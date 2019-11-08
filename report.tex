@@ -110,11 +110,11 @@ Now,
 \begin{cases}
 
 	&{ \langle \hat{a} \rangle = \alpha }\\
-	&{ \langle \hat{a}^\dagger \rangle = \alpha^\ast }\\
-	&{ \langle x \rangle = x _ { 0 } \left( \frac { \hat{a}+ \hat{a} ^ { \dagger } } { 2 } \right) = x _ { 0 } \frac{\alpha + \alpha^\ast}{2}}\\
-	& { \langle p \rangle = p_0  \left\langle \frac { \hat{a}- \hat{a} ^ { \dagger } } { \sqrt { 2 } i } \right\rangle =  p_0 \frac{\alpha - \alpha^\ast}{2i} }\\
-	& { \langle \hat{x}^2 \rangle = {x_0}^2  \left\langle \frac { \hat{a}^2 + \hat{a^ { \dagger }}^2 + \hat{a}\hat{a}^\dagger + \hat{a}^\dagger \hat{a} } { 2 } \right\rangle =  \frac{\alpha^2 + \alpha^{\ast2} + 2|\alpha|^2 + 1 }{2}{x_0}^2}\\
-	& { \langle \hat{p}^2 \rangle = {p_0}^2  \left\langle \frac { \hat{a}^2 + \hat{a^ { \dagger }}^2 - \hat{a}\hat{a}^\dagger - \hat{a}^\dagger \hat{a} } { -2 } \right\rangle = \frac{ 2|\alpha|^2 + 1 -\alpha^2 - \alpha^{\ast2} }{2}{p_0}^2}\\
+	&{ \langle \hat{a}^\dagger \rangle = \alpha^* }\\
+	&{ \langle x \rangle = x _ { 0 } \left( \frac { \hat{a}+ \hat{a} ^ { \dagger } } { 2 } \right) = x _ { 0 } \frac{\alpha + \alpha^*}{2}}\\
+	& { \langle p \rangle = p_0  \left\langle \frac { \hat{a}- \hat{a} ^ { \dagger } } { \sqrt { 2 } i } \right\rangle =  p_0 \frac{\alpha - \alpha^*}{2i} }\\
+	& { \langle \hat{x}^2 \rangle = {x_0}^2  \left\langle \frac { \hat{a}^2 + \hat{a^ { \dagger }}^2 + \hat{a}\hat{a}^\dagger + \hat{a}^\dagger \hat{a} } { 2 } \right\rangle =  \frac{\alpha^2 + \alpha^{*2} + 2|\alpha|^2 + 1 }{2}{x_0}^2}\\
+	& { \langle \hat{p}^2 \rangle = {p_0}^2  \left\langle \frac { \hat{a}^2 + \hat{a^ { \dagger }}^2 - \hat{a}\hat{a}^\dagger - \hat{a}^\dagger \hat{a} } { -2 } \right\rangle = \frac{ 2|\alpha|^2 + 1 -\alpha^2 - \alpha^{*2} }{2}{p_0}^2}\\
 	& \expval{E} = \frac{\hbar\omega}{2}(\hat{a}^{\dagger}\hat{a}+1) = \frac{\hbar\omega}{2}(|\alpha|^2 + 1)\\
 	& (\Delta x)^2 = \frac{{x_0}^2}{2}\\
 	& (\Delta p)^2 = \frac{{p_0}^2}{2}\\
@@ -128,17 +128,33 @@ Now let $\alpha = |\alpha|e^{i\phi}$. Then, $\langle x \rangle (t) $$= \sqrt{2} 
 The coherent state behaves like a classical particle in a harmonic potential, and it has equal uncertainty in position and momentum. However, there exist states which have different values of standard deviation in position and momentum coordinates. In the next section, we will see that the uncertainty is related to the effective temperature in these coordinates, and this can be utilized to prepare efficient heat engines. Let us define \begin{equation} \label{eq:squeeze}
 \hat{Q} = \lambda \hat{a} + \mu \hat{a}^\dagger
 \end{equation} where $|\lambda|^2 - |\mu|^2 = 1$. Let $\lambda = \cosh(r)$, $\mu = \sinh(r)e^{i\phi}$, where $r,\phi \in \mathbb{R}$. The eigenstates of $\hat{Q}$ are defined as the squeezed states. (reference of squeezed state).
- We have the following operator relations. 
- 
- $\left( \begin{array} { l } { \hat { Q } } \\ { \hat { Q } ^ { \dagger } } \end{array} \right) = \left( \begin{array} { l l } { \lambda } & { \mu } \\ { \mu ^ { \ast } } & { \lambda ^ { \ast } } \end{array} \right) \left( \begin{array} { l } { \hat{a} } \\ { \hat{a}^\dagger } \end{array} \right)$
+ We have,
+ \[  \left( \begin{array} { l } { \hat { Q } } \\ { \hat { Q } ^ { \dagger } } \end{array} \right) = \left( \begin{array} { l l } { \lambda } & { \mu } \\ { \mu ^ { * } } & { \lambda ^ { * } } \end{array} \right) \left( \begin{array} { l } { \hat{a} } \\ { \hat{a}^\dagger } \end{array} \right)\]
  
  Inverting, we get, 
  \begin{equation}
 \left( \begin{array} { l } { \hat { a } } \\ { \hat { a } ^ { \dagger } } \end{array} \right) = \left( \begin{array} { c c } { \lambda } & { - \mu } \\ { - \mu ^ { * } } & { \lambda } \end{array} \right) \left( \begin{array} { l } { \hat{Q} } \\ { \hat{Q} ^ { \dagger } } \end{array} \right)
  \end{equation}
-Therefore, $\frac { \hat { x } } { x _ { 0 } } = \frac { \lambda ^ { * } - \mu ^ { * } } { \sqrt { 2 } } \hat { Q } + \frac { \lambda - \mu } { \sqrt { 2 } } \hat { Q } ^ { \dagger }$ and $\frac { \hat { p } } { p _ { 0 } } = \frac { \lambda ^ { * } + \mu ^ { * } } { \sqrt { 2 }i } \hat { Q } - \frac { \lambda + \mu } { \sqrt { 2 } i} \hat { Q } ^ { \dagger }$. \\$[\hat{Q},\hat{Q}^\dagger] = \left[ \lambda \hat { a } + \mu \hat { a } ^ { \dagger } , \lambda ^ { * } \hat { a } ^ { \dagger} + \mu^{ * } \hat { a } \right] = | \lambda | ^ { 2 } - | \mu | ^ { 2 } = 1$.
+Therefore, $\frac { \hat { x } } { x _ { 0 } } = \frac { \lambda ^ { * } - \mu ^ { * } } { \sqrt { 2 } } \hat { Q } + \frac { \lambda - \mu } { \sqrt { 2 } } \hat { Q } ^ { \dagger }$ and $\frac { \hat { p } } { p _ { 0 } } = \frac { \lambda ^ { * } + \mu ^ { * } } { \sqrt { 2 }i } \hat { Q } - \frac { \lambda + \mu } { \sqrt { 2 } i} \hat { Q } ^ { \dagger }$. \\$[\hat{Q},\hat{Q}^\dagger] = \left[ \lambda \hat { a } + \mu \hat { a } ^ { \dagger } , \lambda ^ { * } \hat { a } ^ { \dagger} + \mu^{ * } \hat { a } \right] = | \lambda | ^ { 2 } - | \mu | ^ { 2 } = 1$.\\
+$(\frac { \hat { x } } { x _ { 0 } })^2 = { \left( \frac { \lambda ^ { * } - \mu ^ { * } } { \sqrt { 2 } } \right) ^ { 2 } \hat{Q} ^ { 2 } } { + \left( \frac { \lambda - \mu } { \sqrt { 2 } } \right) ^ { 2 } \hat{Q} ^ { \dagger 2 } } + \frac{|\lambda - \mu|^2}{2}(2\hat{ Q }^\dagger\hat{Q}+1)$\\
+$(\frac { \hat { p } } { p _ { 0 } })^2 = \frac{|\lambda + \mu|^2}{2}(2\hat{ Q }^\dagger \hat{Q}+1)-{ \left( \frac { \lambda ^ { * } + \mu ^ { * } } { \sqrt { 2 } } \right) ^ { 2 } \hat{Q} ^ { 2 } } { - \left( \frac { \lambda + \mu } { \sqrt { 2 } } \right) ^ { 2 } \hat{Q} ^ { \dagger 2 } }$
 
-Let $\hat{Q}\ket{s} = s\ket{s}$.
+Let $\hat{Q}\ket{s} = s\ket{s}$ be a squeezed state. For this state, the following results hold.
+
+$\left\langle \frac { x } { x _ { 0 } } \right\rangle = \frac { \lambda ^ { * } - \mu ^ { * } } { \sqrt { 2 } } s + \frac { \lambda - \mu } { \sqrt { 2 } } s ^ { * }$
+
+$\left\langle \frac{\hat { p }}{p_ { 0 }} \right\rangle = \frac { \lambda ^ { * } + \mu ^ { * } } { \sqrt { 2 } i } s - \frac { \lambda + \mu } { \sqrt { 2 } i } s ^ { * }$
+
+$\left\langle \frac { \hat{x} ^ { 2 } } { x_0 ^ { 2 } } \right\rangle = \left( \frac { \lambda ^ { * } - \mu ^ { * } } { \sqrt { 2 } } \right) ^ { 2 } s ^ { 2 } + \left( \frac { \lambda - \mu } { \sqrt { 2 } } \right) ^ { 2 } s ^ { *2 } + \frac { |\lambda - \mu| ^ { 2 } } { 2 } ( 2|s|^2+1 )$
+
+$\left\langle \frac { \hat{p}^2 } { p_0 ^ 2 } \right\rangle  = \frac { | \lambda + \mu | ^ { 2 } } { 2 } \left( 2 | s | ^ { 2 } + 1 \right) - \left( \frac { \lambda^* + \mu ^ { * } } { \sqrt { 2 } } \right) ^ { 2 } s ^ { 2 } - \left( \frac { \lambda + \mu } { \sqrt { 2 } } \right) ^ { 2 } s ^ { * }$
+
+$(\frac{\Delta x}{x_0})^2 = \frac{|\lambda - \mu|^2}{2}$
+
+$(\frac{\Delta p}{p_0})^2 = \frac{|\lambda + \mu|^2}{2}$
+
+We see that the uncertainties in position and momentum are different, so are the energies.
+Time variation - results and proof.
 \subsection{Brownian motion under harmonic potential}
 \subsubsection{Langevin equation}
 
