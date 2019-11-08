@@ -1,7 +1,7 @@
 % ----------------------------------------------------------------
 % Customization by Leandro C. Coelho -----------------------------
 % ----------------------------------------------------------------
-\documentclass[12pt, twoside, twocolumn, draft]{article}
+\documentclass[12pt, twoside]{article}
 
 \newcommand{\citeny}[1]{\citename{#1}~\citeyear{#1}}
 
@@ -18,7 +18,7 @@
 \usepackage{rotating}
 \usepackage{booktabs}
 \usepackage{multirow}
-\usepackage{physics} 
+\usepackage{physics,empheq} 
 \usepackage[font=small,labelfont=bf,tableposition=top]{caption}
 \usepackage{xfrac}
 \usepackage{relsize}
@@ -61,7 +61,8 @@
 \begin{abstract}
 
 Make abstruct
-Todo. 1. Convert all x basis notation to Dirac notation
+Todo. 1. sinusodially spelling
+2. Make graphs for coherent and squeezed state.
 
 \end{abstract}
 %{\bf Keywords:} enter, keyword, here.
@@ -99,18 +100,45 @@ We can define $\hat{N} = \hat{a}^\dagger\hat{a}$, and then, $\hat{N} \ket{n} = n
 The operator $\hat{a}$ acts on $\ket{0}$ (the vaccuum state) to give the zero vector of the Hilbert space. However, there exist states which are eigenstates of the annihilation operator, and these states are known as the coherent states. (ref. Wikipedia)
 
 Let \begin{equation}\label{eq:coherent}
-	\hat { a } | \alpha \rangle = \alpha | \alpha \rangle
+	\hat { \hat{a}} | \alpha \rangle = \alpha | \alpha \rangle
 \end{equation}, where $\alpha$ is a complex number, and $\ket{\alpha}$ is a coherent state. Since $\ket{n}$ form a basis of the Hilbert space, $\exists c_n \in \mathbb{C}$, such that \begin{equation} \label{eq:coherentexpansion}| \alpha \rangle = \displaystyle\sum _ { n = 0 } ^ { \infty } c_n | n \rangle \end{equation}
-From equations (\ref{eq:coherent}) and (\ref{eq:coherentexpansion}), we get,$\displaystyle\sum _ { n = 0 } ^ { \infty } c_ { n } \hat { a } | n \rangle = \sum _ { n = 0 } ^ { \infty } \alpha c_{ n } | n \rangle\\\implies \sum _ { n = 1 } ^ { \infty } c _ { n } \sqrt { n } | n - 1 \rangle = \sum _ { n = 0 } ^ { \infty } \alpha c _ { n } | n \rangle \\ \implies \sum _ { n = 0 } ^ { \infty } c _ { n + 1 } \sqrt { n + 1 } | n \rangle = \sum _ { n = 0 } ^ { \infty } \alpha c _ { n } | n \rangle\\ \implies \quad c _ { n + 1 } \sqrt { n + 1 } = \alpha c _ { n } \\ \begin{aligned} \implies \frac { c _ { n + 1 } \sqrt { ( n + 1 ) ! } } { \alpha ^ { n + 1 } }  = \frac { c _ { n } \sqrt { n ! } } { \alpha ^ { n } } \\  = \frac { c _ { 0 } \sqrt { 0 ! } } { \alpha ^ { 0 } } \end{aligned} \\ \implies c _ { n } = c _ { 0 } \frac { \alpha ^ { n } } { \sqrt { n ! } }$\\
-Since $\displaystyle\sum _ { n = 0 } ^ { \infty } \left| c _ { n } \right| ^ { 2 } = 1 \implies c _ { 0 } = e ^ { - \frac { | \alpha | ^ { 2 } } { 2 } }$
-
-Finally we get $\displaystyle| \alpha \rangle = e ^ { - \frac {|\alpha| ^ { 2 } } { 2 } } \sum _ { n = 0 } ^ { \infty } \frac { \alpha ^ { n } } { \sqrt { n ! } } | n \rangle$,
+From equations (\ref{eq:coherent}) and (\ref{eq:coherentexpansion}), we get,$\displaystyle\sum _ { n = 0 } ^ { \infty } c_ { n } \hat {a} | n \rangle = \sum _ { n = 0 } ^ { \infty } \alpha c_{ n } | n \rangle\\\implies \sum _ { n = 1 } ^ { \infty } c_{ n } \sqrt { n } | n - 1 \rangle = \sum _ { n = 0 } ^ { \infty } \alpha c_{ n } | n \rangle \\ \implies \sum _ { n = 0 } ^ { \infty } c _ { n + 1 } \sqrt { n + 1 } | n \rangle = \sum _ { n = 0 } ^ { \infty } \alpha c _ { n } | n \rangle\\ \implies \quad c _ { n + 1 } \sqrt { n + 1 } = \alpha c _ { n } \\ \begin{aligned} \implies \frac { c _ { n + 1 } \sqrt { ( n + 1 ) ! } } { \alpha ^ { n + 1 } }  = \frac { c _ { n } \sqrt { n ! } } { \alpha ^ { n } } \\  = \frac { c _ { 0 } \sqrt { 0 ! } } { \alpha ^ { 0 } } \end{aligned} \\ \implies c _ { n } = c _ { 0 } \frac { \alpha ^ { n } } { \sqrt { n ! } }$\\
+Since $\displaystyle\sum _ { n = 0 } ^ { \infty } \left| c _ { n } \right| ^ { 2 } = 1 \implies c _ { 0 } = e ^ { - \frac { | \alpha | ^ { 2 } } { 2 } }$. Finally we get $\displaystyle| \alpha \rangle = e ^ { - \frac {|\alpha| ^ { 2 } } { 2 } } \sum _ { n = 0 } ^ { \infty } \frac { \alpha ^ { n } } { \sqrt { n ! } } | n \rangle$,
 and $\displaystyle| \alpha,t \rangle = e ^ { - \frac {|\alpha| ^ { 2 } + i\omega t} { 2 }} \sum _ { n = 0 } ^ { \infty } \frac { (\alpha e^{-i\omega t})^ { n }  } { \sqrt { n ! } } | n \rangle$. So the state remains a coherent state over time, only the parameter $\alpha$ evolves as $\alpha(t) = \alpha(0) e^{-i\omega t}$.
-Now, $$
-\begin{array} { l } { \langle \hat{a} \rangle = \alpha }\\{ \langle \hat{a}^\dagger \rangle = \alpha^\ast }\\{ \langle x \rangle = x _ { 0 } \left( \frac { a + a ^ { \dagger } } { 2 } \right) = \sqrt { 2 } x _ { 0 } \frac{\alpha + \alpha^\ast}{2}} \\ { \langle p \rangle = p_0  \left\langle \frac { a - a ^ { \dagger } } { \sqrt { 2 } i } \right\rangle = \sqrt { 2 } p_0 \frac{\alpha - \alpha^\ast}{2i} } \end{array}
-$$
+Now, 
+\begin{equation}
+\begin{cases}
+
+	&{ \langle \hat{a} \rangle = \alpha }\\
+	&{ \langle \hat{a}^\dagger \rangle = \alpha^\ast }\\
+	&{ \langle x \rangle = x _ { 0 } \left( \frac { \hat{a}+ \hat{a} ^ { \dagger } } { 2 } \right) = x _ { 0 } \frac{\alpha + \alpha^\ast}{2}}\\
+	& { \langle p \rangle = p_0  \left\langle \frac { \hat{a}- \hat{a} ^ { \dagger } } { \sqrt { 2 } i } \right\rangle =  p_0 \frac{\alpha - \alpha^\ast}{2i} }\\
+	& { \langle \hat{x}^2 \rangle = {x_0}^2  \left\langle \frac { \hat{a}^2 + \hat{a^ { \dagger }}^2 + \hat{a}\hat{a}^\dagger + \hat{a}^\dagger \hat{a} } { 2 } \right\rangle =  \frac{\alpha^2 + \alpha^{\ast2} + 2|\alpha|^2 + 1 }{2}{x_0}^2}\\
+	& { \langle \hat{p}^2 \rangle = {p_0}^2  \left\langle \frac { \hat{a}^2 + \hat{a^ { \dagger }}^2 - \hat{a}\hat{a}^\dagger - \hat{a}^\dagger \hat{a} } { -2 } \right\rangle = \frac{ 2|\alpha|^2 + 1 -\alpha^2 - \alpha^{\ast2} }{2}{p_0}^2}\\
+	& \expval{E} = \frac{\hbar\omega}{2}(\hat{a}^{\dagger}\hat{a}+1) = \frac{\hbar\omega}{2}(|\alpha|^2 + 1)\\
+	& (\Delta x)^2 = \frac{{x_0}^2}{2}\\
+	& (\Delta p)^2 = \frac{{p_0}^2}{2}\\
+	& \Delta x \cdot \Delta p = x_0 p_0 = \frac{\hbar}{2} 
+	
+	\end{cases}\end{equation}
+Now let $\alpha = |\alpha|e^{i\phi}$. Then, $\langle x \rangle (t) $$= \sqrt{2} x_0 \Re{\alpha(t)} $$= \sqrt{2} x_0 |\alpha| \cos(\phi-\omega t)$, and $ \langle p \rangle (t) $$= \sqrt{2} p_0 \Im{\alpha(t)} $$= \sqrt{2} x_0 |\alpha| \sin(\phi-\omega t)$. The total energy ,the standard deviations in position and momentum remain constant, while the expected position and momentum vary sinusodially with time, just like a classical particle. Solving the first order differential equation obtained from (\ref{eq:coherent}) in position basis, it can be easily shown that the wave function $\psi_\alpha (x) = \braket{x}{\alpha}$ is a Gaussian, and its mean $\expval{x}$ changes sinusodially with time.
+	
 \subsection{Squeezed states}
 
+The coherent state behaves like a classical particle in a harmonic potential, and it has equal uncertainty in position and momentum. However, there exist states which have different values of standard deviation in position and momentum coordinates. In the next section, we will see that the uncertainty is related to the effective temperature in these coordinates, and this can be utilized to prepare efficient heat engines. Let us define \begin{equation} \label{eq:squeeze}
+\hat{Q} = \lambda \hat{a} + \mu \hat{a}^\dagger
+\end{equation} where $|\lambda|^2 - |\mu|^2 = 1$. Let $\lambda = \cosh(r)$, $\mu = \sinh(r)e^{i\phi}$, where $r,\phi \in \mathbb{R}$. The eigenstates of $\hat{Q}$ are defined as the squeezed states. (reference of squeezed state).
+ We have the following operator relations. 
+ 
+ $\left( \begin{array} { l } { \hat { Q } } \\ { \hat { Q } ^ { \dagger } } \end{array} \right) = \left( \begin{array} { l l } { \lambda } & { \mu } \\ { \mu ^ { \ast } } & { \lambda ^ { \ast } } \end{array} \right) \left( \begin{array} { l } { \hat{a} } \\ { \hat{a}^\dagger } \end{array} \right)$
+ 
+ Inverting, we get, 
+ \begin{equation}
+\left( \begin{array} { l } { \hat { a } } \\ { \hat { a } ^ { \dagger } } \end{array} \right) = \left( \begin{array} { c c } { \lambda } & { - \mu } \\ { - \mu ^ { * } } & { \lambda } \end{array} \right) \left( \begin{array} { l } { \hat{Q} } \\ { \hat{Q} ^ { \dagger } } \end{array} \right)
+ \end{equation}
+Therefore, $\frac { \hat { x } } { x _ { 0 } } = \frac { \lambda ^ { * } - \mu ^ { * } } { \sqrt { 2 } } \hat { Q } + \frac { \lambda - \mu } { \sqrt { 2 } } \hat { Q } ^ { \dagger }$ and $\frac { \hat { p } } { p _ { 0 } } = \frac { \lambda ^ { * } + \mu ^ { * } } { \sqrt { 2 }i } \hat { Q } - \frac { \lambda + \mu } { \sqrt { 2 } i} \hat { Q } ^ { \dagger }$. \\$[\hat{Q},\hat{Q}^\dagger] = \left[ \lambda \hat { a } + \mu \hat { a } ^ { \dagger } , \lambda ^ { * } \hat { a } ^ { \dagger} + \mu^{ * } \hat { a } \right] = | \lambda | ^ { 2 } - | \mu | ^ { 2 } = 1$.
+
+Let $\hat{Q}\ket{s} = s\ket{s}$.
 \subsection{Brownian motion under harmonic potential}
 \subsubsection{Langevin equation}
 

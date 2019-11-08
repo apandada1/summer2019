@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.2)  8 NOV 2019 23:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.2)  9 NOV 2019 01:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1600,21 +1600,73 @@ Package: xparse 2018/02/21 L3 Experimental document command parser
 . 
 . Defining command \homework with sig. '' on line 764.
 .................................................
-) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/mathtools/empheq.sty
+Package: empheq 2017/03/31 v2.15 Emphasizing equations
+
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count286
+\calc@Bcount=\count287
+\calc@Adimen=\dimen262
+\calc@Bdimen=\dimen263
+\calc@Askip=\skip63
+\calc@Bskip=\skip64
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count288
+\calc@Cskip=\skip65
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count289
+\l_MT_multwidth_dim=\dimen264
+\origjot=\skip66
+\l_MT_shortvdotswithinadjustabove_dim=\dimen265
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen266
+\l_MT_above_intertext_sep=\dimen267
+\l_MT_below_intertext_sep=\dimen268
+\l_MT_above_shortintertext_sep=\dimen269
+\l_MT_below_shortintertext_sep=\dimen270
+)
+\l_EQ_equationtype_int=\count290
+\l_EQ_alignmentmode_int=\count291
+\l_EQ_totalwidth_dim=\dimen271
+\l_EQ_displaywidth_dim=\dimen272
+\l_EQ_temp_linewidth_dim=\dimen273
+\EmphEqdelimitershortfall=\dimen274
+\EmphEqdelimiterfactor=\count292
+\g_EQ_toptag_height_dim=\dimen275
+\g_EQ_bottomtag_depth_dim=\dimen276
+\g_EQ_toprow_height_dim=\dimen277
+\g_EQ_bottomrow_depth_dim=\dimen278
+\g_EQ_widesttag_dim=\dimen279
+\EQ_mathdisplay_box=\box58
+\EQ_tag_box=\box59
+\g_EQ_temprow_int=\count293
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen262
-\captionmargin@=\dimen263
-\captionwidth=\dimen264
-\caption@tempdima=\dimen265
-\caption@indent=\dimen266
-\caption@parindent=\dimen267
-\caption@hangindent=\dimen268
+\captionmargin=\dimen280
+\captionmargin@=\dimen281
+\captionwidth=\dimen282
+\caption@tempdima=\dimen283
+\caption@indent=\dimen284
+\caption@parindent=\dimen285
+\caption@hangindent=\dimen286
 )
-\c@ContinuedFloat=\count286
+\c@ContinuedFloat=\count294
 Package caption Info: float package is loaded.
 Package caption Info: rotating package is loaded.
 )
@@ -1706,19 +1758,19 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2018/02/21 L3 Experimental prototype document functions
-\l__xtemplate_tmp_dim=\dimen269
-\l__xtemplate_tmp_int=\count287
+\l__xtemplate_tmp_dim=\dimen287
+\l__xtemplate_tmp_int=\count295
 \l__xtemplate_tmp_muskip=\muskip17
-\l__xtemplate_tmp_skip=\skip63
+\l__xtemplate_tmp_skip=\skip67
 )
 Package: xfrac 2018/02/21 L3 Experimental split-level fractions
-\l__xfrac_slash_box=\box58
-\l__xfrac_tmp_box=\box59
-\l__xfrac_denominator_bot_sep_dim=\dimen270
-\l__xfrac_numerator_bot_sep_dim=\dimen271
-\l__xfrac_numerator_top_sep_dim=\dimen272
-\l__xfrac_slash_left_sep_dim=\dimen273
-\l__xfrac_slash_right_sep_dim=\dimen274
+\l__xfrac_slash_box=\box60
+\l__xfrac_tmp_box=\box61
+\l__xfrac_denominator_bot_sep_dim=\dimen288
+\l__xfrac_numerator_bot_sep_dim=\dimen289
+\l__xfrac_numerator_top_sep_dim=\dimen290
+\l__xfrac_slash_left_sep_dim=\dimen291
+\l__xfrac_slash_right_sep_dim=\dimen292
 \l__xfrac_slash_left_muskip=\muskip18
 \l__xfrac_slash_right_muskip=\muskip19
 .................................................
@@ -1741,20 +1793,20 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count288
+\linenopenalty=\count296
 \output=\toks42
-\linenoprevgraf=\count289
-\linenumbersep=\dimen275
-\linenumberwidth=\dimen276
-\c@linenumber=\count290
-\c@pagewiselinenumber=\count291
-\c@LN@truepage=\count292
-\c@internallinenumber=\count293
-\c@internallinenumbers=\count294
-\quotelinenumbersep=\dimen277
-\bframerule=\dimen278
-\bframesep=\dimen279
-\bframebox=\box60
+\linenoprevgraf=\count297
+\linenumbersep=\dimen293
+\linenumberwidth=\dimen294
+\c@linenumber=\count298
+\c@pagewiselinenumber=\count299
+\c@LN@truepage=\count300
+\c@internallinenumber=\count301
+\c@internallinenumbers=\count302
+\quotelinenumbersep=\dimen295
+\bframerule=\dimen296
+\bframesep=\dimen297
+\bframebox=\box62
 LaTeX Info: Redefining \\ on input line 3056.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
@@ -1770,17 +1822,17 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count295
-\Gm@cntv=\count296
-\c@Gm@tempcnt=\count297
-\Gm@bindingoffset=\dimen280
-\Gm@wd@mp=\dimen281
-\Gm@odd@mp=\dimen282
-\Gm@even@mp=\dimen283
-\Gm@layoutwidth=\dimen284
-\Gm@layoutheight=\dimen285
-\Gm@layouthoffset=\dimen286
-\Gm@layoutvoffset=\dimen287
+\Gm@cnth=\count303
+\Gm@cntv=\count304
+\c@Gm@tempcnt=\count305
+\Gm@bindingoffset=\dimen298
+\Gm@wd@mp=\dimen299
+\Gm@odd@mp=\dimen300
+\Gm@even@mp=\dimen301
+\Gm@layoutwidth=\dimen302
+\Gm@layoutheight=\dimen303
+\Gm@layouthoffset=\dimen304
+\Gm@layoutvoffset=\dimen305
 \Gm@dimlist=\toks43
 ) (./report.aux)
 \openout1 = `report.aux'.
@@ -1807,16 +1859,16 @@ LaTeX Font Info:    ... okay on input line 41.
 ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count298
-\scratchdimen=\dimen288
-\scratchbox=\box61
-\nofMPsegments=\count299
-\nofMParguments=\count300
+\scratchcounter=\count306
+\scratchdimen=\dimen306
+\scratchbox=\box63
+\nofMPsegments=\count307
+\nofMParguments=\count308
 \everyMPshowfont=\toks44
-\MPscratchCnt=\count301
-\MPscratchDim=\dimen289
-\MPnumerator=\count302
-\makeMPintoPDFobject=\count303
+\MPscratchCnt=\count309
+\MPscratchDim=\dimen307
+\MPnumerator=\count310
+\makeMPintoPDFobject=\count311
 \everyMPtoPDFconversion=\toks45
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1870,6 +1922,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+\Hy@linkcounter=\count312
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
@@ -1896,14 +1949,14 @@ Package caption Info: End \AtBeginDocument code.
 * \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=48.0pt
+* \marginparwidth=95.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
-* \@twocolumntrue
+* \@twocolumnfalse
 * \@twosidetrue
 * \@mparswitchtrue
 * \@reversemarginfalse
@@ -1932,70 +1985,48 @@ LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbraceleft' on input line 59.
 
+[1
 
-Underfull \vbox (badness 2293) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-[]\OT1/cmr/bx/n/17.28 Theory of the for
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-\OT1/cmr/bx/n/17.28 Brow-n-ian Har-monic
- []
-
-
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 103--106
-\OT1/cmr/m/n/12 From equa-tions (3[]) and (4[]), we
- []
-
-
-Underfull \hbox (badness 2875) in paragraph at lines 114--114
-[]\OT1/cmr/bx/n/14.4 Brownian mo-tion un-der
- []
-
-(./report.bbl
+ [3]
+[4] (./report.bbl
 
 Package natbib Warning: Empty `thebibliography' environment on input line 8.
 
-) [3] (./report.aux)
+) [5] (./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 24799 strings out of 492982
- 490269 string characters out of 6134896
- 516605 words of memory out of 5000000
- 28010 multiletter control sequences out of 15000+600000
- 540493 words of font info for 64 fonts, out of 8000000 for 9000
+ 25590 strings out of 492982
+ 504763 string characters out of 6134896
+ 534216 words of memory out of 5000000
+ 28786 multiletter control sequences out of 15000+600000
+ 540801 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,9n,54p,10445b,326s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on report.pdf (3 pages, 161574 bytes).
+ 55i,12n,54p,10445b,294s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on report.pdf (5 pages, 181402 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 87 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
