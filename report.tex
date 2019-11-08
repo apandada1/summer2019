@@ -1,0 +1,127 @@
+% ----------------------------------------------------------------
+% Customization by Leandro C. Coelho -----------------------------
+% ----------------------------------------------------------------
+\documentclass[12pt, twoside, twocolumn, draft]{article}
+
+\newcommand{\citeny}[1]{\citename{#1}~\citeyear{#1}}
+
+% Setup TikZ
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\tikzstyle{block}=[draw opacity=0.7,line width=1cm]
+
+\usepackage{graphicx}
+\usepackage{amsmath, amsthm, amsfonts}
+\usepackage[numbers]{natbib}
+\usepackage{algorithm, algorithmic}
+\usepackage{placeins}
+\usepackage{rotating}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{physics} 
+\usepackage[font=small,labelfont=bf,tableposition=top]{caption}
+\usepackage{xfrac}
+\usepackage{relsize}
+\usepackage{mathrsfs}
+%\setcounter{secnumdepth}{5}
+\usepackage{lineno}
+
+\usepackage[text={16cm,23cm},centering]{geometry}
+
+\setlength{\parskip}{1.2ex}
+\setlength{\parindent}{0em}
+\clubpenalty = 100
+\widowpenalty = 100
+\renewcommand{\baselinestretch}{1.5}
+
+\newcommand*{\red}{\textcolor{red}}
+\newcommand*{\green}{\textcolor{green}}
+\newcommand*{\blue}{\textcolor{blue}}
+
+\begin{document}
+
+\setpagewiselinenumbers
+
+%\modulolinenumbers[5]
+%\linenumbers
+
+\title{Quantum Nano engines (fix title)}
+
+%\footnotesize\date{\today}
+
+
+
+\author{Archisman Panigrahi\\
+	\footnotesize Indian Institute of Science, Bangalore\\
+	\footnotesize \texttt{\{archismanp@iisc.ac.in\}} \\ }
+
+
+\maketitle
+
+\begin{abstract}
+
+Make abstruct
+Todo. 1. Convert all x basis notation to Dirac notation
+
+\end{abstract}
+%{\bf Keywords:} enter, keyword, here.
+
+%\tableofcontents
+
+\section{Introduction}
+The classical limits of the maximum achievable efficiency of an ideal heat engine running between temperatures $T_{hot}$ and $T_{cold}$ us given by Carnot's formula $\eta_{Carnot} = 1 - \frac{T_{cold}}{T_{hot}}$.\\
+The efficiency of real engines are, however, a fraction of this ideal formula, as the reversible Carnot engine is inifinitely slow, and there are frictional dissipations in the real world.
+Nano engines based on the principles of Quantum Mechanics can achieve much higher efficiencies than their classical counterparts and can have efficiency close to the Carnot limit.
+These engines have been realized in many forms including of ion traps[ref], three level systems[ref],harmonic oscillators [ref].
+It has been shown both theoretically[Abah] and experimentally[Klaers] that the efficiencies of engines realized using "squeezed harmonic oscillators" an even surpass the Carnot limit, without violating the second law of thermodynamics. In this report, it will be elaborated in which sense the Carnot limit is surpassed, and why the second law is not violated.
+To see how the experiment[ref Klaers] was done, let us recap squeezed states of harmonic oscillator and Brownian motion.
+\section{Theory of the for Brownian Harmonic oscillator}
+
+Before we discuss squeezed states, let us review ``Coherent states" of a harmonic oscillator.
+\subsection{Coherent states}
+The position and momentum of classical harmonic oscillator (a particle of mass $m$ in potential $\frac{1}{2}m\omega^2x^2$)  oscillates with period $\omega$, its natural frequency.
+However, in quantum mechanics, the expectation value of position or momentum of an eigenstate of the Hamiltonian does not change with time.
+
+
+For the harmonic oscillator, the Hamiltonian is $\hat{H} = \frac{\hat{p}^2}{2m} + \frac{1}{2}m \omega^2 {\hat{x}}^2$.
+
+
+Let the eigenstates of $\hat{H}$ be denoted by $\ket{n}$. It can be shown (ref. Cohen Tannoudji) that it has energy $E_n = (n+\frac{1}{2}) \hbar\omega$. The state evolves with time as $\ket{n,t} = e ^ { -i \left( n + \frac { 1 } { 2 } \right) \omega t } \ket{n,t=0}$, and will have equal energies $(n+\frac{1}{2}) \frac{\hbar\omega}{2}$ in position and momentum coordinates. And, the expected values of position and momentum are $0$ and do not change over time.
+There exist quantum states whose expected values of position and momentum oscillate sinusoidally with time, and the wave packet does not spread with time. These are known as ``Coherent states".
+
+
+Let us define $x_0 = \sqrt{\frac{\hbar}{m\omega}}$ and $p_0 = \sqrt{\hbar m \omega}$, and dimensionless operators $\hat{X} = \frac{\hat{x}}{x_0}$,$\hat{P} = \frac{\hat{p}}{p_0}$. Then we can rewrite $\hat{H} = \frac{\hbar\omega}{2}({\hat{X}}^2 + {\hat{P}}^2)$. Let us define two non Hermitian operators $\hat{a} = \frac{\hat{X} + i \hat{P}}{\sqrt{2}}$, and ${\hat{a}}^\dagger = \frac{\hat{X} - i \hat{P}}{\sqrt{2}}$. Then, $[\hat{a},\hat{a}^\dagger] = 1$, and the Hamiltonian can be written as $\hat{H} = \hbar\omega( \hat{a}^\dagger \hat{a} + \frac{1}{2})$.
+$\hat{a}^\dagger$ and $\hat{a}$ are known as ``creation" and ``annihilation" operators, respectively, because they act on the eigenstates as follows. 
+\begin{equation}\label{eq:a} { \hat{a} | n \rangle = \sqrt { n } | n - 1 \rangle } \end{equation}
+\begin{equation} \label{eq:adagger}{ \hat{a} ^ { \dagger } | n \rangle = \sqrt { n + 1 } | n + 1 \rangle }\end{equation} 
+We can define $\hat{N} = \hat{a}^\dagger\hat{a}$, and then, $\hat{N} \ket{n} = n\ket{n}$, denoting the number of excitations (e.g. photons or phonons) in the system. The creation and annihilation operators can be viewed as operators which create or destroy such an excitation, respectively, hence their name.
+
+The operator $\hat{a}$ acts on $\ket{0}$ (the vaccuum state) to give the zero vector of the Hilbert space. However, there exist states which are eigenstates of the annihilation operator, and these states are known as the coherent states. (ref. Wikipedia)
+
+Let \begin{equation}\label{eq:coherent}
+	\hat { a } | \alpha \rangle = \alpha | \alpha \rangle
+\end{equation}, where $\alpha$ is a complex number, and $\ket{\alpha}$ is a coherent state. Since $\ket{n}$ form a basis of the Hilbert space, $\exists c_n \in \mathbb{C}$, such that \begin{equation} \label{eq:coherentexpansion}| \alpha \rangle = \displaystyle\sum _ { n = 0 } ^ { \infty } c_n | n \rangle \end{equation}
+From equations (\ref{eq:coherent}) and (\ref{eq:coherentexpansion}), we get,$\displaystyle\sum _ { n = 0 } ^ { \infty } c_ { n } \hat { a } | n \rangle = \sum _ { n = 0 } ^ { \infty } \alpha c_{ n } | n \rangle\\\implies \sum _ { n = 1 } ^ { \infty } c _ { n } \sqrt { n } | n - 1 \rangle = \sum _ { n = 0 } ^ { \infty } \alpha c _ { n } | n \rangle \\ \implies \sum _ { n = 0 } ^ { \infty } c _ { n + 1 } \sqrt { n + 1 } | n \rangle = \sum _ { n = 0 } ^ { \infty } \alpha c _ { n } | n \rangle\\ \implies \quad c _ { n + 1 } \sqrt { n + 1 } = \alpha c _ { n } \\ \begin{aligned} \implies \frac { c _ { n + 1 } \sqrt { ( n + 1 ) ! } } { \alpha ^ { n + 1 } }  = \frac { c _ { n } \sqrt { n ! } } { \alpha ^ { n } } \\  = \frac { c _ { 0 } \sqrt { 0 ! } } { \alpha ^ { 0 } } \end{aligned} \\ \implies c _ { n } = c _ { 0 } \frac { \alpha ^ { n } } { \sqrt { n ! } }$\\
+Since $\displaystyle\sum _ { n = 0 } ^ { \infty } \left| c _ { n } \right| ^ { 2 } = 1 \implies c _ { 0 } = e ^ { - \frac { | \alpha | ^ { 2 } } { 2 } }$
+
+Finally we get $\displaystyle| \alpha \rangle = e ^ { - \frac {|\alpha| ^ { 2 } } { 2 } } \sum _ { n = 0 } ^ { \infty } \frac { \alpha ^ { n } } { \sqrt { n ! } } | n \rangle$,
+and $\displaystyle| \alpha,t \rangle = e ^ { - \frac {|\alpha| ^ { 2 } + i\omega t} { 2 }} \sum _ { n = 0 } ^ { \infty } \frac { (\alpha e^{-i\omega t})^ { n }  } { \sqrt { n ! } } | n \rangle$. So the state remains a coherent state over time, only the parameter $\alpha$ evolves as $\alpha(t) = \alpha(0) e^{-i\omega t}$.
+Now, $$
+\begin{array} { l } { \langle \hat{a} \rangle = \alpha }\\{ \langle \hat{a}^\dagger \rangle = \alpha^\ast }\\{ \langle x \rangle = x _ { 0 } \left( \frac { a + a ^ { \dagger } } { 2 } \right) = \sqrt { 2 } x _ { 0 } \frac{\alpha + \alpha^\ast}{2}} \\ { \langle p \rangle = p_0  \left\langle \frac { a - a ^ { \dagger } } { \sqrt { 2 } i } \right\rangle = \sqrt { 2 } p_0 \frac{\alpha - \alpha^\ast}{2i} } \end{array}
+$$
+\subsection{Squeezed states}
+
+\subsection{Brownian motion under harmonic potential}
+\subsubsection{Langevin equation}
+
+\section{Conclusion}
+
+\vspace{1.5cm}
+\noindent \textbf{Acknowledgments}
+
+\noindent \small{This work was partly supported by .}
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}
