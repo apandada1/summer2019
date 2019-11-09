@@ -11,6 +11,7 @@
 \tikzstyle{block}=[draw opacity=0.7,line width=1cm]
 
 \usepackage{graphicx}
+\usepackage[lofdepth,lotdepth]{subfig}
 \usepackage{amsmath, amsthm, amsfonts}
 \usepackage[numbers]{natbib}
 \usepackage{algorithm, algorithmic}
@@ -102,7 +103,7 @@ The operator $\hat{a}$ acts on $\ket{0}$ (the vaccuum state) to give the zero ve
 Let \begin{equation}\label{eq:coherent}
 	\hat { \hat{a}} | \alpha \rangle = \alpha | \alpha \rangle
 \end{equation}, where $\alpha$ is a complex number, and $\ket{\alpha}$ is a coherent state. Since $\ket{n}$ form a basis of the Hilbert space, $\exists c_n \in \mathbb{C}$, such that \begin{equation} \label{eq:coherentexpansion}| \alpha \rangle = \displaystyle\sum _ { n = 0 } ^ { \infty } c_n | n \rangle \end{equation}
-From equations (\ref{eq:coherent}) and (\ref{eq:coherentexpansion}), we get,$\displaystyle\sum _ { n = 0 } ^ { \infty } c_ { n } \hat {a} | n \rangle = \sum _ { n = 0 } ^ { \infty } \alpha c_{ n } | n \rangle\\\implies \sum _ { n = 1 } ^ { \infty } c_{ n } \sqrt { n } | n - 1 \rangle = \sum _ { n = 0 } ^ { \infty } \alpha c_{ n } | n \rangle \\ \implies \sum _ { n = 0 } ^ { \infty } c _ { n + 1 } \sqrt { n + 1 } | n \rangle = \sum _ { n = 0 } ^ { \infty } \alpha c _ { n } | n \rangle\\ \implies \quad c _ { n + 1 } \sqrt { n + 1 } = \alpha c _ { n } \\ \begin{aligned} \implies \frac { c _ { n + 1 } \sqrt { ( n + 1 ) ! } } { \alpha ^ { n + 1 } }  = \frac { c _ { n } \sqrt { n ! } } { \alpha ^ { n } } \\  = \frac { c _ { 0 } \sqrt { 0 ! } } { \alpha ^ { 0 } } \end{aligned} \\ \implies c _ { n } = c _ { 0 } \frac { \alpha ^ { n } } { \sqrt { n ! } }$\\
+$\begin{aligned}\text{From equations (\ref{eq:coherent}) and (\ref{eq:coherentexpansion}), we get,}\displaystyle\sum _ { n = 0 } ^ { \infty } c_ { n } \hat {a} | n \rangle &= \sum _ { n = 0 } ^ { \infty } \alpha c_{ n } | n \rangle\\\implies \sum _ { n = 1 } ^ { \infty } c_{ n } \sqrt { n } | n - 1 \rangle &= \sum _ { n = 0 } ^ { \infty } \alpha c_{ n } | n \rangle \\ \implies \sum _ { n = 0 } ^ { \infty } c _ { n + 1 } \sqrt { n + 1 } | n \rangle &= \sum _ { n = 0 } ^ { \infty } \alpha c _ { n } | n \rangle\\ \implies \quad c _ { n + 1 } \sqrt { n + 1 } &= \alpha c _ { n } \\  \implies \frac { c _ { n + 1 } \sqrt { ( n + 1 ) ! } } { \alpha ^ { n + 1 } }  &= \frac { c _ { n } \sqrt { n ! } } { \alpha ^ { n } } \\  &= \frac { c _ { 0 } \sqrt { 0 ! } } { \alpha ^ { 0 } }  \\ \implies c _ { n } &= c _ { 0 } \frac { \alpha ^ { n } } { \sqrt { n ! } }\end{aligned}$\\
 Since $\displaystyle\sum _ { n = 0 } ^ { \infty } \left| c _ { n } \right| ^ { 2 } = 1 \implies c _ { 0 } = e ^ { - \frac { | \alpha | ^ { 2 } } { 2 } }$. Finally we get $\displaystyle| \alpha \rangle = e ^ { - \frac {|\alpha| ^ { 2 } } { 2 } } \sum _ { n = 0 } ^ { \infty } \frac { \alpha ^ { n } } { \sqrt { n ! } } | n \rangle$,
 and $\displaystyle| \alpha,t \rangle = e ^ { - \frac {|\alpha| ^ { 2 } + i\omega t} { 2 }} \sum _ { n = 0 } ^ { \infty } \frac { (\alpha e^{-i\omega t})^ { n }  } { \sqrt { n ! } } | n \rangle$. So the state remains a coherent state over time, only the parameter $\alpha$ evolves as $\alpha(t) = \alpha(0) e^{-i\omega t}$.
 Now, 
@@ -122,6 +123,63 @@ Now,
 	
 	\end{cases}\end{equation}
 Now let $\alpha = |\alpha|e^{i\phi}$. Then, $\langle x \rangle (t) $$= \sqrt{2} x_0 \Re{\alpha(t)} $$= \sqrt{2} x_0 |\alpha| \cos(\phi-\omega t)$, and $ \langle p \rangle (t) $$= \sqrt{2} p_0 \Im{\alpha(t)} $$= \sqrt{2} x_0 |\alpha| \sin(\phi-\omega t)$. The total energy ,the standard deviations in position and momentum remain constant, while the expected position and momentum vary sinusodially with time, just like a classical particle. Solving the first order differential equation obtained from (\ref{eq:coherent}) in position basis, it can be easily shown that the wave function $\psi_\alpha (x) = \braket{x}{\alpha}$ is a Gaussian, and its mean $\expval{x}$ changes sinusodially with time.
+
+\begin{figure}
+	\centering
+	\subfloat[Subfigure 1 list of figures text][Subfigure 1 caption]{
+		\includegraphics[width=0.4\textwidth]{graphs/coherent/1.jpg}
+		\label{fig:subfig1}}
+	\qquad
+	\subfloat[Subfigure 2 list of figures text][Subfigure 2 caption]{
+		\includegraphics[width=0.4\textwidth]{graphs/coherent/2.jpg}
+		\label{fig:subfig2}}
+	\subfloat[Subfigure 3 list of figures text][Subfigure 3 caption]{
+		\includegraphics[width=0.4\textwidth]{graphs/coherent/3.jpg}
+		\label{fig:subfig3}}
+	\qquad
+	\subfloat[Subfigure 4 list of figures text][Subfigure 4 caption]{
+		\includegraphics[width=0.4\textwidth]{graphs/coherent/4.jpg}
+		\label{fig:subfig4}}
+		\subfloat[Subfigure 2 list of figures text][Subfigure 2 caption]{
+		\includegraphics[width=0.4\textwidth]{graphs/coherent/5.jpg}
+		\label{fig:subfig2}}
+	\qquad
+	\subfloat[Subfigure 3 list of figures text][Subfigure 3 caption]{
+		\includegraphics[width=0.4\textwidth]{graphs/coherent/6.jpg}
+		\label{fig:subfig3}}
+	\qquad
+	\subfloat[Subfigure 3 list of figures text][Subfigure 3 caption]{
+		\includegraphics[width=0.4\textwidth]{graphs/coherent/7.jpg}
+		\label{fig:subfig3}}
+	\qquad
+	\subfloat[Subfigure 3 list of figures text][Subfigure 3 caption]{
+		\includegraphics[width=0.4\textwidth]{graphs/coherent/8.jpg}
+		\label{fig:subfig3}}
+	\qquad
+	\subfloat[Subfigure 3 list of figures text][Subfigure 3 caption]{
+		\includegraphics[width=0.4\textwidth]{graphs/coherent/9.jpg}
+		\label{fig:subfig3}}
+	\qquad
+	\subfloat[Subfigure 3 list of figures text][Subfigure 3 caption]{
+		\includegraphics[width=0.4\textwidth]{graphs/coherent/10.jpg}
+		\label{fig:subfig3}}
+	\qquad
+	\subfloat[Subfigure 3 list of figures text][Subfigure 3 caption]{
+		\includegraphics[width=0.4\textwidth]{graphs/coherent/3.jpg}
+		\label{fig:subfig3}}
+	\qquad
+	\subfloat[Subfigure 3 list of figures text][Subfigure 3 caption]{
+		\includegraphics[width=0.4\textwidth]{graphs/coherent/3.jpg}
+		\label{fig:subfig3}}
+	\qquad
+	\subfloat[Subfigure 3 list of figures text][Subfigure 3 caption]{
+		\includegraphics[width=0.4\textwidth]{graphs/coherent/3.jpg}
+		\label{fig:subfig3}}
+	\qquad
+	\caption{This is a figure containing several subfigures.}
+	\label{fig:globfig}
+\end{figure}
+	
 	
 \subsection{Squeezed states}
 
