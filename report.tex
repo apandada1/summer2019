@@ -101,7 +101,7 @@ We can define $\hat{N} = \hat{a}^\dagger\hat{a}$, and then, $\hat{N} \ket{n} = n
 The operator $\hat{a}$ acts on $\ket{0}$ (the vaccuum state) to give the zero vector of the Hilbert space. However, there exist states which are eigenstates of the annihilation operator, and these states are known as the coherent states. (ref. Wikipedia)
 
 Let \begin{equation}\label{eq:coherent}
-	\hat { \hat{a}} | \alpha \rangle = \alpha | \alpha \rangle
+	\hat {a} | \alpha \rangle = \alpha | \alpha \rangle
 \end{equation}, where $\alpha$ is a complex number, and $\ket{\alpha}$ is a coherent state. Since $\ket{n}$ form a basis of the Hilbert space, $\exists c_n \in \mathbb{C}$, such that \begin{equation} \label{eq:coherentexpansion}| \alpha \rangle = \displaystyle\sum _ { n = 0 } ^ { \infty } c_n | n \rangle \end{equation}
 $\begin{aligned}\text{From equations (\ref{eq:coherent}) and (\ref{eq:coherentexpansion}), we get,}\displaystyle\sum _ { n = 0 } ^ { \infty } c_ { n } \hat {a} | n \rangle &= \sum _ { n = 0 } ^ { \infty } \alpha c_{ n } | n \rangle\\\implies \sum _ { n = 1 } ^ { \infty } c_{ n } \sqrt { n } | n - 1 \rangle &= \sum _ { n = 0 } ^ { \infty } \alpha c_{ n } | n \rangle \\ \implies \sum _ { n = 0 } ^ { \infty } c _ { n + 1 } \sqrt { n + 1 } | n \rangle &= \sum _ { n = 0 } ^ { \infty } \alpha c _ { n } | n \rangle\\ \implies \quad c _ { n + 1 } \sqrt { n + 1 } &= \alpha c _ { n } \\  \implies \frac { c _ { n + 1 } \sqrt { ( n + 1 ) ! } } { \alpha ^ { n + 1 } }  &= \frac { c _ { n } \sqrt { n ! } } { \alpha ^ { n } } \\  &= \frac { c _ { 0 } \sqrt { 0 ! } } { \alpha ^ { 0 } }  \\ \implies c _ { n } &= c _ { 0 } \frac { \alpha ^ { n } } { \sqrt { n ! } }\end{aligned}$\\
 Since $\displaystyle\sum _ { n = 0 } ^ { \infty } \left| c _ { n } \right| ^ { 2 } = 1 \implies c _ { 0 } = e ^ { - \frac { | \alpha | ^ { 2 } } { 2 } }$. Finally we get $\displaystyle| \alpha \rangle = e ^ { - \frac {|\alpha| ^ { 2 } } { 2 } } \sum _ { n = 0 } ^ { \infty } \frac { \alpha ^ { n } } { \sqrt { n ! } } | n \rangle$,
@@ -211,7 +211,7 @@ $\left\langle \frac { \hat{p}^2 } { p_0 ^ 2 } \right\rangle  = \frac { | \lambda
 $\left.\begin{array} { l } { (\frac{\Delta x}{x_0})^2 = \frac{|\lambda - \mu|^2}{2} } \\ { (\frac{\Delta p}{p_0})^2 = \frac{|\lambda + \mu|^2}{2} } \end{array} \right\}$ (independent of $s$)
 
 We see that the (dimensionless) uncertainties in position and momentum are different, so are the energies.
-In the next section, we prove that for a squeezed state, $\lambda$ and $\mu$ must evolve as $\lambda(t) = \lambda(0) e^{i\omega t} = \cosh(r) e^{i\omega t}$ and $\mu(t) = \mu e^{-i\omega t} = \sinh(r) e^{i\omega t - \phi}$, while $s = |s| e^{i\theta}$ does not change.
+In the next section, we prove that for a squeezed state, $\lambda$ and $\mu$ must evolve as $\lambda(t) = \lambda(0) e^{i\omega t} = \cosh(r) e^{i\omega t}$ and $\mu(t) = \mu e^{-i\omega t} = \sinh(r) e^{i(\omega t - \phi)}$, while $s = |s| e^{i\theta}$ does not change.
 
 Then, after some simplification, we get, 
 \begin{equation}
