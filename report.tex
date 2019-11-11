@@ -241,9 +241,9 @@ $\begin{aligned}\text{Thus,}\ket{s,t} &= C \sum _ { n = 0 } ^ { \infty } \frac{ 
 
 \textbf{Case} $s = 0$, $\mu \neq 0$, squeezed vacuum
 
-From (\ref{eq:recursion cn}), $\lambda \sqrt{n+1}c_{n+1} + \mu \sqrt{n} c_n = 0$. 
+From (\ref{eq:recursion cn}), $\lambda \sqrt{n+1}c_{n+1} + \mu \sqrt{n} c_{n-1} = 0$. 
 
-$\begin{aligned}\text{Let } c_n &= e_n \sqrt{n} \\\implies e_{n+1} &= -\frac{\mu}{\lambda} (n+1) e_{n-1} \\\implies e_{n+2} &= -\frac{\mu}{\lambda} (n+1) e_n \\ \implies \frac { e_{2n} } { e _ { 0 } } &= \frac { e_{2n} } { e_{2n- 2} } \frac { e_{2n- 2} } { e_{2n- 4} } \cdots \frac { e _ { 2 } } { e _ { 0 } } \\ &= \left( - \frac { u } { \lambda } \right) { ( 2n - 1 ) } \left( - \frac { \mu } { \lambda } \right) ( 2n - 3 ) \cdots \left( - \frac { \mu } { \lambda } \right) 1 \\
+$\begin{aligned}\text{Let } e_n &= c_n \sqrt{n!} \\\implies e_{n+1} &= -\frac{\mu}{\lambda} n e_{n-1} \\\implies e_{n+2} &= -\frac{\mu}{\lambda} (n+1) e_n \\ \implies \frac { e_{2n} } { e _ { 0 } } &= \frac { e_{2n} } { e_{2n- 2} } \frac { e_{2n- 2} } { e_{2n- 4} } \cdots \frac { e _ { 2 } } { e _ { 0 } } \\ &= \left( - \frac { u } { \lambda } \right) { ( 2n - 1 ) } \left( - \frac { \mu } { \lambda } \right) ( 2n - 3 ) \cdots \left( - \frac { \mu } { \lambda } \right) 1 \\
   &= \left( -\frac { \mu } { \lambda } \right) ^ { n } \cdot ( 2 n - 1 ) ( 2 n - 3 ) \cdots 1 \\  &= ( - 1 ) ^ { n } \left( \frac { \mu } { \lambda } \right) ^ { n } \frac { ( 2 n ) ( 2 n - 1 ) \cdots 2\cdot1 } {2 ^ { n } \cdot n !  } \\ &= ( - 1 ) ^ { n } \left( \frac { \mu } { \lambda } \right) ^ { n } \frac { (2n)! } {2 ^ { n } \cdot n !  }  \end{aligned}$.
   
   $\begin{aligned}\text{Similarly, }\frac { e_{2n+1} } { e _ { 1 } } &= \frac { e_{2n+1} } { e_{2n-1} } \frac { e_{2n- 1} } { e_{2n- 3} } \cdots \frac { e _ { 3 } } { e _ { 1 } } \\
@@ -252,7 +252,38 @@ $\begin{aligned}\text{Let } c_n &= e_n \sqrt{n} \\\implies e_{n+1} &= -\frac{\mu
 
 
 \subsection{Brownian motion under harmonic potential}
+
 \subsubsection{Langevin equation}
+It turns out that the motion of a classical particle undergoing Brownian motion can mimic a squeezed state, under special circumstances. The dynamics of a particle undergoing Brownian motion is governed by the Langevin equation,\begin{equation}\label{eq:langevin}m \ddot{x} = -\derivative{V(x)}{x} - b \dot{x} + m \xi(t)\end{equation} where $\derivative{V(x)}{x}$ is the force acting on the particle due to potential $V(x)$, $-b\dot{x}$ is the effective frictional force acting on the particle due to viscosity of the medium, and $\xi(t)$ is a time dependent stochastic force.
+For the Brownian motion of a particle in a normal heat bath of temperature $T$, the stochastic force is a white noise (reference. wikipedia page of white noise, and some source e.g. Chandrashekhar's paper that the force is indeed white noise), and $\overline{\xi(t_1)\xi(t_2)} = a \delta(t_1 - t_2)$, where the overhead line denotes the average over distribution of $\xi(t)$.
+\subsubsection{Explanation of the nature of correlation of the stochastic force} To see why this happens, we note that when $t_1 \neq t_2$, the two forces are uncorrelated, and the average of their product is zero. When the two times are equal, the force acts like a Dirac delta function because the velocity of the particle changes instantaneously after being hit by another particle. Now we show that for $a = \frac{2 \gamma k T}{m}$, where $k$ is the Boltzmann's constant.\\
+\textbf{Proof}: When $V(x) = 0$,\begin{equation}\label{eq:lang_no_pot}
+	m\dot{v}+m\gamma v = m \xi(t)
+\end{equation} 
+
+$\begin{aligned}\implies e^{\gamma t}(\dot{v}+\gamma v) &= e^{\gamma t} \xi(t) \\ \implies \derivative{(ve^{\gamma t})}{t} &= e^{\gamma t} \xi(t)\\ \implies ve^{\gamma t} - v(0) &= \int_{0}^{t} e^{\gamma s} \xi(s) ds \\ \implies v(t_1) v(t_2) &= v(0)^2 e^{-\gamma(t_1 + t_2)} + v(0) a e^{-\gamma(t_1 + t_2)} [\int_{0}^{t_1} e^{\gamma s} \xi(s) ds + \int_{0}^{t_2} e^{\gamma s} \xi(s) ds] \\&+ e^{-\gamma(t_1 + t_2)} \int_{0}^{t_1}\int_{0}^{t_2} e^{\gamma(s_1 + s_2)} \xi(s_1)\xi(s_2) ds_1 ds_2 \end{aligned}$
+
+Taking averages over the distribution,\\
+$\begin{aligned}\overline{v(t_1) v(t_2)} = v(0)^2 e^{-\gamma(t_1 + t_2)} &+ v(0) a e^{-\gamma(t_1 + t_2)} [\int_{0}^{t_1} e^{\gamma s} \overline{\xi(s)} ds + \int_{0}^{t_2} e^{\gamma s} \overline{\xi(s)} ds] \\&+ e^{-\gamma(t_1 + t_2)} \int_{0}^{t_1}\int_{0}^{t_2} e^{\gamma(s_1 + s_2)} \overline{\xi(s_1)\xi(s_2)} ds_1 \\ &= v(0)^2 e^{-\gamma(t_1 + t_2)} + e^{-\gamma(t_1 + t_2)} \int_{0}^{t_1}\int_{0}^{t_2} e^{\gamma(s_1 + s_2)} {a} \delta(s_1 - s_2) ds_1 ds_2 \\ &= v(0)^2 e^{-\gamma(t_1 + t_2)} + a  e^{-\gamma(t_1 + t_2)} \int_{0}^{min(t_1,t_2)} e^{\gamma(2 s_1)} {a} ds_1 \end{aligned}$
+
+Therefore, $\overline{v(t)^2} = v(0)^2 e^{-2\gamma t} + a e^{-2\gamma t}\frac{e^{2\gamma t} - 1}{2\gamma}$. When $t \rightarrow \infty, \overline{v(t)^2} = \frac{a}{2\gamma}$. But, in a thermal reservoir, $\frac{m\overline{v^2}}{2} =\frac{k T}{2} \implies \overline{v^2} = \frac{kT}{m}$. Hence, $a = \frac{2 \gamma k T}{m}$. To prove this, we could also Fourier transform the Langevin equation (\ref{eq:lang_no_pot}), solve it algebraically, and inverse transform it. This method is illustrated in the next section.
+\subsubsection{Fluctuation dissipation theorem}
+Using this value of $a$ and this method, for a harmonic potential, it can be proved that $\frac{m \omega^2 \overline{x^2}}{2} = \frac{k T}{2}$. These results are known as ``Fluctuation dissipation theorem" (Ref. Chandrashekhar), which basically shows whatever may be the initial position and velocity of the particle, random thermal fluctuations will make each quadratic degree of freedom have energy $\frac{kT}{2}$, in average.
+
+It is claimed in the article by Klaers et. al (Reference. paper by Klaers) that a certain kind of stochastic force will lead to different variance (hence, different effective temperature) in position and momentum coordinates, as seen in a rotating frame.
+
+\section{Proof of the above claim}
+Consider a particle in a Harmonic potential, undergoing Brownian motion for which $\xi(t) =  a_0 (e^r \xi_1(t) \cos(\omega t) + e^{-r} \xi_2(t)\sin(\omega t))$, where $a_0 ^ 2 = \frac{2 \gamma k T}{m}$, and $\xi_1(t)$ and $\xi_2(t)$ are two uncorrelated stochastic forces which satisfy $\overline{\xi_i(t_1)\xi_j(t_2)} = \delta_{ij}\delta(t_1 - t_2)$. $r$ is a real number. Thus, the equations of motion are, \begin{equation}\label{eq:1st}
+m \dot{x} = p
+\end{equation}
+\begin{equation}\label{eq:2nd}
+	\dot{p} = -m{\omega_0}^2 x^2 - m\gamma\dot{x} + m\xi(t)
+\end{equation}
+
+Recall that $x_0 =\sqrt{\hbar}{m\omega_0}$ and $p_0 = \sqrt{\hbar m \omega_0}$. We can write (\ref{eq:1st}) and (\ref{eq:2nd}) in terms of dimensionless variables $X = \frac{x}{x_0}$ and $P = \frac{p}{p_0}$, and then the equations become
+
+
+
 
 \section{Conclusion}
 
