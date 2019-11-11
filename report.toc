@@ -10,5 +10,5 @@
 \contentsline {section}{\numberline {0.3}Proof of the claim}{12}
 \contentsline {subsubsection}{Preliminaries}{13}
 \contentsline {subsubsection}{Calculation of Fourier transformed position and momentum}{14}
-\contentsline {subsubsection}{Calculation of variance in position}{15}
-\contentsline {section}{\numberline {0.4}Conclusion}{15}
+\contentsline {subsection}{\numberline {0.3.1}Calculation of variance in position}{15}
+\contentsline {section}{\numberline {0.4}Conclusion}{16}
