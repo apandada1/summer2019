@@ -261,10 +261,10 @@ For the Brownian motion of a particle in a normal heat bath of temperature $T$, 
 	m\dot{v}+m\gamma v = m \xi(t)
 \end{equation} 
 
-$\begin{aligned}\implies e^{\gamma t}(\dot{v}+\gamma v) &= e^{\gamma t} \xi(t) \\ \implies \derivative{(ve^{\gamma t})}{t} &= e^{\gamma t} \xi(t)\\ \implies ve^{\gamma t} - v(0) &= \int_{0}^{t} e^{\gamma s} \xi(s) ds \\ \implies v(t_1) v(t_2) &= v(0)^2 e^{-\gamma(t_1 + t_2)} + v(0) a e^{-\gamma(t_1 + t_2)} [\int_{0}^{t_1} e^{\gamma s} \xi(s) ds + \int_{0}^{t_2} e^{\gamma s} \xi(s) ds] \\&+ e^{-\gamma(t_1 + t_2)} \int_{0}^{t_1}\int_{0}^{t_2} e^{\gamma(s_1 + s_2)} \xi(s_1)\xi(s_2) ds_1 ds_2 \end{aligned}$
+$\begin{aligned}\implies e^{\gamma t}(\dot{v}+\gamma v) &= e^{\gamma t} \xi(t) \\ \implies \derivative{(ve^{\gamma t})}{t} &= e^{\gamma t} \xi(t)\\ \implies ve^{\gamma t} - v(0) &= \int_{0}^{t} e^{\gamma s} \xi(s) \dd{s} \\ \implies v(t_1) v(t_2) &= v(0)^2 e^{-\gamma(t_1 + t_2)} + v(0) a e^{-\gamma(t_1 + t_2)} [\int_{0}^{t_1} e^{\gamma s} \xi(s) \dd{s} + \int_{0}^{t_2} e^{\gamma s} \xi(s) \dd{s}] \\&+ e^{-\gamma(t_1 + t_2)} \int_{0}^{t_1}\int_{0}^{t_2} e^{\gamma(s_1 + s_2)} \xi(s_1)\xi(s_2) \dd{s_1} \dd{s_2} \end{aligned}$
 
 Taking averages over the distribution,\\
-$\begin{aligned}\overline{v(t_1) v(t_2)} = v(0)^2 e^{-\gamma(t_1 + t_2)} &+ v(0) a e^{-\gamma(t_1 + t_2)} [\int_{0}^{t_1} e^{\gamma s} \overline{\xi(s)} ds + \int_{0}^{t_2} e^{\gamma s} \overline{\xi(s)} ds] \\&+ e^{-\gamma(t_1 + t_2)} \int_{0}^{t_1}\int_{0}^{t_2} e^{\gamma(s_1 + s_2)} \overline{\xi(s_1)\xi(s_2)} ds_1 \\ &= v(0)^2 e^{-\gamma(t_1 + t_2)} + e^{-\gamma(t_1 + t_2)} \int_{0}^{t_1}\int_{0}^{t_2} e^{\gamma(s_1 + s_2)} {a} \delta(s_1 - s_2) ds_1 ds_2 \\ &= v(0)^2 e^{-\gamma(t_1 + t_2)} + a  e^{-\gamma(t_1 + t_2)} \int_{0}^{min(t_1,t_2)} e^{\gamma(2 s_1)} {a} ds_1 \end{aligned}$
+$\begin{aligned}\overline{v(t_1) v(t_2)} = v(0)^2 e^{-\gamma(t_1 + t_2)} &+ v(0) a e^{-\gamma(t_1 + t_2)} [\int_{0}^{t_1} e^{\gamma s} \overline{\xi(s)} \dd{s} + \int_{0}^{t_2} e^{\gamma s} \overline{\xi(s)} \dd{s}] \\&+ e^{-\gamma(t_1 + t_2)} \int_{0}^{t_1}\int_{0}^{t_2} e^{\gamma(s_1 + s_2)} \overline{\xi(s_1)\xi(s_2)} \dd{s_1} \\ &= v(0)^2 e^{-\gamma(t_1 + t_2)} + e^{-\gamma(t_1 + t_2)} \int_{0}^{t_1}\int_{0}^{t_2} e^{\gamma(s_1 + s_2)} {a} \delta(s_1 - s_2) \dd{s_1} \dd{s_2} \\ &= v(0)^2 e^{-\gamma(t_1 + t_2)} + a  e^{-\gamma(t_1 + t_2)} \int_{0}^{min(t_1,t_2)} e^{\gamma(2 s_1)} {a} \dd{s_1} \end{aligned}$
 
 Therefore, $\overline{v(t)^2} = v(0)^2 e^{-2\gamma t} + a e^{-2\gamma t}\frac{e^{2\gamma t} - 1}{2\gamma}$. When $t \rightarrow \infty, \overline{v(t)^2} = \frac{a}{2\gamma}$. But, in a thermal reservoir, $\frac{m\overline{v^2}}{2} =\frac{k T}{2} \implies \overline{v^2} = \frac{kT}{m}$. Hence, $a = \frac{2 \gamma k T}{m}$. To prove this, we could also Fourier transform the Langevin equation (\ref{eq:lang_no_pot}), solve it algebraically, and inverse transform it. This method is illustrated in the next section.
 \subsubsection{Fluctuation dissipation theorem}
@@ -273,15 +273,46 @@ Using this value of $a$ and this method, for a harmonic potential, it can be pro
 It is claimed in the article by Klaers et. al (Reference. paper by Klaers) that a certain kind of stochastic force will lead to different variance (hence, different effective temperature) in position and momentum coordinates, as seen in a rotating frame.
 
 \section{Proof of the above claim}
-Consider a particle in a Harmonic potential, undergoing Brownian motion for which $\xi(t) =  a_0 (e^r \xi_1(t) \cos(\omega t) + e^{-r} \xi_2(t)\sin(\omega t))$, where $a_0 ^ 2 = \frac{2 \gamma k T}{m}$, and $\xi_1(t)$ and $\xi_2(t)$ are two uncorrelated stochastic forces which satisfy $\overline{\xi_i(t_1)\xi_j(t_2)} = \delta_{ij}\delta(t_1 - t_2)$. $r$ is a real number. Thus, the equations of motion are, \begin{equation}\label{eq:1st}
+Consider a particle in a Harmonic potential, undergoing Brownian motion for which \begin{equation}\label{eq: stochastic}
+	\xi(t) =  a_0 [e^r \xi_1(t) \cos(\omega t) + e^{-r} \xi_2(t)\sin(\omega t)]
+\end{equation} where $a_0 ^ 2 = \frac{2 \gamma k T}{m}$, and $\xi_1(t)$ and $\xi_2(t)$ are two uncorrelated stochastic forces which satisfy $\overline{\xi_i(t_1)\xi_j(t_2)} = \delta_{ij}\delta(t_1 - t_2)$. $r$ is a real number. Thus, the equations of motion are, \begin{equation}\label{eq:1st}
 m \dot{x} = p
 \end{equation}
 \begin{equation}\label{eq:2nd}
 	\dot{p} = -m{\omega_0}^2 x^2 - m\gamma\dot{x} + m\xi(t)
 \end{equation}
 
-Recall that $x_0 =\sqrt{\hbar}{m\omega_0}$ and $p_0 = \sqrt{\hbar m \omega_0}$. We can write (\ref{eq:1st}) and (\ref{eq:2nd}) in terms of dimensionless variables $X = \frac{x}{x_0}$ and $P = \frac{p}{p_0}$, and then the equations become
+Recall that $x_0 =\sqrt{\frac{\hbar}{ m\omega_0}}$ and $p_0 = \sqrt{\hbar m \omega_0}$. We can write (\ref{eq:1st}) and (\ref{eq:2nd}) in terms of dimensionless variables $X = \frac{x}{x_0}$ and $P = \frac{p}{p_0}$, and then the equations become
+\begin{equation}\label{eq:1}
+	\dot{X} =\omega_0 P
+\end{equation}
+\begin{equation}\label{eq:2}
+	\dot{P} = -\omega_0 X -\frac{\gamma}{\omega_0}\dot{X} + \frac{m}{p_0}\xi(t)
+\end{equation}
 
+Fourier transforming the above equations, we get, \begin{equation}\label{eq:1}
+-i\omega\tilde{X}(\omega) =\omega_0 \tilde{P}(\omega)
+\end{equation}
+\begin{equation}\label{eq:2}
+-i\omega\tilde{P}(\omega) = -\omega_0 \tilde{X}(\omega) +i\frac{\gamma}{\omega_0}\tilde{X}(\omega) + \frac{m}{p_0}\tilde{\xi}(\omega)
+\end{equation}
+\subsubsection{Preliminaries}
+Let us introduce the notation $\int_{y}^{} f(y)$ to denote $\int_{-\infty}^{\infty} f(y) \dd{y}$. \\
+$\begin{aligned}\text{We know } \overline{\xi_1(t_1)\xi_1(t_2)} = \delta(t_1 - t_2). \text{Then, } \overline{\tilde{\xi_1}(\omega_1)\tilde{\xi_1}(\omega_2)} &= \frac{1}{2\pi}\int_{t_1}\int_{t_2} \overline{\xi_1(t_1)\xi_1(t_2)} e^{i\omega_1 t_1}e^{i\omega_2 t_2} \\&= \frac{1}{2\pi}\int_{t_1}\int_{t_2} \delta(t_1-t_2) e^{i\omega_1 t_1}e^{i\omega_2 t_2} \\&= \frac{1}{2\pi}\int_{t_1} e^{i\omega_1 t_1} e^{i\omega_2 t_1} \\&= \delta(\omega_1 + \omega_2)\end{aligned}$.
+
+We also make use of the following integrals (valid when $\omega_D ^2 = \omega_0^2 - \frac{\gamma^2}{4} > 0$, i.e. an underdamped oscillator)
+\begin{equation}
+	I_1 = \int_{\omega} \frac{1}{(\omega_0^2 - \omega^2)^2 + \omega^2 \gamma^2} = \frac{\pi}{\omega_0^2 \gamma}
+\end{equation}
+
+\begin{equation}
+I_2 = \int_{\omega} \frac{\omega^2}{(\omega_0^2 - \omega^2)^2 + \omega^2 \gamma^2} = \frac{\pi}{\gamma}
+\end{equation} These can be easily proved using contour integration. If $f(t)$ is a function of $t$ having a Fourier transform $\tilde{f}(\omega)$, then, the Fourier transform of the function $f(t)\cos(\omega_0 t)$ is, $\frac{1}{2\pi} \int_{t} f(t) \cos(\omega_0 t) e^{i\omega t} = \frac{1}{2\pi} \int_{t} f(t) \frac{e^{i(\omega+\omega_0) t} + e^{i(\omega-\omega_0) t}}{2} = \frac{\tilde{f}(\omega + \omega_0) + \tilde{f}(\omega - \omega_0)}{2}$. Similarly, the Fourier transform of $f(t)\sin(\omega_0 t)$ is $\frac{\tilde{f}(\omega + \omega_0) - \tilde{f}(\omega - \omega_0)}{2i}$.
+
+Then, from (\ref{eq: stochastic}),
+\begin{equation}\label{eq:fourier_stochastic}
+	\tilde{\xi}(\omega) = \frac{a_0}{2} [e^r \tilde{\xi}_1 (\omega + \omega_1) + e^r \tilde{\xi}_1 (\omega - \omega_1) - i e^{-r} \tilde{\xi}_2 (\omega + \omega_1) +  i e^{-r} \tilde{\xi}_2 (\omega - \omega_1)]
+\end{equation} 
 
 
 
