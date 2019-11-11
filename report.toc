@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {0.1}Introduction}{2}
+\contentsline {section}{\numberline {0.2}Theory of the for Brownian Harmonic oscillator}{3}
+\contentsline {subsection}{\numberline {0.2.1}Coherent states}{3}
+\contentsline {subsection}{\numberline {0.2.2}Squeezed states}{5}
+\contentsline {subsubsection}{Expansion of squeezed state in eigenstate basis and time evolution}{8}
+\contentsline {subsection}{\numberline {0.2.3}Brownian motion under harmonic potential}{10}
+\contentsline {subsubsection}{Langevin equation}{10}
+\contentsline {subsubsection}{Explanation of the nature of correlation of the stochastic force}{11}
+\contentsline {subsubsection}{Fluctuation dissipation theorem and the claim}{12}
+\contentsline {section}{\numberline {0.3}Proof of the claim}{12}
+\contentsline {subsubsection}{Preliminaries}{13}
+\contentsline {subsubsection}{Calculation of Fourier transformed position and momentum}{14}
+\contentsline {subsubsection}{Calculation of variance in position}{15}
+\contentsline {section}{\numberline {0.4}Conclusion}{15}

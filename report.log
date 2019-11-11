@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.2)  11 NOV 2019 17:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.2)  11 NOV 2019 22:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,19 +6,20 @@ entering extended mode
 (./report.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -89,10 +90,10 @@ ex
 \pgf@yc=\dimen114
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count87
-\c@pgf@countb=\count88
-\c@pgf@countc=\count89
-\c@pgf@countd=\count90
+\c@pgf@counta=\count88
+\c@pgf@countb=\count89
+\c@pgf@countc=\count90
+\c@pgf@countd=\count91
 \t@pgf@toka=\toks19
 \t@pgf@tokb=\toks20
 \t@pgf@tokc=\toks21
@@ -111,8 +112,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count91
-\pgfsyssoftpath@bigbuffer@items=\count92
+\pgfsyssoftpath@smallbuffer@items=\count92
+\pgfsyssoftpath@bigbuffer@items=\count93
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -142,7 +143,7 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen115
-\pgfmath@count=\count93
+\pgfmath@count=\count94
 \pgfmath@box=\box27
 \pgfmath@toks=\toks22
 \pgfmath@stack@operand=\toks23
@@ -166,7 +167,7 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count94
+\c@pgfmathroundto@lastzeros=\count95
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
@@ -204,7 +205,7 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box28
 \pgf@hbox=\box29
 \pgf@layerbox@main=\box30
-\pgf@picture@serial@count=\count95
+\pgf@picture@serial@count=\count96
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
@@ -237,7 +238,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen139
-\pgf@sys@shading@range@num=\count96
+\pgf@sys@shading@range@num=\count97
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -294,7 +295,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count97
+\pgf@plot@mark@count=\count98
 \pgfplotmarksize=\dimen144
 )
 \tikz@lastx=\dimen145
@@ -307,18 +308,18 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@figbox@bg=\box34
 \tikz@tempbox=\box35
 \tikz@tempbox@bg=\box36
-\tikztreelevel=\count98
-\tikznumberofchildren=\count99
-\tikznumberofcurrentchild=\count100
-\tikz@fig@count=\count101
+\tikztreelevel=\count99
+\tikznumberofchildren=\count100
+\tikznumberofcurrentchild=\count101
+\tikz@fig@count=\count102
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count102
-\pgfmatrixcurrentcolumn=\count103
-\pgf@matrix@numberofcolumns=\count104
+\pgfmatrixcurrentrow=\count103
+\pgfmatrixcurrentcolumn=\count104
+\pgf@matrix@numberofcolumns=\count105
 )
-\tikz@expandcount=\count105
+\tikz@expandcount=\count106
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -349,19 +350,19 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen157
 \caption@hangindent=\dimen158
 )
-\c@ContinuedFloat=\count106
+\c@ContinuedFloat=\count107
 )
-\c@KVtest=\count107
+\c@KVtest=\count108
 \sf@farskip=\skip43
 \sf@captopadj=\dimen159
 \sf@capskip=\skip44
 \sf@nearskip=\skip45
-\c@subfigure=\count108
-\c@subfigure@save=\count109
-\c@lofdepth=\count110
-\c@subtable=\count111
-\c@subtable@save=\count112
-\c@lotdepth=\count113
+\c@subfigure=\count109
+\c@subfigure@save=\count110
+\c@lofdepth=\count111
+\c@subtable=\count112
+\c@subtable@save=\count113
+\c@lotdepth=\count114
 \sf@top=\skip46
 \sf@bottom=\skip47
 )
@@ -385,13 +386,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count114
+\inf@bad=\count115
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count115
-\leftroot@=\count116
+\uproot@=\count116
+\leftroot@=\count117
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count117
-\DOTSCASE@=\count118
+\classnum@=\count118
+\DOTSCASE@=\count119
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -400,15 +401,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen162
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count119
-\c@MaxMatrixCols=\count120
+\macc@depth=\count120
+\c@MaxMatrixCols=\count121
 \dotsspace@=\muskip10
-\c@parentequation=\count121
-\dspbrk@lvl=\count122
+\c@parentequation=\count122
+\dspbrk@lvl=\count123
 \tag@help=\toks28
-\row@=\count123
-\column@=\count124
-\maxfields@=\count125
+\row@=\count124
+\column@=\count125
+\maxfields@=\count126
 \andhelp@=\toks29
 \eqnshift@=\dimen163
 \alignsep@=\dimen164
@@ -447,7 +448,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip54
 \bibsep=\skip55
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count126
+\c@NAT@ctr=\count127
 )
 (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
@@ -455,7 +456,7 @@ nment
 
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count127
+\c@float@type=\count128
 \float@exts=\toks38
 \float@box=\box39
 \@float@everytoks=\toks39
@@ -465,14 +466,14 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks40
-\c@algorithm=\count128
+\c@algorithm=\count129
 )
 (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count129
-\c@ALC@line=\count130
-\c@ALC@rem=\count131
-\c@ALC@depth=\count132
+\c@ALC@unique=\count130
+\c@ALC@line=\count131
+\c@ALC@rem=\count132
+\c@ALC@depth=\count133
 \ALC@tlm=\skip56
 \algorithmicindent=\skip57
 )
@@ -481,7 +482,7 @@ Package: placeins 2005/04/18  v 2.2
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
-\c@r@tfl@t=\count133
+\c@r@tfl@t=\count134
 \rotFPtop=\skip58
 \rotFPbot=\skip59
 \rot@float@box=\box41
@@ -499,18 +500,18 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \cmidrulesep=\dimen176
 \cmidrulekern=\dimen177
 \defaultaddspace=\dimen178
-\@cmidla=\count134
-\@cmidlb=\count135
+\@cmidla=\count135
+\@cmidlb=\count136
 \@aboverulesep=\dimen179
 \@belowrulesep=\dimen180
-\@thisruleclass=\count136
-\@lastruleclass=\count137
+\@thisruleclass=\count137
+\@lastruleclass=\count138
 \@thisrulewidth=\dimen181
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip60
-\multirow@cntb=\count138
+\multirow@cntb=\count139
 \multirow@dima=\skip61
 \bigstrutjot=\dimen182
 )
@@ -523,18 +524,18 @@ Package: expl3 2018/02/21 L3 programming layer (loader)
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2018/02/21 L3 programming layer (code)
-\c_max_int=\count139
-\l_tmpa_int=\count140
-\l_tmpb_int=\count141
-\g_tmpa_int=\count142
-\g_tmpb_int=\count143
-\g__intarray_font_int=\count144
-\g__prg_map_int=\count145
-\c_log_iow=\count146
-\l_iow_line_count_int=\count147
-\l__iow_line_target_int=\count148
-\l__iow_one_indent_int=\count149
-\l__iow_indent_int=\count150
+\c_max_int=\count140
+\l_tmpa_int=\count141
+\l_tmpb_int=\count142
+\g_tmpa_int=\count143
+\g_tmpb_int=\count144
+\g__intarray_font_int=\count145
+\g__prg_map_int=\count146
+\c_log_iow=\count147
+\l_iow_line_count_int=\count148
+\l__iow_line_target_int=\count149
+\l__iow_one_indent_int=\count150
+\l__iow_indent_int=\count151
 \c_zero_dim=\dimen183
 \c_max_dim=\dimen184
 \l_tmpa_dim=\dimen185
@@ -553,77 +554,77 @@ Package: expl3 2018/02/21 L3 programming layer (code)
 \l_tmpb_muskip=\muskip14
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
-\l_keys_choice_int=\count151
-\c__fp_leading_shift_int=\count152
-\c__fp_middle_shift_int=\count153
-\c__fp_trailing_shift_int=\count154
-\c__fp_big_leading_shift_int=\count155
-\c__fp_big_middle_shift_int=\count156
-\c__fp_big_trailing_shift_int=\count157
-\c__fp_Bigg_leading_shift_int=\count158
-\c__fp_Bigg_middle_shift_int=\count159
-\c__fp_Bigg_trailing_shift_int=\count160
-\c__fp_rand_size_int=\count161
-\c__fp_rand_four_int=\count162
-\c__fp_rand_eight_int=\count163
-\l__sort_length_int=\count164
-\l__sort_min_int=\count165
-\l__sort_top_int=\count166
-\l__sort_max_int=\count167
-\l__sort_true_max_int=\count168
-\l__sort_block_int=\count169
-\l__sort_begin_int=\count170
-\l__sort_end_int=\count171
-\l__sort_A_int=\count172
-\l__sort_B_int=\count173
-\l__sort_C_int=\count174
-\l__tl_build_start_index_int=\count175
-\l__tl_build_index_int=\count176
-\l__tl_analysis_normal_int=\count177
-\l__tl_analysis_index_int=\count178
-\l__tl_analysis_nesting_int=\count179
-\l__tl_analysis_type_int=\count180
-\l__regex_internal_a_int=\count181
-\l__regex_internal_b_int=\count182
-\l__regex_internal_c_int=\count183
-\l__regex_balance_int=\count184
-\l__regex_group_level_int=\count185
-\l__regex_mode_int=\count186
-\c__regex_cs_in_class_mode_int=\count187
-\c__regex_cs_mode_int=\count188
-\l__regex_catcodes_int=\count189
-\l__regex_default_catcodes_int=\count190
-\c__regex_catcode_D_int=\count191
-\c__regex_catcode_S_int=\count192
-\c__regex_catcode_L_int=\count193
-\c__regex_catcode_O_int=\count194
-\c__regex_catcode_A_int=\count195
-\c__regex_all_catcodes_int=\count196
-\l__regex_show_lines_int=\count197
-\l__regex_min_state_int=\count198
-\l__regex_max_state_int=\count199
-\l__regex_left_state_int=\count266
-\l__regex_right_state_int=\count267
-\l__regex_capturing_group_int=\count268
-\l__regex_min_pos_int=\count269
-\l__regex_max_pos_int=\count270
-\l__regex_curr_pos_int=\count271
-\l__regex_start_pos_int=\count272
-\l__regex_success_pos_int=\count273
-\l__regex_curr_char_int=\count274
-\l__regex_curr_catcode_int=\count275
-\l__regex_last_char_int=\count276
-\l__regex_case_changed_char_int=\count277
-\l__regex_curr_state_int=\count278
-\l__regex_step_int=\count279
-\l__regex_min_active_int=\count280
-\l__regex_max_active_int=\count281
-\l__regex_replacement_csnames_int=\count282
-\l__regex_match_count_int=\count283
-\l__regex_min_submatch_int=\count284
-\l__regex_submatch_int=\count285
-\l__regex_zeroth_submatch_int=\count286
-\g__regex_trace_regex_int=\count287
+\l_keys_choice_int=\count152
+\c__fp_leading_shift_int=\count153
+\c__fp_middle_shift_int=\count154
+\c__fp_trailing_shift_int=\count155
+\c__fp_big_leading_shift_int=\count156
+\c__fp_big_middle_shift_int=\count157
+\c__fp_big_trailing_shift_int=\count158
+\c__fp_Bigg_leading_shift_int=\count159
+\c__fp_Bigg_middle_shift_int=\count160
+\c__fp_Bigg_trailing_shift_int=\count161
+\c__fp_rand_size_int=\count162
+\c__fp_rand_four_int=\count163
+\c__fp_rand_eight_int=\count164
+\l__sort_length_int=\count165
+\l__sort_min_int=\count166
+\l__sort_top_int=\count167
+\l__sort_max_int=\count168
+\l__sort_true_max_int=\count169
+\l__sort_block_int=\count170
+\l__sort_begin_int=\count171
+\l__sort_end_int=\count172
+\l__sort_A_int=\count173
+\l__sort_B_int=\count174
+\l__sort_C_int=\count175
+\l__tl_build_start_index_int=\count176
+\l__tl_build_index_int=\count177
+\l__tl_analysis_normal_int=\count178
+\l__tl_analysis_index_int=\count179
+\l__tl_analysis_nesting_int=\count180
+\l__tl_analysis_type_int=\count181
+\l__regex_internal_a_int=\count182
+\l__regex_internal_b_int=\count183
+\l__regex_internal_c_int=\count184
+\l__regex_balance_int=\count185
+\l__regex_group_level_int=\count186
+\l__regex_mode_int=\count187
+\c__regex_cs_in_class_mode_int=\count188
+\c__regex_cs_mode_int=\count189
+\l__regex_catcodes_int=\count190
+\l__regex_default_catcodes_int=\count191
+\c__regex_catcode_D_int=\count192
+\c__regex_catcode_S_int=\count193
+\c__regex_catcode_L_int=\count194
+\c__regex_catcode_O_int=\count195
+\c__regex_catcode_A_int=\count196
+\c__regex_all_catcodes_int=\count197
+\l__regex_show_lines_int=\count198
+\l__regex_min_state_int=\count199
+\l__regex_max_state_int=\count266
+\l__regex_left_state_int=\count267
+\l__regex_right_state_int=\count268
+\l__regex_capturing_group_int=\count269
+\l__regex_min_pos_int=\count270
+\l__regex_max_pos_int=\count271
+\l__regex_curr_pos_int=\count272
+\l__regex_start_pos_int=\count273
+\l__regex_success_pos_int=\count274
+\l__regex_curr_char_int=\count275
+\l__regex_curr_catcode_int=\count276
+\l__regex_last_char_int=\count277
+\l__regex_case_changed_char_int=\count278
+\l__regex_curr_state_int=\count279
+\l__regex_step_int=\count280
+\l__regex_min_active_int=\count281
+\l__regex_max_active_int=\count282
+\l__regex_replacement_csnames_int=\count283
+\l__regex_match_count_int=\count284
+\l__regex_min_submatch_int=\count285
+\l__regex_submatch_int=\count286
+\l__regex_zeroth_submatch_int=\count287
+\g__regex_trace_regex_int=\count288
 \c_empty_box=\box42
 \l_tmpa_box=\box43
 \l_tmpb_box=\box44
@@ -667,15 +668,15 @@ Package: expl3 2018/02/21 L3 programming layer (code)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count288
+\l__driver_color_stack_int=\count289
 \l__driver_tmp_box=\box57
 ))
 Package: xparse 2018/02/21 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count289
-\g__xparse_grabber_int=\count290
-\l__xparse_m_args_int=\count291
-\l__xparse_mandatory_args_int=\count292
-\l__xparse_v_nesting_int=\count293
+\l__xparse_current_arg_int=\count290
+\g__xparse_grabber_int=\count291
+\l__xparse_m_args_int=\count292
+\l__xparse_mandatory_args_int=\count293
+\l__xparse_v_nesting_int=\count294
 )
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -1644,22 +1645,22 @@ Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count294
-\calc@Bcount=\count295
+\calc@Acount=\count295
+\calc@Bcount=\count296
 \calc@Adimen=\dimen270
 \calc@Bdimen=\dimen271
 \calc@Askip=\skip68
 \calc@Bskip=\skip69
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count296
+\calc@Ccount=\count297
 \calc@Cskip=\skip70
 )
 LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count297
+\g_MT_multlinerow_int=\count298
 \l_MT_multwidth_dim=\dimen272
 \origjot=\skip71
 \l_MT_shortvdotswithinadjustabove_dim=\dimen273
@@ -1669,13 +1670,13 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen277
 \l_MT_below_shortintertext_sep=\dimen278
 )
-\l_EQ_equationtype_int=\count298
-\l_EQ_alignmentmode_int=\count299
+\l_EQ_equationtype_int=\count299
+\l_EQ_alignmentmode_int=\count300
 \l_EQ_totalwidth_dim=\dimen279
 \l_EQ_displaywidth_dim=\dimen280
 \l_EQ_temp_linewidth_dim=\dimen281
 \EmphEqdelimitershortfall=\dimen282
-\EmphEqdelimiterfactor=\count300
+\EmphEqdelimiterfactor=\count301
 \g_EQ_toptag_height_dim=\dimen283
 \g_EQ_bottomtag_depth_dim=\dimen284
 \g_EQ_toprow_height_dim=\dimen285
@@ -1683,7 +1684,7 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \g_EQ_widesttag_dim=\dimen287
 \EQ_mathdisplay_box=\box58
 \EQ_tag_box=\box59
-\g_EQ_temprow_int=\count301
+\g_EQ_temprow_int=\count302
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xfrac/xfrac.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
@@ -1774,7 +1775,7 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2018/02/21 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen288
-\l__xtemplate_tmp_int=\count302
+\l__xtemplate_tmp_int=\count303
 \l__xtemplate_tmp_muskip=\muskip17
 \l__xtemplate_tmp_skip=\skip72
 )
@@ -1808,16 +1809,16 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count303
+\linenopenalty=\count304
 \output=\toks42
-\linenoprevgraf=\count304
+\linenoprevgraf=\count305
 \linenumbersep=\dimen294
 \linenumberwidth=\dimen295
-\c@linenumber=\count305
-\c@pagewiselinenumber=\count306
-\c@LN@truepage=\count307
-\c@internallinenumber=\count308
-\c@internallinenumbers=\count309
+\c@linenumber=\count306
+\c@pagewiselinenumber=\count307
+\c@LN@truepage=\count308
+\c@internallinenumber=\count309
+\c@internallinenumbers=\count310
 \quotelinenumbersep=\dimen296
 \bframerule=\dimen297
 \bframesep=\dimen298
@@ -1837,9 +1838,9 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count310
-\Gm@cntv=\count311
-\c@Gm@tempcnt=\count312
+\Gm@cnth=\count311
+\Gm@cntv=\count312
+\c@Gm@tempcnt=\count313
 \Gm@bindingoffset=\dimen299
 \Gm@wd@mp=\dimen300
 \Gm@odd@mp=\dimen301
@@ -1935,16 +1936,16 @@ LaTeX Font Info:    ... okay on input line 42.
 ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count313
+\scratchcounter=\count314
 \scratchdimen=\dimen307
 \scratchbox=\box63
-\nofMPsegments=\count314
-\nofMParguments=\count315
+\nofMPsegments=\count315
+\nofMParguments=\count316
 \everyMPshowfont=\toks44
-\MPscratchCnt=\count316
+\MPscratchCnt=\count317
 \MPscratchDim=\dimen308
-\MPnumerator=\count317
-\makeMPintoPDFobject=\count318
+\MPnumerator=\count318
+\makeMPintoPDFobject=\count319
 \everyMPtoPDFconversion=\toks45
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -2003,7 +2004,7 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\Hy@linkcounter=\count319
+\Hy@linkcounter=\count320
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2066,56 +2067,60 @@ LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [1] (./report.toc)
+\tf@toc=\write4
+\openout4 = `report.toc'.
 
- [3]
-<graphs/coherent/1.jpg, id=31, 578.16pt x 433.62pt>
+
+[2
+
+] [3] [4]
+<graphs/coherent/1.jpg, id=36, 578.16pt x 433.62pt>
 File: graphs/coherent/1.jpg Graphic file (type jpg)
 <use graphs/coherent/1.jpg>
 Package pdftex.def Info: graphs/coherent/1.jpg  used on input line 131.
 (pdftex.def)             Requested size: 182.09485pt x 136.57117pt.
-<graphs/coherent/2.jpg, id=32, 562.2606pt x 421.575pt>
+<graphs/coherent/2.jpg, id=37, 562.2606pt x 421.575pt>
 File: graphs/coherent/2.jpg Graphic file (type jpg)
 <use graphs/coherent/2.jpg>
 Package pdftex.def Info: graphs/coherent/2.jpg  used on input line 135.
 (pdftex.def)             Requested size: 182.09485pt x 136.53423pt.
-<graphs/coherent/3.jpg, id=33, 578.16pt x 433.62pt>
+<graphs/coherent/3.jpg, id=38, 578.16pt x 433.62pt>
 File: graphs/coherent/3.jpg Graphic file (type jpg)
 <use graphs/coherent/3.jpg>
 Package pdftex.def Info: graphs/coherent/3.jpg  used on input line 138.
 (pdftex.def)             Requested size: 182.09485pt x 136.57117pt.
-<graphs/coherent/4.jpg, id=34, 562.2606pt x 421.575pt>
+<graphs/coherent/4.jpg, id=39, 562.2606pt x 421.575pt>
 File: graphs/coherent/4.jpg Graphic file (type jpg)
 <use graphs/coherent/4.jpg>
 Package pdftex.def Info: graphs/coherent/4.jpg  used on input line 142.
 (pdftex.def)             Requested size: 182.09485pt x 136.53423pt.
-<graphs/coherent/5.jpg, id=35, 578.16pt x 433.62pt>
+<graphs/coherent/5.jpg, id=40, 578.16pt x 433.62pt>
 File: graphs/coherent/5.jpg Graphic file (type jpg)
 <use graphs/coherent/5.jpg>
 Package pdftex.def Info: graphs/coherent/5.jpg  used on input line 145.
 (pdftex.def)             Requested size: 182.09485pt x 136.57117pt.
-<graphs/coherent/6.jpg, id=36, 562.2606pt x 421.575pt>
+<graphs/coherent/6.jpg, id=41, 562.2606pt x 421.575pt>
 File: graphs/coherent/6.jpg Graphic file (type jpg)
 <use graphs/coherent/6.jpg>
 Package pdftex.def Info: graphs/coherent/6.jpg  used on input line 149.
 (pdftex.def)             Requested size: 182.09485pt x 136.53423pt.
-<graphs/coherent/7.jpg, id=37, 578.16pt x 433.62pt>
+<graphs/coherent/7.jpg, id=42, 578.16pt x 433.62pt>
 File: graphs/coherent/7.jpg Graphic file (type jpg)
 <use graphs/coherent/7.jpg>
 Package pdftex.def Info: graphs/coherent/7.jpg  used on input line 153.
 (pdftex.def)             Requested size: 182.09485pt x 136.57117pt.
-<graphs/coherent/8.jpg, id=38, 562.2606pt x 421.575pt>
+<graphs/coherent/8.jpg, id=43, 562.2606pt x 421.575pt>
 File: graphs/coherent/8.jpg Graphic file (type jpg)
 <use graphs/coherent/8.jpg>
 Package pdftex.def Info: graphs/coherent/8.jpg  used on input line 157.
 (pdftex.def)             Requested size: 182.09485pt x 136.53423pt.
-<graphs/coherent/9.jpg, id=39, 578.16pt x 433.62pt>
+<graphs/coherent/9.jpg, id=44, 578.16pt x 433.62pt>
 File: graphs/coherent/9.jpg Graphic file (type jpg)
 <use graphs/coherent/9.jpg>
 Package pdftex.def Info: graphs/coherent/9.jpg  used on input line 161.
 (pdftex.def)             Requested size: 182.09485pt x 136.57117pt.
-<graphs/coherent/10.jpg, id=40, 562.2606pt x 421.575pt>
+<graphs/coherent/10.jpg, id=45, 562.2606pt x 421.575pt>
 File: graphs/coherent/10.jpg Graphic file (type jpg)
 <use graphs/coherent/10.jpg>
 Package pdftex.def Info: graphs/coherent/10.jpg  used on input line 165.
@@ -2136,32 +2141,75 @@ Package pdftex.def Info: graphs/coherent/3.jpg  used on input line 177.
 
 LaTeX Warning: Float too large for page by 511.98479pt on input line 181.
 
-[4] [5 <./graphs/coherent/1.jpg> <./graphs/coherent/2.jpg> <./graphs/coherent/3
+[5] [6 <./graphs/coherent/1.jpg> <./graphs/coherent/2.jpg> <./graphs/coherent/3
 .jpg> <./graphs/coherent/4.jpg> <./graphs/coherent/5.jpg> <./graphs/coherent/6.
 jpg> <./graphs/coherent/7.jpg> <./graphs/coherent/8.jpg> <./graphs/coherent/9.j
 pg> <./graphs/coherent/10.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6]
-[7]
+ [7]
+[8]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8]
+ [9]
 Overfull \hbox (14.84012pt too wide) in paragraph at lines 249--251
 []$[][]$\OT1/cmr/m/n/12 . By ra-tio test, it can be shown that $[] \OMS/cmsy/m/
 n/12 j\OML/cmm/m/it/12 c[]\OMS/cmsy/m/n/12 j[]$
  []
 
-[9]
+[10]
 Overfull \hbox (5.88655pt too wide) in paragraph at lines 266--268
 [][]$ 
  []
 
-[10] [11] (./report.bbl
+[11] [12]
+Overfull \hbox (2.44577pt too wide) detected at line 322
+\OML/cmm/m/it/12 I[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ![]; ^^M\OT1/cmr/m/n/12 )
+ = [][] [] = [] + []
+ []
+
+[13]
+Overfull \hbox (59.03064pt too wide) detected at line 332
+[][]
+ []
+
+
+Overfull \hbox (0.16763pt too wide) detected at line 345
+[][]
+ []
+
+
+Overfull \hbox (77.693pt too wide) detected at line 348
+[] \OT1/cmr/m/n/12 = [] [][] []
+ []
+
+
+Overfull \hbox (66.00333pt too wide) detected at line 351
+[] \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 ^^@[] [][] []
+ []
+
+
+Overfull \hbox (13.82292pt too wide) in paragraph at lines 353--356
+$[][]$ 
+ []
+
+[14]
+Overfull \hbox (5.12865pt too wide) in paragraph at lines 357--358
+[]$[][]$ 
+ []
+
+
+Overfull \hbox (3.84694pt too wide) in paragraph at lines 359--362
+[]$[][]$ 
+ []
+
+(./report.bbl [15]
 
 Package natbib Warning: Empty `thebibliography' environment on input line 8.
 
-) [12] [13] (./report.aux)
+) [16
+
+] (./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2170,11 +2218,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25814 strings out of 492982
- 508590 string characters out of 6134896
- 542172 words of memory out of 5000000
- 28994 multiletter control sequences out of 15000+600000
- 541109 words of font info for 66 fonts, out of 8000000 for 9000
+ 25838 strings out of 492982
+ 508890 string characters out of 6134896
+ 543562 words of memory out of 5000000
+ 29016 multiletter control sequences out of 15000+600000
+ 541972 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,54p,10445b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
@@ -2192,10 +2240,10 @@ s/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on report.pdf (13 pages, 691290 bytes).
+Output written on report.pdf (17 pages, 698963 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 136 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  63 words of extra memory for PDF output out of 10000 (max. 10000000)
 
