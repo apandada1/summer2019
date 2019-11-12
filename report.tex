@@ -1,7 +1,7 @@
 % ----------------------------------------------------------------
 % Customization by Leandro C. Coelho -----------------------------
 % ----------------------------------------------------------------
-\documentclass[12pt, twoside]{report}
+\documentclass[12pt, twoside]{article}
 
 \newcommand{\citeny}[1]{\citename{#1}~\citeyear{#1}}
 
@@ -54,6 +54,9 @@
 
 \author{Archisman Panigrahi\\
 	\footnotesize Indian Institute of Science, Bangalore\\
+	\footnotesize Under the Guidance of\\
+	Prof. H. R. Krishnamurthy\\
+	\footnotesize Dept. of Physics, Indian Institute of Science, Bangalore
 	\footnotesize \texttt{\{archismanp@iisc.ac.in\}} \\ }
 
 
@@ -68,7 +71,7 @@ Todo. 1. sinusodially spelling
 \end{abstract}
 %{\bf Keywords:} enter, keyword, here.
 
-\tableofcontents
+\newpage\tableofcontents
 
 \section{Introduction}
 The classical limits of the maximum achievable efficiency of an ideal heat engine running between temperatures $T_{hot}$ and $T_{cold}$ us given by Carnot's formula $\eta_{Carnot} = 1 - \frac{T_{cold}}{T_{hot}}$.\\
@@ -344,10 +347,10 @@ Using (\ref{eq: stochastic_fourier}), (\ref{eq:x_omega}), and (\ref{eq:p_omega})
 \end{aligned}
 \end{equation}
 \begin{equation}\begin{aligned}
-\overline{\widetilde { X } ( \omega_1 )\widetilde { P } ( \omega_2 )} & = \frac{-i\omega\omega_0}{2} \left(\frac { m a_0 } { p _ { 0 } }\right)^2 \\&\cross \frac{\left[\sinh(2r)\left\{\delta(\omega_1 + \omega_2 + 2\omega_0)+\delta(\omega_1 + \omega_2 + 2\omega_0)\right\} + 2\cosh(2r)\delta(\omega_1 + \omega_2)\right]}{( \omega _ { 0 } ^ { 2 } - \omega_1 ^ { 2 } - i \omega_1 \gamma)(\omega _ { 0 } ^ { 2 } - \omega_2 ^ { 2 } - i \omega_2 \gamma)} \end{aligned}
+\overline{\widetilde { X } ( \omega_1 )\widetilde { P } ( \omega_2 )} & = \frac{-i\omega_2}{2\omega_0} \left(\frac { m \omega_0 a_0 } { p _ { 0 } }\right)^2 \\&\cross \frac{\left[\sinh(2r)\left\{\delta(\omega_1 + \omega_2 + 2\omega_0)+\delta(\omega_1 + \omega_2 + 2\omega_0)\right\} + 2\cosh(2r)\delta(\omega_1 + \omega_2)\right]}{( \omega _ { 0 } ^ { 2 } - \omega_1 ^ { 2 } - i \omega_1 \gamma)(\omega _ { 0 } ^ { 2 } - \omega_2 ^ { 2 } - i \omega_2 \gamma)} \end{aligned}
 \end{equation}
 \begin{equation}\begin{aligned}
-\overline{\widetilde { P } ( \omega_1 )\widetilde { P } ( \omega_2 )} & = -\frac{1}{2} \left(\frac { m \omega a_0 } { p _ { 0 } }\right)^2 \\&\cross \frac{\left[\sinh(2r)\left\{\delta(\omega_1 + \omega_2 + 2\omega_0)+\delta(\omega_1 + \omega_2 + 2\omega_0)\right\} + 2\cosh(2r)\delta(\omega_1 + \omega_2)\right]}{( \omega _ { 0 } ^ { 2 } - \omega_1 ^ { 2 } - i \omega_1 \gamma)(\omega _ { 0 } ^ { 2 } - \omega_2 ^ { 2 } - i \omega_2 \gamma)}\end{aligned}
+\overline{\widetilde { P } ( \omega_1 )\widetilde { P } ( \omega_2 )} & = -\frac{1}{2}\frac{\omega_1 \omega_2}{\omega_{ 0 } ^2} \left(\frac { m \omega_0 a_0 } { p _ { 0 } }\right)^2 \\&\cross \frac{\left[\sinh(2r)\left\{\delta(\omega_1 + \omega_2 + 2\omega_0)+\delta(\omega_1 + \omega_2 + 2\omega_0)\right\} + 2\cosh(2r)\delta(\omega_1 + \omega_2)\right]}{( \omega _ { 0 } ^ { 2 } - \omega_1 ^ { 2 } - i \omega_1 \gamma)(\omega _ { 0 } ^ { 2 } - \omega_2 ^ { 2 } - i \omega_2 \gamma)}\end{aligned}
 \end{equation}
 \subsection{Calculation of variance in position}
 $\begin{aligned} \overline{X ^ { 2 } ( t )} &= \frac { 1 } { 2 \pi } \int _ { \omega _ { 1 }}\int_{\omega_2} \overline{\widetilde { X } ( \omega_1 )\widetilde { X } ( \omega_2 )}  e ^ { - i \omega _ { 1 } t } e ^ { - i \omega _ { 2 } t } \\ &= \frac{1}{4\pi}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[ 2 \cosh(2r) \int_{\omega_1} \frac{1}{(\omega_0^2 - \omega_1 ^2)^2 + \omega_1 ^2 \gamma^2}\right] \\&+ \frac{1}{4\pi}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[ \sinh(2r) \int_{\omega_1} \frac{e^{2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 + 2\omega_0)^2 + i(\omega_1 + 2 \omega_0) \gamma)]}\right]
@@ -359,6 +362,22 @@ $\begin{aligned}e^{2i\omega_0 t}I_3(\omega_0,\gamma) + e^{-2i\omega_0 t}I_3(-\om
 \begin{equation}\begin{aligned} \text{Thus, }
 \overline{X ^ { 2 } ( t )} &= \frac{1}{4\pi}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[2\cosh(2r)\frac{\pi}{\omega_0 ^2 \gamma} - \frac{\pi\sinh(2r)}{\omega_0 ^2+ \frac{\gamma^2}{4}}\left\{\cos(2\omega_0 t) - \frac{\gamma}{2 \omega_0}\sin(2\omega_0 t)\right\}\right] \\& = \frac{1}{4\pi} \frac{m^2 \omega_0^2}{m \hbar \omega_0} \frac{\pi}{\omega_0 ^2 \gamma} \frac{2\gamma k T}{m} \left[2\cosh(2r) - \frac{\sinh(2r)}{1 + \frac{\gamma^2}{4\omega_0 ^2}}\left\{\cos(2\omega_0 t) - \frac{\gamma}{2 \omega_0}\sin(2\omega_0 t)\right\}\right] \\& = \frac{kT}{2 \hbar \omega_0} \left[2\cosh(2r) - \frac{\sinh(2r)}{1 + \frac{\gamma^2}{4\omega_0 ^2}}\left\{\cos(2\omega_0 t) - \frac{\gamma}{2 \omega_0}\sin(2\omega_0 t)\right\}\right]
 \end{aligned}\end{equation}
+\subsection{Calculation of covariance in position and momentum}
+$\begin{aligned} \overline{X( t ) P(t)} &= \frac { 1 } { 2 \pi } \int _ { \omega _ { 1 }}\int_{\omega_2} \overline{\widetilde { X } ( \omega_1 )\widetilde { P } ( \omega_2 )}  e ^ { - i \omega _ { 1 } t } e ^ { - i \omega _ { 2 } t } \\ &= \frac{-i}{4\pi \omega_0}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[ 2 \cosh(2r) \int_{\omega_1} \frac{\omega_1}{(\omega_0^2 - \omega_1 ^2)^2 + \omega_1 ^2 \gamma^2}\right] \text{($=0$, as integrand is odd function)} \\&+ \frac{-i}{4\pi\omega_0}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[ \sinh(2r) \int_{\omega_1}\int_{\omega_2} \frac{\omega_2 e^{-i(\omega_1 + \omega_2) t} \left\{\delta(\omega_1 + \omega_2 + 2\omega_0) + \delta(\omega_1 + \omega_2 - 2\omega_0) \right\}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 + 2\omega_0)^2 + i(\omega_1 + 2 \omega_0) \gamma)]}\right] \\&= \frac{-i\gamma k T}{2 \pi \hbar} \sinh(2r) \left[\int_{\omega_1} \frac{\omega_1 e^{2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 + 2\omega_0)^2 + i(\omega_1 + 2 \omega_0) \gamma)]} \right] \\ &+ \frac{-i\gamma k T}{2 \pi \hbar} \sinh(2r) \left[\int_{\omega_1} \frac{\omega_1 e^{-2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 - 2\omega_0)^2 + i(\omega_1 - 2 \omega_0) \gamma)]}   \right] \\& = \frac{-i\gamma k T}{2 \pi \hbar} \sinh(2r) \left[I_4(\omega_0,\gamma) e^{2i\omega_0 t} + I_4(-\omega_0,\gamma)e^{-2i\omega_0 t}\right]
+\end{aligned}$
+
+$\begin{aligned}
+I_4(\omega_0,\gamma) e^{2i\omega_0 t} + I_4(-\omega_0,\gamma)e^{-2i\omega_0 t} &= \frac{\pi}{2\gamma(\omega_0 ^2 + \frac{\gamma^2}{4})} \left[\omega_0 e^{2i\omega_0 t} - \omega_{ 0 } e^{-2 i \omega_0 t} + \frac{i\gamma}{2}(e^{2i\omega_0 t} + e^{-2i \omega_0 t})\right]
+\\&= \frac{i \pi}{\gamma(\omega_0 ^2 + \frac{\gamma^2}{4})} \left[\omega_0 \sin(2\omega_0 t) + \frac{\gamma}{2}\cos(2\omega_0 t)\right]
+\end{aligned}$
+\begin{equation}
+\begin{aligned}
+\text{Thus, } \overline{X( t ) P(t)} &= \frac{-i\gamma k T}{2 \pi \hbar} \sinh(2r) \frac{i \pi}{\gamma(\omega_0 ^2 + \frac{\gamma^2}{4})} \left[\omega_0 \sin(2\omega_0 t) + \frac{\gamma}{2}\cos(2\omega_0 t)\right] \\&= \frac{k T}{2 \hbar \omega_0}  \frac{\sinh(2r)}{(1 + \frac{\gamma^2}{4\omega_0 ^2})} \left[ \sin(2\omega_0 t) + \frac{\gamma}{2\omega_0}\cos(2\omega_0 t)\right]
+\end{aligned}
+\end{equation}
+\subsection{Calculation of variance in momentum}
+$\begin{aligned} \overline{P ^ { 2 } ( t )} &= \frac { 1 } { 2 \pi } \int _ { \omega _ { 1 }}\int_{\omega_2} \overline{\widetilde { P } ( \omega_1 )\widetilde { P } ( \omega_2 )}  e ^ { - i \omega _ { 1 } t } e ^ { - i \omega _ { 2 } t } \\&= -\frac{1}{4\pi}\left(\frac { m a_0 } { p _ { 0 } }\right)^2 \left[ 2 \cosh(2r) \int_{\omega_1} \frac{-\omega_{ 1 }^2}{(\omega_0^2 - \omega_1 ^2)^2 + \omega_1 ^2 \gamma^2}\right] \\&- \frac{1}{4\pi}\left(\frac { m a_0 } { p _ { 0 } }\right)^2 \left[ \sinh(2r) \int_{\omega_1} \frac{\omega_1 (-2\omega_0 - \omega_1)e^{2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 + 2\omega_0)^2 + i(\omega_1 + 2 \omega_0) \gamma)]}\right]
+\\&- \frac{1}{4\pi}\left(\frac { m a_0 } { p _ { 0 } }\right)^2 \left[ \sinh(2r) \int_{\omega_1} \frac{\omega_1 (2\omega_0 - \omega_1)e^{-2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 - 2\omega_0)^2 + i(\omega_1 - 2 \omega_0) \gamma)]}\right] \\&= \frac{1}{4\pi}\left(\frac { m a_0 } { p _ { 0 } }\right)^2 \left[2\cosh(2r) I_2(\omega_0,\gamma) + \sinh(2r)\left\{I_5(\omega_0,\gamma)e^{2i\omega_0 t}+I_5(-\omega_0,\gamma)e^{-2i\omega_0 t}\right\} \right] \end{aligned}$
 
 \section{Conclusion}
 

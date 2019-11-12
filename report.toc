@@ -1,14 +1,16 @@
-\contentsline {section}{\numberline {0.1}Introduction}{2}
-\contentsline {section}{\numberline {0.2}Theory of the for Brownian Harmonic oscillator}{3}
-\contentsline {subsection}{\numberline {0.2.1}Coherent states}{3}
-\contentsline {subsection}{\numberline {0.2.2}Squeezed states}{5}
-\contentsline {subsubsection}{Expansion of squeezed state in eigenstate basis and time evolution}{8}
-\contentsline {subsection}{\numberline {0.2.3}Brownian motion under harmonic potential}{10}
-\contentsline {subsubsection}{Langevin equation}{10}
-\contentsline {subsubsection}{Explanation of the nature of correlation of the stochastic force}{11}
-\contentsline {subsubsection}{Fluctuation dissipation theorem and the claim}{12}
-\contentsline {section}{\numberline {0.3}Proof of the claim}{12}
-\contentsline {subsubsection}{Preliminaries}{13}
-\contentsline {subsubsection}{Calculation of Fourier transformed position and momentum}{14}
-\contentsline {subsection}{\numberline {0.3.1}Calculation of variance in position}{15}
-\contentsline {section}{\numberline {0.4}Conclusion}{16}
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Theory of the for Brownian Harmonic oscillator}{3}
+\contentsline {subsection}{\numberline {2.1}Coherent states}{3}
+\contentsline {subsection}{\numberline {2.2}Squeezed states}{6}
+\contentsline {subsubsection}{\numberline {2.2.1}Expansion of squeezed state in eigenstate basis and time evolution}{8}
+\contentsline {subsection}{\numberline {2.3}Brownian motion under harmonic potential}{11}
+\contentsline {subsubsection}{\numberline {2.3.1}Langevin equation}{11}
+\contentsline {subsubsection}{\numberline {2.3.2}Explanation of the nature of correlation of the stochastic force}{11}
+\contentsline {subsubsection}{\numberline {2.3.3}Fluctuation dissipation theorem and the claim}{12}
+\contentsline {section}{\numberline {3}Proof of the claim}{13}
+\contentsline {subsubsection}{\numberline {3.0.1}Preliminaries}{13}
+\contentsline {subsubsection}{\numberline {3.0.2}Calculation of Fourier transformed position and momentum}{15}
+\contentsline {subsection}{\numberline {3.1}Calculation of variance in position}{15}
+\contentsline {subsection}{\numberline {3.2}Calculation of covariance in position and momentum}{16}
+\contentsline {subsection}{\numberline {3.3}Calculation of variance in momentum}{17}
+\contentsline {section}{\numberline {4}Conclusion}{17}
