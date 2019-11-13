@@ -320,8 +320,8 @@ I_3(\omega_0,\gamma) = \int_{\omega} \frac{1}{(\omega_0^2 - \omega^2 - i\omega\g
 \begin{equation}
 I_4(\omega_0,\gamma) = \int_{\omega} \frac{\omega}{(\omega_0^2 - \omega^2 - i\omega\gamma) [({\omega_0}^2 - (\omega + 2\omega_0)^2 + i(\omega + 2 \omega_0) \gamma)]} = \frac{\pi(\omega_0 + \frac{i\gamma}{2})}{2\gamma(\omega_0^2 + \frac{\gamma^2}{4})}
 \end{equation}
-\begin{equation}
-I_5(\omega_0,\gamma) = \int_{\omega} \frac{\omega (\omega + 2\omega_0)}{(\omega_0^2 - \omega^2 - i\omega\gamma) [({\omega_0}^2 - (\omega + 2\omega_0)^2 + i(\omega + 2 \omega_0) \gamma)]} = \frac{\pi}{2\gamma} + \frac{\pi(-\frac{i\gamma}{2})(\omega_0 + \frac{i\gamma}{2})}{2\gamma(\omega_0^2 + \frac{\gamma^2}{4})}
+\begin{equation}\begin{aligned}
+I_5(\omega_0,\gamma) = \int_{\omega} \frac{\omega (\omega + 2\omega_0)}{(\omega_0^2 - \omega^2 - i\omega\gamma) [({\omega_0}^2 - (\omega + 2\omega_0)^2 + i(\omega + 2 \omega_0) \gamma)]} &= \frac{\pi}{2\gamma} + \frac{\pi(-\frac{i\gamma}{2})(\omega_0 + \frac{i\gamma}{2})}{2\gamma(\omega_0^2 + \frac{\gamma^2}{4})} \\&= \frac{\pi(\omega_0^2 + \frac{\gamma^2}{2} -\frac{i\gamma\omega_0}{2})}{2\gamma(\omega_0^2 + \frac{\gamma^2}{4})}\end{aligned}
 \end{equation}
 
 These can be proved using contour integration. If $f(t)$ is a function of $t$ having a Fourier transform $\widetilde{f}(\omega)$, then, the Fourier transform of the function $f(t)\cos(\omega_0 t)$ is, $\frac{1}{2\pi} \int_{t} f(t) \cos(\omega_0 t) e^{i\omega t} = \frac{1}{2\pi} \int_{t} f(t) \frac{e^{i(\omega+\omega_0) t} + e^{i(\omega-\omega_0) t}}{2} = \frac{\widetilde{f}(\omega + \omega_0) + \widetilde{f}(\omega - \omega_0)}{2}$. Similarly, the Fourier transform of $f(t)\sin(\omega_0 t)$ is $\frac{\widetilde{f}(\omega + \omega_0) - \widetilde{f}(\omega - \omega_0)}{2i}$.
@@ -359,7 +359,7 @@ $\begin{aligned} \overline{X ^ { 2 } ( t )} &= \frac { 1 } { 2 \pi } \int _ { \o
 
 $\begin{aligned}e^{2i\omega_0 t}I_3(\omega_0,\gamma) + e^{-2i\omega_0 t}I_3(-\omega_0,\gamma) & = \frac{-\pi}{2\gamma(\omega_0^2 + \frac{\gamma^2}{4})}\left\{\left( 1 + \frac { i \gamma } { 2 \omega _ { 0 } } \right) e ^ { 2 i \omega _ { 0 } t } + \left( 1 - \frac { i \gamma } { \gamma \omega _ { 0 } } \right) e ^ { - 2 i \omega _ { 0 } t }\right\} \\ & = \frac{-\pi}{2\gamma(\omega_0^2 + \frac{\gamma^2}{4})} \left\{2\cos(2\omega_0 t) + \frac{i\gamma}{2 \omega_0} 2 i \sin(2\omega_0 t)\right\} \\&= \frac{-\pi}{\gamma(\omega_0^2 + \frac{\gamma^2}{4})} \left\{\cos(2\omega_0 t) - \frac{\gamma}{2 \omega_0} \sin(2\omega_0 t)\right\}  \end{aligned}$
 
-\begin{equation}\begin{aligned} \text{Thus, }
+\begin{equation}\begin{aligned}\label{eq:x_average} \text{Thus, }
 \overline{X ^ { 2 } ( t )} &= \frac{1}{4\pi}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[2\cosh(2r)\frac{\pi}{\omega_0 ^2 \gamma} - \frac{\pi\sinh(2r)}{\omega_0 ^2+ \frac{\gamma^2}{4}}\left\{\cos(2\omega_0 t) - \frac{\gamma}{2 \omega_0}\sin(2\omega_0 t)\right\}\right] \\& = \frac{1}{4\pi} \frac{m^2 \omega_0^2}{m \hbar \omega_0} \frac{\pi}{\omega_0 ^2 \gamma} \frac{2\gamma k T}{m} \left[2\cosh(2r) - \frac{\sinh(2r)}{1 + \frac{\gamma^2}{4\omega_0 ^2}}\left\{\cos(2\omega_0 t) - \frac{\gamma}{2 \omega_0}\sin(2\omega_0 t)\right\}\right] \\& = \frac{kT}{2 \hbar \omega_0} \left[2\cosh(2r) - \frac{\sinh(2r)}{1 + \frac{\gamma^2}{4\omega_0 ^2}}\left\{\cos(2\omega_0 t) - \frac{\gamma}{2 \omega_0}\sin(2\omega_0 t)\right\}\right]
 \end{aligned}\end{equation}
 \subsection{Calculation of covariance in position and momentum}
@@ -370,15 +370,43 @@ $\begin{aligned}
 I_4(\omega_0,\gamma) e^{2i\omega_0 t} + I_4(-\omega_0,\gamma)e^{-2i\omega_0 t} &= \frac{\pi}{2\gamma(\omega_0 ^2 + \frac{\gamma^2}{4})} \left[\omega_0 e^{2i\omega_0 t} - \omega_{ 0 } e^{-2 i \omega_0 t} + \frac{i\gamma}{2}(e^{2i\omega_0 t} + e^{-2i \omega_0 t})\right]
 \\&= \frac{i \pi}{\gamma(\omega_0 ^2 + \frac{\gamma^2}{4})} \left[\omega_0 \sin(2\omega_0 t) + \frac{\gamma}{2}\cos(2\omega_0 t)\right]
 \end{aligned}$
-\begin{equation}
+\begin{equation}\label{eq: x_p_average}
 \begin{aligned}
 \text{Thus, } \overline{X( t ) P(t)} &= \frac{-i\gamma k T}{2 \pi \hbar} \sinh(2r) \frac{i \pi}{\gamma(\omega_0 ^2 + \frac{\gamma^2}{4})} \left[\omega_0 \sin(2\omega_0 t) + \frac{\gamma}{2}\cos(2\omega_0 t)\right] \\&= \frac{k T}{2 \hbar \omega_0}  \frac{\sinh(2r)}{(1 + \frac{\gamma^2}{4\omega_0 ^2})} \left[ \sin(2\omega_0 t) + \frac{\gamma}{2\omega_0}\cos(2\omega_0 t)\right]
 \end{aligned}
 \end{equation}
 \subsection{Calculation of variance in momentum}
 $\begin{aligned} \overline{P ^ { 2 } ( t )} &= \frac { 1 } { 2 \pi } \int _ { \omega _ { 1 }}\int_{\omega_2} \overline{\widetilde { P } ( \omega_1 )\widetilde { P } ( \omega_2 )}  e ^ { - i \omega _ { 1 } t } e ^ { - i \omega _ { 2 } t } \\&= -\frac{1}{4\pi}\left(\frac { m a_0 } { p _ { 0 } }\right)^2 \left[ 2 \cosh(2r) \int_{\omega_1} \frac{-\omega_{ 1 }^2}{(\omega_0^2 - \omega_1 ^2)^2 + \omega_1 ^2 \gamma^2}\right] \\&- \frac{1}{4\pi}\left(\frac { m a_0 } { p _ { 0 } }\right)^2 \left[ \sinh(2r) \int_{\omega_1} \frac{\omega_1 (-2\omega_0 - \omega_1)e^{2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 + 2\omega_0)^2 + i(\omega_1 + 2 \omega_0) \gamma)]}\right]
-\\&- \frac{1}{4\pi}\left(\frac { m a_0 } { p _ { 0 } }\right)^2 \left[ \sinh(2r) \int_{\omega_1} \frac{\omega_1 (2\omega_0 - \omega_1)e^{-2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 - 2\omega_0)^2 + i(\omega_1 - 2 \omega_0) \gamma)]}\right] \\&= \frac{1}{4\pi}\left(\frac { m a_0 } { p _ { 0 } }\right)^2 \left[2\cosh(2r) I_2(\omega_0,\gamma) + \sinh(2r)\left\{I_5(\omega_0,\gamma)e^{2i\omega_0 t}+I_5(-\omega_0,\gamma)e^{-2i\omega_0 t}\right\} \right] \end{aligned}$
+\\&- \frac{1}{4\pi}\left(\frac { m a_0 } { p _ { 0 } }\right)^2 \left[ \sinh(2r) \int_{\omega_1} \frac{\omega_1 (2\omega_0 - \omega_1)e^{-2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 - 2\omega_0)^2 + i(\omega_1 - 2 \omega_0) \gamma)]}\right] \\&= \frac{1}{4\pi}\left(\frac { m a_0 } { p _ { 0 } }\right)^2 \left[2\cosh(2r) I_2(\omega_0,\gamma) + \sinh(2r)\left\{I_5(\omega_0,\gamma)e^{2i\omega_0 t}+I_5(-\omega_0,\gamma)e^{-2i\omega_0 t}\right\} \right] 
+\\&= \frac{1}{4\pi}\left(\frac {2\gamma k T } { \hbar \omega_0 }\right) \left[2\cosh(2r) I_2(\omega_0,\gamma) + \sinh(2r)\left\{I_5(\omega_0,\gamma)e^{2i\omega_0 t}+I_5(-\omega_0,\gamma)e^{-2i\omega_0 t}\right\} \right]\end{aligned}$
 
+$\begin{aligned}
+I_5(\omega_0,\gamma)e^{2i\omega_0 t}+I_5(-\omega_0,\gamma)e^{-2i\omega_0 t} &= \frac { \pi } { 2\gamma \left( \omega _ { 0 } ^ { 2 } + \frac { \gamma ^ { 2 } } { 4 } \right) } \left[2 \left( \omega _ { 0 } ^ { 2 } + \frac { \gamma ^ { 2 } } { 2 } \right) \cos \left( 2 \omega _ { 0 } t \right) - \frac { i\gamma } { 2 } \omega _ { 0 } e ^ { 2 i \omega _ { 0 } t } + \frac { i\gamma } { 2 } \omega _ { 0 } e ^ {-2 i \omega _ { 0 } t }\right] 
+\\&= \frac { \pi } { \gamma \left( \omega _ { 0 } ^ { 2 } + \frac { \gamma ^ { 2 } } { 4 } \right) } \left[ \left( \omega _ { 0 } ^ { 2 } + \frac { \gamma ^ { 2 } } { 2 } \right) \cos \left( 2 \omega _ { 0 } t \right)  + \frac { \gamma \omega _ { 0 } } { 2 } \sin \left( 2 \omega _ { 0 } t \right) \right] 
+\end{aligned}$
+\begin{equation}\begin{aligned}\label{eq:p_average} \text{Thus, }
+\overline{P ^ { 2 } ( t )} & = \frac{1}{4\pi} \frac{\pi}{\gamma} \frac{2\gamma k T}{\hbar \omega_0} \left[2\cosh(2r) + \frac{\sinh(2r)}{1 + \frac{\gamma^2}{4\omega_0 ^2}}\left\{(1+\frac{\gamma^2}{2\omega_0 ^2})\cos(2\omega_0 t) + \frac{\gamma}{2 \omega_0}\sin(2\omega_0 t)\right\}\right] \\& = \frac{kT}{2 \hbar \omega_0} \left[2\cosh(2r) + \frac{\sinh(2r)}{1 + \frac{\gamma^2}{4\omega_0 ^2}}\left\{(1+\frac{\gamma^2}{2\omega_0 ^2})\cos(2\omega_0 t) + \frac{\gamma}{2 \omega_0}\sin(2\omega_0 t)\right\}\right]
+\end{aligned}\end{equation}
+\subsection{Rotating coordinates}
+Let us define ``rotating coordinates", \begin{equation}\begin{array} { l } { X _ { 1 } = X \cos \left( \omega _ { 0 } t \right) - P \sin ( \omega_0  t ) } \\ { X _ { 2 } = X \sin ( \omega_0  t ) + P \cos ( \omega_0  t ) } \end{array}\end{equation}
+
+ Therefore, $X _ { 1 } ^ { 2 } =  X ^ { 2 } \cos ^ { 2 } \left( \omega _ { 0 } t \right) + P ^ { 2 } \sin ^ { 2 } ( \omega_0  t )  - 2 X P \sin ( \omega_0 t ) \cos \left( \omega _ { 0 } t \right) $
+ \begin{equation}\label{eq:rot_1}
+ \implies  X _ { 1 } ^ { 2 } = \frac { X ^ { 2 } } { 2 } + \frac { P ^ { 2 } } { 2 } + \frac { X ^ { 2 } } { 2 } \cos \left( 2 \omega _ { 0 } t \right) - \frac { P ^ { 2 } } { 2 } \cos \left( 2 \omega _ { 0 } t \right) - X P \sin(2\omega_0 t)
+ \end{equation}
+ Similarly,\begin{equation}\label{eq:rot_2}
+ X _ { 2 } ^ { 2 } = \frac { X ^ { 2 } } { 2 } + \frac { P ^ { 2 } } { 2 } - \frac { X ^ { 2 } } { 2 } \cos \left( 2 \omega _ { 0 } t \right) + \frac { P ^ { 2 } } { 2 } \cos \left( 2 \omega _ { 0 } t \right) + X P \sin(2\omega_0 t)
+ \end{equation}
+ 
+ 
+ Now we use the fact that over a long time $t (\gg \frac{1}{\omega_0})$, $<\sin(n\omega_0 t)> = <\cos(n \omega_0 t)> = 0$, and $<\sin^2(n\omega_0 t)> = <\cos^2(n \omega_0 t)> = \frac{1}{2}$, where $<f(t)> = \frac{\int_{0}^{t} f(s) \dd{s}}{t}$, the time averaged value of $f(t)$.
+ 
+ Using (\ref{eq:x_average}), (\ref{eq: x_p_average}), (\ref{eq:p_average}) and (\ref{eq:rot_1}), we get,\\
+ $\begin{aligned}
+ <\overline { X _ { 1 } ^ { 2 } } > &= \frac{kT}{4\hbar\omega_0}\left[4\cosh(2r) - \frac{\sinh(2r)}{1+\frac{\gamma^2}{4\omega_0^2}}\cdot\frac{1}{2} - \frac{\sinh(2r)}{1+\frac{\gamma^2}{4\omega_0^2}}\cdot\frac{1}{2}\cdot\left(1+\frac{\gamma^2}{2\omega_0^2}\right)-\frac{\sinh(2r)}{1+\frac{\gamma^2}{4\omega_0^2}}\cdot\frac{1}{2}\cdot2 \right]
+ \\ & = \frac{kT}{4\hbar\omega_0}\left[4\cosh(2r) - 2\frac{\sinh(2r)}{1+\frac{\gamma^2}{4\omega_0^2}}\left(1+\frac{\gamma^2}{8\omega_0^2}\right) \right]
+ \\ & \approx \frac{kT}{\hbar\omega_0}\left[\cosh(2r) - \frac{\sinh(2r)}{2}\right] \left(\text{in the limit of low damping, } \frac{\gamma}{\omega_0} \ll 1\right)
+ \end{aligned}$
 \section{Conclusion}
 
 \vspace{1.5cm}
