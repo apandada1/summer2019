@@ -11,7 +11,7 @@
 \contentsline {subsubsection}{\numberline {3.0.1}Preliminaries}{13}
 \contentsline {subsubsection}{\numberline {3.0.2}Calculation of Fourier transformed position and momentum}{15}
 \contentsline {subsection}{\numberline {3.1}Calculation of variance in position}{16}
-\contentsline {subsection}{\numberline {3.2}Calculation of covariance in position and momentum}{17}
+\contentsline {subsection}{\numberline {3.2}Calculation of covariance in position and momentum}{16}
 \contentsline {subsection}{\numberline {3.3}Calculation of variance in momentum}{17}
 \contentsline {subsection}{\numberline {3.4}Rotating coordinates}{18}
 \contentsline {section}{\numberline {4}Conclusion}{19}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.2)  13 NOV 2019 18:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.2)  13 NOV 2019 19:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2074,7 +2074,19 @@ LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-[3] [4] [5]
+[3] [4]
+Overfull \hbox (42.73967pt too wide) in paragraph at lines 127--129
+\OT1/cmr/m/n/12 Let $\OML/cmm/m/it/12  \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 j\OM
+L/cmm/m/it/12 \OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 e[]$\OT1/cmr/m/n/12 . Then, $
+\OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 x\OMS/cmsy/m/n/12 i\OT1/cmr/m/n/12 (\OML/cmm
+/m/it/12 t\OT1/cmr/m/n/12 )$$= []\OML/cmm/m/it/12 x[] [][][]$$\OT1/cmr/m/n/12 =
+ []\OML/cmm/m/it/12 x[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 \OMS/cmsy/m/n/12 j [
+][][]$\OT1/cmr/m/n/12 , and $\OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 p\OMS/cmsy/m/n/
+12 i\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )$$= []\OML/cmm/m/it/12 
+p[] [][][]$$\OT1/cmr/m/n/12 =
+ []
+
+[5]
 <graphs/coherent/1.jpg, id=37, 578.16pt x 433.62pt>
 File: graphs/coherent/1.jpg Graphic file (type jpg)
 <use graphs/coherent/1.jpg>
@@ -2144,7 +2156,12 @@ LaTeX Warning: Float too large for page by 511.98479pt on input line 184.
 [6] [7 <./graphs/coherent/1.jpg> <./graphs/coherent/2.jpg> <./graphs/coherent/3
 .jpg> <./graphs/coherent/4.jpg> <./graphs/coherent/5.jpg> <./graphs/coherent/6.
 jpg> <./graphs/coherent/7.jpg> <./graphs/coherent/8.jpg> <./graphs/coherent/9.j
-pg> <./graphs/coherent/10.jpg>] [8] [9]
+pg> <./graphs/coherent/10.jpg>]
+Overfull \hbox (2.61891pt too wide) detected at line 228
+[]
+ []
+
+[8] [9]
 Overfull \hbox (14.84012pt too wide) in paragraph at lines 252--254
 []$[][]$\OT1/cmr/m/n/12 . By ra-tio test, it can be shown that $[] \OMS/cmsy/m/
 n/12 j\OML/cmm/m/it/12 c[]\OMS/cmsy/m/n/12 j[]$
@@ -2183,54 +2200,46 @@ Overfull \hbox (0.16763pt too wide) detected at line 348
 [][]
  []
 
-
-Overfull \hbox (13.82292pt too wide) in paragraph at lines 356--359
-$[][]$ 
- []
-
 [15]
-Overfull \hbox (5.12865pt too wide) in paragraph at lines 360--361
+Overfull \hbox (13.82292pt too wide) in paragraph at lines 359--362
 []$[][]$ 
  []
 
 
-Overfull \hbox (3.84694pt too wide) detected at line 364
-[][]
+Overfull \hbox (5.12865pt too wide) in paragraph at lines 363--364
+[]$[][]$ 
  []
 
 
-Overfull \hbox (61.95619pt too wide) in paragraph at lines 366--368
+Overfull \hbox (61.95619pt too wide) in paragraph at lines 372--374
+[]$[][]$ 
+ []
+
+[16]
+Overfull \hbox (11.41782pt too wide) in paragraph at lines 375--379
+[]$[][]$ 
+ []
+
+
+Overfull \hbox (0.46129pt too wide) in paragraph at lines 385--388
 $[][]$ 
+ []
+
+
+Overfull \hbox (67.78732pt too wide) in paragraph at lines 389--393
+[]$[][]$ 
+ []
+
+
+Overfull \hbox (4.95724pt too wide) detected at line 395
+[][]
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16]
-Overfull \hbox (11.41782pt too wide) in paragraph at lines 369--373
-[]$[][]$ 
- []
-
-
-Overfull \hbox (0.46129pt too wide) in paragraph at lines 379--382
-$[][]$ 
- []
-
-
-Overfull \hbox (67.78732pt too wide) in paragraph at lines 383--387
-[]$[][]$ 
- []
-
-
-Overfull \hbox (4.95724pt too wide) detected at line 389
-[][]
- []
-
-
-Underfull \vbox (badness 2435) has occurred while \output is active []
-
  [17]
-Overfull \hbox (5.33093pt too wide) in paragraph at lines 404--410
+Overfull \hbox (5.33093pt too wide) in paragraph at lines 410--416
 [][]$ 
  []
 
@@ -2251,10 +2260,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25847 strings out of 492982
- 508949 string characters out of 6134896
- 546263 words of memory out of 5000000
- 29014 multiletter control sequences out of 15000+600000
+ 25848 strings out of 492982
+ 508968 string characters out of 6134896
+ 545273 words of memory out of 5000000
+ 29015 multiletter control sequences out of 15000+600000
  544380 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,13n,54p,10445b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2274,7 +2283,7 @@ cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on report.pdf (19 pages, 718953 bytes).
+Output written on report.pdf (19 pages, 719552 bytes).
 PDF statistics:
  147 PDF objects out of 1000 (max. 8388607)
  98 compressed objects within 1 object stream
