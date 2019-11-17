@@ -14,4 +14,7 @@
 \contentsline {subsection}{\numberline {3.2}Calculation of covariance in position and momentum}{16}
 \contentsline {subsection}{\numberline {3.3}Calculation of variance in momentum}{17}
 \contentsline {subsection}{\numberline {3.4}Rotating coordinates}{18}
-\contentsline {section}{\numberline {4}Conclusion}{19}
+\contentsline {section}{\numberline {4}Other methods to get this result}{20}
+\contentsline {section}{\numberline {5}Explanation of different effective temperatures}{20}
+\contentsline {section}{\numberline {6}How the Heat Engine Works}{20}
+\contentsline {section}{\numberline {7}Conclusion}{20}

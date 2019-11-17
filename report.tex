@@ -95,7 +95,7 @@ Let the eigenstates of $\hat{H}$ be denoted by $\ket{n}$. It can be shown (ref. 
 There exist quantum states whose expected values of position and momentum oscillate sinusoidally with time, and the wave packet does not spread with time. These are known as ``Coherent states".
 
 
-Let us define $x_0 = \sqrt{\frac{\hbar}{m\omega}}$ and $p_0 = \sqrt{\hbar m \omega}$, and dimensionless operators $\hat{X} = \frac{\hat{x}}{x_0}$,$\hat{P} = \frac{\hat{p}}{p_0}$. Then we can rewrite $\hat{H} = \frac{\hbar\omega}{2}({\hat{X}}^2 + {\hat{P}}^2)$. Let us define two non Hermitian operators $\hat{a} = \frac{\hat{X} + i \hat{P}}{\sqrt{2}}$, and ${\hat{a}}^\dagger = \frac{\hat{X} - i \hat{P}}{\sqrt{2}}$. Then, $[\hat{a},\hat{a}^\dagger] = 1$, and the Hamiltonian can be written as $\hat{H} = \hbar\omega( \hat{a}^\dagger \hat{a} + \frac{1}{2})$.
+Let us define $x_0 = \sqrt{\frac{\hbar}{m\omega}}$ and $p_0 = \sqrt{\hbar m \omega}$, and dimensionless operators $\hat{X} = \frac{\hat{x}}{x_0}$,$\hat{P} = \frac{\hat{p}}{p_0}$. Then we can rewrite \begin{equation}\label{eq:Hamiltonian}\hat{H} = \frac{\hbar\omega}{2}({\hat{X}}^2 + {\hat{P}}^2)\end{equation}. Let us define two non Hermitian operators $\hat{a} = \frac{\hat{X} + i \hat{P}}{\sqrt{2}}$, and ${\hat{a}}^\dagger = \frac{\hat{X} - i \hat{P}}{\sqrt{2}}$. Then, $[\hat{a},\hat{a}^\dagger] = 1$, and the Hamiltonian can be written as $\hat{H} = \hbar\omega( \hat{a}^\dagger \hat{a} + \frac{1}{2})$.
 $\hat{a}^\dagger$ and $\hat{a}$ are known as ``creation" and ``annihilation" operators, respectively, because they act on the eigenstates as follows. 
 \begin{equation}\label{eq:a} { \hat{a} | n \rangle = \sqrt { n } | n - 1 \rangle } \end{equation}
 \begin{equation} \label{eq:adagger}{ \hat{a} ^ { \dagger } | n \rangle = \sqrt { n + 1 } | n + 1 \rangle }\end{equation} 
@@ -413,6 +413,32 @@ Let us define ``rotating coordinates", \begin{equation}\begin{array} { l } { X _
  \\ & = \frac{kT}{4\hbar\omega_0}\left[4\cosh(2r) - 2\frac{\sinh(2r)}{1+\frac{\gamma^2}{4\omega_0^2}}\left(1+\frac{\gamma^2}{8\omega_0^2}\right) \right]
  \\ & \approx \frac{kT}{\hbar\omega_0}\left[\cosh(2r) - \frac{\sinh(2r)}{2}\right] \left(\text{in the limit of low damping, i.e. } \frac{\gamma}{\omega_0} \ll 1\right)
  \end{aligned}$
+ 
+ Similarly, using (\ref{eq:x_average}), (\ref{eq: x_p_average}), (\ref{eq:p_average}) and (\ref{eq:rot_2}), we get,
+ 
+ $\begin{aligned}
+ <\overline { X _ { 2 } ^ { 2 } } > &= \frac{kT}{4\hbar\omega_0}\left[4\cosh(2r) + \frac{\sinh(2r)}{1+\frac{\gamma^2}{4\omega_0^2}}\cdot\frac{1}{2}\cdot\left(1+\frac{\gamma^2}{2\omega_0^2}\right) + \frac{\sinh(2r)}{1+\frac{\gamma^2}{4\omega_0^2}}\cdot\frac{1}{2} + \frac{\sinh(2r)}{1+\frac{\gamma^2}{4\omega_0^2}}\cdot\frac{1}{2}\cdot2 \right]
+ \\ & = \frac{kT}{4\hbar\omega_0}\left[4\cosh(2r) + 2\frac{\sinh(2r)}{1+\frac{\gamma^2}{4\omega_0^2}}\left(1+\frac{\gamma^2}{8\omega_0^2}\right) \right]
+ \\ & \approx \frac{kT}{\hbar\omega_0}\left[\cosh(2r) + \frac{\sinh(2r)}{2}\right] \left(\text{in the limit of low damping, i.e. } \frac{\gamma}{\omega_0} \ll 1\right)
+ \end{aligned}$
+ 
+ From (\ref{eq:Hamiltonian}), the energy in a quadrant $X$ is,  $\frac{\hbar\omega_0}{2} <\overline { X ^ { 2 } } > = \frac{kT^*}{2}$, where $T^*$ is the effective temperature of the quadrant.
+ 
+ Therefore, the effective temperatures in the two rotating coordinates are,
+ \begin{equation}\label{eq:eff_temp}
+ \begin{aligned}
+ {T^*}_1 &= T \left[\cosh(2r) - \frac{\sinh(2r)}{2}\right]
+ \\ {T^*}_2 &= T \left[\cosh(2r) + \frac{\sinh(2r)}{2}\right]
+ \end{aligned}
+ \end{equation}
+ where $T$ is the temperature of the heat bath to which the harmonic oscillator is coupled and $r$ is the parameter in the stochastic force (\ref{eq: stochastic}).
+ 
+ \textbf{Note}: In the paper by Klaers et al. (reference Klaers), the stochastic force is $\xi(t) =  a_0 [e^{\tilde{r}} \xi_1(t) \cos(\omega t) + e^{-{\tilde{r}}} \xi_2(t)\sin(\omega t)]$, and ${T^*}_{1,2}
+= T e^{\pm 2r}$, which does not match with (\ref{eq:eff_temp}). The relation between $r$ and $\tilde{r}$ is not mentioned. This can be explained if the relation $e^{4r} = \frac{\cosh(2\tilde{r}) - \frac{\sinh(2\tilde{r})}{2}}{\cosh(2\tilde{r}) + \frac{\sinh(2\tilde{r})}{2}}$, i.e. $r = \frac{1}{4}\ln(\frac{e^{\tilde{r}} + 3}{3 e^{4\tilde{r}} + 1})$ is satisfied.
+
+\section{Other methods to get this result}
+\section{Explanation of different effective temperatures}
+\section{How the Heat Engine Works}
 \section{Conclusion}
 
 \vspace{1.5cm}
