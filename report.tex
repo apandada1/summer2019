@@ -67,11 +67,25 @@
 Make abstruct
 Todo. 1. sinusodially spelling
 2. add graphs for coherent and squeezed state.
+3. add graphs for simulation
 
 \end{abstract}
 %{\bf Keywords:} enter, keyword, here.
 
-\newpage\tableofcontents
+\newpage
+\begin{center}
+	\large{\textbf{Certificate}}
+\end{center}
+
+This is to certify that Archisman Panigrahi (SR No. 11-01-00-10-91-17-1-14503),
+undergraduate student at Indian Institute of Science, did his 2019 summer research
+project on \textit{Quantum Heat Engines} under my guidance.\\\\\\
+
+\textbf{Prof. H. R. Krishnamurthy}\\
+Department of Physics\\
+Indian Institute of Science, Bangalore.
+\newpage
+\tableofcontents
 
 \section{Introduction}
 The classical limits of the maximum achievable efficiency of an ideal heat engine running between temperatures $T_{hot}$ and $T_{cold}$ us given by Carnot's formula $\eta_{Carnot} = 1 - \frac{T_{cold}}{T_{hot}}$.\\
@@ -83,7 +97,7 @@ To see how the experiment[ref Klaers] was done, let us recap squeezed states of 
 \section{Theory of the for Brownian Harmonic oscillator}
 
 Before we discuss squeezed states, let us review ``Coherent states" of a harmonic oscillator.
-\subsection{Coherent states}
+\subsection{Coherent states of a quantum harmonic oscillator}
 The position and momentum of classical harmonic oscillator (a particle of mass $m$ in potential $\frac{1}{2}m\omega^2x^2$)  oscillates with period $\omega$, its natural frequency.
 However, in quantum mechanics, the expectation value of position or momentum of an eigenstate of the Hamiltonian does not change with time.
 
@@ -184,7 +198,7 @@ Let $\alpha = |\alpha|e^{i\phi}$. Then, $\langle x \rangle (t) $$= \sqrt{2} x_0 
 \end{figure}
 	
 	
-\subsection{Squeezed states}
+\subsection{Squeezed states of a quantum harmonic oscillator}
 
 The coherent state behaves like a classical particle in a harmonic potential, and it has equal uncertainty in position and momentum. However, there exist states which have different values of standard deviation in position and momentum coordinates. In the next section, we will see that the uncertainty is related to the effective temperature in these coordinates, and this can be utilized to prepare efficient heat engines. Let us define \begin{equation} \label{eq:squeeze}
 \hat{Q} = \lambda \hat{a} + \mu \hat{a}^\dagger
@@ -254,12 +268,12 @@ $\begin{aligned}\text{Let } e_n &= c_n \sqrt{n!} \\\implies e_{n+1} &= -\frac{\m
 
 
 
-\subsection{Brownian motion under harmonic potential}
+\subsection{ Classical Brownian motion under harmonic potential}
 
 \subsubsection{Langevin equation}
 It turns out that the motion of a classical particle undergoing Brownian motion can mimic a squeezed state, under special circumstances. The dynamics of a particle undergoing Brownian motion is governed by the Langevin equation,\begin{equation}\label{eq:langevin}m \ddot{x} = -\derivative{V(x)}{x} - b \dot{x} + m \xi(t)\end{equation} where $-\derivative{V(x)}{x}$ is the force acting on the particle due to potential $V(x)$, $-b\dot{x}$ is the effective frictional force acting on the particle due to viscosity of the medium, and $\xi(t)$ is a time dependent stochastic force.
 For the Brownian motion of a particle in a normal heat bath of temperature $T$, the stochastic force is a white noise (reference. wikipedia page of white noise, and some source e.g. Chandrashekhar's paper that the force is indeed white noise), and $\overline{\xi(t_1)\xi(t_2)} = a \delta(t_1 - t_2)$, where the overhead line denotes the average over distribution of $\xi(t)$.
-\subsubsection{Explanation of the nature of correlation of the stochastic force} To see why this happens, we note that when $t_1 \neq t_2$, the two forces are uncorrelated, and the average of their product is zero. When the two times are equal, the force acts like a Dirac delta function because the velocity of the particle changes instantaneously after being hit by another particle. Now we show that for $a = \frac{2 \gamma k T}{m}$, where $k$ is the Boltzmann's constant.\\
+\subsubsection{Explanation of the nature of correlation of the stochastic force}\label{fluctuation_dissipation_proof} To see why this happens, we note that when $t_1 \neq t_2$, the two forces are uncorrelated, and the average of their product is zero. When the two times are equal, the force acts like a Dirac delta function because the velocity of the particle changes instantaneously after being hit by another particle. Now we show that for $a = \frac{2 \gamma k T}{m}$, where $k$ is the Boltzmann's constant.\\
 \textbf{Proof}: When $V(x) = 0$,\begin{equation}\label{eq:lang_no_pot}
 	m\dot{v}+m\gamma v = m \xi(t)
 \end{equation} 
@@ -393,7 +407,7 @@ I_5(\omega_0,\gamma)e^{2i\omega_0 t}+I_5(-\omega_0,\gamma)e^{-2i\omega_0 t} &= \
 \begin{equation}\begin{aligned}\label{eq:p_average} \text{Thus, }
 \overline{P ^ { 2 } ( t )} & = \frac{1}{4\pi} \frac{\pi}{\gamma} \frac{2\gamma k T}{\hbar \omega_0} \left[2\cosh(2r) + \frac{\sinh(2r)}{1 + \frac{\gamma^2}{4\omega_0 ^2}}\left\{(1+\frac{\gamma^2}{2\omega_0 ^2})\cos(2\omega_0 t) + \frac{\gamma}{2 \omega_0}\sin(2\omega_0 t)\right\}\right] \\& = \frac{kT}{2 \hbar \omega_0} \left[2\cosh(2r) + \frac{\sinh(2r)}{1 + \frac{\gamma^2}{4\omega_0 ^2}}\left\{(1+\frac{\gamma^2}{2\omega_0 ^2})\cos(2\omega_0 t) + \frac{\gamma}{2 \omega_0}\sin(2\omega_0 t)\right\}\right]
 \end{aligned}\end{equation}
-\subsection{Rotating coordinates}
+\subsection{Rotating coordinates}\label{rotating_coordinates}
 Let us define ``rotating coordinates", \begin{equation}\begin{array} { l } { X _ { 1 } = X \cos \left( \omega _ { 0 } t \right) - P \sin ( \omega_0  t ) } \\ { X _ { 2 } = X \sin ( \omega_0  t ) + P \cos ( \omega_0  t ) } \end{array}\end{equation}
 
  Therefore, $X _ { 1 } ^ { 2 } =  X ^ { 2 } \cos ^ { 2 } \left( \omega _ { 0 } t \right) + P ^ { 2 } \sin ^ { 2 } ( \omega_0  t )  - 2 X P \sin ( \omega_0 t ) \cos \left( \omega _ { 0 } t \right) $
@@ -437,8 +451,17 @@ Let us define ``rotating coordinates", \begin{equation}\begin{array} { l } { X _
 = T e^{\pm 2r}$, which does not match with (\ref{eq:eff_temp}). The relation between $r$ and $\tilde{r}$ is not mentioned. This can be explained if the relation $e^{4r} = \frac{\cosh(2\tilde{r}) - \frac{\sinh(2\tilde{r})}{2}}{\cosh(2\tilde{r}) + \frac{\sinh(2\tilde{r})}{2}}$, i.e. $r = \frac{1}{4}\ln(\frac{e^{\tilde{r}} + 3}{3 e^{4\tilde{r}} + 1})$ is satisfied.
 
 \section{Other methods to get this result}
-\section{Explanation of different effective temperatures}
-\section{How the Heat Engine Works}
+\subsection{Directly integrating the equations in Mathematica}
+We can write (\ref{eq:1st}) and (\ref{eq:2nd}) in matrix form, and diagonalize the matrices to formally solve for $x(t)$ and $v(t)$ in terms of $\xi(t)$. Then we can calculate of $\overline{x(t_1)x(t_2)}$, $\overline{x(t_1)v(t_2)}$, and  $\overline{v(t_1)v(t_2)}$ just like subsection \ref{fluctuation_dissipation_proof}, and find the variance of the rotating coordinates. I did this calculation (reference - link to the code) in Mathematica and got the same results as in section \ref{rotating_coordinates}, under the limit of low damping.
+
+\subsection{Verification using a simulation}
+I created a C program (ref - link to code) to simulate the dynamics of this particle. The delta function force is simulated with a random force of very high magnitude (high compared to the spring force).
+The following graphs show that the energy in rotating coordinates are different, and the ratio of average energies is very close to the ratio of $T^*_1$ and $T^* _2$ obtained from (\ref{eq:eff_temp}). Also note that this ratio is very different from $e^{4r}$. However, this is in accord with the relation between $r$ and $\tilde{r}$ obtained in the previous section.
+
+\section{How the Heat Engine works}
+\section{Explanation of different effective temperatures and the reason for surpassing the second law}
+In \ref{fluctuation_dissipation_proof} we saw that the effective temperature of the system is proportional to the square of the magnitude of the stochastic force. The force $\xi(t) =  a_0 [e^r \xi_1(t) \cos(\omega t) + e^{-r} \xi_2(t)\sin(\omega t)]$ can be viewed as a combination of two forces with magnitudes $a_1 = a_0 e^r$ and $a_2 = a_0 e^{-r}$. This is as if, the system is simultaneously coupled to two heat baths of temperatures $T e^{2r}$ and $T e^{-2r}$. This gives rise to the different temperatures in the two rotating coordinates. Note that the temperatures in (\ref{eq:eff_temp}) are just linear combinations of the temperatures of these two heat baths.
+
 \section{Conclusion}
 
 \vspace{1.5cm}

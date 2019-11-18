@@ -1,20 +1,22 @@
-\contentsline {section}{\numberline {1}Introduction}{3}
-\contentsline {section}{\numberline {2}Theory of the for Brownian Harmonic oscillator}{3}
-\contentsline {subsection}{\numberline {2.1}Coherent states}{3}
-\contentsline {subsection}{\numberline {2.2}Squeezed states}{6}
-\contentsline {subsubsection}{\numberline {2.2.1}Expansion of squeezed state in eigenstate basis and time evolution}{8}
-\contentsline {subsection}{\numberline {2.3}Brownian motion under harmonic potential}{11}
-\contentsline {subsubsection}{\numberline {2.3.1}Langevin equation}{11}
-\contentsline {subsubsection}{\numberline {2.3.2}Explanation of the nature of correlation of the stochastic force}{11}
-\contentsline {subsubsection}{\numberline {2.3.3}Fluctuation dissipation theorem and the claim}{12}
-\contentsline {section}{\numberline {3}Proof of the claim}{13}
-\contentsline {subsubsection}{\numberline {3.0.1}Preliminaries}{13}
-\contentsline {subsubsection}{\numberline {3.0.2}Calculation of Fourier transformed position and momentum}{15}
-\contentsline {subsection}{\numberline {3.1}Calculation of variance in position}{16}
-\contentsline {subsection}{\numberline {3.2}Calculation of covariance in position and momentum}{16}
-\contentsline {subsection}{\numberline {3.3}Calculation of variance in momentum}{17}
-\contentsline {subsection}{\numberline {3.4}Rotating coordinates}{18}
-\contentsline {section}{\numberline {4}Other methods to get this result}{20}
-\contentsline {section}{\numberline {5}Explanation of different effective temperatures}{20}
-\contentsline {section}{\numberline {6}How the Heat Engine Works}{20}
-\contentsline {section}{\numberline {7}Conclusion}{20}
+\contentsline {section}{\numberline {1}Introduction}{4}
+\contentsline {section}{\numberline {2}Theory of the for Brownian Harmonic oscillator}{4}
+\contentsline {subsection}{\numberline {2.1}Coherent states of a quantum harmonic oscillator}{4}
+\contentsline {subsection}{\numberline {2.2}Squeezed states of a quantum harmonic oscillator}{7}
+\contentsline {subsubsection}{\numberline {2.2.1}Expansion of squeezed state in eigenstate basis and time evolution}{10}
+\contentsline {subsection}{\numberline {2.3} Classical Brownian motion under harmonic potential}{12}
+\contentsline {subsubsection}{\numberline {2.3.1}Langevin equation}{12}
+\contentsline {subsubsection}{\numberline {2.3.2}Explanation of the nature of correlation of the stochastic force}{13}
+\contentsline {subsubsection}{\numberline {2.3.3}Fluctuation dissipation theorem and the claim}{14}
+\contentsline {section}{\numberline {3}Proof of the claim}{14}
+\contentsline {subsubsection}{\numberline {3.0.1}Preliminaries}{15}
+\contentsline {subsubsection}{\numberline {3.0.2}Calculation of Fourier transformed position and momentum}{16}
+\contentsline {subsection}{\numberline {3.1}Calculation of variance in position}{17}
+\contentsline {subsection}{\numberline {3.2}Calculation of covariance in position and momentum}{18}
+\contentsline {subsection}{\numberline {3.3}Calculation of variance in momentum}{19}
+\contentsline {subsection}{\numberline {3.4}Rotating coordinates}{19}
+\contentsline {section}{\numberline {4}Other methods to get this result}{21}
+\contentsline {subsection}{\numberline {4.1}Directly integrating the equations in Mathematica}{21}
+\contentsline {subsection}{\numberline {4.2}Verification using a simulation}{21}
+\contentsline {section}{\numberline {5}How the Heat Engine works}{22}
+\contentsline {section}{\numberline {6}Explanation of different effective temperatures and the reason for surpassing the second law}{22}
+\contentsline {section}{\numberline {7}Conclusion}{22}
