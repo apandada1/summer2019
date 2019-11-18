@@ -1,6 +1,6 @@
 \contentsline {section}{\numberline {1}Introduction}{4}
-\contentsline {section}{\numberline {2}Theory of the for Brownian Harmonic oscillator}{4}
-\contentsline {subsection}{\numberline {2.1}Coherent states of a quantum harmonic oscillator}{4}
+\contentsline {section}{\numberline {2}Theory of the for Brownian Harmonic oscillator}{5}
+\contentsline {subsection}{\numberline {2.1}Coherent states of a quantum harmonic oscillator}{5}
 \contentsline {subsection}{\numberline {2.2}Squeezed states of a quantum harmonic oscillator}{7}
 \contentsline {subsubsection}{\numberline {2.2.1}Expansion of squeezed state in eigenstate basis and time evolution}{10}
 \contentsline {subsection}{\numberline {2.3} Classical Brownian motion under harmonic potential}{12}
@@ -19,4 +19,4 @@
 \contentsline {subsection}{\numberline {4.2}Verification using a simulation}{21}
 \contentsline {section}{\numberline {5}How the Heat Engine works}{22}
 \contentsline {section}{\numberline {6}Explanation of different effective temperatures and the reason for surpassing the second law}{22}
-\contentsline {section}{\numberline {7}Conclusion}{22}
+\contentsline {section}{\numberline {7}Conclusion}{23}

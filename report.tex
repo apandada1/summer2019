@@ -52,12 +52,15 @@
 
 
 
-\author{Archisman Panigrahi\\
+\author{
+	Archisman Panigrahi \\
 	\footnotesize Indian Institute of Science, Bangalore\\
+	\footnotesize SR No. - 11-01-00-10-91-17-1-14503\\
+	\footnotesize KVPY SA Fellow, 2015\\
+	\footnotesize KVPY Registration No. - SA-1510017\\\\\\
 	\footnotesize Under the Guidance of\\
 	Prof. H. R. Krishnamurthy\\
-	\footnotesize Dept. of Physics, Indian Institute of Science, Bangalore
-	\footnotesize \texttt{\{archismanp@iisc.ac.in\}} \\ }
+	\footnotesize Dept. of Physics, Indian Institute of Science, Bangalore }
 
 
 \maketitle
@@ -76,7 +79,7 @@ Todo. 1. sinusodially spelling
 \begin{center}
 	\large{\textbf{Certificate}}
 \end{center}
-
+\vspace{2 cm}
 This is to certify that Archisman Panigrahi (SR No. 11-01-00-10-91-17-1-14503),
 undergraduate student at Indian Institute of Science, did his 2019 summer research
 project on \textit{Quantum Heat Engines} under my guidance.\\\\\\
@@ -85,6 +88,11 @@ project on \textit{Quantum Heat Engines} under my guidance.\\\\\\
 Department of Physics\\
 Indian Institute of Science, Bangalore.
 \newpage
+\noindent \textbf{Acknowledgment}
+
+I am grateful to Prof. H. R. Krishnamurthy for guiding me in this project and growing my interest in different branches of Condensed Matter Physics. 
+
+I am also grateful to D.S.T. and K.V.P.Y. for providing my scholarship.
 \tableofcontents
 
 \section{Introduction}
@@ -236,8 +244,8 @@ Then, after some simplification, we get,
 
 &{ \left\langle \frac{\hat{x}}{x_0} \right\rangle =2\Re{\frac{\lambda(t) - \mu(t)}{\sqrt{2}}s^*}=\sqrt{2}|s|[\cosh(r)\cos(\omega t - \theta) - \sinh(r)\sin(\omega t + \theta - \phi)]}\\
 &{ \left\langle \frac{\hat{p}}{p_0} \right\rangle =2\Im{\frac{\lambda(t)^* + \mu(t)^*}{\sqrt{2}}s}=\sqrt{2}|s|[\cosh(r)\sin(\theta - \omega t) + \sinh(r)\sin(\omega t + \theta + \phi)]}\\
-& { \frac{(\Delta x)^2}{{x_0}^2} = \frac { |\cosh(r)e^{i\omega t} - \sinh(r)e^{i(\phi - \omega t)}|^2 } { 2 } =  \frac{\cosh(2r) - \sinh(2r)\cos(2\omega t-\phi) }{2} }\\
-& { \frac{(\Delta p)^2}{{p_0}^2} = \frac { |\cosh(r)e^{i\omega t} + \sinh(r)e^{i(\phi - \omega t)}|^2 } { 2 } =  \frac{\cosh(2r) + \sinh(2r)\cos(2\omega t-\phi) }{2} }\\
+& { \frac{(\Delta x)^2}{{x_0}^2} = \frac { |\cosh(r)e^{i\omega t} - \sinh(r)e^{i(\phi - \omega t)}|^2 } { 2 } =  \frac{\cosh(2\tilde{r}) - \sinh(2\tilde{r})\cos(2\omega t-\phi) }{2} }\\
+& { \frac{(\Delta p)^2}{{p_0}^2} = \frac { |\cosh(r)e^{i\omega t} + \sinh(r)e^{i(\phi - \omega t)}|^2 } { 2 } =  \frac{\cosh(2\tilde{r}) + \sinh(2\tilde{r})\cos(2\omega t-\phi) }{2} }\\
 
 \end{cases}\end{equation}
 We can solve $\hat{Q}\ket{s} = s\ket{s}$ in position basis, and show that the wave function is a Gaussian peaked at $\expval{\hat{x}}$ with standard deviation $\Delta x$, both of which are sinusoidal functions of time. When $s=0$, the state is called squeezed vacuum, where the wave function is a Gaussian peaked at $x=0$, but the standard deviation oscillates with time. For $r = 0$, we recover the coherent state.
@@ -291,7 +299,7 @@ It is claimed in the article by Klaers et. al (Reference. paper by Klaers) that 
 
 \section{Proof of the claim}
 Consider a particle in a Harmonic potential, undergoing Brownian motion for which \begin{equation}\label{eq: stochastic}
-	\xi(t) =  a_0 [e^r \xi_1(t) \cos(\omega t) + e^{-r} \xi_2(t)\sin(\omega t)]
+	\xi(t) =  a_0 [e^{\tilde{r}} \xi_1(t) \cos(\omega t) + e^{-{\tilde{r}}} \xi_2(t)\sin(\omega t)]
 \end{equation} where $a_0 ^ 2 = \frac{2 \gamma k T}{m}$, and $\xi_1(t)$ and $\xi_2(t)$ are two uncorrelated stochastic forces which satisfy $\overline{\xi_i(t_1)\xi_j(t_2)} = \delta_{ij}\delta(t_1 - t_2)$. $r$ is a real number. Thus, the equations of motion are, \begin{equation}\label{eq:1st}
 m \dot{x} = p
 \end{equation}
@@ -342,11 +350,11 @@ These can be proved using contour integration. If $f(t)$ is a function of $t$ ha
 
 Then, from (\ref{eq: stochastic}),
 \begin{equation}\label{eq:fourier_stochastic}
-	\widetilde{\xi}(\omega) = \frac{a_0}{2} [e^r \widetilde{\xi}_1 (\omega + \omega_1) + e^r \widetilde{\xi}_1 (\omega - \omega_1) - i e^{-r} \widetilde{\xi}_2 (\omega + \omega_1) +  i e^{-r} \widetilde{\xi}_2 (\omega - \omega_1)]
+	\widetilde{\xi}(\omega) = \frac{a_0}{2} [e^{\tilde{r}} \widetilde{\xi}_1 (\omega + \omega_1) + e^{\tilde{r}} \widetilde{\xi}_1 (\omega - \omega_1) - i e^{-{\tilde{r}}} \widetilde{\xi}_2 (\omega + \omega_1) +  i e^{-{\tilde{r}}} \widetilde{\xi}_2 (\omega - \omega_1)]
 \end{equation}
 
 \begin{equation}\label{eq: stochastic_fourier}\begin{aligned} \text{Therefore, }
-\overline{\widetilde { \xi } \left( \omega _ { 1 } \right) \widetilde { \xi } \left( \omega _ { 2 } \right)} &= \frac{a_0 ^2 }{4}\left[e ^ { 2 r } \overline{\left\{ \widetilde{\xi _ { 1 }} \left( \omega _ { 1 } + \omega _ { 0 } \right) + \widetilde{\xi _ { 1 }} \left( \omega _ { 1 } - \omega _ { 0 } \right) \right\}\left\{ \widetilde{\xi _ { 1 }} \left( \omega _ { 2 } + \omega _ { 0 } \right) + \widetilde{\xi _ { 1 }} \left( \omega _ { 2 } - \omega _ { 0 } \right) \right\}} \right]\\ &- \frac{a_0^2}{4} \left[e ^ { -2 r }\overline{\left\{ \widetilde{\xi _ { 2 }} \left( \omega _ { 1 } + \omega _ { 0 } \right) + \widetilde{\xi _ { 2 }} \left( \omega _ { 1 } - \omega _ { 0 } \right) \right\}\left\{ \widetilde{\xi _ { 2 }} \left( \omega _ { 2 } + \omega _ { 0 } \right) + \widetilde{\xi _ { 2 }} \left( \omega _ { 2 } - \omega _ { 0 } \right) \right\}}\right]  \\&\text{(cross terms are $0$ in average)}\\& = \frac{a_0^2}{4} \left[ e^{2r}\left\{\delta \left( \omega _ { 1 } + \omega _ { 2 } + 2 \omega _ { 0 } \right) + 2 \delta \left( \omega _ { 1 } + \omega _ { 2 } \right) + \delta \left( \omega _ { 1 } + \omega _ { 2 } - 2 \omega_0 \right)\right\}\right] \\& - \frac{a_0^2}{4} \left[e^{-2r}\left\{\delta \left( \omega _ { 1 } + \omega _ { 2 } + 2 \omega _ { 0 } \right) + 2 \delta \left( \omega _ { 1 } + \omega _ { 2 } \right) + \delta \left( \omega _ { 1 } + \omega _ { 2 } - 2 \omega_0 \right)\right\}\right] \\ & =\frac{a_0^2}{2}\left[\sinh(2r)\left\{\delta(\omega_1 + \omega_2 + 2\omega_0)+\delta(\omega_1 + \omega_2 + 2\omega_0)\right\} + 2\cosh(2r)\delta(\omega_1 + \omega_2)\right] \end{aligned}\end{equation}
+\overline{\widetilde { \xi } \left( \omega _ { 1 } \right) \widetilde { \xi } \left( \omega _ { 2 } \right)} &= \frac{a_0 ^2 }{4}\left[e ^ { 2 r } \overline{\left\{ \widetilde{\xi _ { 1 }} \left( \omega _ { 1 } + \omega _ { 0 } \right) + \widetilde{\xi _ { 1 }} \left( \omega _ { 1 } - \omega _ { 0 } \right) \right\}\left\{ \widetilde{\xi _ { 1 }} \left( \omega _ { 2 } + \omega _ { 0 } \right) + \widetilde{\xi _ { 1 }} \left( \omega _ { 2 } - \omega _ { 0 } \right) \right\}} \right]\\ &- \frac{a_0^2}{4} \left[e ^ { -2 r }\overline{\left\{ \widetilde{\xi _ { 2 }} \left( \omega _ { 1 } + \omega _ { 0 } \right) + \widetilde{\xi _ { 2 }} \left( \omega _ { 1 } - \omega _ { 0 } \right) \right\}\left\{ \widetilde{\xi _ { 2 }} \left( \omega _ { 2 } + \omega _ { 0 } \right) + \widetilde{\xi _ { 2 }} \left( \omega _ { 2 } - \omega _ { 0 } \right) \right\}}\right]  \\&\text{(cross terms are $0$ in average)}\\& = \frac{a_0^2}{4} \left[ e^{2r}\left\{\delta \left( \omega _ { 1 } + \omega _ { 2 } + 2 \omega _ { 0 } \right) + 2 \delta \left( \omega _ { 1 } + \omega _ { 2 } \right) + \delta \left( \omega _ { 1 } + \omega _ { 2 } - 2 \omega_0 \right)\right\}\right] \\& - \frac{a_0^2}{4} \left[e^{-2r}\left\{\delta \left( \omega _ { 1 } + \omega _ { 2 } + 2 \omega _ { 0 } \right) + 2 \delta \left( \omega _ { 1 } + \omega _ { 2 } \right) + \delta \left( \omega _ { 1 } + \omega _ { 2 } - 2 \omega_0 \right)\right\}\right] \\ & =\frac{a_0^2}{2}\left[\sinh(2\tilde{r})\left\{\delta(\omega_1 + \omega_2 + 2\omega_0)+\delta(\omega_1 + \omega_2 + 2\omega_0)\right\} + 2\cosh(2\tilde{r})\delta(\omega_1 + \omega_2)\right] \end{aligned}\end{equation}
 \subsubsection{Calculation of Fourier transformed position and momentum}
 From (\ref{eq:1}) and (\ref{eq:2}), \begin{equation}\label{eq:x_omega}
 \widetilde{X}(\omega) = \frac{m \omega_0}{p_0} \frac { \widetilde { \xi } ( \omega ) } { \omega _ { 0 } ^ { 2 } - \omega ^ { 2 } - i \omega \gamma }
@@ -357,33 +365,33 @@ From (\ref{eq:1}) and (\ref{eq:2}), \begin{equation}\label{eq:x_omega}
 Using (\ref{eq: stochastic_fourier}), (\ref{eq:x_omega}), and (\ref{eq:p_omega}), we get the following results.
 \begin{equation}\label{eq:x_corr_fourier}
 \begin{aligned} &\overline{\widetilde { X } ( \omega_1 )\widetilde { X } ( \omega_2 )} = \left(\frac { m \omega _ { 0 } } { p _ { 0 } }\right)^2 \frac {\overline{ \widetilde { \xi } ( \omega_1 )\widetilde { \xi } ( \omega_2 ) }} {( \omega _ { 0 } ^ { 2 } - \omega_1 ^ { 2 } - i \omega_1 \gamma)(\omega _ { 0 } ^ { 2 } - \omega_2 ^ { 2 } - i \omega_2 \gamma) }
-\\ & = \frac{1}{2} \left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \frac{\left[\sinh(2r)\left\{\delta(\omega_1 + \omega_2 + 2\omega_0)+\delta(\omega_1 + \omega_2 + 2\omega_0)\right\} + 2\cosh(2r)\delta(\omega_1 + \omega_2)\right]}{( \omega _ { 0 } ^ { 2 } - \omega_1 ^ { 2 } - i \omega_1 \gamma)(\omega _ { 0 } ^ { 2 } - \omega_2 ^ { 2 } - i \omega_2 \gamma)}
+\\ & = \frac{1}{2} \left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \frac{\left[\sinh(2\tilde{r})\left\{\delta(\omega_1 + \omega_2 + 2\omega_0)+\delta(\omega_1 + \omega_2 + 2\omega_0)\right\} + 2\cosh(2\tilde{r})\delta(\omega_1 + \omega_2)\right]}{( \omega _ { 0 } ^ { 2 } - \omega_1 ^ { 2 } - i \omega_1 \gamma)(\omega _ { 0 } ^ { 2 } - \omega_2 ^ { 2 } - i \omega_2 \gamma)}
 \end{aligned}
 \end{equation}
 \begin{equation}\begin{aligned}
-\overline{\widetilde { X } ( \omega_1 )\widetilde { P } ( \omega_2 )} & = \frac{-i\omega_2}{2\omega_0} \left(\frac { m \omega_0 a_0 } { p _ { 0 } }\right)^2 \\&\cross \frac{\left[\sinh(2r)\left\{\delta(\omega_1 + \omega_2 + 2\omega_0)+\delta(\omega_1 + \omega_2 + 2\omega_0)\right\} + 2\cosh(2r)\delta(\omega_1 + \omega_2)\right]}{( \omega _ { 0 } ^ { 2 } - \omega_1 ^ { 2 } - i \omega_1 \gamma)(\omega _ { 0 } ^ { 2 } - \omega_2 ^ { 2 } - i \omega_2 \gamma)} \end{aligned}
+\overline{\widetilde { X } ( \omega_1 )\widetilde { P } ( \omega_2 )} & = \frac{-i\omega_2}{2\omega_0} \left(\frac { m \omega_0 a_0 } { p _ { 0 } }\right)^2 \\&\cross \frac{\left[\sinh(2\tilde{r})\left\{\delta(\omega_1 + \omega_2 + 2\omega_0)+\delta(\omega_1 + \omega_2 + 2\omega_0)\right\} + 2\cosh(2\tilde{r})\delta(\omega_1 + \omega_2)\right]}{( \omega _ { 0 } ^ { 2 } - \omega_1 ^ { 2 } - i \omega_1 \gamma)(\omega _ { 0 } ^ { 2 } - \omega_2 ^ { 2 } - i \omega_2 \gamma)} \end{aligned}
 \end{equation}
 \begin{equation}\begin{aligned}
-\overline{\widetilde { P } ( \omega_1 )\widetilde { P } ( \omega_2 )} & = -\frac{1}{2}\frac{\omega_1 \omega_2}{\omega_{ 0 } ^2} \left(\frac { m \omega_0 a_0 } { p _ { 0 } }\right)^2 \\&\cross \frac{\left[\sinh(2r)\left\{\delta(\omega_1 + \omega_2 + 2\omega_0)+\delta(\omega_1 + \omega_2 + 2\omega_0)\right\} + 2\cosh(2r)\delta(\omega_1 + \omega_2)\right]}{( \omega _ { 0 } ^ { 2 } - \omega_1 ^ { 2 } - i \omega_1 \gamma)(\omega _ { 0 } ^ { 2 } - \omega_2 ^ { 2 } - i \omega_2 \gamma)}\end{aligned}
+\overline{\widetilde { P } ( \omega_1 )\widetilde { P } ( \omega_2 )} & = -\frac{1}{2}\frac{\omega_1 \omega_2}{\omega_{ 0 } ^2} \left(\frac { m \omega_0 a_0 } { p _ { 0 } }\right)^2 \\&\cross \frac{\left[\sinh(2\tilde{r})\left\{\delta(\omega_1 + \omega_2 + 2\omega_0)+\delta(\omega_1 + \omega_2 + 2\omega_0)\right\} + 2\cosh(2\tilde{r})\delta(\omega_1 + \omega_2)\right]}{( \omega _ { 0 } ^ { 2 } - \omega_1 ^ { 2 } - i \omega_1 \gamma)(\omega _ { 0 } ^ { 2 } - \omega_2 ^ { 2 } - i \omega_2 \gamma)}\end{aligned}
 \end{equation}
 \subsection{Calculation of variance in position}
 
 We inverse tranform (\ref{eq:x_corr_fourier}) to time domain, to get the variance of position, averaged over the distribution of the stochastic force. We also note that the average position is zero, as the average stochastic force is zero (hence, its fourier transform is zero, hence from (\ref{eq:x_omega}), average of Fourier transform of position is zero, from which this result follows).
 
-$\begin{aligned} \overline{X ^ { 2 } ( t )} &= \frac { 1 } { 2 \pi } \int _ { \omega _ { 1 }}\int_{\omega_2} \overline{\widetilde { X } ( \omega_1 )\widetilde { X } ( \omega_2 )}  e ^ { - i \omega _ { 1 } t } e ^ { - i \omega _ { 2 } t } \\ &= \frac{1}{4\pi}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[ 2 \cosh(2r) \int_{\omega_1} \frac{1}{(\omega_0^2 - \omega_1 ^2)^2 + \omega_1 ^2 \gamma^2}\right] \\&+ \frac{1}{4\pi}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[ \sinh(2r) \int_{\omega_1} \frac{e^{2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 + 2\omega_0)^2 + i(\omega_1 + 2 \omega_0) \gamma)]}\right]
-\\&+ \frac{1}{4\pi}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[ \sinh(2r) \int_{\omega_1} \frac{e^{-2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 - 2\omega_0)^2 + i(\omega_1 - 2 \omega_0) \gamma)]}\right] \\ & = \frac{1}{4\pi}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[ 2 \cosh(2r) I_1(\omega_0,\gamma) + \sinh(2r) \left\{e^{2i\omega_0 t}I_3(\omega_0,\gamma) + e^{-2i\omega_0 t}I_3(-\omega_0,\gamma)\right\}\right]
+$\begin{aligned} \overline{X ^ { 2 } ( t )} &= \frac { 1 } { 2 \pi } \int _ { \omega _ { 1 }}\int_{\omega_2} \overline{\widetilde { X } ( \omega_1 )\widetilde { X } ( \omega_2 )}  e ^ { - i \omega _ { 1 } t } e ^ { - i \omega _ { 2 } t } \\ &= \frac{1}{4\pi}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[ 2 \cosh(2\tilde{r}) \int_{\omega_1} \frac{1}{(\omega_0^2 - \omega_1 ^2)^2 + \omega_1 ^2 \gamma^2}\right] \\&+ \frac{1}{4\pi}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[ \sinh(2\tilde{r}) \int_{\omega_1} \frac{e^{2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 + 2\omega_0)^2 + i(\omega_1 + 2 \omega_0) \gamma)]}\right]
+\\&+ \frac{1}{4\pi}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[ \sinh(2\tilde{r}) \int_{\omega_1} \frac{e^{-2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 - 2\omega_0)^2 + i(\omega_1 - 2 \omega_0) \gamma)]}\right] \\ & = \frac{1}{4\pi}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[ 2 \cosh(2\tilde{r}) I_1(\omega_0,\gamma) + \sinh(2\tilde{r}) \left\{e^{2i\omega_0 t}I_3(\omega_0,\gamma) + e^{-2i\omega_0 t}I_3(-\omega_0,\gamma)\right\}\right]
 \end{aligned}$
 
 $\begin{aligned}e^{2i\omega_0 t}I_3(\omega_0,\gamma) + e^{-2i\omega_0 t}I_3(-\omega_0,\gamma) & = \frac{-\pi}{2\gamma(\omega_0^2 + \frac{\gamma^2}{4})}\left\{\left( 1 + \frac { i \gamma } { 2 \omega _ { 0 } } \right) e ^ { 2 i \omega _ { 0 } t } + \left( 1 - \frac { i \gamma } { \gamma \omega _ { 0 } } \right) e ^ { - 2 i \omega _ { 0 } t }\right\} \\ & = \frac{-\pi}{2\gamma(\omega_0^2 + \frac{\gamma^2}{4})} \left\{2\cos(2\omega_0 t) + \frac{i\gamma}{2 \omega_0} 2 i \sin(2\omega_0 t)\right\} \\&= \frac{-\pi}{\gamma(\omega_0^2 + \frac{\gamma^2}{4})} \left\{\cos(2\omega_0 t) - \frac{\gamma}{2 \omega_0} \sin(2\omega_0 t)\right\}  \end{aligned}$
 
 Substituting this expression in the expression of variance in position, we get,
 \begin{equation}\begin{aligned}\label{eq:x_average}
-\overline{X ^ { 2 } ( t )} &= \frac{1}{4\pi}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[2\cosh(2r)\frac{\pi}{\omega_0 ^2 \gamma} - \frac{\pi\sinh(2r)}{\omega_0 ^2+ \frac{\gamma^2}{4}}\left\{\cos(2\omega_0 t) - \frac{\gamma}{2 \omega_0}\sin(2\omega_0 t)\right\}\right] \\& = \frac{1}{4\pi} \frac{m^2 \omega_0^2}{m \hbar \omega_0} \frac{\pi}{\omega_0 ^2 \gamma} \frac{2\gamma k T}{m} \left[2\cosh(2r) - \frac{\sinh(2r)}{1 + \frac{\gamma^2}{4\omega_0 ^2}}\left\{\cos(2\omega_0 t) - \frac{\gamma}{2 \omega_0}\sin(2\omega_0 t)\right\}\right] \\& = \frac{kT}{2 \hbar \omega_0} \left[2\cosh(2r) - \frac{\sinh(2r)}{1 + \frac{\gamma^2}{4\omega_0 ^2}}\left\{\cos(2\omega_0 t) - \frac{\gamma}{2 \omega_0}\sin(2\omega_0 t)\right\}\right]
+\overline{X ^ { 2 } ( t )} &= \frac{1}{4\pi}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[2\cosh(2\tilde{r})\frac{\pi}{\omega_0 ^2 \gamma} - \frac{\pi\sinh(2\tilde{r})}{\omega_0 ^2+ \frac{\gamma^2}{4}}\left\{\cos(2\omega_0 t) - \frac{\gamma}{2 \omega_0}\sin(2\omega_0 t)\right\}\right] \\& = \frac{1}{4\pi} \frac{m^2 \omega_0^2}{m \hbar \omega_0} \frac{\pi}{\omega_0 ^2 \gamma} \frac{2\gamma k T}{m} \left[2\cosh(2\tilde{r}) - \frac{\sinh(2\tilde{r})}{1 + \frac{\gamma^2}{4\omega_0 ^2}}\left\{\cos(2\omega_0 t) - \frac{\gamma}{2 \omega_0}\sin(2\omega_0 t)\right\}\right] \\& = \frac{kT}{2 \hbar \omega_0} \left[2\cosh(2\tilde{r}) - \frac{\sinh(2\tilde{r})}{1 + \frac{\gamma^2}{4\omega_0 ^2}}\left\{\cos(2\omega_0 t) - \frac{\gamma}{2 \omega_0}\sin(2\omega_0 t)\right\}\right]
 \end{aligned}\end{equation}
 \subsection{Calculation of covariance in position and momentum}
 Similarly, we inverse transform the covariance of position and momentum to time domain. 
 
-$\begin{aligned} \overline{X( t ) P(t)} &= \frac { 1 } { 2 \pi } \int _ { \omega _ { 1 }}\int_{\omega_2} \overline{\widetilde { X } ( \omega_1 )\widetilde { P } ( \omega_2 )}  e ^ { - i \omega _ { 1 } t } e ^ { - i \omega _ { 2 } t } \\ &= \frac{-i}{4\pi \omega_0}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[ 2 \cosh(2r) \int_{\omega_1} \frac{\omega_1}{(\omega_0^2 - \omega_1 ^2)^2 + \omega_1 ^2 \gamma^2}\right] \text{($=0$, as integrand is odd function)} \\&+ \frac{-i}{4\pi\omega_0}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[ \sinh(2r) \int_{\omega_1}\int_{\omega_2} \frac{\omega_2 e^{-i(\omega_1 + \omega_2) t} \left\{\delta(\omega_1 + \omega_2 + 2\omega_0) + \delta(\omega_1 + \omega_2 - 2\omega_0) \right\}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 + 2\omega_0)^2 + i(\omega_1 + 2 \omega_0) \gamma)]}\right] \\&= \frac{-i\gamma k T}{2 \pi \hbar} \sinh(2r) \left[\int_{\omega_1} \frac{\omega_1 e^{2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 + 2\omega_0)^2 + i(\omega_1 + 2 \omega_0) \gamma)]} \right] \\ &+ \frac{-i\gamma k T}{2 \pi \hbar} \sinh(2r) \left[\int_{\omega_1} \frac{\omega_1 e^{-2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 - 2\omega_0)^2 + i(\omega_1 - 2 \omega_0) \gamma)]}   \right] \\& = \frac{-i\gamma k T}{2 \pi \hbar} \sinh(2r) \left[I_4(\omega_0,\gamma) e^{2i\omega_0 t} + I_4(-\omega_0,\gamma)e^{-2i\omega_0 t}\right]
+$\begin{aligned} \overline{X( t ) P(t)} &= \frac { 1 } { 2 \pi } \int _ { \omega _ { 1 }}\int_{\omega_2} \overline{\widetilde { X } ( \omega_1 )\widetilde { P } ( \omega_2 )}  e ^ { - i \omega _ { 1 } t } e ^ { - i \omega _ { 2 } t } \\ &= \frac{-i}{4\pi \omega_0}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[ 2 \cosh(2\tilde{r}) \int_{\omega_1} \frac{\omega_1}{(\omega_0^2 - \omega_1 ^2)^2 + \omega_1 ^2 \gamma^2}\right] \text{($=0$, as integrand is odd function)} \\&+ \frac{-i}{4\pi\omega_0}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[ \sinh(2\tilde{r}) \int_{\omega_1}\int_{\omega_2} \frac{\omega_2 e^{-i(\omega_1 + \omega_2) t} \left\{\delta(\omega_1 + \omega_2 + 2\omega_0) + \delta(\omega_1 + \omega_2 - 2\omega_0) \right\}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 + 2\omega_0)^2 + i(\omega_1 + 2 \omega_0) \gamma)]}\right] \\&= \frac{-i\gamma k T}{2 \pi \hbar} \sinh(2\tilde{r}) \left[\int_{\omega_1} \frac{\omega_1 e^{2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 + 2\omega_0)^2 + i(\omega_1 + 2 \omega_0) \gamma)]} \right] \\ &+ \frac{-i\gamma k T}{2 \pi \hbar} \sinh(2\tilde{r}) \left[\int_{\omega_1} \frac{\omega_1 e^{-2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 - 2\omega_0)^2 + i(\omega_1 - 2 \omega_0) \gamma)]}   \right] \\& = \frac{-i\gamma k T}{2 \pi \hbar} \sinh(2\tilde{r}) \left[I_4(\omega_0,\gamma) e^{2i\omega_0 t} + I_4(-\omega_0,\gamma)e^{-2i\omega_0 t}\right]
 \end{aligned}$
 
 $\begin{aligned}
@@ -392,20 +400,20 @@ I_4(\omega_0,\gamma) e^{2i\omega_0 t} + I_4(-\omega_0,\gamma)e^{-2i\omega_0 t} &
 \end{aligned}$
 \begin{equation}\label{eq: x_p_average}
 \begin{aligned}
-\text{Thus, } \overline{X( t ) P(t)} &= \frac{-i\gamma k T}{2 \pi \hbar} \sinh(2r) \frac{i \pi}{\gamma(\omega_0 ^2 + \frac{\gamma^2}{4})} \left[\omega_0 \sin(2\omega_0 t) + \frac{\gamma}{2}\cos(2\omega_0 t)\right] \\&= \frac{k T}{2 \hbar \omega_0}  \frac{\sinh(2r)}{(1 + \frac{\gamma^2}{4\omega_0 ^2})} \left[ \sin(2\omega_0 t) + \frac{\gamma}{2\omega_0}\cos(2\omega_0 t)\right]
+\text{Thus, } \overline{X( t ) P(t)} &= \frac{-i\gamma k T}{2 \pi \hbar} \sinh(2\tilde{r}) \frac{i \pi}{\gamma(\omega_0 ^2 + \frac{\gamma^2}{4})} \left[\omega_0 \sin(2\omega_0 t) + \frac{\gamma}{2}\cos(2\omega_0 t)\right] \\&= \frac{k T}{2 \hbar \omega_0}  \frac{\sinh(2\tilde{r})}{(1 + \frac{\gamma^2}{4\omega_0 ^2})} \left[ \sin(2\omega_0 t) + \frac{\gamma}{2\omega_0}\cos(2\omega_0 t)\right]
 \end{aligned}
 \end{equation}
 \subsection{Calculation of variance in momentum}
-$\begin{aligned} \overline{P ^ { 2 } ( t )} &= \frac { 1 } { 2 \pi } \int _ { \omega _ { 1 }}\int_{\omega_2} \overline{\widetilde { P } ( \omega_1 )\widetilde { P } ( \omega_2 )}  e ^ { - i \omega _ { 1 } t } e ^ { - i \omega _ { 2 } t } \\&= -\frac{1}{4\pi}\left(\frac { m a_0 } { p _ { 0 } }\right)^2 \left[ 2 \cosh(2r) \int_{\omega_1} \frac{-\omega_{ 1 }^2}{(\omega_0^2 - \omega_1 ^2)^2 + \omega_1 ^2 \gamma^2}\right] \\&- \frac{1}{4\pi}\left(\frac { m a_0 } { p _ { 0 } }\right)^2 \left[ \sinh(2r) \int_{\omega_1} \frac{\omega_1 (-2\omega_0 - \omega_1)e^{2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 + 2\omega_0)^2 + i(\omega_1 + 2 \omega_0) \gamma)]}\right]
-\\&- \frac{1}{4\pi}\left(\frac { m a_0 } { p _ { 0 } }\right)^2 \left[ \sinh(2r) \int_{\omega_1} \frac{\omega_1 (2\omega_0 - \omega_1)e^{-2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 - 2\omega_0)^2 + i(\omega_1 - 2 \omega_0) \gamma)]}\right] \\&= \frac{1}{4\pi}\left(\frac { m a_0 } { p _ { 0 } }\right)^2 \left[2\cosh(2r) I_2(\omega_0,\gamma) + \sinh(2r)\left\{I_5(\omega_0,\gamma)e^{2i\omega_0 t}+I_5(-\omega_0,\gamma)e^{-2i\omega_0 t}\right\} \right] 
-\\&= \frac{1}{4\pi}\left(\frac {2\gamma k T } { \hbar \omega_0 }\right) \left[2\cosh(2r) I_2(\omega_0,\gamma) + \sinh(2r)\left\{I_5(\omega_0,\gamma)e^{2i\omega_0 t}+I_5(-\omega_0,\gamma)e^{-2i\omega_0 t}\right\} \right]\end{aligned}$
+$\begin{aligned} \overline{P ^ { 2 } ( t )} &= \frac { 1 } { 2 \pi } \int _ { \omega _ { 1 }}\int_{\omega_2} \overline{\widetilde { P } ( \omega_1 )\widetilde { P } ( \omega_2 )}  e ^ { - i \omega _ { 1 } t } e ^ { - i \omega _ { 2 } t } \\&= -\frac{1}{4\pi}\left(\frac { m a_0 } { p _ { 0 } }\right)^2 \left[ 2 \cosh(2\tilde{r}) \int_{\omega_1} \frac{-\omega_{ 1 }^2}{(\omega_0^2 - \omega_1 ^2)^2 + \omega_1 ^2 \gamma^2}\right] \\&- \frac{1}{4\pi}\left(\frac { m a_0 } { p _ { 0 } }\right)^2 \left[ \sinh(2\tilde{r}) \int_{\omega_1} \frac{\omega_1 (-2\omega_0 - \omega_1)e^{2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 + 2\omega_0)^2 + i(\omega_1 + 2 \omega_0) \gamma)]}\right]
+\\&- \frac{1}{4\pi}\left(\frac { m a_0 } { p _ { 0 } }\right)^2 \left[ \sinh(2\tilde{r}) \int_{\omega_1} \frac{\omega_1 (2\omega_0 - \omega_1)e^{-2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 - 2\omega_0)^2 + i(\omega_1 - 2 \omega_0) \gamma)]}\right] \\&= \frac{1}{4\pi}\left(\frac { m a_0 } { p _ { 0 } }\right)^2 \left[2\cosh(2\tilde{r}) I_2(\omega_0,\gamma) + \sinh(2\tilde{r})\left\{I_5(\omega_0,\gamma)e^{2i\omega_0 t}+I_5(-\omega_0,\gamma)e^{-2i\omega_0 t}\right\} \right] 
+\\&= \frac{1}{4\pi}\left(\frac {2\gamma k T } { \hbar \omega_0 }\right) \left[2\cosh(2\tilde{r}) I_2(\omega_0,\gamma) + \sinh(2\tilde{r})\left\{I_5(\omega_0,\gamma)e^{2i\omega_0 t}+I_5(-\omega_0,\gamma)e^{-2i\omega_0 t}\right\} \right]\end{aligned}$
 
 $\begin{aligned}
 I_5(\omega_0,\gamma)e^{2i\omega_0 t}+I_5(-\omega_0,\gamma)e^{-2i\omega_0 t} &= \frac { \pi } { 2\gamma \left( \omega _ { 0 } ^ { 2 } + \frac { \gamma ^ { 2 } } { 4 } \right) } \left[2 \left( \omega _ { 0 } ^ { 2 } + \frac { \gamma ^ { 2 } } { 2 } \right) \cos \left( 2 \omega _ { 0 } t \right) - \frac { i\gamma } { 2 } \omega _ { 0 } e ^ { 2 i \omega _ { 0 } t } + \frac { i\gamma } { 2 } \omega _ { 0 } e ^ {-2 i \omega _ { 0 } t }\right] 
 \\&= \frac { \pi } { \gamma \left( \omega _ { 0 } ^ { 2 } + \frac { \gamma ^ { 2 } } { 4 } \right) } \left[ \left( \omega _ { 0 } ^ { 2 } + \frac { \gamma ^ { 2 } } { 2 } \right) \cos \left( 2 \omega _ { 0 } t \right)  + \frac { \gamma \omega _ { 0 } } { 2 } \sin \left( 2 \omega _ { 0 } t \right) \right] 
 \end{aligned}$
 \begin{equation}\begin{aligned}\label{eq:p_average} \text{Thus, }
-\overline{P ^ { 2 } ( t )} & = \frac{1}{4\pi} \frac{\pi}{\gamma} \frac{2\gamma k T}{\hbar \omega_0} \left[2\cosh(2r) + \frac{\sinh(2r)}{1 + \frac{\gamma^2}{4\omega_0 ^2}}\left\{(1+\frac{\gamma^2}{2\omega_0 ^2})\cos(2\omega_0 t) + \frac{\gamma}{2 \omega_0}\sin(2\omega_0 t)\right\}\right] \\& = \frac{kT}{2 \hbar \omega_0} \left[2\cosh(2r) + \frac{\sinh(2r)}{1 + \frac{\gamma^2}{4\omega_0 ^2}}\left\{(1+\frac{\gamma^2}{2\omega_0 ^2})\cos(2\omega_0 t) + \frac{\gamma}{2 \omega_0}\sin(2\omega_0 t)\right\}\right]
+\overline{P ^ { 2 } ( t )} & = \frac{1}{4\pi} \frac{\pi}{\gamma} \frac{2\gamma k T}{\hbar \omega_0} \left[2\cosh(2\tilde{r}) + \frac{\sinh(2\tilde{r})}{1 + \frac{\gamma^2}{4\omega_0 ^2}}\left\{(1+\frac{\gamma^2}{2\omega_0 ^2})\cos(2\omega_0 t) + \frac{\gamma}{2 \omega_0}\sin(2\omega_0 t)\right\}\right] \\& = \frac{kT}{2 \hbar \omega_0} \left[2\cosh(2\tilde{r}) + \frac{\sinh(2\tilde{r})}{1 + \frac{\gamma^2}{4\omega_0 ^2}}\left\{(1+\frac{\gamma^2}{2\omega_0 ^2})\cos(2\omega_0 t) + \frac{\gamma}{2 \omega_0}\sin(2\omega_0 t)\right\}\right]
 \end{aligned}\end{equation}
 \subsection{Rotating coordinates}\label{rotating_coordinates}
 Let us define ``rotating coordinates", \begin{equation}\begin{array} { l } { X _ { 1 } = X \cos \left( \omega _ { 0 } t \right) - P \sin ( \omega_0  t ) } \\ { X _ { 2 } = X \sin ( \omega_0  t ) + P \cos ( \omega_0  t ) } \end{array}\end{equation}
@@ -423,17 +431,17 @@ Let us define ``rotating coordinates", \begin{equation}\begin{array} { l } { X _
  
  Using (\ref{eq:x_average}), (\ref{eq: x_p_average}), (\ref{eq:p_average}) and (\ref{eq:rot_1}), we get,\\
  $\begin{aligned}
- <\overline { X _ { 1 } ^ { 2 } } > &= \frac{kT}{4\hbar\omega_0}\left[4\cosh(2r) - \frac{\sinh(2r)}{1+\frac{\gamma^2}{4\omega_0^2}}\cdot\frac{1}{2} - \frac{\sinh(2r)}{1+\frac{\gamma^2}{4\omega_0^2}}\cdot\frac{1}{2}\cdot\left(1+\frac{\gamma^2}{2\omega_0^2}\right)-\frac{\sinh(2r)}{1+\frac{\gamma^2}{4\omega_0^2}}\cdot\frac{1}{2}\cdot2 \right]
- \\ & = \frac{kT}{4\hbar\omega_0}\left[4\cosh(2r) - 2\frac{\sinh(2r)}{1+\frac{\gamma^2}{4\omega_0^2}}\left(1+\frac{\gamma^2}{8\omega_0^2}\right) \right]
- \\ & \approx \frac{kT}{\hbar\omega_0}\left[\cosh(2r) - \frac{\sinh(2r)}{2}\right] \left(\text{in the limit of low damping, i.e. } \frac{\gamma}{\omega_0} \ll 1\right)
+ <\overline { X _ { 1 } ^ { 2 } } > &= \frac{kT}{4\hbar\omega_0}\left[4\cosh(2\tilde{r}) - \frac{\sinh(2\tilde{r})}{1+\frac{\gamma^2}{4\omega_0^2}}\cdot\frac{1}{2} - \frac{\sinh(2\tilde{r})}{1+\frac{\gamma^2}{4\omega_0^2}}\cdot\frac{1}{2}\cdot\left(1+\frac{\gamma^2}{2\omega_0^2}\right)-\frac{\sinh(2\tilde{r})}{1+\frac{\gamma^2}{4\omega_0^2}}\cdot\frac{1}{2}\cdot2 \right]
+ \\ & = \frac{kT}{4\hbar\omega_0}\left[4\cosh(2\tilde{r}) - 2\frac{\sinh(2\tilde{r})}{1+\frac{\gamma^2}{4\omega_0^2}}\left(1+\frac{\gamma^2}{8\omega_0^2}\right) \right]
+ \\ & \approx \frac{kT}{\hbar\omega_0}\left[\cosh(2\tilde{r}) - \frac{\sinh(2\tilde{r})}{2}\right] \left(\text{in the limit of low damping, i.e. } \frac{\gamma}{\omega_0} \ll 1\right)
  \end{aligned}$
  
  Similarly, using (\ref{eq:x_average}), (\ref{eq: x_p_average}), (\ref{eq:p_average}) and (\ref{eq:rot_2}), we get,
  
  $\begin{aligned}
- <\overline { X _ { 2 } ^ { 2 } } > &= \frac{kT}{4\hbar\omega_0}\left[4\cosh(2r) + \frac{\sinh(2r)}{1+\frac{\gamma^2}{4\omega_0^2}}\cdot\frac{1}{2}\cdot\left(1+\frac{\gamma^2}{2\omega_0^2}\right) + \frac{\sinh(2r)}{1+\frac{\gamma^2}{4\omega_0^2}}\cdot\frac{1}{2} + \frac{\sinh(2r)}{1+\frac{\gamma^2}{4\omega_0^2}}\cdot\frac{1}{2}\cdot2 \right]
- \\ & = \frac{kT}{4\hbar\omega_0}\left[4\cosh(2r) + 2\frac{\sinh(2r)}{1+\frac{\gamma^2}{4\omega_0^2}}\left(1+\frac{\gamma^2}{8\omega_0^2}\right) \right]
- \\ & \approx \frac{kT}{\hbar\omega_0}\left[\cosh(2r) + \frac{\sinh(2r)}{2}\right] \left(\text{in the limit of low damping, i.e. } \frac{\gamma}{\omega_0} \ll 1\right)
+ <\overline { X _ { 2 } ^ { 2 } } > &= \frac{kT}{4\hbar\omega_0}\left[4\cosh(2\tilde{r}) + \frac{\sinh(2\tilde{r})}{1+\frac{\gamma^2}{4\omega_0^2}}\cdot\frac{1}{2}\cdot\left(1+\frac{\gamma^2}{2\omega_0^2}\right) + \frac{\sinh(2\tilde{r})}{1+\frac{\gamma^2}{4\omega_0^2}}\cdot\frac{1}{2} + \frac{\sinh(2\tilde{r})}{1+\frac{\gamma^2}{4\omega_0^2}}\cdot\frac{1}{2}\cdot2 \right]
+ \\ & = \frac{kT}{4\hbar\omega_0}\left[4\cosh(2\tilde{r}) + 2\frac{\sinh(2\tilde{r})}{1+\frac{\gamma^2}{4\omega_0^2}}\left(1+\frac{\gamma^2}{8\omega_0^2}\right) \right]
+ \\ & \approx \frac{kT}{\hbar\omega_0}\left[\cosh(2\tilde{r}) + \frac{\sinh(2\tilde{r})}{2}\right] \left(\text{in the limit of low damping, i.e. } \frac{\gamma}{\omega_0} \ll 1\right)
  \end{aligned}$
  
  From (\ref{eq:Hamiltonian}), the energy in a quadrant $X$ is,  $\frac{\hbar\omega_0}{2} <\overline { X ^ { 2 } } > = \frac{kT^*}{2}$, where $T^*$ is the effective temperature of the quadrant.
@@ -441,14 +449,14 @@ Let us define ``rotating coordinates", \begin{equation}\begin{array} { l } { X _
  Therefore, the effective temperatures in the two rotating coordinates are,
  \begin{equation}\label{eq:eff_temp}
  \begin{aligned}
- {T^*}_1 &= T \left[\cosh(2r) - \frac{\sinh(2r)}{2}\right]
- \\ {T^*}_2 &= T \left[\cosh(2r) + \frac{\sinh(2r)}{2}\right]
+ {T^*}_1 &= T \left[\cosh(2\tilde{r}) - \frac{\sinh(2\tilde{r})}{2}\right]
+ \\ {T^*}_2 &= T \left[\cosh(2\tilde{r}) + \frac{\sinh(2\tilde{r})}{2}\right]
  \end{aligned}
  \end{equation}
  where $T$ is the temperature of the heat bath to which the harmonic oscillator is coupled and $r$ is the parameter in the stochastic force (\ref{eq: stochastic}).
  
- \textbf{Note}: In the paper by Klaers et al. (reference Klaers), the stochastic force is $\xi(t) =  a_0 [e^{\tilde{r}} \xi_1(t) \cos(\omega t) + e^{-{\tilde{r}}} \xi_2(t)\sin(\omega t)]$, and ${T^*}_{1,2}
-= T e^{\pm 2r}$, which does not match with (\ref{eq:eff_temp}). The relation between $r$ and $\tilde{r}$ is not mentioned. This can be explained if the relation $e^{4r} = \frac{\cosh(2\tilde{r}) - \frac{\sinh(2\tilde{r})}{2}}{\cosh(2\tilde{r}) + \frac{\sinh(2\tilde{r})}{2}}$, i.e. $r = \frac{1}{4}\ln(\frac{e^{\tilde{r}} + 3}{3 e^{4\tilde{r}} + 1})$ is satisfied.
+ \textbf{Note}: It is claimed in paper by Klaers et al. (reference Klaers), the stochastic force $\xi(t) =  a_0 [e^{\tilde{r}} \xi_1(t) \cos(\omega t) + e^{-{\tilde{r}}} \xi_2(t)\sin(\omega t)]$ gives rise to effective temperatures ${T^*}_{1,2}
+= T e^{\pm 2r}$. The relation between $r$ and $\tilde{r}$ is not mentioned. This can be explained if the relation $e^{4r} = \frac{\cosh(2\tilde{r}) - \frac{\sinh(2\tilde{r})}{2}}{\cosh(2\tilde{r}) + \frac{\sinh(2\tilde{r})}{2}}$, i.e. $r = \frac{1}{4}\ln(\frac{e^{\tilde{r}} + 3}{3 e^{4\tilde{r}} + 1})$ is satisfied.
 
 \section{Other methods to get this result}
 \subsection{Directly integrating the equations in Mathematica}
@@ -456,18 +464,19 @@ We can write (\ref{eq:1st}) and (\ref{eq:2nd}) in matrix form, and diagonalize t
 
 \subsection{Verification using a simulation}
 I created a C program (ref - link to code) to simulate the dynamics of this particle. The delta function force is simulated with a random force of very high magnitude (high compared to the spring force).
-The following graphs show that the energy in rotating coordinates are different, and the ratio of average energies is very close to the ratio of $T^*_1$ and $T^* _2$ obtained from (\ref{eq:eff_temp}). Also note that this ratio is very different from $e^{4r}$. However, this is in accord with the relation between $r$ and $\tilde{r}$ obtained in the previous section.
+The following graphs show that the energy in rotating coordinates are different, and the ratio of average energies is very close to the ratio of $T^*_1$ and $T^* _2$ obtained from (\ref{eq:eff_temp}). This also shows that $r$ and $\tilde{r}$ are not equal and the relation between them is given by the expression in the previous section.
 
 \section{How the Heat Engine works}
 \section{Explanation of different effective temperatures and the reason for surpassing the second law}
-In \ref{fluctuation_dissipation_proof} we saw that the effective temperature of the system is proportional to the square of the magnitude of the stochastic force. The force $\xi(t) =  a_0 [e^r \xi_1(t) \cos(\omega t) + e^{-r} \xi_2(t)\sin(\omega t)]$ can be viewed as a combination of two forces with magnitudes $a_1 = a_0 e^r$ and $a_2 = a_0 e^{-r}$. This is as if, the system is simultaneously coupled to two heat baths of temperatures $T e^{2r}$ and $T e^{-2r}$. This gives rise to the different temperatures in the two rotating coordinates. Note that the temperatures in (\ref{eq:eff_temp}) are just linear combinations of the temperatures of these two heat baths.
+In \ref{fluctuation_dissipation_proof} we saw that the effective temperature of the system is proportional to the square of the magnitude of the stochastic force. The force $\xi(t) =  a_0 [e^{\tilde{r}} \xi_1(t) \cos(\omega t) + e^{-{\tilde{r}}} \xi_2(t)\sin(\omega t)]$ can be viewed as a combination of two forces with magnitudes $a_1 = a_0 e^{\tilde{r}}$ and $a_2 = a_0 e^{-{\tilde{r}}}$. This is as if, the system is simultaneously coupled to two heat baths of temperatures $T e^{2{\tilde{r}}}$ and $T e^{-2{\tilde{r}}}$. This gives rise to the different temperatures in the two rotating coordinates. Note that the temperatures in (\ref{eq:eff_temp}) are just linear combinations of the temperatures of these two heat baths.
+
+As mentioned in papers by Klaers et. al (reference klaers), we can only say that Carnot efficiency has been surpassed if squeezing can be obtained as a free resource. If we have two engines, one of which creates the squeezed force, and the other utilizes it, then the efficiency of the whole system will not be greater than the Carnot limit.
+
+There is a notion of generalized Carnot limit given by $\eta = 1 - \frac{T^*_{high}}{T^*_{low}}$ (where $T^*$ denotes the effective temperature). It is seen that the experimental efficiency is still less than this limit, although it is more than the standard Carnot limit $1 - \frac{T_{high}}{T_{low}}$. 
+
+When we calculate the change in entropy, we need to take into account the effective temperatures  ${T^*_{high}}$ and ${T^*_{low}}$ of the heat baths, and that is why, the second law of thermodynamics should not be violated. When we use this special stochastic force, the system is really coupled to two heat baths of different temperatures, and we really would not compare its efficiency to the ``formula" of standard Carnot efficiency, with some intermediate temperature $T_{high}$ and $T_{low}$.
 
 \section{Conclusion}
-
-\vspace{1.5cm}
-\noindent \textbf{Acknowledgments}
-
-\noindent \small{This work was partly supported by .}
 
 \bibliographystyle{plainnat}
 \bibliography{references}
