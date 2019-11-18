@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.2)  18 NOV 2019 15:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.2)  18 NOV 2019 15:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2071,10 +2071,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--86
 
  []
 
-[2] (./report.toc
-Underfull \vbox (badness 1221) has occurred while \output is active []
-
- [3])
+[2] (./report.toc [3])
 \tf@toc=\write4
 \openout4 = `report.toc'.
 
@@ -2086,7 +2083,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
-Overfull \hbox (42.73967pt too wide) in paragraph at lines 149--151
+Overfull \hbox (42.73967pt too wide) in paragraph at lines 151--153
 \OT1/cmr/m/n/12 Let $\OML/cmm/m/it/12  \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 j\OM
 L/cmm/m/it/12 \OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 e[]$\OT1/cmr/m/n/12 . Then, $
 \OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 x\OMS/cmsy/m/n/12 i\OT1/cmr/m/n/12 (\OML/cmm
@@ -2100,73 +2097,73 @@ p[] [][][]$$\OT1/cmr/m/n/12 =
 <graphs/coherent/1.jpg, id=40, 578.16pt x 433.62pt>
 File: graphs/coherent/1.jpg Graphic file (type jpg)
 <use graphs/coherent/1.jpg>
-Package pdftex.def Info: graphs/coherent/1.jpg  used on input line 156.
+Package pdftex.def Info: graphs/coherent/1.jpg  used on input line 158.
 (pdftex.def)             Requested size: 182.09485pt x 136.57117pt.
 <graphs/coherent/2.jpg, id=41, 562.2606pt x 421.575pt>
 File: graphs/coherent/2.jpg Graphic file (type jpg)
 <use graphs/coherent/2.jpg>
-Package pdftex.def Info: graphs/coherent/2.jpg  used on input line 160.
+Package pdftex.def Info: graphs/coherent/2.jpg  used on input line 162.
 (pdftex.def)             Requested size: 182.09485pt x 136.53423pt.
 <graphs/coherent/3.jpg, id=42, 578.16pt x 433.62pt>
 File: graphs/coherent/3.jpg Graphic file (type jpg)
 <use graphs/coherent/3.jpg>
-Package pdftex.def Info: graphs/coherent/3.jpg  used on input line 163.
+Package pdftex.def Info: graphs/coherent/3.jpg  used on input line 165.
 (pdftex.def)             Requested size: 182.09485pt x 136.57117pt.
 <graphs/coherent/4.jpg, id=43, 562.2606pt x 421.575pt>
 File: graphs/coherent/4.jpg Graphic file (type jpg)
 <use graphs/coherent/4.jpg>
-Package pdftex.def Info: graphs/coherent/4.jpg  used on input line 167.
+Package pdftex.def Info: graphs/coherent/4.jpg  used on input line 169.
 (pdftex.def)             Requested size: 182.09485pt x 136.53423pt.
 <graphs/coherent/5.jpg, id=44, 578.16pt x 433.62pt>
 File: graphs/coherent/5.jpg Graphic file (type jpg)
 <use graphs/coherent/5.jpg>
-Package pdftex.def Info: graphs/coherent/5.jpg  used on input line 170.
+Package pdftex.def Info: graphs/coherent/5.jpg  used on input line 172.
 (pdftex.def)             Requested size: 182.09485pt x 136.57117pt.
 <graphs/coherent/6.jpg, id=45, 562.2606pt x 421.575pt>
 File: graphs/coherent/6.jpg Graphic file (type jpg)
 <use graphs/coherent/6.jpg>
-Package pdftex.def Info: graphs/coherent/6.jpg  used on input line 174.
+Package pdftex.def Info: graphs/coherent/6.jpg  used on input line 176.
 (pdftex.def)             Requested size: 182.09485pt x 136.53423pt.
 <graphs/coherent/7.jpg, id=46, 578.16pt x 433.62pt>
 File: graphs/coherent/7.jpg Graphic file (type jpg)
 <use graphs/coherent/7.jpg>
-Package pdftex.def Info: graphs/coherent/7.jpg  used on input line 178.
+Package pdftex.def Info: graphs/coherent/7.jpg  used on input line 180.
 (pdftex.def)             Requested size: 182.09485pt x 136.57117pt.
 <graphs/coherent/8.jpg, id=47, 562.2606pt x 421.575pt>
 File: graphs/coherent/8.jpg Graphic file (type jpg)
 <use graphs/coherent/8.jpg>
-Package pdftex.def Info: graphs/coherent/8.jpg  used on input line 182.
+Package pdftex.def Info: graphs/coherent/8.jpg  used on input line 184.
 (pdftex.def)             Requested size: 182.09485pt x 136.53423pt.
 <graphs/coherent/9.jpg, id=48, 578.16pt x 433.62pt>
 File: graphs/coherent/9.jpg Graphic file (type jpg)
 <use graphs/coherent/9.jpg>
-Package pdftex.def Info: graphs/coherent/9.jpg  used on input line 186.
+Package pdftex.def Info: graphs/coherent/9.jpg  used on input line 188.
 (pdftex.def)             Requested size: 182.09485pt x 136.57117pt.
 <graphs/coherent/10.jpg, id=49, 562.2606pt x 421.575pt>
 File: graphs/coherent/10.jpg Graphic file (type jpg)
 <use graphs/coherent/10.jpg>
-Package pdftex.def Info: graphs/coherent/10.jpg  used on input line 190.
+Package pdftex.def Info: graphs/coherent/10.jpg  used on input line 192.
 (pdftex.def)             Requested size: 182.09485pt x 136.53423pt.
 File: graphs/coherent/3.jpg Graphic file (type jpg)
 <use graphs/coherent/3.jpg>
-Package pdftex.def Info: graphs/coherent/3.jpg  used on input line 194.
+Package pdftex.def Info: graphs/coherent/3.jpg  used on input line 196.
 (pdftex.def)             Requested size: 182.09485pt x 136.57117pt.
 File: graphs/coherent/3.jpg Graphic file (type jpg)
 <use graphs/coherent/3.jpg>
-Package pdftex.def Info: graphs/coherent/3.jpg  used on input line 198.
+Package pdftex.def Info: graphs/coherent/3.jpg  used on input line 200.
 (pdftex.def)             Requested size: 182.09485pt x 136.57117pt.
 File: graphs/coherent/3.jpg Graphic file (type jpg)
 <use graphs/coherent/3.jpg>
-Package pdftex.def Info: graphs/coherent/3.jpg  used on input line 202.
+Package pdftex.def Info: graphs/coherent/3.jpg  used on input line 204.
 (pdftex.def)             Requested size: 182.09485pt x 136.57117pt.
 
-LaTeX Warning: Float too large for page by 511.98479pt on input line 206.
+LaTeX Warning: Float too large for page by 511.98479pt on input line 208.
 
 [7] [8 <./graphs/coherent/1.jpg> <./graphs/coherent/2.jpg> <./graphs/coherent/3
 .jpg> <./graphs/coherent/4.jpg> <./graphs/coherent/5.jpg> <./graphs/coherent/6.
 jpg> <./graphs/coherent/7.jpg> <./graphs/coherent/8.jpg> <./graphs/coherent/9.j
 pg> <./graphs/coherent/10.jpg>]
-Overfull \hbox (2.61891pt too wide) detected at line 250
+Overfull \hbox (2.61891pt too wide) detected at line 252
 []
  []
 
@@ -2178,38 +2175,38 @@ Underfull \vbox (badness 6995) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11]
-Overfull \hbox (14.84012pt too wide) in paragraph at lines 274--276
+Overfull \hbox (14.84012pt too wide) in paragraph at lines 276--278
 []$[][]$\OT1/cmr/m/n/12 . By ra-tio test, it can be shown that $[] \OMS/cmsy/m/
 n/12 j\OML/cmm/m/it/12 c[]\OMS/cmsy/m/n/12 j[]$
  []
 
 [12]
-Overfull \hbox (5.88655pt too wide) in paragraph at lines 291--293
+Overfull \hbox (5.88655pt too wide) in paragraph at lines 293--295
 [][]$ 
  []
 
 [13] [14]
-Overfull \hbox (7.77902pt too wide) detected at line 347
+Overfull \hbox (7.77902pt too wide) detected at line 349
 [][]
  []
 
 [15]
-Overfull \hbox (59.03064pt too wide) detected at line 357
+Overfull \hbox (59.03064pt too wide) detected at line 359
 [][]
  []
 
 
-Overfull \hbox (0.16763pt too wide) detected at line 370
+Overfull \hbox (0.16763pt too wide) detected at line 372
 [][]
  []
 
 [16]
-Overfull \hbox (13.82292pt too wide) in paragraph at lines 381--384
+Overfull \hbox (13.82292pt too wide) in paragraph at lines 383--386
 []$[][]$ 
  []
 
 
-Overfull \hbox (5.12865pt too wide) in paragraph at lines 385--386
+Overfull \hbox (5.12865pt too wide) in paragraph at lines 387--388
 []$[][]$ 
  []
 
@@ -2217,17 +2214,17 @@ Overfull \hbox (5.12865pt too wide) in paragraph at lines 385--386
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17]
-Overfull \hbox (61.95619pt too wide) in paragraph at lines 394--396
+Overfull \hbox (61.95619pt too wide) in paragraph at lines 396--398
 []$[][]$ 
  []
 
 
-Overfull \hbox (11.41782pt too wide) in paragraph at lines 397--401
+Overfull \hbox (11.41782pt too wide) in paragraph at lines 399--403
 []$[][]$ 
  []
 
 
-Overfull \hbox (0.46129pt too wide) in paragraph at lines 407--410
+Overfull \hbox (0.46129pt too wide) in paragraph at lines 409--412
 $[][]$ 
  []
 
@@ -2235,22 +2232,22 @@ $[][]$
 Underfull \vbox (badness 5802) has occurred while \output is active []
 
  [18]
-Overfull \hbox (67.78732pt too wide) in paragraph at lines 411--415
+Overfull \hbox (67.78732pt too wide) in paragraph at lines 413--417
 []$[][]$ 
  []
 
 
-Overfull \hbox (4.95724pt too wide) detected at line 417
+Overfull \hbox (4.95724pt too wide) detected at line 419
 [][]
  []
 
 [19]
-Overfull \hbox (5.33093pt too wide) in paragraph at lines 432--438
+Overfull \hbox (5.33093pt too wide) in paragraph at lines 434--440
 [][]$ 
  []
 
 
-Overfull \hbox (4.74724pt too wide) in paragraph at lines 441--446
+Overfull \hbox (4.74724pt too wide) in paragraph at lines 443--448
 []$[][]$ 
  []
 
@@ -2295,7 +2292,7 @@ cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on report.pdf (23 pages, 734519 bytes).
+Output written on report.pdf (23 pages, 734535 bytes).
 PDF statistics:
  160 PDF objects out of 1000 (max. 8388607)
  106 compressed objects within 2 object streams
