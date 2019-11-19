@@ -16,9 +16,9 @@ for j = 0:num
 	maxyaxis = cosh(2*r);
 	plot(x,y,"linewidth",1)
 	axis([-8*xmax,8*xmax, 0, maxyaxis]);
-	ylabel ("Probability density");
-    xlabel ("x/x_0");
-    title(sprintf("time = (%1.4g T), r = %1.4g, phi = %1.4g",j/num, r , phi));
+	ylabel ("Probability density","fontsize",24);
+    xlabel ("x/x_0","Interpreter", "none","fontsize",24);
+    title(sprintf("time = (%1.4g T), r = %1.4g, phi = %1.4g",j/num, r , phi),"fontsize",24);
     grid on;
 	saveas(h, num2str(j), 'jpg');
  end

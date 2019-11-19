@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.2)  18 NOV 2019 15:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.2)  20 NOV 2019 00:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -332,8 +332,8 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 \arrowsize=\dimen151
-)) (/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
-Package: subfig 2005/06/28 ver: 1.3 subfig package
+)) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
@@ -351,23 +351,12 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 )
 \c@ContinuedFloat=\count106
 )
-\c@KVtest=\count107
-\sf@farskip=\skip43
-\sf@captopadj=\dimen159
-\sf@capskip=\skip44
-\sf@nearskip=\skip45
-\c@subfigure=\count108
-\c@subfigure@save=\count109
-\c@lofdepth=\count110
-\c@subtable=\count111
-\c@subtable@save=\count112
-\c@lotdepth=\count113
-\sf@top=\skip46
-\sf@bottom=\skip47
+\c@subfigure=\count107
+\c@subtable=\count108
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip48
+\@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -376,49 +365,49 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks27
-\ex@=\dimen160
+\ex@=\dimen159
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen161
+\pmbraise@=\dimen160
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count114
+\inf@bad=\count109
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count115
-\leftroot@=\count116
+\uproot@=\count110
+\leftroot@=\count111
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count117
-\DOTSCASE@=\count118
+\classnum@=\count112
+\DOTSCASE@=\count113
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box37
 \strutbox@=\box38
-\big@size=\dimen162
+\big@size=\dimen161
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count119
-\c@MaxMatrixCols=\count120
+\macc@depth=\count114
+\c@MaxMatrixCols=\count115
 \dotsspace@=\muskip10
-\c@parentequation=\count121
-\dspbrk@lvl=\count122
+\c@parentequation=\count116
+\dspbrk@lvl=\count117
 \tag@help=\toks28
-\row@=\count123
-\column@=\count124
-\maxfields@=\count125
+\row@=\count118
+\column@=\count119
+\maxfields@=\count120
 \andhelp@=\toks29
-\eqnshift@=\dimen163
-\alignsep@=\dimen164
-\tagshift@=\dimen165
-\tagwidth@=\dimen166
-\totwidth@=\dimen167
-\lineht@=\dimen168
+\eqnshift@=\dimen162
+\alignsep@=\dimen163
+\tagshift@=\dimen164
+\tagwidth@=\dimen165
+\totwidth@=\dimen166
+\lineht@=\dimen167
 \@envbody=\toks30
-\multlinegap=\skip49
-\multlinetaggap=\skip50
+\multlinegap=\skip44
+\multlinetaggap=\skip45
 \mathdisplay@stack=\toks31
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
@@ -430,9 +419,9 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headfont=\toks34
 \thm@notefont=\toks35
 \thm@headpunct=\toks36
-\thm@preskip=\skip51
-\thm@postskip=\skip52
-\thm@headsep=\skip53
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
 \dth@everypar=\toks37
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -444,10 +433,16 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )
 (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip54
-\bibsep=\skip55
+\bibhang=\skip49
+\bibsep=\skip50
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count126
+\c@NAT@ctr=\count121
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks38
+\AP@partial=\box39
+\AP@footins=\box40
 )
 (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
@@ -455,64 +450,64 @@ nment
 
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count127
-\float@exts=\toks38
-\float@box=\box39
-\@float@everytoks=\toks39
-\@floatcapt=\box40
+\c@float@type=\count122
+\float@exts=\toks39
+\float@box=\box41
+\@float@everytoks=\toks40
+\@floatcapt=\box42
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\@float@every@algorithm=\toks40
-\c@algorithm=\count128
+\@float@every@algorithm=\toks41
+\c@algorithm=\count123
 )
 (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count129
-\c@ALC@line=\count130
-\c@ALC@rem=\count131
-\c@ALC@depth=\count132
-\ALC@tlm=\skip56
-\algorithmicindent=\skip57
+\c@ALC@unique=\count124
+\c@ALC@line=\count125
+\c@ALC@rem=\count126
+\c@ALC@depth=\count127
+\ALC@tlm=\skip51
+\algorithmicindent=\skip52
 )
 (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
-\c@r@tfl@t=\count133
-\rotFPtop=\skip58
-\rotFPbot=\skip59
-\rot@float@box=\box41
-\rot@mess@toks=\toks41
+\c@r@tfl@t=\count128
+\rotFPtop=\skip53
+\rotFPbot=\skip54
+\rot@float@box=\box43
+\rot@mess@toks=\toks42
 )
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
-\heavyrulewidth=\dimen169
-\lightrulewidth=\dimen170
-\cmidrulewidth=\dimen171
-\belowrulesep=\dimen172
-\belowbottomsep=\dimen173
-\aboverulesep=\dimen174
-\abovetopsep=\dimen175
-\cmidrulesep=\dimen176
-\cmidrulekern=\dimen177
-\defaultaddspace=\dimen178
-\@cmidla=\count134
-\@cmidlb=\count135
-\@aboverulesep=\dimen179
-\@belowrulesep=\dimen180
-\@thisruleclass=\count136
-\@lastruleclass=\count137
-\@thisrulewidth=\dimen181
+\heavyrulewidth=\dimen168
+\lightrulewidth=\dimen169
+\cmidrulewidth=\dimen170
+\belowrulesep=\dimen171
+\belowbottomsep=\dimen172
+\aboverulesep=\dimen173
+\abovetopsep=\dimen174
+\cmidrulesep=\dimen175
+\cmidrulekern=\dimen176
+\defaultaddspace=\dimen177
+\@cmidla=\count129
+\@cmidlb=\count130
+\@aboverulesep=\dimen178
+\@belowrulesep=\dimen179
+\@thisruleclass=\count131
+\@lastruleclass=\count132
+\@thisrulewidth=\dimen180
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip60
-\multirow@cntb=\count138
-\multirow@dima=\skip61
-\bigstrutjot=\dimen182
+\multirow@colwidth=\skip55
+\multirow@cntb=\count133
+\multirow@dima=\skip56
+\bigstrutjot=\dimen181
 )
 (/usr/share/texlive/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
@@ -523,159 +518,159 @@ Package: expl3 2018/02/21 L3 programming layer (loader)
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2018/02/21 L3 programming layer (code)
-\c_max_int=\count139
-\l_tmpa_int=\count140
-\l_tmpb_int=\count141
-\g_tmpa_int=\count142
-\g_tmpb_int=\count143
-\g__intarray_font_int=\count144
-\g__prg_map_int=\count145
-\c_log_iow=\count146
-\l_iow_line_count_int=\count147
-\l__iow_line_target_int=\count148
-\l__iow_one_indent_int=\count149
-\l__iow_indent_int=\count150
-\c_zero_dim=\dimen183
-\c_max_dim=\dimen184
-\l_tmpa_dim=\dimen185
-\l_tmpb_dim=\dimen186
-\g_tmpa_dim=\dimen187
-\g_tmpb_dim=\dimen188
-\c_zero_skip=\skip62
-\c_max_skip=\skip63
-\l_tmpa_skip=\skip64
-\l_tmpb_skip=\skip65
-\g_tmpa_skip=\skip66
-\g_tmpb_skip=\skip67
+\c_max_int=\count134
+\l_tmpa_int=\count135
+\l_tmpb_int=\count136
+\g_tmpa_int=\count137
+\g_tmpb_int=\count138
+\g__intarray_font_int=\count139
+\g__prg_map_int=\count140
+\c_log_iow=\count141
+\l_iow_line_count_int=\count142
+\l__iow_line_target_int=\count143
+\l__iow_one_indent_int=\count144
+\l__iow_indent_int=\count145
+\c_zero_dim=\dimen182
+\c_max_dim=\dimen183
+\l_tmpa_dim=\dimen184
+\l_tmpb_dim=\dimen185
+\g_tmpa_dim=\dimen186
+\g_tmpb_dim=\dimen187
+\c_zero_skip=\skip57
+\c_max_skip=\skip58
+\l_tmpa_skip=\skip59
+\l_tmpb_skip=\skip60
+\g_tmpa_skip=\skip61
+\g_tmpb_skip=\skip62
 \c_zero_muskip=\muskip11
 \c_max_muskip=\muskip12
 \l_tmpa_muskip=\muskip13
 \l_tmpb_muskip=\muskip14
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
-\l_keys_choice_int=\count151
-\c__fp_leading_shift_int=\count152
-\c__fp_middle_shift_int=\count153
-\c__fp_trailing_shift_int=\count154
-\c__fp_big_leading_shift_int=\count155
-\c__fp_big_middle_shift_int=\count156
-\c__fp_big_trailing_shift_int=\count157
-\c__fp_Bigg_leading_shift_int=\count158
-\c__fp_Bigg_middle_shift_int=\count159
-\c__fp_Bigg_trailing_shift_int=\count160
-\c__fp_rand_size_int=\count161
-\c__fp_rand_four_int=\count162
-\c__fp_rand_eight_int=\count163
-\l__sort_length_int=\count164
-\l__sort_min_int=\count165
-\l__sort_top_int=\count166
-\l__sort_max_int=\count167
-\l__sort_true_max_int=\count168
-\l__sort_block_int=\count169
-\l__sort_begin_int=\count170
-\l__sort_end_int=\count171
-\l__sort_A_int=\count172
-\l__sort_B_int=\count173
-\l__sort_C_int=\count174
-\l__tl_build_start_index_int=\count175
-\l__tl_build_index_int=\count176
-\l__tl_analysis_normal_int=\count177
-\l__tl_analysis_index_int=\count178
-\l__tl_analysis_nesting_int=\count179
-\l__tl_analysis_type_int=\count180
-\l__regex_internal_a_int=\count181
-\l__regex_internal_b_int=\count182
-\l__regex_internal_c_int=\count183
-\l__regex_balance_int=\count184
-\l__regex_group_level_int=\count185
-\l__regex_mode_int=\count186
-\c__regex_cs_in_class_mode_int=\count187
-\c__regex_cs_mode_int=\count188
-\l__regex_catcodes_int=\count189
-\l__regex_default_catcodes_int=\count190
-\c__regex_catcode_D_int=\count191
-\c__regex_catcode_S_int=\count192
-\c__regex_catcode_L_int=\count193
-\c__regex_catcode_O_int=\count194
-\c__regex_catcode_A_int=\count195
-\c__regex_all_catcodes_int=\count196
-\l__regex_show_lines_int=\count197
-\l__regex_min_state_int=\count198
-\l__regex_max_state_int=\count199
-\l__regex_left_state_int=\count266
-\l__regex_right_state_int=\count267
-\l__regex_capturing_group_int=\count268
-\l__regex_min_pos_int=\count269
-\l__regex_max_pos_int=\count270
-\l__regex_curr_pos_int=\count271
-\l__regex_start_pos_int=\count272
-\l__regex_success_pos_int=\count273
-\l__regex_curr_char_int=\count274
-\l__regex_curr_catcode_int=\count275
-\l__regex_last_char_int=\count276
-\l__regex_case_changed_char_int=\count277
-\l__regex_curr_state_int=\count278
-\l__regex_step_int=\count279
-\l__regex_min_active_int=\count280
-\l__regex_max_active_int=\count281
-\l__regex_replacement_csnames_int=\count282
-\l__regex_match_count_int=\count283
-\l__regex_min_submatch_int=\count284
-\l__regex_submatch_int=\count285
-\l__regex_zeroth_submatch_int=\count286
-\g__regex_trace_regex_int=\count287
-\c_empty_box=\box42
-\l_tmpa_box=\box43
-\l_tmpb_box=\box44
-\g_tmpa_box=\box45
-\g_tmpb_box=\box46
-\l__box_top_dim=\dimen189
-\l__box_bottom_dim=\dimen190
-\l__box_left_dim=\dimen191
-\l__box_right_dim=\dimen192
-\l__box_top_new_dim=\dimen193
-\l__box_bottom_new_dim=\dimen194
-\l__box_left_new_dim=\dimen195
-\l__box_right_new_dim=\dimen196
-\l__box_internal_box=\box47
-\l__coffin_internal_box=\box48
-\l__coffin_internal_dim=\dimen197
-\l__coffin_offset_x_dim=\dimen198
-\l__coffin_offset_y_dim=\dimen199
-\l__coffin_x_dim=\dimen256
-\l__coffin_y_dim=\dimen257
-\l__coffin_x_prime_dim=\dimen258
-\l__coffin_y_prime_dim=\dimen259
-\c_empty_coffin=\box49
-\l__coffin_aligned_coffin=\box50
-\l__coffin_aligned_internal_coffin=\box51
-\l_tmpa_coffin=\box52
-\l_tmpb_coffin=\box53
-\l__coffin_display_coffin=\box54
-\l__coffin_display_coord_coffin=\box55
-\l__coffin_display_pole_coffin=\box56
-\l__coffin_display_offset_dim=\dimen260
-\l__coffin_display_x_dim=\dimen261
-\l__coffin_display_y_dim=\dimen262
-\l__coffin_bounding_shift_dim=\dimen263
-\l__coffin_left_corner_dim=\dimen264
-\l__coffin_right_corner_dim=\dimen265
-\l__coffin_bottom_corner_dim=\dimen266
-\l__coffin_top_corner_dim=\dimen267
-\l__coffin_scaled_total_height_dim=\dimen268
-\l__coffin_scaled_width_dim=\dimen269
+\l_keys_choice_int=\count146
+\c__fp_leading_shift_int=\count147
+\c__fp_middle_shift_int=\count148
+\c__fp_trailing_shift_int=\count149
+\c__fp_big_leading_shift_int=\count150
+\c__fp_big_middle_shift_int=\count151
+\c__fp_big_trailing_shift_int=\count152
+\c__fp_Bigg_leading_shift_int=\count153
+\c__fp_Bigg_middle_shift_int=\count154
+\c__fp_Bigg_trailing_shift_int=\count155
+\c__fp_rand_size_int=\count156
+\c__fp_rand_four_int=\count157
+\c__fp_rand_eight_int=\count158
+\l__sort_length_int=\count159
+\l__sort_min_int=\count160
+\l__sort_top_int=\count161
+\l__sort_max_int=\count162
+\l__sort_true_max_int=\count163
+\l__sort_block_int=\count164
+\l__sort_begin_int=\count165
+\l__sort_end_int=\count166
+\l__sort_A_int=\count167
+\l__sort_B_int=\count168
+\l__sort_C_int=\count169
+\l__tl_build_start_index_int=\count170
+\l__tl_build_index_int=\count171
+\l__tl_analysis_normal_int=\count172
+\l__tl_analysis_index_int=\count173
+\l__tl_analysis_nesting_int=\count174
+\l__tl_analysis_type_int=\count175
+\l__regex_internal_a_int=\count176
+\l__regex_internal_b_int=\count177
+\l__regex_internal_c_int=\count178
+\l__regex_balance_int=\count179
+\l__regex_group_level_int=\count180
+\l__regex_mode_int=\count181
+\c__regex_cs_in_class_mode_int=\count182
+\c__regex_cs_mode_int=\count183
+\l__regex_catcodes_int=\count184
+\l__regex_default_catcodes_int=\count185
+\c__regex_catcode_D_int=\count186
+\c__regex_catcode_S_int=\count187
+\c__regex_catcode_L_int=\count188
+\c__regex_catcode_O_int=\count189
+\c__regex_catcode_A_int=\count190
+\c__regex_all_catcodes_int=\count191
+\l__regex_show_lines_int=\count192
+\l__regex_min_state_int=\count193
+\l__regex_max_state_int=\count194
+\l__regex_left_state_int=\count195
+\l__regex_right_state_int=\count196
+\l__regex_capturing_group_int=\count197
+\l__regex_min_pos_int=\count198
+\l__regex_max_pos_int=\count199
+\l__regex_curr_pos_int=\count266
+\l__regex_start_pos_int=\count267
+\l__regex_success_pos_int=\count268
+\l__regex_curr_char_int=\count269
+\l__regex_curr_catcode_int=\count270
+\l__regex_last_char_int=\count271
+\l__regex_case_changed_char_int=\count272
+\l__regex_curr_state_int=\count273
+\l__regex_step_int=\count274
+\l__regex_min_active_int=\count275
+\l__regex_max_active_int=\count276
+\l__regex_replacement_csnames_int=\count277
+\l__regex_match_count_int=\count278
+\l__regex_min_submatch_int=\count279
+\l__regex_submatch_int=\count280
+\l__regex_zeroth_submatch_int=\count281
+\g__regex_trace_regex_int=\count282
+\c_empty_box=\box44
+\l_tmpa_box=\box45
+\l_tmpb_box=\box46
+\g_tmpa_box=\box47
+\g_tmpb_box=\box48
+\l__box_top_dim=\dimen188
+\l__box_bottom_dim=\dimen189
+\l__box_left_dim=\dimen190
+\l__box_right_dim=\dimen191
+\l__box_top_new_dim=\dimen192
+\l__box_bottom_new_dim=\dimen193
+\l__box_left_new_dim=\dimen194
+\l__box_right_new_dim=\dimen195
+\l__box_internal_box=\box49
+\l__coffin_internal_box=\box50
+\l__coffin_internal_dim=\dimen196
+\l__coffin_offset_x_dim=\dimen197
+\l__coffin_offset_y_dim=\dimen198
+\l__coffin_x_dim=\dimen199
+\l__coffin_y_dim=\dimen256
+\l__coffin_x_prime_dim=\dimen257
+\l__coffin_y_prime_dim=\dimen258
+\c_empty_coffin=\box51
+\l__coffin_aligned_coffin=\box52
+\l__coffin_aligned_internal_coffin=\box53
+\l_tmpa_coffin=\box54
+\l_tmpb_coffin=\box55
+\l__coffin_display_coffin=\box56
+\l__coffin_display_coord_coffin=\box57
+\l__coffin_display_pole_coffin=\box58
+\l__coffin_display_offset_dim=\dimen259
+\l__coffin_display_x_dim=\dimen260
+\l__coffin_display_y_dim=\dimen261
+\l__coffin_bounding_shift_dim=\dimen262
+\l__coffin_left_corner_dim=\dimen263
+\l__coffin_right_corner_dim=\dimen264
+\l__coffin_bottom_corner_dim=\dimen265
+\l__coffin_top_corner_dim=\dimen266
+\l__coffin_scaled_total_height_dim=\dimen267
+\l__coffin_scaled_width_dim=\dimen268
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count288
-\l__driver_tmp_box=\box57
+\l__driver_color_stack_int=\count283
+\l__driver_tmp_box=\box59
 ))
 Package: xparse 2018/02/21 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count289
-\g__xparse_grabber_int=\count290
-\l__xparse_m_args_int=\count291
-\l__xparse_mandatory_args_int=\count292
-\l__xparse_v_nesting_int=\count293
+\l__xparse_current_arg_int=\count284
+\g__xparse_grabber_int=\count285
+\l__xparse_m_args_int=\count286
+\l__xparse_mandatory_args_int=\count287
+\l__xparse_v_nesting_int=\count288
 )
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -1644,46 +1639,46 @@ Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count294
-\calc@Bcount=\count295
-\calc@Adimen=\dimen270
-\calc@Bdimen=\dimen271
-\calc@Askip=\skip68
-\calc@Bskip=\skip69
+\calc@Acount=\count289
+\calc@Bcount=\count290
+\calc@Adimen=\dimen269
+\calc@Bdimen=\dimen270
+\calc@Askip=\skip63
+\calc@Bskip=\skip64
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count296
-\calc@Cskip=\skip70
+\calc@Ccount=\count291
+\calc@Cskip=\skip65
 )
 LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count297
-\l_MT_multwidth_dim=\dimen272
-\origjot=\skip71
-\l_MT_shortvdotswithinadjustabove_dim=\dimen273
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen274
-\l_MT_above_intertext_sep=\dimen275
-\l_MT_below_intertext_sep=\dimen276
-\l_MT_above_shortintertext_sep=\dimen277
-\l_MT_below_shortintertext_sep=\dimen278
+\g_MT_multlinerow_int=\count292
+\l_MT_multwidth_dim=\dimen271
+\origjot=\skip66
+\l_MT_shortvdotswithinadjustabove_dim=\dimen272
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen273
+\l_MT_above_intertext_sep=\dimen274
+\l_MT_below_intertext_sep=\dimen275
+\l_MT_above_shortintertext_sep=\dimen276
+\l_MT_below_shortintertext_sep=\dimen277
 )
-\l_EQ_equationtype_int=\count298
-\l_EQ_alignmentmode_int=\count299
-\l_EQ_totalwidth_dim=\dimen279
-\l_EQ_displaywidth_dim=\dimen280
-\l_EQ_temp_linewidth_dim=\dimen281
-\EmphEqdelimitershortfall=\dimen282
-\EmphEqdelimiterfactor=\count300
-\g_EQ_toptag_height_dim=\dimen283
-\g_EQ_bottomtag_depth_dim=\dimen284
-\g_EQ_toprow_height_dim=\dimen285
-\g_EQ_bottomrow_depth_dim=\dimen286
-\g_EQ_widesttag_dim=\dimen287
-\EQ_mathdisplay_box=\box58
-\EQ_tag_box=\box59
-\g_EQ_temprow_int=\count301
+\l_EQ_equationtype_int=\count293
+\l_EQ_alignmentmode_int=\count294
+\l_EQ_totalwidth_dim=\dimen278
+\l_EQ_displaywidth_dim=\dimen279
+\l_EQ_temp_linewidth_dim=\dimen280
+\EmphEqdelimitershortfall=\dimen281
+\EmphEqdelimiterfactor=\count295
+\g_EQ_toptag_height_dim=\dimen282
+\g_EQ_bottomtag_depth_dim=\dimen283
+\g_EQ_toprow_height_dim=\dimen284
+\g_EQ_bottomrow_depth_dim=\dimen285
+\g_EQ_widesttag_dim=\dimen286
+\EQ_mathdisplay_box=\box60
+\EQ_tag_box=\box61
+\g_EQ_temprow_int=\count296
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xfrac/xfrac.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
@@ -1773,19 +1768,19 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2018/02/21 L3 Experimental prototype document functions
-\l__xtemplate_tmp_dim=\dimen288
-\l__xtemplate_tmp_int=\count302
+\l__xtemplate_tmp_dim=\dimen287
+\l__xtemplate_tmp_int=\count297
 \l__xtemplate_tmp_muskip=\muskip17
-\l__xtemplate_tmp_skip=\skip72
+\l__xtemplate_tmp_skip=\skip67
 )
 Package: xfrac 2018/02/21 L3 Experimental split-level fractions
-\l__xfrac_slash_box=\box60
-\l__xfrac_tmp_box=\box61
-\l__xfrac_denominator_bot_sep_dim=\dimen289
-\l__xfrac_numerator_bot_sep_dim=\dimen290
-\l__xfrac_numerator_top_sep_dim=\dimen291
-\l__xfrac_slash_left_sep_dim=\dimen292
-\l__xfrac_slash_right_sep_dim=\dimen293
+\l__xfrac_slash_box=\box62
+\l__xfrac_tmp_box=\box63
+\l__xfrac_denominator_bot_sep_dim=\dimen288
+\l__xfrac_numerator_bot_sep_dim=\dimen289
+\l__xfrac_numerator_top_sep_dim=\dimen290
+\l__xfrac_slash_left_sep_dim=\dimen291
+\l__xfrac_slash_right_sep_dim=\dimen292
 \l__xfrac_slash_left_muskip=\muskip18
 \l__xfrac_slash_right_muskip=\muskip19
 .................................................
@@ -1808,20 +1803,20 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count303
-\output=\toks42
-\linenoprevgraf=\count304
-\linenumbersep=\dimen294
-\linenumberwidth=\dimen295
-\c@linenumber=\count305
-\c@pagewiselinenumber=\count306
-\c@LN@truepage=\count307
-\c@internallinenumber=\count308
-\c@internallinenumbers=\count309
-\quotelinenumbersep=\dimen296
-\bframerule=\dimen297
-\bframesep=\dimen298
-\bframebox=\box62
+\linenopenalty=\count298
+\output=\toks43
+\linenoprevgraf=\count299
+\linenumbersep=\dimen293
+\linenumberwidth=\dimen294
+\c@linenumber=\count300
+\c@pagewiselinenumber=\count301
+\c@LN@truepage=\count302
+\c@internallinenumber=\count303
+\c@internallinenumbers=\count304
+\quotelinenumbersep=\dimen295
+\bframerule=\dimen296
+\bframesep=\dimen297
+\bframebox=\box64
 LaTeX Info: Redefining \\ on input line 3056.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
@@ -1837,73 +1832,19 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count310
-\Gm@cntv=\count311
-\c@Gm@tempcnt=\count312
-\Gm@bindingoffset=\dimen299
-\Gm@wd@mp=\dimen300
-\Gm@odd@mp=\dimen301
-\Gm@even@mp=\dimen302
-\Gm@layoutwidth=\dimen303
-\Gm@layoutheight=\dimen304
-\Gm@layouthoffset=\dimen305
-\Gm@layoutvoffset=\dimen306
-\Gm@dimlist=\toks43
+\Gm@cnth=\count305
+\Gm@cntv=\count306
+\c@Gm@tempcnt=\count307
+\Gm@bindingoffset=\dimen298
+\Gm@wd@mp=\dimen299
+\Gm@odd@mp=\dimen300
+\Gm@even@mp=\dimen301
+\Gm@layoutwidth=\dimen302
+\Gm@layoutheight=\dimen303
+\Gm@layouthoffset=\dimen304
+\Gm@layoutvoffset=\dimen305
+\Gm@dimlist=\toks44
 ) (./report.aux
-
-LaTeX Warning: Label `fig:subfig2' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:subfig2' multiply defined.
-
-
-LaTeX Warning: Label `fig:subfig3' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:subfig3' multiply defined.
-
-
-LaTeX Warning: Label `fig:subfig3' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:subfig3' multiply defined.
-
-
-LaTeX Warning: Label `fig:subfig3' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:subfig3' multiply defined.
-
-
-LaTeX Warning: Label `fig:subfig3' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:subfig3' multiply defined.
-
-
-LaTeX Warning: Label `fig:subfig3' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:subfig3' multiply defined.
-
-
-LaTeX Warning: Label `fig:subfig3' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:subfig3' multiply defined.
-
-
-LaTeX Warning: Label `fig:subfig3' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:subfig3' multiply defined.
-
-
-LaTeX Warning: Label `fig:subfig3' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:subfig3' multiply defined.
-
 
 LaTeX Warning: Label `eq:1' multiply defined.
 
@@ -1913,39 +1854,39 @@ LaTeX Warning: Label `eq:2' multiply defined.
 )
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 46.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    ... okay on input line 46.
 
 ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count313
-\scratchdimen=\dimen307
-\scratchbox=\box63
-\nofMPsegments=\count314
-\nofMParguments=\count315
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count316
-\MPscratchDim=\dimen308
-\MPnumerator=\count317
-\makeMPintoPDFobject=\count318
-\everyMPtoPDFconversion=\toks45
+\scratchcounter=\count308
+\scratchdimen=\dimen306
+\scratchbox=\box65
+\nofMPsegments=\count309
+\nofMParguments=\count310
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count311
+\MPscratchDim=\dimen307
+\MPnumerator=\count312
+\makeMPintoPDFobject=\count313
+\everyMPtoPDFconversion=\toks46
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1999,11 +1940,10 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\Hy@linkcounter=\count319
+\Hy@linkcounter=\count314
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2041,261 +1981,368 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+LaTeX Font Info:    Try loading font information for U+msa on input line 70.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+LaTeX Font Info:    Try loading font information for U+msb on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 66.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 83--86
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 89--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--86
+Underfull \hbox (badness 10000) in paragraph at lines 89--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--86
+Underfull \hbox (badness 10000) in paragraph at lines 89--92
 
  []
 
-[2] (./report.toc [3])
+[3] (./report.toc [4])
 \tf@toc=\write4
 \openout4 = `report.toc'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4]
-[5]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6]
-Overfull \hbox (42.73967pt too wide) in paragraph at lines 151--153
-\OT1/cmr/m/n/12 Let $\OML/cmm/m/it/12  \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 j\OM
-L/cmm/m/it/12 \OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 e[]$\OT1/cmr/m/n/12 . Then, $
-\OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 x\OMS/cmsy/m/n/12 i\OT1/cmr/m/n/12 (\OML/cmm
-/m/it/12 t\OT1/cmr/m/n/12 )$$= []\OML/cmm/m/it/12 x[] [][][]$$\OT1/cmr/m/n/12 =
- []\OML/cmm/m/it/12 x[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 \OMS/cmsy/m/n/12 j [
-][][]$\OT1/cmr/m/n/12 , and $\OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 p\OMS/cmsy/m/n/
-12 i\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )$$= []\OML/cmm/m/it/12 
-p[] [][][]$$\OT1/cmr/m/n/12 =
- []
-
-<graphs/coherent/1.jpg, id=40, 578.16pt x 433.62pt>
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no Ÿ in font cmr12!
+ [5] [6] [7]
+<graphs/coherent/1.jpg, id=44, 562.2606pt x 421.575pt>
 File: graphs/coherent/1.jpg Graphic file (type jpg)
 <use graphs/coherent/1.jpg>
-Package pdftex.def Info: graphs/coherent/1.jpg  used on input line 158.
-(pdftex.def)             Requested size: 182.09485pt x 136.57117pt.
-<graphs/coherent/2.jpg, id=41, 562.2606pt x 421.575pt>
+Package pdftex.def Info: graphs/coherent/1.jpg  used on input line 163.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/coherent/2.jpg, id=45, 578.16pt x 433.62pt>
 File: graphs/coherent/2.jpg Graphic file (type jpg)
 <use graphs/coherent/2.jpg>
-Package pdftex.def Info: graphs/coherent/2.jpg  used on input line 162.
-(pdftex.def)             Requested size: 182.09485pt x 136.53423pt.
-<graphs/coherent/3.jpg, id=42, 578.16pt x 433.62pt>
+Package pdftex.def Info: graphs/coherent/2.jpg  used on input line 166.
+(pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
+<graphs/coherent/3.jpg, id=46, 578.16pt x 433.62pt>
 File: graphs/coherent/3.jpg Graphic file (type jpg)
 <use graphs/coherent/3.jpg>
-Package pdftex.def Info: graphs/coherent/3.jpg  used on input line 165.
-(pdftex.def)             Requested size: 182.09485pt x 136.57117pt.
-<graphs/coherent/4.jpg, id=43, 562.2606pt x 421.575pt>
+Package pdftex.def Info: graphs/coherent/3.jpg  used on input line 169.
+(pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
+<graphs/coherent/4.jpg, id=47, 578.16pt x 433.62pt>
 File: graphs/coherent/4.jpg Graphic file (type jpg)
 <use graphs/coherent/4.jpg>
-Package pdftex.def Info: graphs/coherent/4.jpg  used on input line 169.
-(pdftex.def)             Requested size: 182.09485pt x 136.53423pt.
-<graphs/coherent/5.jpg, id=44, 578.16pt x 433.62pt>
+Package pdftex.def Info: graphs/coherent/4.jpg  used on input line 172.
+(pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
+<graphs/coherent/5.jpg, id=48, 578.16pt x 433.62pt>
 File: graphs/coherent/5.jpg Graphic file (type jpg)
 <use graphs/coherent/5.jpg>
-Package pdftex.def Info: graphs/coherent/5.jpg  used on input line 172.
-(pdftex.def)             Requested size: 182.09485pt x 136.57117pt.
-<graphs/coherent/6.jpg, id=45, 562.2606pt x 421.575pt>
+Package pdftex.def Info: graphs/coherent/5.jpg  used on input line 175.
+(pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
+<graphs/coherent/6.jpg, id=49, 562.2606pt x 421.575pt>
 File: graphs/coherent/6.jpg Graphic file (type jpg)
 <use graphs/coherent/6.jpg>
-Package pdftex.def Info: graphs/coherent/6.jpg  used on input line 176.
-(pdftex.def)             Requested size: 182.09485pt x 136.53423pt.
-<graphs/coherent/7.jpg, id=46, 578.16pt x 433.62pt>
+Package pdftex.def Info: graphs/coherent/6.jpg  used on input line 178.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/coherent/7.jpg, id=50, 562.2606pt x 421.575pt>
 File: graphs/coherent/7.jpg Graphic file (type jpg)
 <use graphs/coherent/7.jpg>
-Package pdftex.def Info: graphs/coherent/7.jpg  used on input line 180.
-(pdftex.def)             Requested size: 182.09485pt x 136.57117pt.
-<graphs/coherent/8.jpg, id=47, 562.2606pt x 421.575pt>
+Package pdftex.def Info: graphs/coherent/7.jpg  used on input line 181.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/coherent/8.jpg, id=51, 578.16pt x 433.62pt>
 File: graphs/coherent/8.jpg Graphic file (type jpg)
 <use graphs/coherent/8.jpg>
 Package pdftex.def Info: graphs/coherent/8.jpg  used on input line 184.
-(pdftex.def)             Requested size: 182.09485pt x 136.53423pt.
-<graphs/coherent/9.jpg, id=48, 578.16pt x 433.62pt>
-File: graphs/coherent/9.jpg Graphic file (type jpg)
-<use graphs/coherent/9.jpg>
-Package pdftex.def Info: graphs/coherent/9.jpg  used on input line 188.
-(pdftex.def)             Requested size: 182.09485pt x 136.57117pt.
-<graphs/coherent/10.jpg, id=49, 562.2606pt x 421.575pt>
-File: graphs/coherent/10.jpg Graphic file (type jpg)
-<use graphs/coherent/10.jpg>
-Package pdftex.def Info: graphs/coherent/10.jpg  used on input line 192.
-(pdftex.def)             Requested size: 182.09485pt x 136.53423pt.
-File: graphs/coherent/3.jpg Graphic file (type jpg)
-<use graphs/coherent/3.jpg>
-Package pdftex.def Info: graphs/coherent/3.jpg  used on input line 196.
-(pdftex.def)             Requested size: 182.09485pt x 136.57117pt.
-File: graphs/coherent/3.jpg Graphic file (type jpg)
-<use graphs/coherent/3.jpg>
-Package pdftex.def Info: graphs/coherent/3.jpg  used on input line 200.
-(pdftex.def)             Requested size: 182.09485pt x 136.57117pt.
-File: graphs/coherent/3.jpg Graphic file (type jpg)
-<use graphs/coherent/3.jpg>
-Package pdftex.def Info: graphs/coherent/3.jpg  used on input line 204.
-(pdftex.def)             Requested size: 182.09485pt x 136.57117pt.
+(pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
 
-LaTeX Warning: Float too large for page by 511.98479pt on input line 208.
 
-[7] [8 <./graphs/coherent/1.jpg> <./graphs/coherent/2.jpg> <./graphs/coherent/3
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (42.73967pt too wide) in paragraph at lines 188--189
+[]\OT1/cmr/m/n/12 Let $\OML/cmm/m/it/12  \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 j\
+OML/cmm/m/it/12 \OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 e[]$\OT1/cmr/m/n/12 . Then,
+ $\OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 x\OMS/cmsy/m/n/12 i\OT1/cmr/m/n/12 (\OML/c
+mm/m/it/12 t\OT1/cmr/m/n/12 )$$= []\OML/cmm/m/it/12 x[] [][][]$$\OT1/cmr/m/n/12
+ = []\OML/cmm/m/it/12 x[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 \OMS/cmsy/m/n/12 j
+ [][][]$\OT1/cmr/m/n/12 , and $\OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 p\OMS/cmsy/m/
+n/12 i\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )$$= []\OML/cmm/m/it/1
+2 p[] [][][]$$\OT1/cmr/m/n/12 =
+ []
+
+[8] [9 <./graphs/coherent/1.jpg> <./graphs/coherent/2.jpg> <./graphs/coherent/3
 .jpg> <./graphs/coherent/4.jpg> <./graphs/coherent/5.jpg> <./graphs/coherent/6.
-jpg> <./graphs/coherent/7.jpg> <./graphs/coherent/8.jpg> <./graphs/coherent/9.j
-pg> <./graphs/coherent/10.jpg>]
-Overfull \hbox (2.61891pt too wide) detected at line 252
+jpg> <./graphs/coherent/7.jpg> <./graphs/coherent/8.jpg>]
+Overfull \hbox (2.61891pt too wide) detected at line 230
 []
  []
 
+<graphs/squeeze_0.8/1.jpg, id=58, 562.2606pt x 421.575pt>
+File: graphs/squeeze_0.8/1.jpg Graphic file (type jpg)
+<use graphs/squeeze_0.8/1.jpg>
+Package pdftex.def Info: graphs/squeeze_0.8/1.jpg  used on input line 235.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeeze_0.8/2.jpg, id=59, 578.16pt x 433.62pt>
+File: graphs/squeeze_0.8/2.jpg Graphic file (type jpg)
+<use graphs/squeeze_0.8/2.jpg>
+Package pdftex.def Info: graphs/squeeze_0.8/2.jpg  used on input line 238.
+(pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
+<graphs/squeeze_0.8/3.jpg, id=60, 562.2606pt x 421.575pt>
+File: graphs/squeeze_0.8/3.jpg Graphic file (type jpg)
+<use graphs/squeeze_0.8/3.jpg>
+Package pdftex.def Info: graphs/squeeze_0.8/3.jpg  used on input line 241.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeeze_0.8/4.jpg, id=61, 562.2606pt x 421.575pt>
+File: graphs/squeeze_0.8/4.jpg Graphic file (type jpg)
+<use graphs/squeeze_0.8/4.jpg>
+Package pdftex.def Info: graphs/squeeze_0.8/4.jpg  used on input line 244.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeeze_0.8/5.jpg, id=62, 562.2606pt x 421.575pt>
+File: graphs/squeeze_0.8/5.jpg Graphic file (type jpg)
+<use graphs/squeeze_0.8/5.jpg>
+Package pdftex.def Info: graphs/squeeze_0.8/5.jpg  used on input line 247.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeeze_0.8/6.jpg, id=63, 578.16pt x 433.62pt>
+File: graphs/squeeze_0.8/6.jpg Graphic file (type jpg)
+<use graphs/squeeze_0.8/6.jpg>
+Package pdftex.def Info: graphs/squeeze_0.8/6.jpg  used on input line 250.
+(pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
+<graphs/squeeze_0.8/7.jpg, id=64, 562.2606pt x 421.575pt>
+File: graphs/squeeze_0.8/7.jpg Graphic file (type jpg)
+<use graphs/squeeze_0.8/7.jpg>
+Package pdftex.def Info: graphs/squeeze_0.8/7.jpg  used on input line 253.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeeze_0.8/8.jpg, id=65, 578.16pt x 433.62pt>
+File: graphs/squeeze_0.8/8.jpg Graphic file (type jpg)
+<use graphs/squeeze_0.8/8.jpg>
+Package pdftex.def Info: graphs/squeeze_0.8/8.jpg  used on input line 256.
+(pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
+<graphs/squeeze_0.8/9.jpg, id=66, 562.2606pt x 421.575pt>
+File: graphs/squeeze_0.8/9.jpg Graphic file (type jpg)
+<use graphs/squeeze_0.8/9.jpg>
+Package pdftex.def Info: graphs/squeeze_0.8/9.jpg  used on input line 259.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeeze_0.8/10.jpg, id=67, 562.2606pt x 421.575pt>
+File: graphs/squeeze_0.8/10.jpg Graphic file (type jpg)
+<use graphs/squeeze_0.8/10.jpg>
+Package pdftex.def Info: graphs/squeeze_0.8/10.jpg  used on input line 262.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeeze_0.8/11.jpg, id=68, 562.2606pt x 421.575pt>
+File: graphs/squeeze_0.8/11.jpg Graphic file (type jpg)
+<use graphs/squeeze_0.8/11.jpg>
+Package pdftex.def Info: graphs/squeeze_0.8/11.jpg  used on input line 265.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeeze_0.8/12.jpg, id=69, 562.2606pt x 421.575pt>
+File: graphs/squeeze_0.8/12.jpg Graphic file (type jpg)
+<use graphs/squeeze_0.8/12.jpg>
+Package pdftex.def Info: graphs/squeeze_0.8/12.jpg  used on input line 268.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
 
-Underfull \vbox (badness 6995) has occurred while \output is active []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
- [9]
-[10]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
-Overfull \hbox (14.84012pt too wide) in paragraph at lines 276--278
-[]$[][]$\OT1/cmr/m/n/12 . By ra-tio test, it can be shown that $[] \OMS/cmsy/m/
-n/12 j\OML/cmm/m/it/12 c[]\OMS/cmsy/m/n/12 j[]$
- []
+ [10]
+[11 <./graphs/squeeze_0.8/1.jpg> <./graphs/squeeze_0.8/2.jpg> <./graphs/squeeze
+_0.8/3.jpg> <./graphs/squeeze_0.8/4.jpg> <./graphs/squeeze_0.8/5.jpg> <./graphs
+/squeeze_0.8/6.jpg> <./graphs/squeeze_0.8/7.jpg> <./graphs/squeeze_0.8/8.jpg> <
+./graphs/squeeze_0.8/9.jpg> <./graphs/squeeze_0.8/10.jpg> <./graphs/squeeze_0.8
+/11.jpg> <./graphs/squeeze_0.8/12.jpg>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[12]
-Overfull \hbox (5.88655pt too wide) in paragraph at lines 293--295
+ [12]
+<graphs/squeezed_vacuum/1.jpg, id=80, 562.2606pt x 421.575pt>
+File: graphs/squeezed_vacuum/1.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/1.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/1.jpg  used on input line 293.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeezed_vacuum/2.jpg, id=81, 562.2606pt x 421.575pt>
+File: graphs/squeezed_vacuum/2.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/2.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/2.jpg  used on input line 296.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeezed_vacuum/3.jpg, id=82, 562.2606pt x 421.575pt>
+File: graphs/squeezed_vacuum/3.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/3.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/3.jpg  used on input line 299.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeezed_vacuum/4.jpg, id=83, 578.16pt x 433.62pt>
+File: graphs/squeezed_vacuum/4.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/4.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/4.jpg  used on input line 302.
+(pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
+<graphs/squeezed_vacuum/5.jpg, id=84, 562.2606pt x 421.575pt>
+File: graphs/squeezed_vacuum/5.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/5.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/5.jpg  used on input line 305.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeezed_vacuum/6.jpg, id=85, 578.16pt x 433.62pt>
+File: graphs/squeezed_vacuum/6.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/6.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/6.jpg  used on input line 308.
+(pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
+<graphs/squeezed_vacuum/7.jpg, id=86, 562.2606pt x 421.575pt>
+File: graphs/squeezed_vacuum/7.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/7.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/7.jpg  used on input line 311.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeezed_vacuum/8.jpg, id=87, 562.2606pt x 421.575pt>
+File: graphs/squeezed_vacuum/8.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/8.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/8.jpg  used on input line 314.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeezed_vacuum/9.jpg, id=88, 578.16pt x 433.62pt>
+File: graphs/squeezed_vacuum/9.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/9.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/9.jpg  used on input line 317.
+(pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
+<graphs/squeezed_vacuum/10.jpg, id=89, 562.2606pt x 421.575pt>
+File: graphs/squeezed_vacuum/10.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/10.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/10.jpg  used on input line 320.
+
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeezed_vacuum/11.jpg, id=90, 562.2606pt x 421.575pt>
+File: graphs/squeezed_vacuum/11.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/11.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/11.jpg  used on input line 323.
+
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeezed_vacuum/12.jpg, id=91, 578.16pt x 433.62pt>
+File: graphs/squeezed_vacuum/12.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/12.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/12.jpg  used on input line 326.
+
+(pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13 <./graphs/squeezed_vacuum/1.jpg> <./graphs/squeezed_vacuum/2.jpg> <./graph
+s/squeezed_vacuum/3.jpg> <./graphs/squeezed_vacuum/4.jpg> <./graphs/squeezed_va
+cuum/5.jpg> <./graphs/squeezed_vacuum/6.jpg> <./graphs/squeezed_vacuum/7.jpg> <
+./graphs/squeezed_vacuum/8.jpg> <./graphs/squeezed_vacuum/9.jpg> <./graphs/sque
+ezed_vacuum/10.jpg> <./graphs/squeezed_vacuum/11.jpg> <./graphs/squeezed_vacuum
+/12.jpg>]
+[14]
+Overfull \hbox (5.88655pt too wide) in paragraph at lines 355--357
 [][]$ 
  []
 
-[13] [14]
-Overfull \hbox (7.77902pt too wide) detected at line 349
+[15] [16]
+Overfull \hbox (7.77902pt too wide) detected at line 411
 [][]
  []
 
-[15]
-Overfull \hbox (59.03064pt too wide) detected at line 359
+[17]
+Overfull \hbox (59.03064pt too wide) detected at line 421
 [][]
  []
 
 
-Overfull \hbox (0.16763pt too wide) detected at line 372
+Overfull \hbox (0.16763pt too wide) detected at line 434
 [][]
  []
 
-[16]
-Overfull \hbox (13.82292pt too wide) in paragraph at lines 383--386
+[18]
+Overfull \hbox (13.82292pt too wide) in paragraph at lines 445--448
 []$[][]$ 
  []
 
 
-Overfull \hbox (5.12865pt too wide) in paragraph at lines 387--388
+Overfull \hbox (5.12865pt too wide) in paragraph at lines 449--450
 []$[][]$ 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17]
-Overfull \hbox (61.95619pt too wide) in paragraph at lines 396--398
+ [19]
+Overfull \hbox (61.95619pt too wide) in paragraph at lines 458--460
 []$[][]$ 
  []
 
 
-Overfull \hbox (11.41782pt too wide) in paragraph at lines 399--403
+Overfull \hbox (11.41782pt too wide) in paragraph at lines 461--465
 []$[][]$ 
  []
 
 
-Overfull \hbox (0.46129pt too wide) in paragraph at lines 409--412
+Overfull \hbox (0.46129pt too wide) in paragraph at lines 471--474
 $[][]$ 
  []
 
 
 Underfull \vbox (badness 5802) has occurred while \output is active []
 
- [18]
-Overfull \hbox (67.78732pt too wide) in paragraph at lines 413--417
+ [20]
+Overfull \hbox (67.78732pt too wide) in paragraph at lines 475--479
 []$[][]$ 
  []
 
 
-Overfull \hbox (4.95724pt too wide) detected at line 419
+Overfull \hbox (4.95724pt too wide) detected at line 481
 [][]
  []
 
-[19]
-Overfull \hbox (5.33093pt too wide) in paragraph at lines 434--440
+[21]
+Overfull \hbox (5.33093pt too wide) in paragraph at lines 496--502
 [][]$ 
  []
 
 
-Overfull \hbox (4.74724pt too wide) in paragraph at lines 443--448
+Overfull \hbox (4.74724pt too wide) in paragraph at lines 505--510
 []$[][]$ 
  []
 
-[20]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21]
-(./report.bbl
+[22] [23] [24]
+<graphs/P-V_Otto_cycle.png, id=131, 224.33812pt x 207.02344pt>
+File: graphs/P-V_Otto_cycle.png Graphic file (type png)
+<use graphs/P-V_Otto_cycle.png>
+Package pdftex.def Info: graphs/P-V_Otto_cycle.png  used on input line 550.
+(pdftex.def)             Requested size: 182.09485pt x 168.04501pt.
+ [25 <./graphs/P-V_Otto_cycle.png>] [26] (./report.bbl
 
 Package natbib Warning: Empty `thebibliography' environment on input line 8.
 
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [22]
-[23] (./report.aux)
+) [27] (./report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 25845 strings out of 492982
- 508966 string characters out of 6134896
- 545317 words of memory out of 5000000
- 29014 multiletter control sequences out of 15000+600000
- 544559 words of font info for 78 fonts, out of 8000000 for 9000
+ 25873 strings out of 492982
+ 510886 string characters out of 6134896
+ 543222 words of memory out of 5000000
+ 29033 multiletter control sequences out of 15000+600000
+ 545664 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,13n,54p,10445b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,13n,54p,10445b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on report.pdf (23 pages, 734535 bytes).
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on report.pdf (27 pages, 2254070 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
- 106 compressed objects within 2 object streams
+ 202 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 178 words of extra memory for PDF output out of 10000 (max. 10000000)
 

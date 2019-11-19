@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 299.8 283.7"
+   style="enable-background:new 0 0 299.8 283.7;"
+   xml:space="preserve"
+   sodipodi:docname="P-V_Otto_cycle.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:export-filename="/media/archisman/Store/OneDrive - Indian Institute of Science/Summer Project/2019 summer project/report/new/graphs/P-V_Otto_cycle.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"><metadata
+   id="metadata120"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs118" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1366"
+   inkscape:window-height="716"
+   id="namedview116"
+   showgrid="false"
+   inkscape:zoom="0.83186461"
+   inkscape:cx="-58.066544"
+   inkscape:cy="141.85001"
+   inkscape:window-x="0"
+   inkscape:window-y="27"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+<style
+   type="text/css"
+   id="style2">
+	.Drop_x0020_Shadow{fill:none;}
+	.Outer_x0020_Glow_x0020_5_x0020_pt{fill:none;}
+	.Blue_x0020_Neon{fill:none;stroke:#8AACDA;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;}
+	.Chrome_x0020_Highlight{fill:url(#SVGID_1_);stroke:#FFFFFF;stroke-width:0.3629;stroke-miterlimit:1;}
+	.Jive_GS{fill:#FFDD00;}
+	.Alyssa_GS{fill:#A6D0E4;}
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FF0000;stroke-width:2;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#0000FF;stroke-width:2;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#00FF00;stroke-width:2;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#F7931E;stroke-width:2;stroke-miterlimit:10;}
+	.st5{font-family:'STIX-Regular';}
+	.st6{font-size:12;}
+	.st7{font-size:18;}
+	.st8{fill:none;stroke:#FF0000;stroke-miterlimit:10;}
+	.st9{fill:#FF0000;}
+	.st10{fill:none;stroke:#F7931E;stroke-miterlimit:10;}
+	.st11{fill:#F7931E;}
+	.st12{fill:none;stroke:#0000FF;stroke-miterlimit:10;}
+	.st13{fill:#0000FF;}
+	.st14{fill:none;stroke:#00FF00;stroke-miterlimit:10;}
+	.st15{fill:#00FF00;}
+</style>
+<font
+   horiz-adv-x="1000"
+   id="font20">
+<!-- Copyright (c) 2001-2011 by the STI Pub Companies, consisting of the American Chemical Society, the American Institute of Physics, the American Mathematical Society, the American Physical Society, Elsevier, Inc., and The Institute of Electrical and Electronic Engineers, Inc.  Portions copyright (c) 1998-2003 by MicroPress, Inc.  Portions copyright (c) 1990 by Elsevier, Inc.  All rights reserved. -->
+<!-- Copyright: Copyright 2015 Adobe System Incorporated. All rights reserved. -->
+<font-face
+   font-family="STIX-Regular"
+   units-per-em="1000"
+   underline-position="-50"
+   underline-thickness="50"
+   id="font-face4" />
+<missing-glyph
+   horiz-adv-x="250"
+   id="missing-glyph6" />
+<glyph
+   unicode="V"
+   horiz-adv-x="722"
+   d="M697,662l-204,0l0,-19C533,639 565,641 565,602C565,585 558,560 546,530l-147,-369l-152,342C217,570 208,594 208,610C208,630 221,639 253,641l28,2l0,19l-265,0l0,-19C66,642 81,630 124,533l244,-544l15,0l222,563C634,626 657,642 697,643z"
+   id="glyph8" />
+<glyph
+   unicode="4"
+   horiz-adv-x="500"
+   d="M473,167l0,64l-103,0l0,445l-44,0l-314,-445l0,-64l280,0l0,-167l78,0l0,167M292,231l-240,0l240,343z"
+   id="glyph10" />
+<glyph
+   unicode="1"
+   horiz-adv-x="500"
+   d="M394,0l0,15C319,15 299,33 299,76l0,597l-9,3l-179,-91l0,-14l27,10C156,588 173,593 183,593C204,593 213,578 213,544l0,-449C213,40 192,19 118,15l0,-15z"
+   id="glyph12" />
+<glyph
+   unicode="p"
+   horiz-adv-x="500"
+   d="M159,458l-6,2C100,439 64,426 9,409l0,-16C18,394 25,394 34,394C68,394 75,384 75,337l0,-468C75,-183 64,-194 5,-200l0,-17l242,0l0,18C172,-198 159,-187 159,-124l0,157C195,0 218,-10 260,-10C379,-10 470,102 470,247C470,371 400,460 303,460C247,460 203,436 159,381M159,334C159,364 215,400 261,400C335,400 384,324 384,207C384,97 335,22 263,22C216,22 159,58 159,88z"
+   id="glyph14" />
+<glyph
+   unicode="3"
+   horiz-adv-x="500"
+   d="M61,510C102,584 148,616 210,616C276,616 318,582 318,514C318,453 286,408 237,380C217,368 191,357 153,344l0,-14C210,330 233,327 255,320C324,300 359,251 359,175C359,90 303,22 229,22C201,22 180,27 143,53C115,73 99,79 82,79C59,79 41,64 41,43C41,7 80,-14 153,-14C242,-14 337,15 385,79C414,117 431,166 431,219C431,271 415,317 387,348C366,370 348,382 304,401C371,441 397,491 397,539C397,621 334,676 241,676C137,676 74,609 45,514z"
+   id="glyph16" />
+<glyph
+   unicode="2"
+   horiz-adv-x="500"
+   d="M474,137l-14,6C427,87 406,76 364,76l-234,0l165,176C384,346 423,421 423,500C423,599 351,676 238,676C115,676 51,594 30,477l21,-5C91,570 126,602 198,602C283,602 337,552 337,461C337,376 301,300 207,201l-178,-189l0,-12l391,0z"
+   id="glyph18" />
+</font>
+
+	<linearGradient
+   id="SVGID_1_"
+   gradientUnits="userSpaceOnUse"
+   x1="-489.25"
+   y1="-267"
+   x2="-489.25"
+   y2="-268">
+	<stop
+   offset="0"
+   style="stop-color:#656565"
+   id="stop22" />
+	<stop
+   offset="0.618"
+   style="stop-color:#1B1B1B"
+   id="stop24" />
+	<stop
+   offset="0.6292"
+   style="stop-color:#545454"
+   id="stop26" />
+	<stop
+   offset="0.9831"
+   style="stop-color:#3E3E3E"
+   id="stop28" />
+</linearGradient>
+<g
+   id="g39">
+	<g
+   id="g37">
+		<line
+   class="st0"
+   x1="23.8"
+   y1="245.5"
+   x2="292.8"
+   y2="245.5"
+   id="line31" />
+		<g
+   id="g35">
+			<polygon
+   points="299.8,245.5 289.8,249.6 292.2,245.5 289.8,241.4    "
+   id="polygon33" />
+		</g>
+	</g>
+</g>
+<g
+   id="g49">
+	<g
+   id="g47">
+		<line
+   class="st0"
+   x1="23.3"
+   y1="243"
+   x2="23.3"
+   y2="7"
+   id="line41" />
+		<g
+   id="g45">
+			<polygon
+   points="23.3,0 27.3,9.9 23.3,7.6 19.2,9.9    "
+   id="polygon43" />
+		</g>
+	</g>
+</g>
+<line
+   class="st1"
+   x1="56.8"
+   y1="109"
+   x2="56.8"
+   y2="30"
+   id="line51" />
+<line
+   class="st2"
+   x1="283.8"
+   y1="197"
+   x2="283.8"
+   y2="153"
+   id="line53" />
+
+
+<path
+   class="st1"
+   d="M56.5,29.8c34.2,79.9,117.9,115.1,228.8,124"
+   id="path59" />
+<path
+   class="st4"
+   d="M56.5,108.5c31.9,44.5,126,67.8,229.5,88"
+   id="path61" />
+<text
+   transform="matrix(1 0 0 1 292.25 198.5)"
+   class="st5 st6"
+   id="text63">1</text>
+
+
+<text
+   transform="matrix(1 0 0 1 44.5 115.25)"
+   class="st5 st6"
+   id="text65">2</text>
+
+
+<text
+   transform="matrix(1 0 0 1 46 28.5)"
+   class="st5 st6"
+   id="text67">3</text>
+
+
+<text
+   transform="matrix(1 0 0 1 290.25 152.5)"
+   class="st5 st6"
+   id="text69">4</text>
+
+
+<text
+   transform="matrix(1 0 0 1 277.5 275)"
+   class="st5 st7"
+   id="text71">V</text>
+
+
+<text
+   transform="matrix(1 0 0 1 0 19)"
+   class="st5 st7"
+   id="text73">p</text>
+
+
+<g
+   id="g83">
+	<g
+   id="g81">
+		<path
+   class="st8"
+   d="M129.6,103.1c15.4,9,32.5,16.5,51.1,22.5"
+   id="path75" />
+		<g
+   id="g79">
+			<polygon
+   class="st9"
+   points="187.4,127.7 176.7,128.4 180.2,125.3 179.3,120.7    "
+   id="polygon77" />
+		</g>
+	</g>
+</g>
+<g
+   id="g93">
+	<g
+   id="g91">
+		<path
+   class="st10"
+   d="M122.9,162.2c16.6,6.6,35.1,12.5,55.1,17.9"
+   id="path85" />
+		<g
+   id="g89">
+			<polygon
+   class="st11"
+   points="116.3,159.5 124.1,166.9 123.4,162.3 127.1,159.4    "
+   id="polygon87" />
+		</g>
+	</g>
+</g>
+
+
+</svg>

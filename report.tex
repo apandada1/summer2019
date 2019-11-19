@@ -4,16 +4,20 @@
 \documentclass[12pt, twoside]{article}
 
 \newcommand{\citeny}[1]{\citename{#1}~\citeyear{#1}}
-
+\newcommand\blankpage{%
+	\null
+	\thispagestyle{empty}%
+	%\addtocounter{page}{-1}%
+	\newpage}
 % Setup TikZ
 \usepackage{tikz}
 \usetikzlibrary{arrows}
 \tikzstyle{block}=[draw opacity=0.7,line width=1cm]
 
-\usepackage{graphicx}
-\usepackage[lofdepth,lotdepth]{subfig}
+\usepackage{graphicx,subcaption}
 \usepackage{amsmath, amsthm, amsfonts}
 \usepackage[numbers]{natbib}
+\usepackage{afterpage}
 \usepackage{algorithm, algorithmic}
 \usepackage{placeins}
 \usepackage{rotating}
@@ -54,28 +58,30 @@
 
 \author{
 	Archisman Panigrahi \\
-	\footnotesize Indian Institute of Science, Bangalore\\
+	\footnotesize Indian Institute of Science, Bangalore, India\\
 	\footnotesize SR No. - 11-01-00-10-91-17-1-14503\\
 	\footnotesize KVPY SA Fellow, 2015\\
 	\footnotesize KVPY Registration No. - SA-1510017\\\\\\
 	\footnotesize Under the Guidance of\\
 	Prof. H. R. Krishnamurthy\\
-	\footnotesize Dept. of Physics, Indian Institute of Science, Bangalore }
+	\footnotesize Dept. of Physics, Indian Institute of Science, Bangalore, India}
 
 
 \maketitle
 
 \begin{abstract}
 
-Make abstruct
-Todo. 1. sinusodially spelling
-2. add graphs for coherent and squeezed state.
-3. add graphs for simulation
+It is a challenging work to make efficient heat engines. The Carnot limit[reference Resnick Halliday] provides an upper bound for the efficiency of a heat engine. It was claimed in a recent paper [reference Klaers] that it researchers have been able to experimentally surpass the Carnot limit using non-equilibrium reservoirs, and the second law of thermodynamics was not violated due to the non-equilibrium nature of the reservoirs. There was a claim that a certain kind of stochastic gave rise to classical squeezed states, which can be utilized to make such an heat engines. In this article, that claim is verified, and the sense in which the Carnot efficiency is surpassed, and why second law is still not violated is explained.  
+
+\textbf{Todo} 1. sinusodially spelling
+2. add graphs for simulation
+3. References
 
 \end{abstract}
 %{\bf Keywords:} enter, keyword, here.
 
-\newpage
+
+\afterpage{\blankpage}
 \begin{center}
 	\large{\textbf{Certificate}}
 \end{center}
@@ -102,7 +108,7 @@ The classical limits of the maximum achievable efficiency of an ideal heat engin
 The efficiency of real engines are, however, a fraction of this ideal formula, as the reversible Carnot engine is inifinitely slow, and there are frictional dissipations in the real world.
 Nano engines based on the principles of Quantum Mechanics can achieve much higher efficiencies than their classical counterparts and can have efficiency close to the Carnot limit.
 These engines have been realized in many forms including of ion traps[ref], three level systems[ref],harmonic oscillators [ref].
-It has been shown both theoretically[ref Abah] and experimentally[ref Klaers] that the efficiencies of engines realized using ``squeezed harmonic oscillators" an even surpass the Carnot limit, without violating the second law of thermodynamics. In this report, it will be elaborated in which sense the Carnot limit is surpassed, and why the second law is not violated.
+It has been shown both theoretically[ref Roßnagel ,Abah et al.] and experimentally[ref Klaers] that the efficiencies of engines realized using ``squeezed harmonic oscillators" an even surpass the Carnot limit, without violating the second law of thermodynamics. In this report, it will be elaborated in which sense the Carnot limit is surpassed, and why the second law is not violated.
 To see how the experiment[ref Klaers] was done, let us recap squeezed states of harmonic oscillator and Brownian motion.
 \section{Theory of the for Brownian Harmonic oscillator}
 
@@ -149,65 +155,37 @@ Now,
 	& \Delta x \cdot \Delta p = x_0 p_0 = \frac{\hbar}{2} 
 	
 	\end{cases}\end{equation}
-Let $\alpha = |\alpha|e^{i\phi}$. Then, $\langle x \rangle (t) $$= \sqrt{2} x_0 \Re{\alpha(t)} $$= \sqrt{2} x_0 |\alpha| \cos(\phi-\omega t)$, and $ \langle p \rangle (t) $$= \sqrt{2} p_0 \Im{\alpha(t)} $$= \sqrt{2} x_0 |\alpha| \sin(\phi-\omega t)$. The total energy, the standard deviations in position and momentum remain constant, while the expected position and momentum vary sinusodially with time, just like a classical particle. Solving the first order differential equation obtained from (\ref{eq:coherent}) in position basis, it can be easily shown that the wave function $\psi_\alpha (x) = \braket{x}{\alpha}$ is a Gaussian, and its mean $\expval{x}$ changes sinusodially with time.
-
-\begin{figure}
+	
+\begin{figure}[h!]
+	\label{fig:coherent_state}
 	\centering
-	\subfloat[Subfigure 1 list of figures text][Subfigure 1 caption]{
-		\includegraphics[width=0.4\textwidth]{graphs/coherent/1.jpg}
-		\label{fig:subfig1}}
-	\qquad
-	\subfloat[Subfigure 2 list of figures text][Subfigure 2 caption]{
-		\includegraphics[width=0.4\textwidth]{graphs/coherent/2.jpg}
-		\label{fig:subfig2}}
-	\subfloat[Subfigure 3 list of figures text][Subfigure 3 caption]{
-		\includegraphics[width=0.4\textwidth]{graphs/coherent/3.jpg}
-		\label{fig:subfig3}}
-	\qquad
-	\subfloat[Subfigure 4 list of figures text][Subfigure 4 caption]{
-		\includegraphics[width=0.4\textwidth]{graphs/coherent/4.jpg}
-		\label{fig:subfig4}}
-		\subfloat[Subfigure 2 list of figures text][Subfigure 2 caption]{
-		\includegraphics[width=0.4\textwidth]{graphs/coherent/5.jpg}
-		\label{fig:subfig2}}
-	\qquad
-	\subfloat[Subfigure 3 list of figures text][Subfigure 3 caption]{
-		\includegraphics[width=0.4\textwidth]{graphs/coherent/6.jpg}
-		\label{fig:subfig3}}
-	\qquad
-	\subfloat[Subfigure 3 list of figures text][Subfigure 3 caption]{
-		\includegraphics[width=0.4\textwidth]{graphs/coherent/7.jpg}
-		\label{fig:subfig3}}
-	\qquad
-	\subfloat[Subfigure 3 list of figures text][Subfigure 3 caption]{
-		\includegraphics[width=0.4\textwidth]{graphs/coherent/8.jpg}
-		\label{fig:subfig3}}
-	\qquad
-	\subfloat[Subfigure 3 list of figures text][Subfigure 3 caption]{
-		\includegraphics[width=0.4\textwidth]{graphs/coherent/9.jpg}
-		\label{fig:subfig3}}
-	\qquad
-	\subfloat[Subfigure 3 list of figures text][Subfigure 3 caption]{
-		\includegraphics[width=0.4\textwidth]{graphs/coherent/10.jpg}
-		\label{fig:subfig3}}
-	\qquad
-	\subfloat[Subfigure 3 list of figures text][Subfigure 3 caption]{
-		\includegraphics[width=0.4\textwidth]{graphs/coherent/3.jpg}
-		\label{fig:subfig3}}
-	\qquad
-	\subfloat[Subfigure 3 list of figures text][Subfigure 3 caption]{
-		\includegraphics[width=0.4\textwidth]{graphs/coherent/3.jpg}
-		\label{fig:subfig3}}
-	\qquad
-	\subfloat[Subfigure 3 list of figures text][Subfigure 3 caption]{
-		\includegraphics[width=0.4\textwidth]{graphs/coherent/3.jpg}
-		\label{fig:subfig3}}
-	\qquad
-	\caption{This is a figure containing several subfigures.}
-	\label{fig:globfig}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/coherent/1.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/coherent/2.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/coherent/3.jpg}
+	\end{subfigure}
+\begin{subfigure}[h!]{0.3\linewidth}
+	\includegraphics[width=\linewidth]{graphs/coherent/4.jpg}
+\end{subfigure}
+\begin{subfigure}[h!]{0.3\linewidth}
+	\includegraphics[width=\linewidth]{graphs/coherent/5.jpg}
+\end{subfigure}
+\begin{subfigure}[h!]{0.3\linewidth}
+	\includegraphics[width=\linewidth]{graphs/coherent/6.jpg}
+\end{subfigure}
+\begin{subfigure}[h!]{0.3\linewidth}
+	\includegraphics[width=\linewidth]{graphs/coherent/7.jpg}
+\end{subfigure}
+\begin{subfigure}[h!]{0.3\linewidth}
+	\includegraphics[width=\linewidth]{graphs/coherent/8.jpg}
+\end{subfigure}
+	\caption{Time evolution of probability density of a coherent state}
 \end{figure}
-	
-	
+Let $\alpha = |\alpha|e^{i\phi}$. Then, $\langle x \rangle (t) $$= \sqrt{2} x_0 \Re{\alpha(t)} $$= \sqrt{2} x_0 |\alpha| \cos(\phi-\omega t)$, and $ \langle p \rangle (t) $$= \sqrt{2} p_0 \Im{\alpha(t)} $$= \sqrt{2} x_0 |\alpha| \sin(\phi-\omega t)$. The total energy, the standard deviations in position and momentum remain constant, while the expected position and momentum vary sinusodially with time, just like a classical particle. Solving the first order differential equation obtained from (\ref{eq:coherent}) in position basis, it can be easily shown that the wave function $\psi_\alpha (x) = \braket{x}{\alpha}$ is a Gaussian, and its mean $\expval{x}$ changes sinusodially with time.
 \subsection{Squeezed states of a quantum harmonic oscillator}
 
 The coherent state behaves like a classical particle in a harmonic potential, and it has equal uncertainty in position and momentum. However, there exist states which have different values of standard deviation in position and momentum coordinates. In the next section, we will see that the uncertainty is related to the effective temperature in these coordinates, and this can be utilized to prepare efficient heat engines. Let us define \begin{equation} \label{eq:squeeze}
@@ -250,7 +228,48 @@ Then, after some simplification, we get,
 & { \frac{(\Delta p)^2}{{p_0}^2} = \frac { |\cosh(r)e^{i\omega t} + \sinh(r)e^{i(\phi - \omega t)}|^2 } { 2 } =  \frac{\cosh(2\tilde{r}) + \sinh(2\tilde{r})\cos(2\omega t-\phi) }{2} }\\
 
 \end{cases}\end{equation}
-We can solve $\hat{Q}\ket{s} = s\ket{s}$ in position basis, and show that the wave function is a Gaussian peaked at $\expval{\hat{x}}$ with standard deviation $\Delta x$, both of which are sinusoidal functions of time. When $s=0$, the state is called squeezed vacuum, where the wave function is a Gaussian peaked at $x=0$, but the standard deviation oscillates with time. For $r = 0$, we recover the coherent state.
+\begin{figure}[h!]
+	\label{fig:squeezed_state}
+	\centering
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeeze_0.8/1.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeeze_0.8/2.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeeze_0.8/3.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeeze_0.8/4.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeeze_0.8/5.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeeze_0.8/6.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeeze_0.8/7.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeeze_0.8/8.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeeze_0.8/9.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeeze_0.8/10.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeeze_0.8/11.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeeze_0.8/12.jpg}
+	\end{subfigure}
+	\caption{Time evolution of a squeezed coherent state with $r=0.8$ and $s=1$}
+\end{figure}
+We can solve $\hat{Q}\ket{s} = s\ket{s}$ in position basis, and show that the wave function is a Gaussian peaked at $\expval{\hat{x}}$ with standard deviation $\Delta x$, both of which are sinusoidal functions of time. When $s=0$, the state is called squeezed vacuum, where the wave function is a Gaussian peaked at $x=0$, but the standard deviation oscillates with time.
 
 \subsubsection{Expansion of squeezed state in eigenstate basis and time evolution}
 
@@ -267,21 +286,64 @@ We know $e^{2ty -y^2} = \sum _ { n = 0 } ^ { \infty } H _ { n } ( t ) \frac { y 
 $\begin{aligned}\text{Thus,}\ket{s,t} &= C \sum _ { n = 0 } ^ { \infty } \frac{ H_n ( \frac { s } { \sqrt { 2 \mu \lambda } }) \left( \frac { \mu } { \lambda } \right) ^ { n / 2 }}{\sqrt{2^n n!}} e^{-i(n+\frac{1}{2})\omega t}\ket{n,0} (C \text{ is a normalization constant}) \\ &= C e^{-\frac{i\omega t}{2}}\sum _ { n = 0 } ^ { \infty } \frac{ H_n ( \frac { s } { \sqrt { 2 (\mu e^{-i\omega t}) (\lambda e^{i\omega t}) } }) \left( \frac { \mu e^{-i\omega t}} { \lambda e^{i\omega t} } \right) ^ { n / 2 }}{\sqrt{2^n n!}}\ket{n,0} \end{aligned}$.\\ Therefore, the state evolves as if it remains a squeezed state with the same value of $s$, while $\lambda$ and $\mu$ evolve as $ \lambda e^{i\omega t}$ and $\mu e^{-i\omega t}$, respectively.
 
 \textbf{Case} $s = 0$, $\mu \neq 0$, squeezed vacuum
+\begin{figure}[h!]
+	\label{fig:squeezed_vacuum}
+	\centering
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeezed_vacuum/1.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeezed_vacuum/2.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeezed_vacuum/3.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeezed_vacuum/4.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeezed_vacuum/5.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeezed_vacuum/6.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeezed_vacuum/7.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeezed_vacuum/8.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeezed_vacuum/9.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeezed_vacuum/10.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeezed_vacuum/11.jpg}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{graphs/squeezed_vacuum/12.jpg}
+	\end{subfigure}
+	\caption{Time evolution of probability density of a squeezed vacuum state with $r=0.8$}
+\end{figure}
 
-From (\ref{eq:recursion cn}), $\lambda \sqrt{n+1}c_{n+1} + \mu \sqrt{n} c_{n-1} = 0$. 
+From (\ref{eq:recursion cn}), we get $\lambda \sqrt{n+1}c_{n+1} + \mu \sqrt{n} c_{n-1} = 0$. 
 
 $\begin{aligned}\text{Let } e_n &= c_n \sqrt{n!} \\\implies e_{n+1} &= -\frac{\mu}{\lambda} n e_{n-1} \\\implies e_{n+2} &= -\frac{\mu}{\lambda} (n+1) e_n \\ \implies \frac { e_{2n} } { e _ { 0 } } &= \frac { e_{2n} } { e_{2n- 2} } \frac { e_{2n- 2} } { e_{2n- 4} } \cdots \frac { e _ { 2 } } { e _ { 0 } } \\ &= \left( - \frac { u } { \lambda } \right) { ( 2n - 1 ) } \left( - \frac { \mu } { \lambda } \right) ( 2n - 3 ) \cdots \left( - \frac { \mu } { \lambda } \right) 1 \\
   &= \left( -\frac { \mu } { \lambda } \right) ^ { n } \cdot ( 2 n - 1 ) ( 2 n - 3 ) \cdots 1 \\  &= ( - 1 ) ^ { n } \left( \frac { \mu } { \lambda } \right) ^ { n } \frac { ( 2 n ) ( 2 n - 1 ) \cdots 2\cdot1 } {2 ^ { n } \cdot n !  } \\ &= ( - 1 ) ^ { n } \left( \frac { \mu } { \lambda } \right) ^ { n } \frac { (2n)! } {2 ^ { n } \cdot n !  }  \end{aligned}$.
   
   $\begin{aligned}\text{Similarly, }\frac { e_{2n+1} } { e _ { 1 } } &= \frac { e_{2n+1} } { e_{2n-1} } \frac { e_{2n- 1} } { e_{2n- 3} } \cdots \frac { e _ { 3 } } { e _ { 1 } } \\
-  &= \left( -\frac { \mu } { \lambda } \right) ^ { n } \cdot ( 2 n ) ( 2 n - 2) \cdots 2 \\  &= ( - 1 ) ^ { n } \left( \frac { \mu } { \lambda } \right) ^ { n } {2 ^ { n } \cdot n !  }\end{aligned}$. By ratio test, it can be shown that $\sum _ { n = 0 } ^ { \infty } |c_{2n+1}|^2$ does not converge, and hence, $c_1$ must be zero. Therefore, squeezed vacuum is only composed of even eigenstates of Hamiltonian.
+  &= \left( -\frac { \mu } { \lambda } \right) ^ { n } \cdot ( 2 n ) ( 2 n - 2) \cdots 2 \\  &= ( - 1 ) ^ { n } \left( \frac { \mu } { \lambda } \right) ^ { n } {2 ^ { n } \cdot n !  }\end{aligned}$.
+  
+  By ratio test, it can be shown that $\sum _ { n = 0 } ^ { \infty } |c_{2n+1}|^2$ does not converge, and hence, $c_1$ must be zero. Therefore, squeezed vacuum is only composed of even eigenstates of Hamiltonian.
 
 
 
 \subsection{ Classical Brownian motion under harmonic potential}
 
 \subsubsection{Langevin equation}
-It turns out that the motion of a classical particle undergoing Brownian motion can mimic a squeezed state, under special circumstances. The dynamics of a particle undergoing Brownian motion is governed by the Langevin equation,\begin{equation}\label{eq:langevin}m \ddot{x} = -\derivative{V(x)}{x} - b \dot{x} + m \xi(t)\end{equation} where $-\derivative{V(x)}{x}$ is the force acting on the particle due to potential $V(x)$, $-b\dot{x}$ is the effective frictional force acting on the particle due to viscosity of the medium, and $\xi(t)$ is a time dependent stochastic force.
+It turns out that the motion of a classical particle undergoing Brownian motion can mimic a squeezed state, under special circumstances. The dynamics of a particle undergoing Brownian motion is governed by the Langevin equation,\begin{equation}\label{eq:Langevin}m \ddot{x} = -\derivative{V(x)}{x} - b \dot{x} + m \xi(t)\end{equation} where $-\derivative{V(x)}{x}$ is the force acting on the particle due to potential $V(x)$, $-b\dot{x}$ is the effective frictional force acting on the particle due to viscosity of the medium, and $\xi(t)$ is a time dependent stochastic force.
 For the Brownian motion of a particle in a normal heat bath of temperature $T$, the stochastic force is a white noise (reference. wikipedia page of white noise, and some source e.g. Chandrashekhar's paper that the force is indeed white noise), and $\overline{\xi(t_1)\xi(t_2)} = a \delta(t_1 - t_2)$, where the overhead line denotes the average over distribution of $\xi(t)$.
 \subsubsection{Explanation of the nature of correlation of the stochastic force}\label{fluctuation_dissipation_proof} To see why this happens, we note that when $t_1 \neq t_2$, the two forces are uncorrelated, and the average of their product is zero. When the two times are equal, the force acts like a Dirac delta function because the velocity of the particle changes instantaneously after being hit by another particle. Now we show that for $a = \frac{2 \gamma k T}{m}$, where $k$ is the Boltzmann's constant.\\
 \textbf{Proof}: When $V(x) = 0$,\begin{equation}\label{eq:lang_no_pot}
@@ -469,18 +531,44 @@ I created a C program (ref - link to code) to simulate the dynamics of this part
 The following graphs show that the energy in rotating coordinates are different, and the ratio of average energies is very close to the ratio of $T^*_1$ and $T^* _2$ obtained from (\ref{eq:eff_temp}). This also shows that $r$ and $\tilde{r}$ are not equal and the relation between them is given by the expression in the previous section.
 
 \section{How the Heat Engine works}
+The working principle of the squeezed harmonic oscillator used by Klaers et. al is hereby explained. This section is based on the supplement material (reference to supplement) of their paper. They have created a nano beam structure made of GaAs that is doubly clamped, and allowed to vibrate. (reference to supplement). The nano-beam contains two doped layers, where a DC bias voltage can be applied to change the frequency of oscillation of the beam. 
+\subsection{How the force is applied}
+Due to the piezo-electric nature of GaAs, when an AC electric field is applied to it, it experiences a mechanical force, and oscillates according to it. The oscillator is weakly damped (Q factor is approximately $10^3$). Now, an electric field of the form (\ref{eq: stochastic}) is used, so that the beam experiences a similar mechanical force, and its displacement from equilibrium is is described by the Langevin equation (\ref{eq:Langevin}), where the force is given by (\ref{eq: stochastic}).
+\subsection{How the quantities are measured}
+The displacement of the nano-beam is measured using Mach-Zehnder interferometry, where the path length of a laser beam changes as the nano-beam oscillates, creating a shift in the position of fringes, which can be used to calculate the displacement of the nano-beam. From the displacement, rotating coordinate amplitudes, their effective temperatures, and all other quantities of interest can be found.
+\subsection{How it is used as a heat engine}
+The frequency of oscillation of the beam can be changed by altering the DC bias voltage. It has been shown in the supplement material (reference to supplement) of that paper that the entropy in the two quadratures of the oscillator can be expressed as $S_{1,2} = \frac{k_B}{2} \ln (\frac{k_B T_{1,2}}{\hbar \omega}) + \text{constant}$ (Where $T_{1,2} = T e^{\pm 2r}$ are effective temperatures in the two rotating coordinates. Note that the absolute constant in entropy does not matter). The volume of the system is defined to be $V = \frac{1}{\omega}$, and it can be shown that internal energy $U \left( S _ { 1 } , S _ { 2 } , V \right) = \frac { \hbar } { 2 V } \left( \exp \left( 2 \frac{S _ { 1 }} { k _ { \mathrm { B } }} - 1 \right) + \exp \left( 2 \frac{S _ { 2 }} { k _ { \mathrm { B } }} - 1 \right) \right)$. Then, we can define pressure $p = - \left( \frac { \partial U } { \partial V } \right) _ { S _ { 1 } , S _ { 2 } } = \frac { k _ { \mathrm { B } } } { 2 } \frac { \left( T _ { 1 } + T _ { 2 } \right) } { V }$.
+
+Now, the temperature $T$ and squeezing parameter $r$ can be varied by tweaking the stochastic force. This way, the oscillator is made to undergo an Otto cycle [reference - Resnick, Halliday, Walker]. The adiabatic strokes of the Otto cycle are replaced by an isoentropic stoke, where the ratio $\frac{T}{\omega}$ is kept constant (note that entropy is a function of $\frac{k_B T}{\hbar \omega}$).
+
+The natural frequency of the oscillator is in the order of MHz, whereas the cycle time of the Otto cycle is of several seconds. So, we can use the time average values for sines and cosines (and their squares, as in subsection \ref{rotating_coordinates}), and assume that the rotating coordinates have a Gaussian distribution with mean zero, and variance proportional to $T^*_1$ and $T^*_2$.
+
+When the temperature is highest ($T_h = 10000 K$), the squeezing parameter is kept at a value $r_h = 0.4$, and when the temperature is lowest ($T_c = 9500 K$), the squeezing parameter is zero. So, the effective highest temperature is $T^*_h = T_h e^{2r_h}$, while the effective lowest temperature is $T_c$.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.4\linewidth]{graphs/P-V_Otto_cycle.png}
+	\caption{pressure-volume diagram of Otto Cycle. Image source: Wikipedia (reference - wikipedia)}
+	\label{fig:Otto_cycle}
+\end{figure}
+
+\subsection{How efficiency is measured}
+From the displacement of the oscillator, the two rotating coordinates, and their effective temperature, and entropy can be calculated. So, one can generate a "temperature-entropy diagram" of the cycle, and find the corresponding efficiency. One can also find generate a "pressure-volume diagram" (where pressure and volume are defined in the last subsection), and find the efficiency from the ratio of work done (the area enclosed by the loop) and the heat supplied to the system when $T = T_h$. When the system is coupled to the hot bath (i.e. the prefactor $a_0$ in the stochastic force (\ref{eq: stochastic}) is such that $T = T_h$), it undergoes an isochoric process, i.e. its volume (here inverse frequency) does not change. Then the work done is zero, and from first law of thermodynamics, the effective heat given to the system is equal to the increase in internal energy (which can be calculated using the formula of internal energy given in the last subsection).
+
+It is experimentally found that the efficiency of the engine is more than the standard Carnot limit $1 - \frac{T_c}{T_h}$ (although it is less than $1 - \frac{T_c}{T^* _h}$).
+
 \section{Explanation of different effective temperatures and the reason for surpassing the second law}
 In \ref{fluctuation_dissipation_proof} we saw that the effective temperature of the system is proportional to the square of the magnitude of the stochastic force. The force $\xi(t) =  a_0 [e^{\tilde{r}} \xi_1(t) \cos(\omega t) + e^{-{\tilde{r}}} \xi_2(t)\sin(\omega t)]$ can be viewed as a combination of two forces with magnitudes $a_1 = a_0 e^{\tilde{r}}$ and $a_2 = a_0 e^{-{\tilde{r}}}$. This is as if, the system is simultaneously coupled to two heat baths of temperatures $T e^{2{\tilde{r}}}$ and $T e^{-2{\tilde{r}}}$. This gives rise to the different temperatures in the two rotating coordinates. Note that the temperatures in (\ref{eq:eff_temp}) are just linear combinations of the temperatures of these two heat baths.
 
 As mentioned in papers by Klaers et. al (reference klaers), we can only say that Carnot efficiency has been surpassed if squeezing can be obtained as a free resource. If we have two engines, one of which creates the squeezed force, and the other utilizes it, then the efficiency of the whole system will not be greater than the Carnot limit.
 
-There is a notion of generalized Carnot limit given by $\eta = 1 - \frac{T^*_{high}}{T^*_{low}}$ (where $T^*$ denotes the effective temperature). It is seen that the experimental efficiency is still less than this limit, although it is more than the standard Carnot limit $1 - \frac{T_{high}}{T_{low}}$. 
+There is a notion of generalized Carnot limit given by $\eta = 1 - \frac{T^*_{h}}{T^*_{c}}$ (where $T^*$ denotes the effective temperature). It is seen that the experimental efficiency is still less than this limit, although it is more than the standard Carnot limit $1 - \frac{T_{h}}{T_{c}}$. 
 
-When we calculate the change in entropy, we need to take into account the effective temperatures  ${T^*_{high}}$ and ${T^*_{low}}$ of the heat baths, and that is why, the second law of thermodynamics would not be violated. When we use this special stochastic force, the system is really coupled to two heat baths of different temperatures, and we should not compare its efficiency to the ``formula" of standard Carnot efficiency, with some intermediate temperature $T_{high}$ and $T_{low}$.
+When we calculate the change in entropy, we need to take into account the effective temperatures  ${T^*_{h}}$ and ${T^*_{c}}$ of the heat baths, and that is why, the second law of thermodynamics would not be violated. When we use this special stochastic force, the system is really coupled to two heat baths of different temperatures, and we should not compare its efficiency to the ``formula" of standard Carnot efficiency, with some intermediate temperature $T_{h}$ and $T_{c}$, where the squeezing parameter $r$ is put to zero.
 
 \section{Conclusion}
 
 \bibliographystyle{plainnat}
 \bibliography{references}
-
+wikipedia image reference in next line (commented) %{https://commons.wikimedia.org/wiki/File:P-V_Otto_cycle.svg}%
 \end{document}
