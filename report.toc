@@ -2,7 +2,7 @@
 \contentsline {section}{\numberline {2}Theory of the for Brownian Harmonic oscillator}{6}
 \contentsline {subsection}{\numberline {2.1}Coherent states of a quantum harmonic oscillator}{6}
 \contentsline {subsection}{\numberline {2.2}Squeezed states of a quantum harmonic oscillator}{8}
-\contentsline {subsubsection}{\numberline {2.2.1}Expansion of squeezed state in eigenstate basis and time evolution}{11}
+\contentsline {subsubsection}{\numberline {2.2.1}Expansion of squeezed state in eigenstate basis and its time evolution}{11}
 \contentsline {subsection}{\numberline {2.3} Classical Brownian motion under harmonic potential}{14}
 \contentsline {subsubsection}{\numberline {2.3.1}Langevin equation}{14}
 \contentsline {subsubsection}{\numberline {2.3.2}Explanation of the nature of correlation of the stochastic force}{15}
@@ -17,10 +17,10 @@
 \contentsline {section}{\numberline {4}Other methods to get this result}{23}
 \contentsline {subsection}{\numberline {4.1}Directly integrating the equations in Mathematica}{23}
 \contentsline {subsection}{\numberline {4.2}Verification using a simulation}{23}
-\contentsline {section}{\numberline {5}How the Heat Engine works}{23}
-\contentsline {subsection}{\numberline {5.1}How the force is applied}{24}
-\contentsline {subsection}{\numberline {5.2}How the quantities are measured}{24}
-\contentsline {subsection}{\numberline {5.3}How it is used as a heat engine}{24}
-\contentsline {subsection}{\numberline {5.4}How efficiency is measured}{25}
-\contentsline {section}{\numberline {6}Explanation of different effective temperatures and the reason for surpassing the second law}{26}
-\contentsline {section}{\numberline {7}Conclusion}{27}
+\contentsline {section}{\numberline {5}How the Heat Engine works}{24}
+\contentsline {subsection}{\numberline {5.1}How the force is applied}{25}
+\contentsline {subsection}{\numberline {5.2}How the quantities are measured}{25}
+\contentsline {subsection}{\numberline {5.3}How it is used as a heat engine}{25}
+\contentsline {subsection}{\numberline {5.4}How efficiency is measured}{26}
+\contentsline {section}{\numberline {6}Explanation of different effective temperatures and the reason for surpassing the second law}{27}
+\contentsline {section}{\numberline {7}Conclusion}{28}

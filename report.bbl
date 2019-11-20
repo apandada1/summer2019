@@ -1,8 +1,55 @@
-\begin{thebibliography}{0}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+\begin{thebibliography}{1}
+
+\bibitem{resnick_halliday}
+Resnick R., Halliday D., and Walker J.
+\newblock {\em Principles of Physics}, pages 525--528.
+\newblock Wiley, 10th edition, 2014.
+
+\bibitem{klaers}
+Jan Klaers, Stefan Faelt, Atac Imamoglu, and Emre Togan.
+\newblock Squeezed thermal reservoirs as a resource for a nanomechanical engine
+  beyond the carnot limit.
+\newblock {\em Phys. Rev. X}, 7:031044, Sep 2017.
+
+\bibitem{Millen_2016}
+James Millen and Andr{\'{e}} Xuereb.
+\newblock The rise of the quantum machines.
+\newblock {\em Physics World}, 29(1):23--26, jan 2016.
+
+\bibitem{ion_trap_abah}
+O.~Abah, J.~Ro\ss{}nagel, G.~Jacob, S.~Deffner, F.~Schmidt-Kaler, K.~Singer,
+  and E.~Lutz.
+\newblock Single-ion heat engine at maximum power.
+\newblock {\em Phys. Rev. Lett.}, 109:203006, Nov 2012.
+
+\bibitem{bacterial_reservoir}
+Sudeesh Krishnamurthy, Subho Ghosh, Dipankar Chatterji, Rajesh Ganapathy, and
+  A.~K. Sood.
+\newblock A micrometre-sized heat engine operating between bacterial
+  reservoirs.
+\newblock {\em Nature Physics}, 12(12):1134--1138, 2016.
+
+\bibitem{abah_et_al}
+J.~Ro\ss{}nagel, O.~Abah, F.~Schmidt-Kaler, K.~Singer, and E.~Lutz.
+\newblock Nanoscale heat engine beyond the carnot limit.
+\newblock {\em Phys. Rev. Lett.}, 112:030602, Jan 2014.
+
+\bibitem{cohen_tannoudji}
+Cohen-Tannoudji C., Diu B., and Laloe F.
+\newblock {\em Quantum Mechanics}, volume One, chapter~V.
+\newblock WILEY-VCH, 1977.
+
+\bibitem{squeezed_reference}
+M~C Teich and B~E~A Saleh.
+\newblock Squeezed state of light.
+\newblock {\em Quantum Optics: Journal of the European Optical Society Part B},
+  1(2):153--191, dec 1989.
+
+\bibitem{recursion_substitution}
+metamorphy (https://math.stackexchange.com/users/543769/metamorphy).
+\newblock How to solve the recurrence relation $d_n = a \sqrt{n+1}d_{n+1} + b
+  \sqrt{n} d_{n-1}$ (when $n \in \mathbb { Z } ^ { + } )$, and $d_0 := a d_1$.
+\newblock Mathematics Stack Exchange.
+\newblock URL:https://math.stackexchange.com/q/3344192 (version: 2019-09-04).
 
 \end{thebibliography}

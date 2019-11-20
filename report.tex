@@ -30,7 +30,7 @@
 \usepackage{mathrsfs}
 %\setcounter{secnumdepth}{5}
 \usepackage{lineno}
-
+\usepackage{url}
 \usepackage[text={16cm,23cm},centering]{geometry}
 
 \setlength{\parskip}{1.2ex}
@@ -71,11 +71,10 @@
 
 \begin{abstract}
 
-It is a challenging work to make efficient heat engines. The Carnot limit[reference Resnick Halliday] provides an upper bound for the efficiency of a heat engine. It was claimed in a recent paper [reference Klaers] that it researchers have been able to experimentally surpass the Carnot limit using non-equilibrium reservoirs, and the second law of thermodynamics was not violated due to the non-equilibrium nature of the reservoirs. There was a claim that a certain kind of stochastic gave rise to classical squeezed states, which can be utilized to make such an heat engines. In this article, that claim is verified, and the sense in which the Carnot efficiency is surpassed, and why second law is still not violated is explained.  
+It is a challenging work to make efficient heat engines. The Carnot limit \cite{resnick_halliday} provides an upper bound for the efficiency of a heat engine. It was claimed in a recent paper \cite{klaers} that it researchers have been able to experimentally surpass the Carnot limit using non-equilibrium reservoirs, and the second law of thermodynamics was not violated due to the non-equilibrium nature of the reservoirs. There was a claim that a certain kind of stochastic gave rise to classical squeezed states, which can be utilized to make such an heat engines. In this report, that claim is verified, and the sense in which the Carnot efficiency is surpassed, and why second law is still not violated is explained.
 
 \textbf{Todo} 1. sinusodially spelling
-2. add graphs for simulation
-3. References
+2. References
 
 \end{abstract}
 %{\bf Keywords:} enter, keyword, here.
@@ -105,11 +104,11 @@ I am also grateful to D.S.T. and K.V.P.Y. for providing me scholarship.
 
 \section{Introduction}
 The classical limits of the maximum achievable efficiency of an ideal heat engine running between temperatures $T_{hot}$ and $T_{cold}$ us given by Carnot's formula $\eta_{Carnot} = 1 - \frac{T_{cold}}{T_{hot}}$.\\
-The efficiency of real engines are, however, a fraction of this ideal formula, as the reversible Carnot engine is inifinitely slow, and there are frictional dissipations in the real world.
-Nano engines based on the principles of Quantum Mechanics can achieve much higher efficiencies than their classical counterparts and can have efficiency close to the Carnot limit.
-These engines have been realized in many forms including of ion traps[ref], three level systems[ref],harmonic oscillators [ref].
-It has been shown both theoretically[ref Roßnagel ,Abah et al.] and experimentally[ref Klaers] that the efficiencies of engines realized using ``squeezed harmonic oscillators" an even surpass the Carnot limit, without violating the second law of thermodynamics. In this report, it will be elaborated in which sense the Carnot limit is surpassed, and why the second law is not violated.
-To see how the experiment[ref Klaers] was done, let us recap squeezed states of harmonic oscillator and Brownian motion.
+Being reversible, Carnot engine is inifinitely slow, and there are frictional dissipations in the real world. As a result, the efficiency of real, irreversible engines are a small fraction of this ideal formula.
+Nano engines based on the principles of Quantum Mechanics can achieve much higher efficiencies than their classical counterparts \cite{Millen_2016} and can have efficiency close to the Carnot limit.
+These engines can be realized in many forms including ion traps \cite{ion_trap_abah}, bacterial reservoirs \cite{bacterial_reservoir}, harmonic oscillators [ref].
+It has been shown both theoretically \cite{abah_et_al} and experimentally \cite{klaers} that the efficiencies of engines realized using ``squeezed harmonic oscillators" an even surpass the Carnot limit, without violating the second law of thermodynamics. In this report, it will be elaborated in which sense the Carnot limit is surpassed, and why the second law is not violated.
+To see how the experiment \cite{klaers} was done, let us recap squeezed states of harmonic oscillator and Brownian motion.
 \section{Theory of the for Brownian Harmonic oscillator}
 
 Before we discuss squeezed states, let us review ``Coherent states" of a harmonic oscillator.
@@ -121,7 +120,7 @@ However, in quantum mechanics, the expectation value of position or momentum of 
 For the harmonic oscillator, the Hamiltonian is $\hat{H} = \frac{\hat{p}^2}{2m} + \frac{1}{2}m \omega^2 {\hat{x}}^2$.
 
 
-Let the eigenstates of $\hat{H}$ be denoted by $\ket{n}$. It can be shown (ref. Cohen Tannoudji) that it has energy $E_n = (n+\frac{1}{2}) \hbar\omega$. The state evolves with time as $\ket{n,t} = e ^ { -i \left( n + \frac { 1 } { 2 } \right) \omega t } \ket{n,t=0}$, and the position and momentum coordinate will share equal energies $(n+\frac{1}{2}) \frac{\hbar\omega}{2}$. And, the expected values of position and momentum are $0$ and do not change over time.
+Let the eigenstates of $\hat{H}$ be denoted by $\ket{n}$. It can be shown \cite{cohen_tannoudji} that it has energy $E_n = (n+\frac{1}{2}) \hbar\omega$. The state evolves with time as $\ket{n,t} = e ^ { -i \left( n + \frac { 1 } { 2 } \right) \omega t } \ket{n,t=0}$, and the position and momentum coordinate will share equal energies $(n+\frac{1}{2}) \frac{\hbar\omega}{2}$. And, the expected values of position and momentum are zero and do not change over time.
 There exist quantum states whose expected values of position and momentum oscillate sinusoidally with time, and the wave packet does not spread with time. These are known as ``Coherent states".
 
 
@@ -131,7 +130,7 @@ $\hat{a}^\dagger$ and $\hat{a}$ are known as ``creation" and ``annihilation" ope
 \begin{equation} \label{eq:adagger}{ \hat{a} ^ { \dagger } | n \rangle = \sqrt { n + 1 } | n + 1 \rangle }\end{equation} 
 We can define $\hat{N} = \hat{a}^\dagger\hat{a}$, and then, $\hat{N} \ket{n} = n\ket{n}$, denoting the number of excitations (e.g. photons or phonons) in the system. The creation and annihilation operators can be viewed as operators which create or destroy such an excitation, respectively, hence their name.
 
-The operator $\hat{a}$ acts on $\ket{0}$ (the vaccuum state) to give the zero vector of the Hilbert space. However, there exist states which are eigenstates of the annihilation operator, and these states are known as the coherent states. (ref. Wikipedia)
+The operator $\hat{a}$ acts on $\ket{0}$ (the vaccuum state) to give the zero vector of the Hilbert space. However, there exist states which are eigenstates of the annihilation operator, and these states are known as the coherent states. (ref. Wikipedia)\cite{test}
 
 Let \begin{equation}\label{eq:coherent}
 	\hat {a} | \alpha \rangle = \alpha | \alpha \rangle
@@ -190,7 +189,7 @@ Let $\alpha = |\alpha|e^{i\phi}$. Then, $\langle x \rangle (t) $$= \sqrt{2} x_0 
 
 The coherent state behaves like a classical particle in a harmonic potential, and it has equal uncertainty in position and momentum. However, there exist states which have different values of standard deviation in position and momentum coordinates. In the next section, we will see that the uncertainty is related to the effective temperature in these coordinates, and this can be utilized to prepare efficient heat engines. Let us define \begin{equation} \label{eq:squeeze}
 \hat{Q} = \lambda \hat{a} + \mu \hat{a}^\dagger
-\end{equation} where $|\lambda|^2 - |\mu|^2 = 1$. Let $\lambda = \cosh(r)$, $\mu = \sinh(r)e^{i\phi}$, where $r,\phi \in \mathbb{R}$. The eigenstates of $\hat{Q}$ are defined as the squeezed states. (reference of squeezed state).
+\end{equation} where $|\lambda|^2 - |\mu|^2 = 1$. Let $\lambda = \cosh(r)$, $\mu = \sinh(r)e^{i\phi}$, where $r,\phi \in \mathbb{R}$. The eigenstates of $\hat{Q}$ are defined as the squeezed states \cite{squeezed_reference}.
  We have,
  \[  \left( \begin{array} { l } { \hat { Q } } \\ { \hat { Q } ^ { \dagger } } \end{array} \right) = \left( \begin{array} { l l } { \lambda } & { \mu } \\ { \mu ^ { * } } & { \lambda ^ { * } } \end{array} \right) \left( \begin{array} { l } { \hat{a} } \\ { \hat{a}^\dagger } \end{array} \right)\]
  
@@ -271,13 +270,13 @@ Then, after some simplification, we get,
 \end{figure}
 We can solve $\hat{Q}\ket{s} = s\ket{s}$ in position basis, and show that the wave function is a Gaussian peaked at $\expval{\hat{x}}$ with standard deviation $\Delta x$, both of which are sinusoidal functions of time. When $s=0$, the state is called squeezed vacuum, where the wave function is a Gaussian peaked at $x=0$, but the standard deviation oscillates with time.
 
-\subsubsection{Expansion of squeezed state in eigenstate basis and time evolution}
+\subsubsection{Expansion of squeezed state in eigenstate basis and its time evolution}
 
 Let $\displaystyle | s \rangle = \sum _ { n = 0 } ^ { \infty } c _ { n } | n \rangle$. Then, $\displaystyle\hat { Q } \ket{s} = s \ket{s} \implies \hat { Q } \sum _ { n = 0 } ^ { N } c _ { n } | n \rangle = g \sum c _ { n } | n \rangle \\ \implies \sum _ { n = 0 } ^ { \infty } c _ { n } \lambda \sqrt{n} \ket{n-1} + \mu \sqrt{n+1} \ket{n+1} =s \sum _ { n = 0 } ^ { \infty } c _ { n } \ket{n} \\ \implies s \sum _ { n = 0 } ^ { \infty } c _ { n } \ket{n} = \sum _ { n = 0 } ^ { \infty } (c _ { n+1 } \lambda \sqrt{n+1} +c _ { n-1 } \mu \sqrt{n}) \ket{n}$ \begin{equation}\label{eq:recursion cn}\implies s c_n =  \lambda \sqrt{n+1} c _ { n+1 } + \mu \sqrt{n} c _ { n-1 }\end{equation} 
 We need to solve this recursion relation.
 
 \textbf{Case} $s \neq 0$
-\\From (\ref{eq:recursion cn}), $ c_n =  a \sqrt{n+1} c _ { n+1 } + b \sqrt{n} c _ { n-1 }$ (where $a = \frac{\lambda}{s}$, $b = \frac{\mu}{s}$). Let $c_n = d_n \sqrt{n!}$(reference of this substitution - math stack exchange) \\ $\implies d_n \sqrt{n!} = a d_{n+1} (n+1) \sqrt{n!} + b d_{n-1} \sqrt{n!} \\ \implies c_n = d_n \sqrt{n!} \\ \implies d_n = a d_{n+1} (n+1)  + b d_{n-1}$. Let $\displaystyle f ( x ) = \sum _ { n = 0 } ^ { \infty } d _ { n } x ^ { n }$
+\\From (\ref{eq:recursion cn}), $ c_n =  a \sqrt{n+1} c _ { n+1 } + b \sqrt{n} c _ { n-1 }$ (where $a = \frac{\lambda}{s}$, $b = \frac{\mu}{s}$). Let $c_n = d_n \sqrt{n!}$ \cite{recursion_substitution} \\ $\implies d_n \sqrt{n!} = a d_{n+1} (n+1) \sqrt{n!} + b d_{n-1} \sqrt{n!} \\ \implies c_n = d_n \sqrt{n!} \\ \implies d_n = a d_{n+1} (n+1)  + b d_{n-1}$. Let $\displaystyle f ( x ) = \sum _ { n = 0 } ^ { \infty } d _ { n } x ^ { n }$
 
 $ \begin{aligned} \implies f ( x ) &= a \sum _ { n = 0 } ^ { n } d _ { n + 1 } ( n + 1 ) x ^ { n } + b \sum _ { n = 0 } ^ { \infty } d _ { n - 1 } x ^ { n } \\ &= { a  \sum _ { n = 1 } ^ { \infty } d _ { n } n x ^ { n - 1 } } + { b x f( x ) } \\ &=  { a \sum _ { n = 0 } ^ { \infty } n d_n x ^ { n - 1 } } + {  b x f ( x ) } \\ &= a x f'(x) + b x f(x) \\\implies a f'(x)  &= f(x) (1-bx)\\ \implies \frac{f'(x)}{f(x)} &= \frac{1}{a} - \frac{b}{a} x \\ \implies f(x) &= C e^{\frac{x}{a} - \frac{bx^2}{2a}}\end{aligned}$
 
@@ -517,7 +516,7 @@ Let us define ``rotating coordinates", \begin{equation}\begin{array} { l } { X _
  \\ {T^*}_2 &= T \left[\cosh(2\tilde{r}) + \frac{\sinh(2\tilde{r})}{2}\right]
  \end{aligned}
  \end{equation}
- where $T$ is the temperature of the heat bath to which the harmonic oscillator is coupled and $r$ is the parameter in the stochastic force (\ref{eq: stochastic}).
+ where $T$ is the temperature of the heat bath to which the harmonic oscillator is coupled and $r$ is the parameter in the stochastic force (\ref{eq: stochastic}). Note that the time-averaged energies in non-rotating coordinates $X(t)$ (kinetic energy) and $P(t)$(potential energy) are equal.
  
  \textbf{Note}: It is claimed in paper by Klaers et al. (reference Klaers), the stochastic force $\xi(t) =  a_0 [e^{\tilde{r}} \xi_1(t) \cos(\omega t) + e^{-{\tilde{r}}} \xi_2(t)\sin(\omega t)]$ gives rise to effective temperatures ${T^*}_{1,2}
 = T e^{\pm 2r}$. The relation between $r$ and $\tilde{r}$ is not mentioned. This can be explained if the relation $e^{4r} = \frac{\cosh(2\tilde{r}) - \frac{\sinh(2\tilde{r})}{2}}{\cosh(2\tilde{r}) + \frac{\sinh(2\tilde{r})}{2}}$, i.e. $r = \frac{1}{4}\ln(\frac{e^{\tilde{r}} + 3}{3 e^{4\tilde{r}} + 1})$ is satisfied.
@@ -527,8 +526,32 @@ Let us define ``rotating coordinates", \begin{equation}\begin{array} { l } { X _
 We can write (\ref{eq:1st}) and (\ref{eq:2nd}) in matrix form, and diagonalize the matrices to formally solve for $x(t)$ and $v(t)$ in terms of $\xi(t)$. Then we can calculate of $\overline{x(t_1)x(t_2)}$, $\overline{x(t_1)v(t_2)}$, and  $\overline{v(t_1)v(t_2)}$ just like subsection \ref{fluctuation_dissipation_proof}, and find the variance of the rotating coordinates. I did this calculation (reference - link to the code) in Mathematica and got the same results as in section \ref{rotating_coordinates}, under the limit of low damping.
 
 \subsection{Verification using a simulation}
+
+\begin{figure}[h!]
+	\label{fig:simulation}
+	\centering
+	\begin{subfigure}[h!]{0.45\linewidth}
+		\includegraphics[width=\linewidth]{graphs/simulation/position.png}
+		\caption{position as a function of time}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.45\linewidth}
+		\includegraphics[width=\linewidth]{graphs/simulation/velocity.png}
+		\caption{velocity as a function of time}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.45\linewidth}
+		\includegraphics[width=\linewidth]{graphs/simulation/rotating_energies.png}
+		\caption{energies in the two rotating coordinates as a function of time}
+	\end{subfigure}
+	\begin{subfigure}[h!]{0.45\linewidth}
+		\includegraphics[width=\linewidth]{graphs/simulation/kinetic_potential.png}
+		\caption{The average energy in position and momentum are almost equal.}
+	\end{subfigure}
+	\caption{A simulation of a Brownian harmonic oscillator under the stochastic force with $a_0 = 1000, \tilde{r} = -0.4$. In this, mass is taken to be unity, Note that the energy in rotating coordinates are different, while they are almost equal in the non-rotating coordinates, which can be justified by time averaging equations (\ref{eq:x_average}) and (\ref{eq:p_average})}
+	
+\end{figure}
+
 I created a C program (ref - link to code) to simulate the dynamics of this particle. The delta function force is simulated with a random force of very high magnitude (high compared to the spring force).
-The following graphs show that the energy in rotating coordinates are different, and the ratio of average energies is very close to the ratio of $T^*_1$ and $T^* _2$ obtained from (\ref{eq:eff_temp}). This also shows that $r$ and $\tilde{r}$ are not equal and the relation between them is given by the expression in the previous section.
+The following graphs show that the energy in rotating coordinates are different. It is found that their ratio is close to the ratio obtained in (\ref{eq:eff_temp}).\\\\\\\\
 
 \section{How the Heat Engine works}
 The working principle of the squeezed harmonic oscillator used by Klaers et. al is hereby explained. This section is based on the supplement material (reference to supplement) of their paper. They have created a nano beam structure made of GaAs that is doubly clamped, and allowed to vibrate. (reference to supplement). The nano-beam contains two doped layers, where a DC bias voltage can be applied to change the frequency of oscillation of the beam. 
@@ -567,8 +590,10 @@ There is a notion of generalized Carnot limit given by $\eta = 1 - \frac{T^*_{h}
 When we calculate the change in entropy, we need to take into account the effective temperatures  ${T^*_{h}}$ and ${T^*_{c}}$ of the heat baths, and that is why, the second law of thermodynamics would not be violated. When we use this special stochastic force, the system is really coupled to two heat baths of different temperatures, and we should not compare its efficiency to the ``formula" of standard Carnot efficiency, with some intermediate temperature $T_{h}$ and $T_{c}$, where the squeezing parameter $r$ is put to zero.
 
 \section{Conclusion}
+The efficiency of the heat engine was calculated from the Temperature-Entropy diagram obtained from the rotating coordinates, the heat engine was coupled to anything that extracts actual work. Also, the effective temperatures are different in the rotating coordinates, while they are equal in the lab coordinates. It is to be investigated how work can be experimentally extracted from the rotating coordinates. Although the claim of surpassing Carnot efficiency depends on how the temperatures are interpreted, these microscopic engines can provide much higher efficiency than traditional macroscopic engines, and may become very useful in the near future.
 
-\bibliographystyle{plainnat}
-\bibliography{references}
-wikipedia image reference in next line (commented) %{https://commons.wikimedia.org/wiki/File:P-V_Otto_cycle.svg}%
+
+\bibliographystyle{unsrt}
+\bibliography{sample}
+wikipedia image reference in next line (commented)
 \end{document}
