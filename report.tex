@@ -130,7 +130,7 @@ $\hat{a}^\dagger$ and $\hat{a}$ are known as ``creation" and ``annihilation" ope
 \begin{equation} \label{eq:adagger}{ \hat{a} ^ { \dagger } | n \rangle = \sqrt { n + 1 } | n + 1 \rangle }\end{equation} 
 We can define $\hat{N} = \hat{a}^\dagger\hat{a}$, and then, $\hat{N} \ket{n} = n\ket{n}$, denoting the number of excitations (e.g. photons or phonons) in the system. The creation and annihilation operators can be viewed as operators which create or destroy such an excitation, respectively, hence their name.
 
-The operator $\hat{a}$ acts on $\ket{0}$ (the vaccuum state) to give the zero vector of the Hilbert space. However, there exist states which are eigenstates of the annihilation operator, and these states are known as the coherent states. (ref. Wikipedia)\cite{test}
+The operator $\hat{a}$ acts on $\ket{0}$ (the vaccuum state) to give the zero vector of the Hilbert space. However, there exist states which are eigenstates of the annihilation operator, and these states are known as the coherent states. \cite{wikipedia_coherent}
 
 Let \begin{equation}\label{eq:coherent}
 	\hat {a} | \alpha \rangle = \alpha | \alpha \rangle
@@ -280,7 +280,7 @@ We need to solve this recursion relation.
 
 $ \begin{aligned} \implies f ( x ) &= a \sum _ { n = 0 } ^ { n } d _ { n + 1 } ( n + 1 ) x ^ { n } + b \sum _ { n = 0 } ^ { \infty } d _ { n - 1 } x ^ { n } \\ &= { a  \sum _ { n = 1 } ^ { \infty } d _ { n } n x ^ { n - 1 } } + { b x f( x ) } \\ &=  { a \sum _ { n = 0 } ^ { \infty } n d_n x ^ { n - 1 } } + {  b x f ( x ) } \\ &= a x f'(x) + b x f(x) \\\implies a f'(x)  &= f(x) (1-bx)\\ \implies \frac{f'(x)}{f(x)} &= \frac{1}{a} - \frac{b}{a} x \\ \implies f(x) &= C e^{\frac{x}{a} - \frac{bx^2}{2a}}\end{aligned}$
 
-We know $e^{2ty -y^2} = \sum _ { n = 0 } ^ { \infty } H _ { n } ( t ) \frac { y ^ { n } } { n ! }$, where $H_n(t)$ is the Hermite polynomial of $n$th order.(ref. Arfken, Weber, Harris). Here $y = x \sqrt{\frac{b}{2a}}$ and $t = \frac{1}{\sqrt{2ab}}$. \\ Therefore, $e^{\frac{x}{a} - \frac{bx^2}{2a}} = \sum _ { n = 0 } ^ { \infty } H _ { n }( \frac{1}{\sqrt { 2 a b } }) \frac {x ^ { n } \left( \frac { b } { 2 a } \right) ^ { n / 2 } } { n ! }$, and \\$\begin{aligned}c_n = d_n \sqrt{n!} &= \frac{ H_n ( \frac { 1 } { \sqrt { 2 a b } }) \left( \frac { b } { a } \right) ^ { n / 2 }}{\sqrt{2^n n!}}\\ &=\frac{ H_n ( \frac { s } { \sqrt { 2 \mu \lambda } }) \left( \frac { \mu } { \lambda } \right) ^ { n / 2 }}{\sqrt{2^n n!}}\end{aligned}$.
+We know $e^{2ty -y^2} = \sum _ { n = 0 } ^ { \infty } H _ { n } ( t ) \frac { y ^ { n } } { n ! }$, where $H_n(t)$ is the Hermite polynomial of $n$th order.(reference Arfken, Weber, Harris). Here $y = x \sqrt{\frac{b}{2a}}$ and $t = \frac{1}{\sqrt{2ab}}$. \\ Therefore, $e^{\frac{x}{a} - \frac{bx^2}{2a}} = \sum _ { n = 0 } ^ { \infty } H _ { n }( \frac{1}{\sqrt { 2 a b } }) \frac {x ^ { n } \left( \frac { b } { 2 a } \right) ^ { n / 2 } } { n ! }$, and \\$\begin{aligned}c_n = d_n \sqrt{n!} &= \frac{ H_n ( \frac { 1 } { \sqrt { 2 a b } }) \left( \frac { b } { a } \right) ^ { n / 2 }}{\sqrt{2^n n!}}\\ &=\frac{ H_n ( \frac { s } { \sqrt { 2 \mu \lambda } }) \left( \frac { \mu } { \lambda } \right) ^ { n / 2 }}{\sqrt{2^n n!}}\end{aligned}$.
 
 $\begin{aligned}\text{Thus,}\ket{s,t} &= C \sum _ { n = 0 } ^ { \infty } \frac{ H_n ( \frac { s } { \sqrt { 2 \mu \lambda } }) \left( \frac { \mu } { \lambda } \right) ^ { n / 2 }}{\sqrt{2^n n!}} e^{-i(n+\frac{1}{2})\omega t}\ket{n,0} (C \text{ is a normalization constant}) \\ &= C e^{-\frac{i\omega t}{2}}\sum _ { n = 0 } ^ { \infty } \frac{ H_n ( \frac { s } { \sqrt { 2 (\mu e^{-i\omega t}) (\lambda e^{i\omega t}) } }) \left( \frac { \mu e^{-i\omega t}} { \lambda e^{i\omega t} } \right) ^ { n / 2 }}{\sqrt{2^n n!}}\ket{n,0} \end{aligned}$.\\ Therefore, the state evolves as if it remains a squeezed state with the same value of $s$, while $\lambda$ and $\mu$ evolve as $ \lambda e^{i\omega t}$ and $\mu e^{-i\omega t}$, respectively.
 
@@ -356,9 +356,9 @@ $\begin{aligned}\overline{v(t_1) v(t_2)} = v(0)^2 e^{-\gamma(t_1 + t_2)} &+ v(0)
 
 Therefore, $\overline{v(t)^2} = v(0)^2 e^{-2\gamma t} + a e^{-2\gamma t}\frac{e^{2\gamma t} - 1}{2\gamma}$. When $t \rightarrow \infty, \overline{v(t)^2} = \frac{a}{2\gamma}$. But, in a thermal reservoir, $\frac{m\overline{v^2}}{2} =\frac{k T}{2} \implies \overline{v^2} = \frac{kT}{m}$. Hence, $a = \frac{2 \gamma k T}{m}$. To prove this, we could also Fourier transform the Langevin equation (\ref{eq:lang_no_pot}), solve it algebraically, and inverse transform it. This method is illustrated in the next section.
 \subsubsection{Fluctuation dissipation theorem and the claim}
-Using this value of $a$ and this method, for a harmonic potential, it can be proved that $\frac{m \omega^2 \overline{x^2}}{2} = \frac{k T}{2}$. These results are known as ``Fluctuation dissipation theorem" (Ref. Chandrashekhar), which basically shows whatever may be the initial position and velocity of the particle, random thermal fluctuations will make each quadratic degree of freedom have energy $\frac{kT}{2}$, in average.
+Using this value of $a$ and this method, for a harmonic potential, it can be proved that $\frac{m \omega^2 \overline{x^2}}{2} = \frac{k T}{2}$. These results are known as ``Fluctuation dissipation theorem" (Reference Chandrashekhar), which basically shows whatever may be the initial position and velocity of the particle, random thermal fluctuations will make each quadratic degree of freedom have energy $\frac{kT}{2}$, in average.
 
-It is claimed in the article by Klaers et. al (Reference. paper by Klaers) that a certain kind of stochastic force will lead to different variance (hence, different effective temperature) in position and momentum coordinates, as seen in a rotating frame.
+It is claimed in the article by Klaers et. al (\cite{klaers}) that a certain kind of stochastic force will lead to different variance (hence, different effective temperature) in position and momentum coordinates, as seen in a rotating frame.
 
 \section{Proof of the claim}
 Consider a particle in a Harmonic potential, undergoing Brownian motion for which \begin{equation}\label{eq: stochastic}
@@ -518,7 +518,7 @@ Let us define ``rotating coordinates", \begin{equation}\begin{array} { l } { X _
  \end{equation}
  where $T$ is the temperature of the heat bath to which the harmonic oscillator is coupled and $r$ is the parameter in the stochastic force (\ref{eq: stochastic}). Note that the time-averaged energies in non-rotating coordinates $X(t)$ (kinetic energy) and $P(t)$(potential energy) are equal.
  
- \textbf{Note}: It is claimed in paper by Klaers et al. (reference Klaers), the stochastic force $\xi(t) =  a_0 [e^{\tilde{r}} \xi_1(t) \cos(\omega t) + e^{-{\tilde{r}}} \xi_2(t)\sin(\omega t)]$ gives rise to effective temperatures ${T^*}_{1,2}
+ \textbf{Note}: It is claimed in \cite{klaers}, the stochastic force $\xi(t) =  a_0 [e^{\tilde{r}} \xi_1(t) \cos(\omega t) + e^{-{\tilde{r}}} \xi_2(t)\sin(\omega t)]$ gives rise to effective temperatures ${T^*}_{1,2}
 = T e^{\pm 2r}$. The relation between $r$ and $\tilde{r}$ is not mentioned. This can be explained if the relation $e^{4r} = \frac{\cosh(2\tilde{r}) - \frac{\sinh(2\tilde{r})}{2}}{\cosh(2\tilde{r}) + \frac{\sinh(2\tilde{r})}{2}}$, i.e. $r = \frac{1}{4}\ln(\frac{e^{\tilde{r}} + 3}{3 e^{4\tilde{r}} + 1})$ is satisfied.
 
 \section{Other methods to get this result}
@@ -554,7 +554,7 @@ I created a C program (ref - link to code) to simulate the dynamics of this part
 The following graphs show that the energy in rotating coordinates are different. It is found that their ratio is close to the ratio obtained in (\ref{eq:eff_temp}).\\\\\\\\
 
 \section{How the Heat Engine works}
-The working principle of the squeezed harmonic oscillator used by Klaers et. al is hereby explained. This section is based on the supplement material (reference to supplement) of their paper. They have created a nano beam structure made of GaAs that is doubly clamped, and allowed to vibrate. (reference to supplement). The nano-beam contains two doped layers, where a DC bias voltage can be applied to change the frequency of oscillation of the beam. 
+The working principle of the squeezed harmonic oscillator used in \cite{klaers} is hereby explained. This section is based on the supplement material (reference to supplement) of their paper. They have created a nano beam structure made of GaAs that is doubly clamped, and allowed to vibrate. (reference to supplement). The nano-beam contains two doped layers, where a DC bias voltage can be applied to change the frequency of oscillation of the beam. 
 \subsection{How the force is applied}
 Due to the piezo-electric nature of GaAs, when an AC electric field is applied to it, it experiences a mechanical force, and oscillates according to it. The oscillator is weakly damped (Q factor is approximately $10^3$). Now, an electric field of the form (\ref{eq: stochastic}) is used, so that the beam experiences a similar mechanical force, and its displacement from equilibrium is is described by the Langevin equation (\ref{eq:Langevin}), where the force is given by (\ref{eq: stochastic}).
 \subsection{How the quantities are measured}
@@ -583,7 +583,7 @@ It is experimentally found that the efficiency of the engine is more than the st
 \section{Explanation of different effective temperatures and the reason for surpassing the second law}
 In \ref{fluctuation_dissipation_proof} we saw that the effective temperature of the system is proportional to the square of the magnitude of the stochastic force. The force $\xi(t) =  a_0 [e^{\tilde{r}} \xi_1(t) \cos(\omega t) + e^{-{\tilde{r}}} \xi_2(t)\sin(\omega t)]$ can be viewed as a combination of two forces with magnitudes $a_1 = a_0 e^{\tilde{r}}$ and $a_2 = a_0 e^{-{\tilde{r}}}$. This is as if, the system is simultaneously coupled to two heat baths of temperatures $T e^{2{\tilde{r}}}$ and $T e^{-2{\tilde{r}}}$. This gives rise to the different temperatures in the two rotating coordinates. Note that the temperatures in (\ref{eq:eff_temp}) are just linear combinations of the temperatures of these two heat baths.
 
-As mentioned in papers by Klaers et. al (reference klaers), we can only say that Carnot efficiency has been surpassed if squeezing can be obtained as a free resource. If we have two engines, one of which creates the squeezed force, and the other utilizes it, then the efficiency of the whole system will not be greater than the Carnot limit.
+As mentioned in \cite{klaers}, we can only say that Carnot efficiency has been surpassed if squeezing can be obtained as a free resource. If we have two engines, one of which creates the squeezed force, and the other utilizes it, then the efficiency of the whole system will not be greater than the Carnot limit.
 
 There is a notion of generalized Carnot limit given by $\eta = 1 - \frac{T^*_{h}}{T^*_{c}}$ (where $T^*$ denotes the effective temperature). It is seen that the experimental efficiency is still less than this limit, although it is more than the standard Carnot limit $1 - \frac{T_{h}}{T_{c}}$. 
 
