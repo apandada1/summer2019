@@ -65,6 +65,16 @@ Arfken~G. B., Weber~H. J., and Harris~F. E.
 Wikipedia article for white noise.
 \newblock \url{https://en.wikipedia.org/wiki/White_noise}.
 
+\bibitem{brownian_motion_riemann}
+Peter Reimann.
+\newblock Brownian motors: noisy transport far from equilibrium.
+\newblock {\em Physics Reports}, 361(2):57 -- 265, 2002.
+
+\bibitem{chandrashekhar_stochastic_physics_astro}
+S.~Chandrasekhar.
+\newblock Stochastic problems in physics and astronomy.
+\newblock {\em Rev. Mod. Phys.}, 15:1--89, Jan 1943.
+
 \bibitem{link_to_c_code}
 \url{https://github.com/apandada1/physics-simulations/tree/master/Brownian%20Harmonic%20Oscillator}.
 

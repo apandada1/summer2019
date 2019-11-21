@@ -73,9 +73,6 @@
 
 It is a challenging work to make efficient heat engines. The Carnot limit \cite{resnick_halliday} provides an upper bound for the efficiency of a heat engine. It was claimed in a recent paper \cite{klaers} that it researchers have been able to experimentally surpass the Carnot limit using non-equilibrium reservoirs, and the second law of thermodynamics was not violated due to the non-equilibrium nature of the reservoirs. There was a claim that a certain kind of stochastic gave rise to classical squeezed states, which can be utilized to make such an heat engines. In this report, that claim is verified, and the sense in which the Carnot efficiency is surpassed, and why second law is still not violated is explained.
 
-\textbf{Todo} 1. sinusodially spelling
-2. References
-
 \end{abstract}
 %{\bf Keywords:} enter, keyword, here.
 
@@ -343,7 +340,7 @@ $\begin{aligned}\text{Let } e_n &= c_n \sqrt{n!} \\\implies e_{n+1} &= -\frac{\m
 
 \subsubsection{Langevin equation}
 It turns out that the motion of a classical particle undergoing Brownian motion can mimic a squeezed state, under special circumstances. The dynamics of a particle undergoing Brownian motion is governed by the Langevin equation,\begin{equation}\label{eq:Langevin}m \ddot{x} = -\derivative{V(x)}{x} - b \dot{x} + m \xi(t)\end{equation} where $-\derivative{V(x)}{x}$ is the force acting on the particle due to potential $V(x)$, $-b\dot{x}$ is the effective frictional force acting on the particle due to viscosity of the medium, and $\xi(t)$ is a time dependent stochastic force.
-For the Brownian motion of a particle in a normal heat bath of temperature $T$, the stochastic force is a white noise \cite{wikipedia_white_noise}. (reference. some source e.g. Chandrashekhar's paper that the force is indeed white noise), and $\overline{\xi(t_1)\xi(t_2)} = a \delta(t_1 - t_2)$, where the overhead line denotes the average over distribution of $\xi(t)$.
+For the Brownian motion of a particle in a normal heat bath of temperature $T$, the stochastic force is a white noise \cite{wikipedia_white_noise}, \cite{brownian_motion_riemann}, and $\overline{\xi(t_1)\xi(t_2)} = a \delta(t_1 - t_2)$, where the overhead line denotes the average over distribution of $\xi(t)$.
 \subsubsection{Explanation of the nature of correlation of the stochastic force}\label{fluctuation_dissipation_proof} To see why this happens, we note that when $t_1 \neq t_2$, the two forces are uncorrelated, and the average of their product is zero. When the two times are equal, the force acts like a Dirac delta function because the velocity of the particle changes instantaneously after being hit by another particle. Now we show that for $a = \frac{2 \gamma k T}{m}$, where $k$ is the Boltzmann's constant.\\
 \textbf{Proof}: When $V(x) = 0$,\begin{equation}\label{eq:lang_no_pot}
 	m\dot{v}+m\gamma v = m \xi(t)
@@ -356,7 +353,7 @@ $\begin{aligned}\overline{v(t_1) v(t_2)} = v(0)^2 e^{-\gamma(t_1 + t_2)} &+ v(0)
 
 Therefore, $\overline{v(t)^2} = v(0)^2 e^{-2\gamma t} + a e^{-2\gamma t}\frac{e^{2\gamma t} - 1}{2\gamma}$. When $t \rightarrow \infty, \overline{v(t)^2} = \frac{a}{2\gamma}$. But, in a thermal reservoir, $\frac{m\overline{v^2}}{2} =\frac{k T}{2} \implies \overline{v^2} = \frac{kT}{m}$. Hence, $a = \frac{2 \gamma k T}{m}$. To prove this, we could also Fourier transform the Langevin equation (\ref{eq:lang_no_pot}), solve it algebraically, and inverse transform it. This method is illustrated in the next section.
 \subsubsection{Fluctuation dissipation theorem and the claim}
-Using this value of $a$ and this method, for a harmonic potential, it can be proved that $\frac{m \omega^2 \overline{x^2}}{2} = \frac{k T}{2}$. These results are known as ``Fluctuation dissipation theorem" (Reference Chandrashekhar), which basically shows whatever may be the initial position and velocity of the particle, random thermal fluctuations will make each quadratic degree of freedom have energy $\frac{kT}{2}$, in average.
+Using this value of $a$ and this method, it can be proved that $\frac{m \omega^2 \overline{x^2}}{2} = \frac{k T}{2}$ for a harmonic potential (see section 3 of chapter II in \cite{chandrashekhar_stochastic_physics_astro}). These results are known as ``Fluctuation dissipation theorem", which basically shows whatever may be the initial position and velocity of the particle, random thermal fluctuations will make each quadratic degree of freedom have energy $\frac{kT}{2}$, in average. This results also holds for random noise in LCR circuits, where the differential equation for the time evolution the charge in the capacitor is identical to the equation of the displacement a damped harmonic oscillator. 
 
 It is claimed in the article by Klaers et. al \cite{klaers} that a certain kind of stochastic force will lead to different variance (hence, different effective temperature) in position and momentum coordinates, as seen in a rotating frame.
 
@@ -523,7 +520,7 @@ Let us define ``rotating coordinates", \begin{equation}\begin{array} { l } { X _
 
 \section{Other methods to get this result}
 \subsection{Directly integrating the equations in Mathematica}
-We can write (\ref{eq:1st}) and (\ref{eq:2nd}) in matrix form, and diagonalize the matrices to formally solve for $x(t)$ and $v(t)$ in terms of $\xi(t)$. Then we can calculate of $\overline{x(t_1)x(t_2)}$, $\overline{x(t_1)v(t_2)}$, and  $\overline{v(t_1)v(t_2)}$ just like subsection \ref{fluctuation_dissipation_proof}, and find the variance of the rotating coordinates. I did this calculation (reference - link to the code) in Mathematica and got the same results as in section \ref{rotating_coordinates}, under the limit of low damping.
+We can write (\ref{eq:1st}) and (\ref{eq:2nd}) in matrix form, and diagonalize the matrices to formally solve for $x(t)$ and $v(t)$ in terms of $\xi(t)$. Then we can calculate of $\overline{x(t_1)x(t_2)}$, $\overline{x(t_1)v(t_2)}$, and  $\overline{v(t_1)v(t_2)}$ just like subsection \ref{fluctuation_dissipation_proof}, and find the variance of the rotating coordinates. I did this calculation in Mathematica and got the same results as in section \ref{rotating_coordinates}, under the limit of low damping.
 
 \subsection{Verification using a simulation}
 
