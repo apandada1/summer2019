@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{resnick_halliday}
 Resnick R., Halliday D., and Walker J.
@@ -39,6 +39,10 @@ Cohen-Tannoudji C., Diu B., and Laloe F.
 \newblock {\em Quantum Mechanics}, volume One, chapter~V.
 \newblock WILEY-VCH, 1977.
 
+\bibitem{wikipedia_coherent}
+Wikipedia article for coherent states.
+\newblock \url{https://en.wikipedia.org/wiki/Coherent_states}.
+
 \bibitem{squeezed_reference}
 M~C Teich and B~E~A Saleh.
 \newblock Squeezed state of light.
@@ -51,5 +55,25 @@ metamorphy (https://math.stackexchange.com/users/543769/metamorphy).
   \sqrt{n} d_{n-1}$ (when $n \in \mathbb { Z } ^ { + } )$, and $d_0 := a d_1$.
 \newblock Mathematics Stack Exchange.
 \newblock URL:https://math.stackexchange.com/q/3344192 (version: 2019-09-04).
+
+\bibitem{arfken_weber_harris}
+Arfken~G. B., Weber~H. J., and Harris~F. E.
+\newblock {\em Mathematical Methods for Physicists}, chapter 18.1.
+\newblock Academic Press, 7th edition, 2013.
+
+\bibitem{wikipedia_white_noise}
+Wikipedia article for white noise.
+\newblock \url{https://en.wikipedia.org/wiki/White_noise}.
+
+\bibitem{link_to_c_code}
+\url{https://github.com/apandada1/physics-simulations/tree/master/Brownian%20Harmonic%20Oscillator}.
+
+\bibitem{klaers_supplement}
+Supplemental material of \cite{klaers}.
+\newblock
+  \url{https://journals.aps.org/prx/supplemental/10.1103/PhysRevX.7.031044/heatengine-PRX-supplemental_V3.pdf}.
+
+\bibitem{image_reference}
+\url{https://commons.wikimedia.org/wiki/File:P-V_Otto_cycle.svg}.
 
 \end{thebibliography}

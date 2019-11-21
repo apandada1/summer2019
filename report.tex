@@ -182,7 +182,7 @@ Now,
 \begin{subfigure}[h!]{0.3\linewidth}
 	\includegraphics[width=\linewidth]{graphs/coherent/8.jpg}
 \end{subfigure}
-	\caption{Time evolution of probability density of a coherent state}
+	\caption{Time evolution of probability density of a coherent state. $T = \frac{2\pi}{\omega}$}
 \end{figure}
 Let $\alpha = |\alpha|e^{i\phi}$. Then, $\langle x \rangle (t) $$= \sqrt{2} x_0 \Re{\alpha(t)} $$= \sqrt{2} x_0 |\alpha| \cos(\phi-\omega t)$, and $ \langle p \rangle (t) $$= \sqrt{2} p_0 \Im{\alpha(t)} $$= \sqrt{2} x_0 |\alpha| \sin(\phi-\omega t)$. The total energy, the standard deviations in position and momentum remain constant, while the expected position and momentum vary sinusodially with time, just like a classical particle. Solving the first order differential equation obtained from (\ref{eq:coherent}) in position basis, it can be easily shown that the wave function $\psi_\alpha (x) = \braket{x}{\alpha}$ is a Gaussian, and its mean $\expval{x}$ changes sinusodially with time.
 \subsection{Squeezed states of a quantum harmonic oscillator}
@@ -280,7 +280,7 @@ We need to solve this recursion relation.
 
 $ \begin{aligned} \implies f ( x ) &= a \sum _ { n = 0 } ^ { n } d _ { n + 1 } ( n + 1 ) x ^ { n } + b \sum _ { n = 0 } ^ { \infty } d _ { n - 1 } x ^ { n } \\ &= { a  \sum _ { n = 1 } ^ { \infty } d _ { n } n x ^ { n - 1 } } + { b x f( x ) } \\ &=  { a \sum _ { n = 0 } ^ { \infty } n d_n x ^ { n - 1 } } + {  b x f ( x ) } \\ &= a x f'(x) + b x f(x) \\\implies a f'(x)  &= f(x) (1-bx)\\ \implies \frac{f'(x)}{f(x)} &= \frac{1}{a} - \frac{b}{a} x \\ \implies f(x) &= C e^{\frac{x}{a} - \frac{bx^2}{2a}}\end{aligned}$
 
-We know $e^{2ty -y^2} = \sum _ { n = 0 } ^ { \infty } H _ { n } ( t ) \frac { y ^ { n } } { n ! }$, where $H_n(t)$ is the Hermite polynomial of $n$th order.(reference Arfken, Weber, Harris). Here $y = x \sqrt{\frac{b}{2a}}$ and $t = \frac{1}{\sqrt{2ab}}$. \\ Therefore, $e^{\frac{x}{a} - \frac{bx^2}{2a}} = \sum _ { n = 0 } ^ { \infty } H _ { n }( \frac{1}{\sqrt { 2 a b } }) \frac {x ^ { n } \left( \frac { b } { 2 a } \right) ^ { n / 2 } } { n ! }$, and \\$\begin{aligned}c_n = d_n \sqrt{n!} &= \frac{ H_n ( \frac { 1 } { \sqrt { 2 a b } }) \left( \frac { b } { a } \right) ^ { n / 2 }}{\sqrt{2^n n!}}\\ &=\frac{ H_n ( \frac { s } { \sqrt { 2 \mu \lambda } }) \left( \frac { \mu } { \lambda } \right) ^ { n / 2 }}{\sqrt{2^n n!}}\end{aligned}$.
+We know $e^{2ty -y^2} = \sum _ { n = 0 } ^ { \infty } H _ { n } ( t ) \frac { y ^ { n } } { n ! }$, where $H_n(t)$ is the Hermite polynomial of $n$th order \cite{arfken_weber_harris}. Here $y = x \sqrt{\frac{b}{2a}}$ and $t = \frac{1}{\sqrt{2ab}}$. \\ Therefore, $e^{\frac{x}{a} - \frac{bx^2}{2a}} = \sum _ { n = 0 } ^ { \infty } H _ { n }( \frac{1}{\sqrt { 2 a b } }) \frac {x ^ { n } \left( \frac { b } { 2 a } \right) ^ { n / 2 } } { n ! }$, and \\$\begin{aligned}c_n = d_n \sqrt{n!} &= \frac{ H_n ( \frac { 1 } { \sqrt { 2 a b } }) \left( \frac { b } { a } \right) ^ { n / 2 }}{\sqrt{2^n n!}}\\ &=\frac{ H_n ( \frac { s } { \sqrt { 2 \mu \lambda } }) \left( \frac { \mu } { \lambda } \right) ^ { n / 2 }}{\sqrt{2^n n!}}\end{aligned}$.
 
 $\begin{aligned}\text{Thus,}\ket{s,t} &= C \sum _ { n = 0 } ^ { \infty } \frac{ H_n ( \frac { s } { \sqrt { 2 \mu \lambda } }) \left( \frac { \mu } { \lambda } \right) ^ { n / 2 }}{\sqrt{2^n n!}} e^{-i(n+\frac{1}{2})\omega t}\ket{n,0} (C \text{ is a normalization constant}) \\ &= C e^{-\frac{i\omega t}{2}}\sum _ { n = 0 } ^ { \infty } \frac{ H_n ( \frac { s } { \sqrt { 2 (\mu e^{-i\omega t}) (\lambda e^{i\omega t}) } }) \left( \frac { \mu e^{-i\omega t}} { \lambda e^{i\omega t} } \right) ^ { n / 2 }}{\sqrt{2^n n!}}\ket{n,0} \end{aligned}$.\\ Therefore, the state evolves as if it remains a squeezed state with the same value of $s$, while $\lambda$ and $\mu$ evolve as $ \lambda e^{i\omega t}$ and $\mu e^{-i\omega t}$, respectively.
 
@@ -343,7 +343,7 @@ $\begin{aligned}\text{Let } e_n &= c_n \sqrt{n!} \\\implies e_{n+1} &= -\frac{\m
 
 \subsubsection{Langevin equation}
 It turns out that the motion of a classical particle undergoing Brownian motion can mimic a squeezed state, under special circumstances. The dynamics of a particle undergoing Brownian motion is governed by the Langevin equation,\begin{equation}\label{eq:Langevin}m \ddot{x} = -\derivative{V(x)}{x} - b \dot{x} + m \xi(t)\end{equation} where $-\derivative{V(x)}{x}$ is the force acting on the particle due to potential $V(x)$, $-b\dot{x}$ is the effective frictional force acting on the particle due to viscosity of the medium, and $\xi(t)$ is a time dependent stochastic force.
-For the Brownian motion of a particle in a normal heat bath of temperature $T$, the stochastic force is a white noise (reference. wikipedia page of white noise, and some source e.g. Chandrashekhar's paper that the force is indeed white noise), and $\overline{\xi(t_1)\xi(t_2)} = a \delta(t_1 - t_2)$, where the overhead line denotes the average over distribution of $\xi(t)$.
+For the Brownian motion of a particle in a normal heat bath of temperature $T$, the stochastic force is a white noise \cite{wikipedia_white_noise}. (reference. some source e.g. Chandrashekhar's paper that the force is indeed white noise), and $\overline{\xi(t_1)\xi(t_2)} = a \delta(t_1 - t_2)$, where the overhead line denotes the average over distribution of $\xi(t)$.
 \subsubsection{Explanation of the nature of correlation of the stochastic force}\label{fluctuation_dissipation_proof} To see why this happens, we note that when $t_1 \neq t_2$, the two forces are uncorrelated, and the average of their product is zero. When the two times are equal, the force acts like a Dirac delta function because the velocity of the particle changes instantaneously after being hit by another particle. Now we show that for $a = \frac{2 \gamma k T}{m}$, where $k$ is the Boltzmann's constant.\\
 \textbf{Proof}: When $V(x) = 0$,\begin{equation}\label{eq:lang_no_pot}
 	m\dot{v}+m\gamma v = m \xi(t)
@@ -358,7 +358,7 @@ Therefore, $\overline{v(t)^2} = v(0)^2 e^{-2\gamma t} + a e^{-2\gamma t}\frac{e^
 \subsubsection{Fluctuation dissipation theorem and the claim}
 Using this value of $a$ and this method, for a harmonic potential, it can be proved that $\frac{m \omega^2 \overline{x^2}}{2} = \frac{k T}{2}$. These results are known as ``Fluctuation dissipation theorem" (Reference Chandrashekhar), which basically shows whatever may be the initial position and velocity of the particle, random thermal fluctuations will make each quadratic degree of freedom have energy $\frac{kT}{2}$, in average.
 
-It is claimed in the article by Klaers et. al (\cite{klaers}) that a certain kind of stochastic force will lead to different variance (hence, different effective temperature) in position and momentum coordinates, as seen in a rotating frame.
+It is claimed in the article by Klaers et. al \cite{klaers} that a certain kind of stochastic force will lead to different variance (hence, different effective temperature) in position and momentum coordinates, as seen in a rotating frame.
 
 \section{Proof of the claim}
 Consider a particle in a Harmonic potential, undergoing Brownian motion for which \begin{equation}\label{eq: stochastic}
@@ -550,19 +550,19 @@ We can write (\ref{eq:1st}) and (\ref{eq:2nd}) in matrix form, and diagonalize t
 	
 \end{figure}
 
-I created a C program (ref - link to code) to simulate the dynamics of this particle. The delta function force is simulated with a random force of very high magnitude (high compared to the spring force).
+I created a C program \cite{link_to_c_code} to simulate the dynamics of this particle. The delta function force is simulated with a random force of very high magnitude (high compared to the spring force).
 The following graphs show that the energy in rotating coordinates are different. It is found that their ratio is close to the ratio obtained in (\ref{eq:eff_temp}).\\\\\\\\
 
 \section{How the Heat Engine works}
-The working principle of the squeezed harmonic oscillator used in \cite{klaers} is hereby explained. This section is based on the supplement material (reference to supplement) of their paper. They have created a nano beam structure made of GaAs that is doubly clamped, and allowed to vibrate. (reference to supplement). The nano-beam contains two doped layers, where a DC bias voltage can be applied to change the frequency of oscillation of the beam. 
+The working principle of the squeezed harmonic oscillator used in \cite{klaers} is hereby explained. This section is based on the supplement material \cite{klaers_supplement} of their paper. They have created a nano beam structure made of GaAs that is doubly clamped, and allowed to vibrate. The nano-beam contains two doped layers, where a DC bias voltage can be applied to change the frequency of oscillation of the beam. 
 \subsection{How the force is applied}
 Due to the piezo-electric nature of GaAs, when an AC electric field is applied to it, it experiences a mechanical force, and oscillates according to it. The oscillator is weakly damped (Q factor is approximately $10^3$). Now, an electric field of the form (\ref{eq: stochastic}) is used, so that the beam experiences a similar mechanical force, and its displacement from equilibrium is is described by the Langevin equation (\ref{eq:Langevin}), where the force is given by (\ref{eq: stochastic}).
 \subsection{How the quantities are measured}
 The displacement of the nano-beam is measured using Mach-Zehnder interferometry, where the path length of a laser beam changes as the nano-beam oscillates, creating a shift in the position of fringes, which can be used to calculate the displacement of the nano-beam. From the displacement, rotating coordinate amplitudes, their effective temperatures, and all other quantities of interest can be found.
 \subsection{How it is used as a heat engine}
-The frequency of oscillation of the beam can be changed by altering the DC bias voltage. It has been shown in the supplement material (reference to supplement) of that paper that the entropy in the two quadratures of the oscillator can be expressed as $S_{1,2} = \frac{k_B}{2} \ln (\frac{k_B T_{1,2}}{\hbar \omega}) + \text{constant}$ (Where $T_{1,2} = T e^{\pm 2r}$ are effective temperatures in the two rotating coordinates. Note that the absolute constant in entropy does not matter). The volume of the system is defined to be $V = \frac{1}{\omega}$, and it can be shown that internal energy $U \left( S _ { 1 } , S _ { 2 } , V \right) = \frac { \hbar } { 2 V } \left( \exp \left( 2 \frac{S _ { 1 }} { k _ { \mathrm { B } }} - 1 \right) + \exp \left( 2 \frac{S _ { 2 }} { k _ { \mathrm { B } }} - 1 \right) \right)$. Then, we can define pressure $p = - \left( \frac { \partial U } { \partial V } \right) _ { S _ { 1 } , S _ { 2 } } = \frac { k _ { \mathrm { B } } } { 2 } \frac { \left( T _ { 1 } + T _ { 2 } \right) } { V }$.
+The frequency of oscillation of the beam can be changed by altering the DC bias voltage. It has been shown in the supplement material \cite{klaers_supplement} of that paper that the entropy in the two quadratures of the oscillator can be expressed as $S_{1,2} = \frac{k_B}{2} \ln (\frac{k_B T_{1,2}}{\hbar \omega}) + \text{constant}$ (Where $T_{1,2} = T e^{\pm 2r}$ are effective temperatures in the two rotating coordinates. Note that the absolute constant in entropy does not matter). The volume of the system is defined to be $V = \frac{1}{\omega}$, and it can be shown that internal energy $U \left( S _ { 1 } , S _ { 2 } , V \right) = \frac { \hbar } { 2 V } \left( \exp \left( 2 \frac{S _ { 1 }} { k _ { \mathrm { B } }} - 1 \right) + \exp \left( 2 \frac{S _ { 2 }} { k _ { \mathrm { B } }} - 1 \right) \right)$. Then, we can define pressure $p = - \left( \frac { \partial U } { \partial V } \right) _ { S _ { 1 } , S _ { 2 } } = \frac { k _ { \mathrm { B } } } { 2 } \frac { \left( T _ { 1 } + T _ { 2 } \right) } { V }$.
 
-Now, the temperature $T$ and squeezing parameter $r$ can be varied by tweaking the stochastic force. This way, the oscillator is made to undergo an Otto cycle [reference - Resnick, Halliday, Walker]. The adiabatic strokes of the Otto cycle are replaced by an isoentropic stoke, where the ratio $\frac{T}{\omega}$ is kept constant (note that entropy is a function of $\frac{k_B T}{\hbar \omega}$).
+Now, the temperature $T$ and squeezing parameter $r$ can be varied by tweaking the stochastic force. This way, the oscillator is made to undergo an Otto cycle \cite{resnick_halliday}. The adiabatic strokes of the Otto cycle are replaced by an isoentropic stoke, where the ratio $\frac{T}{\omega}$ is kept constant (note that entropy is a function of $\frac{k_B T}{\hbar \omega}$).
 
 The natural frequency of the oscillator is in the order of MHz, whereas the cycle time of the Otto cycle is of several seconds. So, we can use the time average values for sines and cosines (and their squares, as in subsection \ref{rotating_coordinates}), and assume that the rotating coordinates have a Gaussian distribution with mean zero, and variance proportional to $T^*_1$ and $T^*_2$.
 
@@ -571,7 +571,7 @@ When the temperature is highest ($T_h = 10000 K$), the squeezing parameter is ke
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.4\linewidth]{graphs/P-V_Otto_cycle.png}
-	\caption{pressure-volume diagram of Otto Cycle. Image source: Wikipedia (reference - wikipedia)}
+	\caption{pressure-volume diagram of Otto Cycle. Image source: Wikipedia \cite{image_reference}}
 	\label{fig:Otto_cycle}
 \end{figure}
 
@@ -595,5 +595,4 @@ The efficiency of the heat engine was calculated from the Temperature-Entropy di
 
 \bibliographystyle{unsrt}
 \bibliography{sample}
-wikipedia image reference in next line (commented)
 \end{document}
