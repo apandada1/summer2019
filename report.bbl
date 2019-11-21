@@ -78,6 +78,10 @@ S.~Chandrasekhar.
 \bibitem{link_to_c_code}
 \url{https://github.com/apandada1/physics-simulations/tree/master/Brownian%20Harmonic%20Oscillator}.
 
+\bibitem{wikipedia_runge_kutta}
+Wikipedia article for runge-kutta methods.
+\newblock \url{https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods}.
+
 \bibitem{klaers_supplement}
 Supplemental material of \cite{klaers}.
 \newblock

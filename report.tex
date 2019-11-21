@@ -553,7 +553,7 @@ We can write (\ref{eq:1st}) and (\ref{eq:2nd}) in matrix form, and diagonalize t
 	
 \end{figure}
 
-I created a C program \cite{link_to_c_code} to simulate the dynamics of this particle. The delta function force is simulated with a random force of very high magnitude (high compared to the spring force).
+I created a C program \cite{link_to_c_code} to numerically solve (\ref{eq:Langevin}) and (\ref{eq: stochastic}) numerically with Runge-Kutta method \cite{wikipedia_runge_kutta} of order 4. The delta function force is simulated with a random force of very high magnitude (high compared to the spring force).
 The following graphs show that the energy in rotating coordinates are different. It is found that their ratio is close to the ratio obtained in (\ref{eq:eff_temp}).
 
 \section{How the Heat Engine works}
