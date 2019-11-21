@@ -31,7 +31,7 @@
 %\setcounter{secnumdepth}{5}
 \usepackage{lineno}
 \usepackage{url}
-\usepackage[text={16cm,23cm},centering]{geometry}
+\usepackage[text={16cm,24cm},centering]{geometry}
 
 \setlength{\parskip}{1.2ex}
 \setlength{\parindent}{0em}
@@ -50,20 +50,19 @@
 %\modulolinenumbers[5]
 %\linenumbers
 
-\title{Quantum Nano engines (fix title)}
+\title{\textbf{A Study of Generation of Classical Squeezed States Using Stochastic Force, and Their Applications in Building Highly Efficient Heat Engines}}
 
 \date{2019}
 
 
 
 \author{
-	Archisman Panigrahi \\
-	\footnotesize Indian Institute of Science, Bangalore, India\\
+	\textbf{Archisman Panigrahi} \footnotesize(archismanp@iisc.ac.in) \\
+	\footnotesize{Indian Institute of Science, Bangalore, India}\\
 	\footnotesize SR No. - 11-01-00-10-91-17-1-14503\\
-	\footnotesize KVPY SA Fellow, 2015\\
-	\footnotesize KVPY Registration No. - SA-1510017\\\\\\
+	\footnotesize KVPY SA Fellow, 2015, KVPY Registration No. - \underline{SA-1510017}\\
 	\footnotesize Under the Guidance of\\
-	Prof. H. R. Krishnamurthy\\
+	\textbf{Prof. H. R. Krishnamurthy}\\
 	\footnotesize Dept. of Physics, Indian Institute of Science, Bangalore, India}
 
 
@@ -71,7 +70,7 @@
 
 \begin{abstract}
 
-It is a challenging work to make efficient heat engines. The Carnot limit \cite{resnick_halliday} provides an upper bound for the efficiency of a heat engine. It was claimed in a recent paper \cite{klaers} that it researchers have been able to experimentally surpass the Carnot limit using non-equilibrium reservoirs, and the second law of thermodynamics was not violated due to the non-equilibrium nature of the reservoirs. There was a claim that a certain kind of stochastic gave rise to classical squeezed states, which can be utilized to make such an heat engines. In this report, that claim is verified, and the sense in which the Carnot efficiency is surpassed, and why second law is still not violated is explained.
+It is a challenging task to make efficient heat engines. The Carnot limit \cite{resnick_halliday} provides an upper bound for the efficiency of a heat engine. It was claimed in a recent paper \cite{klaers} that it researchers have been able to experimentally surpass the Carnot limit using non-equilibrium reservoirs, and the second law of thermodynamics was not violated due to the non-equilibrium nature of the reservoirs. There was a claim that a certain kind of stochastic gave rise to classical squeezed states, which can be utilized to make such an heat engines. In this report, that claim is verified, and the sense in which the Carnot efficiency is surpassed, and why second law is still not violated is explained.
 
 \end{abstract}
 %{\bf Keywords:} enter, keyword, here.
@@ -84,7 +83,10 @@ It is a challenging work to make efficient heat engines. The Carnot limit \cite{
 \vspace{2 cm}
 This is to certify that Archisman Panigrahi (SR No. 11-01-00-10-91-17-1-14503),
 undergraduate student at Indian Institute of Science, did his 2019 summer research
-project on \textit{Quantum Heat Engines} under my guidance.\\\\\\
+project titled \textit{A Study of Generation of Classical Squeezed
+	States Using Stochastic Force, and Their
+	Applications in Building Highly Efficient
+	Heat Engines} under my guidance.\\\\\\
 
 \textbf{Prof. H. R. Krishnamurthy}\\
 Department of Physics\\
@@ -94,7 +96,7 @@ Indian Institute of Science, Bangalore.
 	\textbf{Acknowledgment}
 \end{center}
 
-I am grateful to Prof. H. R. Krishnamurthy for guiding me in this project and for growing my interest in different branches of Condensed Matter Physics. 
+I am grateful to Prof. H. R. Krishnamurthy for guiding me in this project and for growing my interest in different branches of Condensed Matter Physics.
 
 I am also grateful to D.S.T. and K.V.P.Y. for providing me scholarship.
 \tableofcontents
@@ -375,12 +377,16 @@ Recall that $x_0 =\sqrt{\frac{\hbar}{ m\omega_0}}$ and $p_0 = \sqrt{\hbar m \ome
 	\dot{P} = -\omega_0 X -\frac{\gamma}{\omega_0}\dot{X} + \frac{m}{p_0}\xi(t)
 \end{equation}
 
-Fourier transforming the above equations, we get, \begin{equation}\label{eq:1}
+Fourier transforming the above equations, we get, \begin{equation}\label{eq:3}
 -i\omega\widetilde{X}(\omega) =\omega_0 \widetilde{P}(\omega)
 \end{equation}
-\begin{equation}\label{eq:2}
+\begin{equation}\label{eq:4}
 -i\omega\widetilde{P}(\omega) = -\omega_0 \widetilde{X}(\omega) +i\frac{\gamma}{\omega_0}\widetilde{X}(\omega) + \frac{m}{p_0}\widetilde{\xi}(\omega)
 \end{equation}
+
+Note that in this article, $$
+\begin{array} { l } { f ( t ) = \frac { 1 } { \sqrt { 2 \pi } } \int _ { - \infty } ^ { \infty } \tilde { f } ( \omega ) e ^ { - i \omega t } \dd{\omega} } \\ { \tilde { f } ( \omega ) = \frac { 1 } { \sqrt { 2 \pi } } \int _ { - \infty } ^ { \infty } f ( t ) e ^ { i \omega t } \dd{t} } \end{array}
+$$
 \subsubsection{Preliminaries}
 Let us introduce the notation $\int_{y}^{} f(y)$ to denote $\int_{-\infty}^{\infty} f(y) \dd{y}$. \\
 $\begin{aligned}\text{We know } \overline{\xi_1(t_1)\xi_1(t_2)} = \delta(t_1 - t_2). \text{Then, } \overline{\widetilde{\xi_1}(\omega_1)\widetilde{\xi_1}(\omega_2)} &= \frac{1}{2\pi}\int_{t_1}\int_{t_2} \overline{\xi_1(t_1)\xi_1(t_2)} e^{i\omega_1 t_1}e^{i\omega_2 t_2} \\&= \frac{1}{2\pi}\int_{t_1}\int_{t_2} \delta(t_1-t_2) e^{i\omega_1 t_1}e^{i\omega_2 t_2} \\&= \frac{1}{2\pi}\int_{t_1} e^{i\omega_1 t_1} e^{i\omega_2 t_1} \\&= \delta(\omega_1 + \omega_2)\end{aligned}$\\
@@ -416,7 +422,7 @@ Then, from (\ref{eq: stochastic}),
 \begin{equation}\label{eq: stochastic_fourier}\begin{aligned} \text{Therefore, }
 \overline{\widetilde { \xi } \left( \omega _ { 1 } \right) \widetilde { \xi } \left( \omega _ { 2 } \right)} &= \frac{a_0 ^2 }{4}\left[e ^ { 2 r } \overline{\left\{ \widetilde{\xi _ { 1 }} \left( \omega _ { 1 } + \omega _ { 0 } \right) + \widetilde{\xi _ { 1 }} \left( \omega _ { 1 } - \omega _ { 0 } \right) \right\}\left\{ \widetilde{\xi _ { 1 }} \left( \omega _ { 2 } + \omega _ { 0 } \right) + \widetilde{\xi _ { 1 }} \left( \omega _ { 2 } - \omega _ { 0 } \right) \right\}} \right]\\ &- \frac{a_0^2}{4} \left[e ^ { -2 r }\overline{\left\{ \widetilde{\xi _ { 2 }} \left( \omega _ { 1 } + \omega _ { 0 } \right) + \widetilde{\xi _ { 2 }} \left( \omega _ { 1 } - \omega _ { 0 } \right) \right\}\left\{ \widetilde{\xi _ { 2 }} \left( \omega _ { 2 } + \omega _ { 0 } \right) + \widetilde{\xi _ { 2 }} \left( \omega _ { 2 } - \omega _ { 0 } \right) \right\}}\right]  \\&\text{(cross terms are $0$ in average)}\\& = \frac{a_0^2}{4} \left[ e^{2r}\left\{\delta \left( \omega _ { 1 } + \omega _ { 2 } + 2 \omega _ { 0 } \right) + 2 \delta \left( \omega _ { 1 } + \omega _ { 2 } \right) + \delta \left( \omega _ { 1 } + \omega _ { 2 } - 2 \omega_0 \right)\right\}\right] \\& - \frac{a_0^2}{4} \left[e^{-2r}\left\{\delta \left( \omega _ { 1 } + \omega _ { 2 } + 2 \omega _ { 0 } \right) + 2 \delta \left( \omega _ { 1 } + \omega _ { 2 } \right) + \delta \left( \omega _ { 1 } + \omega _ { 2 } - 2 \omega_0 \right)\right\}\right] \\ & =\frac{a_0^2}{2}\left[\sinh(2\tilde{r})\left\{\delta(\omega_1 + \omega_2 + 2\omega_0)+\delta(\omega_1 + \omega_2 + 2\omega_0)\right\} + 2\cosh(2\tilde{r})\delta(\omega_1 + \omega_2)\right] \end{aligned}\end{equation}
 \subsubsection{Calculation of Fourier transformed position and momentum}
-From (\ref{eq:1}) and (\ref{eq:2}), \begin{equation}\label{eq:x_omega}
+From (\ref{eq:3}) and (\ref{eq:4}), \begin{equation}\label{eq:x_omega}
 \widetilde{X}(\omega) = \frac{m \omega_0}{p_0} \frac { \widetilde { \xi } ( \omega ) } { \omega _ { 0 } ^ { 2 } - \omega ^ { 2 } - i \omega \gamma }
 \end{equation}
 \begin{equation}\label{eq:p_omega}
@@ -548,7 +554,7 @@ We can write (\ref{eq:1st}) and (\ref{eq:2nd}) in matrix form, and diagonalize t
 \end{figure}
 
 I created a C program \cite{link_to_c_code} to simulate the dynamics of this particle. The delta function force is simulated with a random force of very high magnitude (high compared to the spring force).
-The following graphs show that the energy in rotating coordinates are different. It is found that their ratio is close to the ratio obtained in (\ref{eq:eff_temp}).\\\\\\\\
+The following graphs show that the energy in rotating coordinates are different. It is found that their ratio is close to the ratio obtained in (\ref{eq:eff_temp}).
 
 \section{How the Heat Engine works}
 The working principle of the squeezed harmonic oscillator used in \cite{klaers} is hereby explained. This section is based on the supplement material \cite{klaers_supplement} of their paper. They have created a nano beam structure made of GaAs that is doubly clamped, and allowed to vibrate. The nano-beam contains two doped layers, where a DC bias voltage can be applied to change the frequency of oscillation of the beam. 

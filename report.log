@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.2)  21 NOV 2019 15:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.10.2)  21 NOV 2019 15:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1848,14 +1848,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen304
 \Gm@layoutvoffset=\dimen305
 \Gm@dimlist=\toks44
-) (./report.aux
-
-LaTeX Warning: Label `eq:1' multiply defined.
-
-
-LaTeX Warning: Label `eq:2' multiply defined.
-
-)
+) (./report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
@@ -1872,7 +1865,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
 LaTeX Font Info:    ... okay on input line 46.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 46.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 46.
@@ -1960,14 +1953,14 @@ Package caption Info: End \AtBeginDocument code.
 * vratio: 1:1
 * modes: twoside 
 * h-part:(L,W,R)=(79.52545pt, 455.24408pt, 79.52547pt)
-* v-part:(T,H,B)=(70.2783pt, 654.41338pt, 70.2783pt)
+* v-part:(T,H,B)=(56.05193pt, 682.86613pt, 56.05193pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=455.24408pt
-* \textheight=654.41338pt
+* \textheight=682.86613pt
 * \oddsidemargin=7.25546pt
 * \evensidemargin=7.25548pt
-* \topmargin=-38.99168pt
+* \topmargin=-53.21806pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -1985,33 +1978,33 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 70.
+LaTeX Font Info:    Try loading font information for U+msa on input line 69.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 70.
+LaTeX Font Info:    Try loading font information for U+msb on input line 69.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 70.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 69.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 85--88
+Underfull \hbox (badness 10000) in paragraph at lines 84--90
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--88
+Underfull \hbox (badness 10000) in paragraph at lines 84--90
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--88
+Underfull \hbox (badness 10000) in paragraph at lines 84--90
 
  []
 
@@ -2019,53 +2012,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--88
 \tf@toc=\write4
 \openout4 = `report.toc'.
 
- [5] [6] [7]
-<graphs/coherent/1.jpg, id=44, 562.2606pt x 421.575pt>
+
+Underfull \vbox (badness 3128) has occurred while \output is active []
+
+ [5]
+[6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+<graphs/coherent/1.jpg, id=43, 562.2606pt x 421.575pt>
 File: graphs/coherent/1.jpg Graphic file (type jpg)
 <use graphs/coherent/1.jpg>
-Package pdftex.def Info: graphs/coherent/1.jpg  used on input line 159.
+Package pdftex.def Info: graphs/coherent/1.jpg  used on input line 161.
 (pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
-<graphs/coherent/2.jpg, id=45, 578.16pt x 433.62pt>
+<graphs/coherent/2.jpg, id=44, 578.16pt x 433.62pt>
 File: graphs/coherent/2.jpg Graphic file (type jpg)
 <use graphs/coherent/2.jpg>
-Package pdftex.def Info: graphs/coherent/2.jpg  used on input line 162.
+Package pdftex.def Info: graphs/coherent/2.jpg  used on input line 164.
 (pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
-<graphs/coherent/3.jpg, id=46, 578.16pt x 433.62pt>
+<graphs/coherent/3.jpg, id=45, 578.16pt x 433.62pt>
 File: graphs/coherent/3.jpg Graphic file (type jpg)
 <use graphs/coherent/3.jpg>
-Package pdftex.def Info: graphs/coherent/3.jpg  used on input line 165.
+Package pdftex.def Info: graphs/coherent/3.jpg  used on input line 167.
 (pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
-<graphs/coherent/4.jpg, id=47, 578.16pt x 433.62pt>
+<graphs/coherent/4.jpg, id=46, 578.16pt x 433.62pt>
 File: graphs/coherent/4.jpg Graphic file (type jpg)
 <use graphs/coherent/4.jpg>
-Package pdftex.def Info: graphs/coherent/4.jpg  used on input line 168.
+Package pdftex.def Info: graphs/coherent/4.jpg  used on input line 170.
 (pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
-<graphs/coherent/5.jpg, id=48, 578.16pt x 433.62pt>
+<graphs/coherent/5.jpg, id=47, 578.16pt x 433.62pt>
 File: graphs/coherent/5.jpg Graphic file (type jpg)
 <use graphs/coherent/5.jpg>
-Package pdftex.def Info: graphs/coherent/5.jpg  used on input line 171.
+Package pdftex.def Info: graphs/coherent/5.jpg  used on input line 173.
 (pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
-<graphs/coherent/6.jpg, id=49, 562.2606pt x 421.575pt>
+<graphs/coherent/6.jpg, id=48, 562.2606pt x 421.575pt>
 File: graphs/coherent/6.jpg Graphic file (type jpg)
 <use graphs/coherent/6.jpg>
-Package pdftex.def Info: graphs/coherent/6.jpg  used on input line 174.
+Package pdftex.def Info: graphs/coherent/6.jpg  used on input line 176.
 (pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
-<graphs/coherent/7.jpg, id=50, 562.2606pt x 421.575pt>
+<graphs/coherent/7.jpg, id=49, 562.2606pt x 421.575pt>
 File: graphs/coherent/7.jpg Graphic file (type jpg)
 <use graphs/coherent/7.jpg>
-Package pdftex.def Info: graphs/coherent/7.jpg  used on input line 177.
+Package pdftex.def Info: graphs/coherent/7.jpg  used on input line 179.
 (pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
-<graphs/coherent/8.jpg, id=51, 578.16pt x 433.62pt>
+<graphs/coherent/8.jpg, id=50, 578.16pt x 433.62pt>
 File: graphs/coherent/8.jpg Graphic file (type jpg)
 <use graphs/coherent/8.jpg>
-Package pdftex.def Info: graphs/coherent/8.jpg  used on input line 180.
+Package pdftex.def Info: graphs/coherent/8.jpg  used on input line 182.
 (pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (42.73967pt too wide) in paragraph at lines 184--185
+Overfull \hbox (42.73967pt too wide) in paragraph at lines 186--187
 []\OT1/cmr/m/n/12 Let $\OML/cmm/m/it/12  \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 j\
 OML/cmm/m/it/12 \OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 e[]$\OT1/cmr/m/n/12 . Then,
  $\OMS/cmsy/m/n/12 h\OML/cmm/m/it/12 x\OMS/cmsy/m/n/12 i\OT1/cmr/m/n/12 (\OML/c
@@ -2079,69 +2079,69 @@ n/12 i\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )$$= []\OML/cmm/m/it/1
 [8] [9 <./graphs/coherent/1.jpg> <./graphs/coherent/2.jpg> <./graphs/coherent/3
 .jpg> <./graphs/coherent/4.jpg> <./graphs/coherent/5.jpg> <./graphs/coherent/6.
 jpg> <./graphs/coherent/7.jpg> <./graphs/coherent/8.jpg>]
-Overfull \hbox (2.61891pt too wide) detected at line 226
+Overfull \hbox (2.61891pt too wide) detected at line 228
 []
  []
 
-<graphs/squeeze_0.8/1.jpg, id=59, 562.2606pt x 421.575pt>
+<graphs/squeeze_0.8/1.jpg, id=58, 562.2606pt x 421.575pt>
 File: graphs/squeeze_0.8/1.jpg Graphic file (type jpg)
 <use graphs/squeeze_0.8/1.jpg>
-Package pdftex.def Info: graphs/squeeze_0.8/1.jpg  used on input line 231.
+Package pdftex.def Info: graphs/squeeze_0.8/1.jpg  used on input line 233.
 (pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
-<graphs/squeeze_0.8/2.jpg, id=60, 578.16pt x 433.62pt>
+<graphs/squeeze_0.8/2.jpg, id=59, 578.16pt x 433.62pt>
 File: graphs/squeeze_0.8/2.jpg Graphic file (type jpg)
 <use graphs/squeeze_0.8/2.jpg>
-Package pdftex.def Info: graphs/squeeze_0.8/2.jpg  used on input line 234.
+Package pdftex.def Info: graphs/squeeze_0.8/2.jpg  used on input line 236.
 (pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
-<graphs/squeeze_0.8/3.jpg, id=61, 562.2606pt x 421.575pt>
+<graphs/squeeze_0.8/3.jpg, id=60, 562.2606pt x 421.575pt>
 File: graphs/squeeze_0.8/3.jpg Graphic file (type jpg)
 <use graphs/squeeze_0.8/3.jpg>
-Package pdftex.def Info: graphs/squeeze_0.8/3.jpg  used on input line 237.
+Package pdftex.def Info: graphs/squeeze_0.8/3.jpg  used on input line 239.
 (pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
-<graphs/squeeze_0.8/4.jpg, id=62, 562.2606pt x 421.575pt>
+<graphs/squeeze_0.8/4.jpg, id=61, 562.2606pt x 421.575pt>
 File: graphs/squeeze_0.8/4.jpg Graphic file (type jpg)
 <use graphs/squeeze_0.8/4.jpg>
-Package pdftex.def Info: graphs/squeeze_0.8/4.jpg  used on input line 240.
+Package pdftex.def Info: graphs/squeeze_0.8/4.jpg  used on input line 242.
 (pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
-<graphs/squeeze_0.8/5.jpg, id=63, 562.2606pt x 421.575pt>
+<graphs/squeeze_0.8/5.jpg, id=62, 562.2606pt x 421.575pt>
 File: graphs/squeeze_0.8/5.jpg Graphic file (type jpg)
 <use graphs/squeeze_0.8/5.jpg>
-Package pdftex.def Info: graphs/squeeze_0.8/5.jpg  used on input line 243.
+Package pdftex.def Info: graphs/squeeze_0.8/5.jpg  used on input line 245.
 (pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
-<graphs/squeeze_0.8/6.jpg, id=64, 578.16pt x 433.62pt>
+<graphs/squeeze_0.8/6.jpg, id=63, 578.16pt x 433.62pt>
 File: graphs/squeeze_0.8/6.jpg Graphic file (type jpg)
 <use graphs/squeeze_0.8/6.jpg>
-Package pdftex.def Info: graphs/squeeze_0.8/6.jpg  used on input line 246.
+Package pdftex.def Info: graphs/squeeze_0.8/6.jpg  used on input line 248.
 (pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
-<graphs/squeeze_0.8/7.jpg, id=65, 562.2606pt x 421.575pt>
+<graphs/squeeze_0.8/7.jpg, id=64, 562.2606pt x 421.575pt>
 File: graphs/squeeze_0.8/7.jpg Graphic file (type jpg)
 <use graphs/squeeze_0.8/7.jpg>
-Package pdftex.def Info: graphs/squeeze_0.8/7.jpg  used on input line 249.
+Package pdftex.def Info: graphs/squeeze_0.8/7.jpg  used on input line 251.
 (pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
-<graphs/squeeze_0.8/8.jpg, id=66, 578.16pt x 433.62pt>
+<graphs/squeeze_0.8/8.jpg, id=65, 578.16pt x 433.62pt>
 File: graphs/squeeze_0.8/8.jpg Graphic file (type jpg)
 <use graphs/squeeze_0.8/8.jpg>
-Package pdftex.def Info: graphs/squeeze_0.8/8.jpg  used on input line 252.
+Package pdftex.def Info: graphs/squeeze_0.8/8.jpg  used on input line 254.
 (pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
-<graphs/squeeze_0.8/9.jpg, id=67, 562.2606pt x 421.575pt>
+<graphs/squeeze_0.8/9.jpg, id=66, 562.2606pt x 421.575pt>
 File: graphs/squeeze_0.8/9.jpg Graphic file (type jpg)
 <use graphs/squeeze_0.8/9.jpg>
-Package pdftex.def Info: graphs/squeeze_0.8/9.jpg  used on input line 255.
+Package pdftex.def Info: graphs/squeeze_0.8/9.jpg  used on input line 257.
 (pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
-<graphs/squeeze_0.8/10.jpg, id=68, 562.2606pt x 421.575pt>
+<graphs/squeeze_0.8/10.jpg, id=67, 562.2606pt x 421.575pt>
 File: graphs/squeeze_0.8/10.jpg Graphic file (type jpg)
 <use graphs/squeeze_0.8/10.jpg>
-Package pdftex.def Info: graphs/squeeze_0.8/10.jpg  used on input line 258.
+Package pdftex.def Info: graphs/squeeze_0.8/10.jpg  used on input line 260.
 (pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
-<graphs/squeeze_0.8/11.jpg, id=69, 562.2606pt x 421.575pt>
+<graphs/squeeze_0.8/11.jpg, id=68, 562.2606pt x 421.575pt>
 File: graphs/squeeze_0.8/11.jpg Graphic file (type jpg)
 <use graphs/squeeze_0.8/11.jpg>
-Package pdftex.def Info: graphs/squeeze_0.8/11.jpg  used on input line 261.
+Package pdftex.def Info: graphs/squeeze_0.8/11.jpg  used on input line 263.
 (pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
-<graphs/squeeze_0.8/12.jpg, id=70, 562.2606pt x 421.575pt>
+<graphs/squeeze_0.8/12.jpg, id=69, 562.2606pt x 421.575pt>
 File: graphs/squeeze_0.8/12.jpg Graphic file (type jpg)
 <use graphs/squeeze_0.8/12.jpg>
-Package pdftex.def Info: graphs/squeeze_0.8/12.jpg  used on input line 264.
+Package pdftex.def Info: graphs/squeeze_0.8/12.jpg  used on input line 266.
 (pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2155,74 +2155,78 @@ _0.8/3.jpg> <./graphs/squeeze_0.8/4.jpg> <./graphs/squeeze_0.8/5.jpg> <./graphs
 /squeeze_0.8/6.jpg> <./graphs/squeeze_0.8/7.jpg> <./graphs/squeeze_0.8/8.jpg> <
 ./graphs/squeeze_0.8/9.jpg> <./graphs/squeeze_0.8/10.jpg> <./graphs/squeeze_0.8
 /11.jpg> <./graphs/squeeze_0.8/12.jpg>]
+<graphs/squeezed_vacuum/1.jpg, id=76, 562.2606pt x 421.575pt>
+File: graphs/squeezed_vacuum/1.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/1.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/1.jpg  used on input line 291.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeezed_vacuum/2.jpg, id=77, 562.2606pt x 421.575pt>
+File: graphs/squeezed_vacuum/2.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/2.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/2.jpg  used on input line 294.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeezed_vacuum/3.jpg, id=78, 562.2606pt x 421.575pt>
+File: graphs/squeezed_vacuum/3.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/3.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/3.jpg  used on input line 297.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeezed_vacuum/4.jpg, id=79, 578.16pt x 433.62pt>
+File: graphs/squeezed_vacuum/4.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/4.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/4.jpg  used on input line 300.
+(pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
+<graphs/squeezed_vacuum/5.jpg, id=80, 562.2606pt x 421.575pt>
+File: graphs/squeezed_vacuum/5.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/5.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/5.jpg  used on input line 303.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeezed_vacuum/6.jpg, id=81, 578.16pt x 433.62pt>
+File: graphs/squeezed_vacuum/6.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/6.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/6.jpg  used on input line 306.
+(pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
+<graphs/squeezed_vacuum/7.jpg, id=82, 562.2606pt x 421.575pt>
+File: graphs/squeezed_vacuum/7.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/7.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/7.jpg  used on input line 309.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeezed_vacuum/8.jpg, id=83, 562.2606pt x 421.575pt>
+File: graphs/squeezed_vacuum/8.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/8.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/8.jpg  used on input line 312.
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeezed_vacuum/9.jpg, id=84, 578.16pt x 433.62pt>
+File: graphs/squeezed_vacuum/9.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/9.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/9.jpg  used on input line 315.
+(pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
+<graphs/squeezed_vacuum/10.jpg, id=85, 562.2606pt x 421.575pt>
+File: graphs/squeezed_vacuum/10.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/10.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/10.jpg  used on input line 318.
+
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeezed_vacuum/11.jpg, id=86, 562.2606pt x 421.575pt>
+File: graphs/squeezed_vacuum/11.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/11.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/11.jpg  used on input line 321.
+
+(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
+<graphs/squeezed_vacuum/12.jpg, id=87, 578.16pt x 433.62pt>
+File: graphs/squeezed_vacuum/12.jpg Graphic file (type jpg)
+<use graphs/squeezed_vacuum/12.jpg>
+Package pdftex.def Info: graphs/squeezed_vacuum/12.jpg  used on input line 324.
+
+(pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
-<graphs/squeezed_vacuum/1.jpg, id=80, 562.2606pt x 421.575pt>
-File: graphs/squeezed_vacuum/1.jpg Graphic file (type jpg)
-<use graphs/squeezed_vacuum/1.jpg>
-Package pdftex.def Info: graphs/squeezed_vacuum/1.jpg  used on input line 289.
-(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
-<graphs/squeezed_vacuum/2.jpg, id=81, 562.2606pt x 421.575pt>
-File: graphs/squeezed_vacuum/2.jpg Graphic file (type jpg)
-<use graphs/squeezed_vacuum/2.jpg>
-Package pdftex.def Info: graphs/squeezed_vacuum/2.jpg  used on input line 292.
-(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
-<graphs/squeezed_vacuum/3.jpg, id=82, 562.2606pt x 421.575pt>
-File: graphs/squeezed_vacuum/3.jpg Graphic file (type jpg)
-<use graphs/squeezed_vacuum/3.jpg>
-Package pdftex.def Info: graphs/squeezed_vacuum/3.jpg  used on input line 295.
-(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
-<graphs/squeezed_vacuum/4.jpg, id=83, 578.16pt x 433.62pt>
-File: graphs/squeezed_vacuum/4.jpg Graphic file (type jpg)
-<use graphs/squeezed_vacuum/4.jpg>
-Package pdftex.def Info: graphs/squeezed_vacuum/4.jpg  used on input line 298.
-(pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
-<graphs/squeezed_vacuum/5.jpg, id=84, 562.2606pt x 421.575pt>
-File: graphs/squeezed_vacuum/5.jpg Graphic file (type jpg)
-<use graphs/squeezed_vacuum/5.jpg>
-Package pdftex.def Info: graphs/squeezed_vacuum/5.jpg  used on input line 301.
-(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
-<graphs/squeezed_vacuum/6.jpg, id=85, 578.16pt x 433.62pt>
-File: graphs/squeezed_vacuum/6.jpg Graphic file (type jpg)
-<use graphs/squeezed_vacuum/6.jpg>
-Package pdftex.def Info: graphs/squeezed_vacuum/6.jpg  used on input line 304.
-(pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
-<graphs/squeezed_vacuum/7.jpg, id=86, 562.2606pt x 421.575pt>
-File: graphs/squeezed_vacuum/7.jpg Graphic file (type jpg)
-<use graphs/squeezed_vacuum/7.jpg>
-Package pdftex.def Info: graphs/squeezed_vacuum/7.jpg  used on input line 307.
-(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
-<graphs/squeezed_vacuum/8.jpg, id=87, 562.2606pt x 421.575pt>
-File: graphs/squeezed_vacuum/8.jpg Graphic file (type jpg)
-<use graphs/squeezed_vacuum/8.jpg>
-Package pdftex.def Info: graphs/squeezed_vacuum/8.jpg  used on input line 310.
-(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
-<graphs/squeezed_vacuum/9.jpg, id=88, 578.16pt x 433.62pt>
-File: graphs/squeezed_vacuum/9.jpg Graphic file (type jpg)
-<use graphs/squeezed_vacuum/9.jpg>
-Package pdftex.def Info: graphs/squeezed_vacuum/9.jpg  used on input line 313.
-(pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
-<graphs/squeezed_vacuum/10.jpg, id=89, 562.2606pt x 421.575pt>
-File: graphs/squeezed_vacuum/10.jpg Graphic file (type jpg)
-<use graphs/squeezed_vacuum/10.jpg>
-Package pdftex.def Info: graphs/squeezed_vacuum/10.jpg  used on input line 316.
-
-(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
-<graphs/squeezed_vacuum/11.jpg, id=90, 562.2606pt x 421.575pt>
-File: graphs/squeezed_vacuum/11.jpg Graphic file (type jpg)
-<use graphs/squeezed_vacuum/11.jpg>
-Package pdftex.def Info: graphs/squeezed_vacuum/11.jpg  used on input line 319.
-
-(pdftex.def)             Requested size: 136.5746pt x 102.40227pt.
-<graphs/squeezed_vacuum/12.jpg, id=91, 578.16pt x 433.62pt>
-File: graphs/squeezed_vacuum/12.jpg Graphic file (type jpg)
-<use graphs/squeezed_vacuum/12.jpg>
-Package pdftex.def Info: graphs/squeezed_vacuum/12.jpg  used on input line 322.
-
-(pdftex.def)             Requested size: 136.5746pt x 102.43002pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3281) has occurred while \output is active []
 
  [13 <./graphs/squeezed_vacuum/1.jpg> <./graphs/squeezed_vacuum/2.jpg> <./graph
 s/squeezed_vacuum/3.jpg> <./graphs/squeezed_vacuum/4.jpg> <./graphs/squeezed_va
@@ -2231,146 +2235,125 @@ cuum/5.jpg> <./graphs/squeezed_vacuum/6.jpg> <./graphs/squeezed_vacuum/7.jpg> <
 ezed_vacuum/10.jpg> <./graphs/squeezed_vacuum/11.jpg> <./graphs/squeezed_vacuum
 /12.jpg>]
 [14]
-Overfull \hbox (5.88655pt too wide) in paragraph at lines 351--353
+Overfull \hbox (5.88655pt too wide) in paragraph at lines 353--355
 [][]$ 
  []
 
 [15] [16]
-Overfull \hbox (7.77902pt too wide) detected at line 407
-[][]
- []
-
-[17]
-Overfull \hbox (59.03064pt too wide) detected at line 417
+Overfull \hbox (7.77902pt too wide) detected at line 413
 [][]
  []
 
 
-Overfull \hbox (0.16763pt too wide) detected at line 430
+Overfull \hbox (59.03064pt too wide) detected at line 423
+[][]
+ []
+
+
+Underfull \vbox (badness 6380) has occurred while \output is active []
+
+ [17]
+Overfull \hbox (0.16763pt too wide) detected at line 436
 [][]
  []
 
 [18]
-Overfull \hbox (13.82292pt too wide) in paragraph at lines 441--444
+Overfull \hbox (13.82292pt too wide) in paragraph at lines 447--450
 []$[][]$ 
  []
 
 
-Overfull \hbox (5.12865pt too wide) in paragraph at lines 445--446
+Overfull \hbox (5.12865pt too wide) in paragraph at lines 451--452
 []$[][]$ 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (61.95619pt too wide) in paragraph at lines 460--462
+[]$[][]$ 
+ []
+
+
+Underfull \vbox (badness 1221) has occurred while \output is active []
 
  [19]
-Overfull \hbox (61.95619pt too wide) in paragraph at lines 454--456
+Overfull \hbox (11.41782pt too wide) in paragraph at lines 463--467
 []$[][]$ 
  []
 
 
-Overfull \hbox (11.41782pt too wide) in paragraph at lines 457--461
-[]$[][]$ 
- []
-
-
-Overfull \hbox (0.46129pt too wide) in paragraph at lines 467--470
+Overfull \hbox (0.46129pt too wide) in paragraph at lines 473--476
 $[][]$ 
  []
 
 
-Underfull \vbox (badness 5802) has occurred while \output is active []
-
- [20]
-Overfull \hbox (67.78732pt too wide) in paragraph at lines 471--475
+Overfull \hbox (67.78732pt too wide) in paragraph at lines 477--481
 []$[][]$ 
  []
 
 
-Overfull \hbox (4.95724pt too wide) detected at line 477
+Overfull \hbox (4.95724pt too wide) detected at line 483
 [][]
  []
 
-[21]
-Overfull \hbox (5.33093pt too wide) in paragraph at lines 492--498
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+Overfull \hbox (5.33093pt too wide) in paragraph at lines 498--504
 [][]$ 
  []
 
-
-Overfull \hbox (4.74724pt too wide) in paragraph at lines 501--506
+[21]
+Overfull \hbox (4.74724pt too wide) in paragraph at lines 507--512
 []$[][]$ 
  []
 
-[22]
-<graphs/simulation/position.png, id=125, 578.16pt x 433.62pt>
+<graphs/simulation/position.png, id=121, 578.16pt x 433.62pt>
 File: graphs/simulation/position.png Graphic file (type png)
 <use graphs/simulation/position.png>
-Package pdftex.def Info: graphs/simulation/position.png  used on input line 531
+Package pdftex.def Info: graphs/simulation/position.png  used on input line 537
 .
 (pdftex.def)             Requested size: 204.85844pt x 153.64174pt.
-<graphs/simulation/velocity.png, id=126, 578.16pt x 433.62pt>
+<graphs/simulation/velocity.png, id=122, 578.16pt x 433.62pt>
 File: graphs/simulation/velocity.png Graphic file (type png)
 <use graphs/simulation/velocity.png>
-Package pdftex.def Info: graphs/simulation/velocity.png  used on input line 535
+Package pdftex.def Info: graphs/simulation/velocity.png  used on input line 541
 .
 (pdftex.def)             Requested size: 204.85844pt x 153.64174pt.
-<graphs/simulation/rotating_energies.png, id=127, 578.16pt x 433.62pt>
+<graphs/simulation/rotating_energies.png, id=123, 578.16pt x 433.62pt>
 File: graphs/simulation/rotating_energies.png Graphic file (type png)
 <use graphs/simulation/rotating_energies.png>
 Package pdftex.def Info: graphs/simulation/rotating_energies.png  used on input
- line 539.
+ line 545.
 (pdftex.def)             Requested size: 204.85844pt x 153.64174pt.
-<graphs/simulation/kinetic_potential.png, id=128, 578.16pt x 433.62pt>
+<graphs/simulation/kinetic_potential.png, id=124, 578.16pt x 433.62pt>
 File: graphs/simulation/kinetic_potential.png Graphic file (type png)
 <use graphs/simulation/kinetic_potential.png>
 Package pdftex.def Info: graphs/simulation/kinetic_potential.png  used on input
- line 543.
+ line 549.
 (pdftex.def)             Requested size: 204.85844pt x 153.64174pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 550--552
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 550--552
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 550--552
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 550--552
-
- []
-
-
+[22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [24 <./graphs/simulation/position.png> <./graphs/simulation/velocity.png> <./g
+ [23 <./graphs/simulation/position.png> <./graphs/simulation/velocity.png> <./g
 raphs/simulation/rotating_energies.png> <./graphs/simulation/kinetic_potential.
 png>]
-Overfull \hbox (12.51642pt too wide) in paragraph at lines 560--561
+Overfull \hbox (12.51642pt too wide) in paragraph at lines 566--567
 [] []$\OT1/cmr/m/n/12 . Then, we can de-fine pres-sure $\OML/cmm/m/it/12 p \OT1
 /cmr/m/n/12 = \OMS/cmsy/m/n/12 ^^@ [][] \OT1/cmr/m/n/12 =
  []
 
-[25]
-<graphs/P-V_Otto_cycle.png, id=139, 224.33812pt x 207.02344pt>
+[24]
+<graphs/P-V_Otto_cycle.png, id=134, 224.33812pt x 207.02344pt>
 File: graphs/P-V_Otto_cycle.png Graphic file (type png)
 <use graphs/P-V_Otto_cycle.png>
-Package pdftex.def Info: graphs/P-V_Otto_cycle.png  used on input line 570.
+Package pdftex.def Info: graphs/P-V_Otto_cycle.png  used on input line 576.
 (pdftex.def)             Requested size: 182.09485pt x 168.04501pt.
- [26 <./graphs/P-V_Otto_cycle.png>] [27] (./report.bbl [28]
+ [25 <./graphs/P-V_Otto_cycle.png>]
+Underfull \vbox (badness 1622) has occurred while \output is active []
+
+ [26]
+(./report.bbl [27]
 Underfull \hbox (badness 10000) in paragraph at lines 53--58
 []\OT1/cmr/m/n/12 metamorphy (https://math.stackexchange.com/users/543769/metam
 orphy).
@@ -2396,41 +2379,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--80
 s / tree / master /
  []
 
-) [29] (./report.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+) [28] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 26019 strings out of 492982
- 513817 string characters out of 6134896
- 544627 words of memory out of 5000000
- 29169 multiletter control sequences out of 15000+600000
- 545833 words of font info for 84 fonts, out of 8000000 for 9000
+ 26022 strings out of 492982
+ 513847 string characters out of 6134896
+ 545610 words of memory out of 5000000
+ 29172 multiletter control sequences out of 15000+600000
+ 546140 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,13n,54p,10445b,471s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on report.pdf (29 pages, 2370219 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
+2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on report.pdf (28 pages, 2362636 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 126 compressed objects within 2 object streams
+ 209 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  198 words of extra memory for PDF output out of 10000 (max. 10000000)
 
