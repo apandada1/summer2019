@@ -8,7 +8,7 @@
 \contentsline {subsubsection}{\numberline {2.3.2}Explanation of the nature of correlation of the stochastic force}{14}
 \contentsline {subsubsection}{\numberline {2.3.3}Fluctuation dissipation theorem and the claim}{15}
 \contentsline {section}{\numberline {3}Proof of the claim}{16}
-\contentsline {subsubsection}{\numberline {3.0.1}Preliminaries}{16}
+\contentsline {subsubsection}{\numberline {3.0.1}Preliminaries}{17}
 \contentsline {subsubsection}{\numberline {3.0.2}Calculation of Fourier transformed position and momentum}{18}
 \contentsline {subsection}{\numberline {3.1}Calculation of variance in position}{19}
 \contentsline {subsection}{\numberline {3.2}Calculation of covariance in position and momentum}{19}

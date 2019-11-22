@@ -70,7 +70,7 @@
 
 \begin{abstract}
 
-It is a challenging task to make efficient heat engines. The Carnot limit \cite{resnick_halliday} provides an upper bound for the efficiency of a heat engine. It was claimed in a recent paper \cite{klaers} that it researchers have been able to experimentally surpass the Carnot limit using non-equilibrium reservoirs, and the second law of thermodynamics was not violated due to the non-equilibrium nature of the reservoirs. There was a claim that a certain kind of stochastic gave rise to classical squeezed states, which can be utilized to make such an heat engines. In this report, that claim is verified, and the sense in which the Carnot efficiency is surpassed, and why second law is still not violated is explained.
+It is a challenging task to make efficient heat engines. The Carnot limit \cite{resnick_halliday} provides an upper bound for the efficiency of a heat engine. It was claimed in a recent paper \cite{klaers} that it is possible to experimentally surpass the Carnot limit using non-equilibrium reservoirs, and the second law of thermodynamics was not violated due to the non-equilibrium nature of the reservoirs. There was a claim that a certain kind of stochastic gave rise to classical squeezed states, which can be utilized to make such an heat engines. In this report, that claim is verified, and the sense in which the Carnot efficiency is surpassed, and why second law is still not violated is explained.
 
 \end{abstract}
 %{\bf Keywords:} enter, keyword, here.
@@ -96,49 +96,48 @@ Indian Institute of Science, Bangalore.
 	\textbf{Acknowledgment}
 \end{center}
 
-I am grateful to Prof. H. R. Krishnamurthy for guiding me in this project and for growing my interest in different branches of Condensed Matter Physics.
+I am grateful to Prof. H. R. Krishnamurthy for guiding me in this project and for providing his valuable time to explain many topics to me. I am also grateful to him for growing my interest in different branches of Condensed Matter Physics.
 
-I am also grateful to D.S.T. and K.V.P.Y. for providing me scholarship.
+I am also thankful to D.S.T. and K.V.P.Y. for providing me scholarship.
 \tableofcontents
 
 \section{Introduction}
 The classical limits of the maximum achievable efficiency of an ideal heat engine running between temperatures $T_{hot}$ and $T_{cold}$ us given by Carnot's formula $\eta_{Carnot} = 1 - \frac{T_{cold}}{T_{hot}}$.\\
 Being reversible, Carnot engine is inifinitely slow, and there are frictional dissipations in the real world. As a result, the efficiency of real, irreversible engines are a small fraction of this ideal formula.
 Nano engines based on the principles of Quantum Mechanics can achieve much higher efficiencies than their classical counterparts \cite{Millen_2016} and can have efficiency close to the Carnot limit.
-These engines can be realized in many forms including ion traps \cite{ion_trap_abah}, bacterial reservoirs \cite{bacterial_reservoir}, harmonic oscillators [ref].
-It has been shown both theoretically \cite{abah_et_al} and experimentally \cite{klaers} that the efficiencies of engines realized using ``squeezed harmonic oscillators" an even surpass the Carnot limit, without violating the second law of thermodynamics. In this report, it will be elaborated in which sense the Carnot limit is surpassed, and why the second law is not violated.
+These engines can be realized in many forms including ion traps \cite{ion_trap_abah}, bacterial reservoirs \cite{bacterial_reservoir}, harmonic oscillators \cite{harmonic_oscl_engine}.
+It has been shown both theoretically \cite{abah_et_al} and experimentally \cite{klaers} that the efficiencies of engines realized using ``squeezed harmonic oscillators" can even surpass the Carnot limit, without violating the second law of thermodynamics. In this report, it will be elaborated in which sense the Carnot limit is surpassed, and why the second law is not violated.
 To see how the experiment \cite{klaers} was done, let us recap squeezed states of harmonic oscillator and Brownian motion.
 \section{Theory of the for Brownian Harmonic oscillator}
 
 Before we discuss squeezed states, let us review ``Coherent states" of a harmonic oscillator.
 \subsection{Coherent states of a quantum harmonic oscillator}
-The position and momentum of classical harmonic oscillator (a particle of mass $m$ in potential $\frac{1}{2}m\omega^2x^2$)  oscillates with period $\omega$, its natural frequency.
+The position and momentum of classical harmonic oscillator (a particle of mass $m$ in potential $\frac{1}{2}m\omega^2x^2$, basically a spring-mass system)  oscillates with period $\omega$, its natural frequency.
 However, in quantum mechanics, the expectation value of position or momentum of an eigenstate of the Hamiltonian does not change with time.
-
 
 For the harmonic oscillator, the Hamiltonian is $\hat{H} = \frac{\hat{p}^2}{2m} + \frac{1}{2}m \omega^2 {\hat{x}}^2$.
 
-
 Let the eigenstates of $\hat{H}$ be denoted by $\ket{n}$. It can be shown \cite{cohen_tannoudji} that it has energy $E_n = (n+\frac{1}{2}) \hbar\omega$. The state evolves with time as $\ket{n,t} = e ^ { -i \left( n + \frac { 1 } { 2 } \right) \omega t } \ket{n,t=0}$, and the position and momentum coordinate will share equal energies $(n+\frac{1}{2}) \frac{\hbar\omega}{2}$. And, the expected values of position and momentum are zero and do not change over time.
-There exist quantum states whose expected values of position and momentum oscillate sinusoidally with time, and the wave packet does not spread with time. These are known as ``Coherent states".
+There exist quantum states whose expected values of position and momentum oscillate sinusoidally with time, and the wave packet does not spread with time. These are known as ``Coherent states" \cite{wikipedia_coherent}.
 
 
-Let us define $x_0 = \sqrt{\frac{\hbar}{m\omega}}$ and $p_0 = \sqrt{\hbar m \omega}$, and dimensionless operators $\hat{X} = \frac{\hat{x}}{x_0}$,$\hat{P} = \frac{\hat{p}}{p_0}$. Then we can rewrite \begin{equation}\label{eq:Hamiltonian}\hat{H} = \frac{\hbar\omega}{2}({\hat{X}}^2 + {\hat{P}}^2)\end{equation}. Let us define two non Hermitian operators $\hat{a} = \frac{\hat{X} + i \hat{P}}{\sqrt{2}}$, and ${\hat{a}}^\dagger = \frac{\hat{X} - i \hat{P}}{\sqrt{2}}$. Then, $[\hat{a},\hat{a}^\dagger] = 1$, and the Hamiltonian can be written as $\hat{H} = \hbar\omega( \hat{a}^\dagger \hat{a} + \frac{1}{2})$.
+Let us define $x_0 = \sqrt{\frac{\hbar}{m\omega}}$ and $p_0 = \sqrt{\hbar m \omega}$, and dimensionless operators $\hat{X} = \frac{\hat{x}}{x_0}$,$\hat{P} = \frac{\hat{p}}{p_0}$. Then we can rewrite \begin{equation}\label{eq:Hamiltonian}\hat{H} = \frac{\hbar\omega}{2}({\hat{X}}^2 + {\hat{P}}^2)\end{equation}
+Let us define two non Hermitian operators $\hat{a} = \frac{\hat{X} + i \hat{P}}{\sqrt{2}}$, and ${\hat{a}}^\dagger = \frac{\hat{X} - i \hat{P}}{\sqrt{2}}$. Then, $[\hat{a},\hat{a}^\dagger] = 1$, and the Hamiltonian can be written as $\hat{H} = \hbar\omega( \hat{a}^\dagger \hat{a} + \frac{1}{2})$.
 $\hat{a}^\dagger$ and $\hat{a}$ are known as ``creation" and ``annihilation" operators, respectively, because they act on the eigenstates as follows. 
 \begin{equation}\label{eq:a} { \hat{a} | n \rangle = \sqrt { n } | n - 1 \rangle } \end{equation}
 \begin{equation} \label{eq:adagger}{ \hat{a} ^ { \dagger } | n \rangle = \sqrt { n + 1 } | n + 1 \rangle }\end{equation} 
 We can define $\hat{N} = \hat{a}^\dagger\hat{a}$, and then, $\hat{N} \ket{n} = n\ket{n}$, denoting the number of excitations (e.g. photons or phonons) in the system. The creation and annihilation operators can be viewed as operators which create or destroy such an excitation, respectively, hence their name.
 
-The operator $\hat{a}$ acts on $\ket{0}$ (the vaccuum state) to give the zero vector of the Hilbert space. However, there exist states which are eigenstates of the annihilation operator, and these states are known as the coherent states. \cite{wikipedia_coherent}
+The operator $\hat{a}$ acts on $\ket{0}$ (the vaccuum state) to give the zero vector of the Hilbert space. However, there exist states which are eigenstates of the annihilation operator, and these are the coherent states.
 
 Let \begin{equation}\label{eq:coherent}
 	\hat {a} | \alpha \rangle = \alpha | \alpha \rangle
-\end{equation}, where $\alpha$ is a complex number, and $\ket{\alpha}$ is a coherent state. Since $\ket{n}$ form a basis of the Hilbert space, $\exists c_n \in \mathbb{C}$, such that \begin{equation} \label{eq:coherentexpansion}| \alpha \rangle = \displaystyle\sum _ { n = 0 } ^ { \infty } c_n | n \rangle \end{equation}
+\end{equation} where $\alpha$ is a complex number, and $\ket{\alpha}$ is a coherent state. Since $\ket{n}$ form a basis of the Hilbert space, $\exists c_n \in \mathbb{C}$, such that \begin{equation} \label{eq:coherentexpansion}| \alpha \rangle = \displaystyle\sum _ { n = 0 } ^ { \infty } c_n | n \rangle \end{equation}
 $\begin{aligned}\text{From equations (\ref{eq:coherent}) and (\ref{eq:coherentexpansion}), we get,}\displaystyle\sum _ { n = 0 } ^ { \infty } c_ { n } \hat {a} | n \rangle &= \sum _ { n = 0 } ^ { \infty } \alpha c_{ n } | n \rangle\\\implies \sum _ { n = 1 } ^ { \infty } c_{ n } \sqrt { n } | n - 1 \rangle &= \sum _ { n = 0 } ^ { \infty } \alpha c_{ n } | n \rangle \\ \implies \sum _ { n = 0 } ^ { \infty } c _ { n + 1 } \sqrt { n + 1 } | n \rangle &= \sum _ { n = 0 } ^ { \infty } \alpha c _ { n } | n \rangle\\ \implies \quad c _ { n + 1 } \sqrt { n + 1 } &= \alpha c _ { n } \\  \implies \frac { c _ { n + 1 } \sqrt { ( n + 1 ) ! } } { \alpha ^ { n + 1 } }  &= \frac { c _ { n } \sqrt { n ! } } { \alpha ^ { n } } \\  &= \frac { c _ { 0 } \sqrt { 0 ! } } { \alpha ^ { 0 } }  \\ \implies c _ { n } &= c _ { 0 } \frac { \alpha ^ { n } } { \sqrt { n ! } }\end{aligned}$\\
 Since $\displaystyle\sum _ { n = 0 } ^ { \infty } \left| c _ { n } \right| ^ { 2 } = 1 \implies c _ { 0 } = e ^ { - \frac { | \alpha | ^ { 2 } } { 2 } }$. Finally we get $\displaystyle| \alpha \rangle = e ^ { - \frac {|\alpha| ^ { 2 } } { 2 } } \sum _ { n = 0 } ^ { \infty } \frac { \alpha ^ { n } } { \sqrt { n ! } } | n \rangle$,
 and $\displaystyle| \alpha,t \rangle = e ^ { - \frac {|\alpha| ^ { 2 } + i\omega t} { 2 }} \sum _ { n = 0 } ^ { \infty } \frac { (\alpha e^{-i\omega t})^ { n }  } { \sqrt { n ! } } | n \rangle$. So the state remains a coherent state over time, only the parameter $\alpha$ evolves as $\alpha(t) = \alpha(0) e^{-i\omega t}$.
 Now, 
-\begin{equation}
+\begin{equation}\label{eq:coherent_stats}
 \begin{cases}
 
 	&{ \langle \hat{a} \rangle = \alpha }\\
@@ -183,10 +182,10 @@ Now,
 \end{subfigure}
 	\caption{Time evolution of probability density of a coherent state. $T = \frac{2\pi}{\omega}$}
 \end{figure}
-Let $\alpha = |\alpha|e^{i\phi}$. Then, $\langle x \rangle (t) $$= \sqrt{2} x_0 \Re{\alpha(t)} $$= \sqrt{2} x_0 |\alpha| \cos(\phi-\omega t)$, and $ \langle p \rangle (t) $$= \sqrt{2} p_0 \Im{\alpha(t)} $$= \sqrt{2} x_0 |\alpha| \sin(\phi-\omega t)$. The total energy, the standard deviations in position and momentum remain constant, while the expected position and momentum vary sinusodially with time, just like a classical particle. Solving the first order differential equation obtained from (\ref{eq:coherent}) in position basis, it can be easily shown that the wave function $\psi_\alpha (x) = \braket{x}{\alpha}$ is a Gaussian, and its mean $\expval{x}$ changes sinusodially with time.
+Let $\alpha = |\alpha|e^{i\phi}$. Then, $\langle x \rangle (t) $$= \sqrt{2} x_0 \Re{\alpha(t)} $$= \sqrt{2} x_0 |\alpha| \cos(\phi-\omega t)$, and $ \langle p \rangle (t) $$= \sqrt{2} p_0 \Im{\alpha(t)} $$= \sqrt{2} x_0 |\alpha| \sin(\phi-\omega t)$. The total energy, the standard deviations in position and momentum remain constant, while the expected position and momentum vary sinusodially with time, just like a classical particle. Solving the first order differential equation obtained from (\ref{eq:coherent}) in position basis, it can be easily shown that the wave function $\psi_\alpha (x) = \braket{x}{\alpha}$ is a Gaussian of fixed variance $\frac{x_0^2}{2}$, and its mean $\expval{x}$ evolves sinusodially with time.
 \subsection{Squeezed states of a quantum harmonic oscillator}
 
-The coherent state behaves like a classical particle in a harmonic potential, and it has equal uncertainty in position and momentum. However, there exist states which have different values of standard deviation in position and momentum coordinates. In the next section, we will see that the uncertainty is related to the effective temperature in these coordinates, and this can be utilized to prepare efficient heat engines. Let us define \begin{equation} \label{eq:squeeze}
+The coherent state behaves like a classical particle in a harmonic potential, and it has equal uncertainty in position and momentum. However, there exist states which have different values of standard deviation in position and momentum coordinates. In the next section, we will see that these uncertainties are related to the effective temperature in these coordinates, and this can be utilized to prepare efficient heat engines. Let us define \begin{equation} \label{eq:squeeze}
 \hat{Q} = \lambda \hat{a} + \mu \hat{a}^\dagger
 \end{equation} where $|\lambda|^2 - |\mu|^2 = 1$. Let $\lambda = \cosh(r)$, $\mu = \sinh(r)e^{i\phi}$, where $r,\phi \in \mathbb{R}$. The eigenstates of $\hat{Q}$ are defined as the squeezed states \cite{squeezed_reference}.
  We have,
@@ -222,8 +221,8 @@ Then, after some simplification, we get,
 
 &{ \left\langle \frac{\hat{x}}{x_0} \right\rangle =2\Re{\frac{\lambda(t) - \mu(t)}{\sqrt{2}}s^*}=\sqrt{2}|s|[\cosh(r)\cos(\omega t - \theta) - \sinh(r)\sin(\omega t + \theta - \phi)]}\\
 &{ \left\langle \frac{\hat{p}}{p_0} \right\rangle =2\Im{\frac{\lambda(t)^* + \mu(t)^*}{\sqrt{2}}s}=\sqrt{2}|s|[\cosh(r)\sin(\theta - \omega t) + \sinh(r)\sin(\omega t + \theta + \phi)]}\\
-& { \frac{(\Delta x)^2}{{x_0}^2} = \frac { |\cosh(r)e^{i\omega t} - \sinh(r)e^{i(\phi - \omega t)}|^2 } { 2 } =  \frac{\cosh(2\tilde{r}) - \sinh(2\tilde{r})\cos(2\omega t-\phi) }{2} }\\
-& { \frac{(\Delta p)^2}{{p_0}^2} = \frac { |\cosh(r)e^{i\omega t} + \sinh(r)e^{i(\phi - \omega t)}|^2 } { 2 } =  \frac{\cosh(2\tilde{r}) + \sinh(2\tilde{r})\cos(2\omega t-\phi) }{2} }\\
+& { \frac{(\Delta x)^2}{{x_0}^2} = \frac { |\cosh(r)e^{i\omega t} - \sinh(r)e^{i(\phi - \omega t)}|^2 } { 2 } =  \frac{\cosh(2r) - \sinh(2r)\cos(2\omega t-\phi) }{2} }\\
+& { \frac{(\Delta p)^2}{{p_0}^2} = \frac { |\cosh(r)e^{i\omega t} + \sinh(r)e^{i(\phi - \omega t)}|^2 } { 2 } =  \frac{\cosh(2r) + \sinh(2r)\cos(2\omega t-\phi) }{2} }\\
 
 \end{cases}\end{equation}
 \begin{figure}[h!]
@@ -267,7 +266,7 @@ Then, after some simplification, we get,
 	\end{subfigure}
 	\caption{Time evolution of a squeezed coherent state with $r=0.8$ and $s=1$}
 \end{figure}
-We can solve $\hat{Q}\ket{s} = s\ket{s}$ in position basis, and show that the wave function is a Gaussian peaked at $\expval{\hat{x}}$ with standard deviation $\Delta x$, both of which are sinusoidal functions of time. When $s=0$, the state is called squeezed vacuum, where the wave function is a Gaussian peaked at $x=0$, but the standard deviation oscillates with time.
+We can solve $\hat{Q}\ket{s} = s\ket{s}$ in position basis, and show that the wave function is a Gaussian peaked at $\expval{\hat{x}}$ with standard deviation $\Delta x$, both of which are sinusoidal functions of time. When $s=0$, the state is called squeezed vacuum, where the wave function is a Gaussian peaked at $x=0$, but the standard deviation oscillates with time. For $r = 0$, the squeezed state reduces to the regular coherent state. When both $r$ and $s$ are $0$, we get back the vacuum state $\ket{0}$.
 
 \subsubsection{Expansion of squeezed state in eigenstate basis and its time evolution}
 
@@ -275,11 +274,14 @@ Let $\displaystyle | s \rangle = \sum _ { n = 0 } ^ { \infty } c _ { n } | n \ra
 We need to solve this recursion relation.
 
 \textbf{Case} $s \neq 0$
-\\From (\ref{eq:recursion cn}), $ c_n =  a \sqrt{n+1} c _ { n+1 } + b \sqrt{n} c _ { n-1 }$ (where $a = \frac{\lambda}{s}$, $b = \frac{\mu}{s}$). Let $c_n = d_n \sqrt{n!}$ \cite{recursion_substitution} \\ $\implies d_n \sqrt{n!} = a d_{n+1} (n+1) \sqrt{n!} + b d_{n-1} \sqrt{n!} \\ \implies c_n = d_n \sqrt{n!} \\ \implies d_n = a d_{n+1} (n+1)  + b d_{n-1}$. Let $\displaystyle f ( x ) = \sum _ { n = 0 } ^ { \infty } d _ { n } x ^ { n }$
+\\From (\ref{eq:recursion cn}), $ c_n =  a \sqrt{n+1} c _ { n+1 } + b \sqrt{n} c _ { n-1 }$ (where $a = \frac{\lambda}{s}$, $b = \frac{\mu}{s}$). Let $c_n = d_n \sqrt{n!}$ (see \cite{recursion_substitution}) \\ $\implies d_n \sqrt{n!} = a d_{n+1} (n+1) \sqrt{n!} + b d_{n-1} \sqrt{n!} \\ \implies d_n = a d_{n+1} (n+1)  + b d_{n-1}$. Let $\displaystyle f ( x ) = \sum _ { n = 0 } ^ { \infty } d _ { n } x ^ { n }$
 
-$ \begin{aligned} \implies f ( x ) &= a \sum _ { n = 0 } ^ { n } d _ { n + 1 } ( n + 1 ) x ^ { n } + b \sum _ { n = 0 } ^ { \infty } d _ { n - 1 } x ^ { n } \\ &= { a  \sum _ { n = 1 } ^ { \infty } d _ { n } n x ^ { n - 1 } } + { b x f( x ) } \\ &=  { a \sum _ { n = 0 } ^ { \infty } n d_n x ^ { n - 1 } } + {  b x f ( x ) } \\ &= a x f'(x) + b x f(x) \\\implies a f'(x)  &= f(x) (1-bx)\\ \implies \frac{f'(x)}{f(x)} &= \frac{1}{a} - \frac{b}{a} x \\ \implies f(x) &= C e^{\frac{x}{a} - \frac{bx^2}{2a}}\end{aligned}$
+$ \begin{aligned} \implies f ( x ) &= a \sum _ { n = 0 } ^ { n } d _ { n + 1 } ( n + 1 ) x ^ { n } + b \sum _ { n = 0 } ^ { \infty } d _ { n - 1 } x ^ { n } \\ &= { a  \sum _ { n = 1 } ^ { \infty } d _ { n } n x ^ { n - 1 } } + { b x f( x ) } \\ &=  { a \sum _ { n = 0 } ^ { \infty } n d_n x ^ { n - 1 } } + {  b x f ( x ) } \\ &= a x f'(x) + b x f(x) \\\implies a f'(x)  &= f(x) (1-bx)\\ \implies \frac{f'(x)}{f(x)} &= \frac{1}{a} - \frac{b}{a} x\end{aligned}$
+\begin{equation}\label{eq:recursion_sol}
+\implies f(x) = C e^{\frac{x}{a} - \frac{bx^2}{2a}}
+\end{equation}
 
-We know $e^{2ty -y^2} = \sum _ { n = 0 } ^ { \infty } H _ { n } ( t ) \frac { y ^ { n } } { n ! }$, where $H_n(t)$ is the Hermite polynomial of $n$th order \cite{arfken_weber_harris}. Here $y = x \sqrt{\frac{b}{2a}}$ and $t = \frac{1}{\sqrt{2ab}}$. \\ Therefore, $e^{\frac{x}{a} - \frac{bx^2}{2a}} = \sum _ { n = 0 } ^ { \infty } H _ { n }( \frac{1}{\sqrt { 2 a b } }) \frac {x ^ { n } \left( \frac { b } { 2 a } \right) ^ { n / 2 } } { n ! }$, and \\$\begin{aligned}c_n = d_n \sqrt{n!} &= \frac{ H_n ( \frac { 1 } { \sqrt { 2 a b } }) \left( \frac { b } { a } \right) ^ { n / 2 }}{\sqrt{2^n n!}}\\ &=\frac{ H_n ( \frac { s } { \sqrt { 2 \mu \lambda } }) \left( \frac { \mu } { \lambda } \right) ^ { n / 2 }}{\sqrt{2^n n!}}\end{aligned}$.
+We know $e^{2ty -y^2} = \sum _ { n = 0 } ^ { \infty } H _ { n } ( t ) \frac { y ^ { n } } { n ! }$, where $H_n(t)$ is the Hermite polynomial of $n$th order \cite{arfken_weber_harris}. Here in equation (\ref{eq:recursion_sol}) $y = x \sqrt{\frac{b}{2a}}$ and $t = \frac{1}{\sqrt{2ab}}$. \\ Therefore, $e^{\frac{x}{a} - \frac{bx^2}{2a}} = \sum _ { n = 0 } ^ { \infty } H _ { n }( \frac{1}{\sqrt { 2 a b } }) \frac {x ^ { n } \left( \frac { b } { 2 a } \right) ^ { n / 2 } } { n ! }$, and \\$\begin{aligned}c_n = d_n \sqrt{n!} &= \frac{ H_n ( \frac { 1 } { \sqrt { 2 a b } }) \left( \frac { b } { a } \right) ^ { n / 2 }}{\sqrt{2^n n!}}\\ &=\frac{ H_n ( \frac { s } { \sqrt { 2 \mu \lambda } }) \left( \frac { \mu } { \lambda } \right) ^ { n / 2 }}{\sqrt{2^n n!}}\end{aligned}$.
 
 $\begin{aligned}\text{Thus,}\ket{s,t} &= C \sum _ { n = 0 } ^ { \infty } \frac{ H_n ( \frac { s } { \sqrt { 2 \mu \lambda } }) \left( \frac { \mu } { \lambda } \right) ^ { n / 2 }}{\sqrt{2^n n!}} e^{-i(n+\frac{1}{2})\omega t}\ket{n,0} (C \text{ is a normalization constant}) \\ &= C e^{-\frac{i\omega t}{2}}\sum _ { n = 0 } ^ { \infty } \frac{ H_n ( \frac { s } { \sqrt { 2 (\mu e^{-i\omega t}) (\lambda e^{i\omega t}) } }) \left( \frac { \mu e^{-i\omega t}} { \lambda e^{i\omega t} } \right) ^ { n / 2 }}{\sqrt{2^n n!}}\ket{n,0} \end{aligned}$.\\ Therefore, the state evolves as if it remains a squeezed state with the same value of $s$, while $\lambda$ and $\mu$ evolve as $ \lambda e^{i\omega t}$ and $\mu e^{-i\omega t}$, respectively.
 
@@ -328,13 +330,20 @@ $\begin{aligned}\text{Thus,}\ket{s,t} &= C \sum _ { n = 0 } ^ { \infty } \frac{ 
 
 From (\ref{eq:recursion cn}), we get $\lambda \sqrt{n+1}c_{n+1} + \mu \sqrt{n} c_{n-1} = 0$. 
 
-$\begin{aligned}\text{Let } e_n &= c_n \sqrt{n!} \\\implies e_{n+1} &= -\frac{\mu}{\lambda} n e_{n-1} \\\implies e_{n+2} &= -\frac{\mu}{\lambda} (n+1) e_n \\ \implies \frac { e_{2n} } { e _ { 0 } } &= \frac { e_{2n} } { e_{2n- 2} } \frac { e_{2n- 2} } { e_{2n- 4} } \cdots \frac { e _ { 2 } } { e _ { 0 } } \\ &= \left( - \frac { u } { \lambda } \right) { ( 2n - 1 ) } \left( - \frac { \mu } { \lambda } \right) ( 2n - 3 ) \cdots \left( - \frac { \mu } { \lambda } \right) 1 \\
+Let $e_n = c_n \sqrt{n!}$
+
+$ 
+\implies \lambda \sqrt{n+1} \frac{e_{n+1}}{\sqrt{(n+1)!}} + \mu \sqrt{n} \frac{e_{n-1}}{\sqrt{(n-1)!}} = 0$
+
+$\begin{aligned} \implies e_{n+1} &= -\frac{\mu}{\lambda} n e_{n-1} 
+\\\implies e_{n+2} &= -\frac{\mu}{\lambda} (n+1) e_n (\text{ replacing $n$ with $n+1$})
+\\ \implies \frac { e_{2n} } { e _ { 0 } } &= \frac { e_{2n} } { e_{2n- 2} } \frac { e_{2n- 2} } { e_{2n- 4} } \cdots \frac { e _ { 2 } } { e _ { 0 } } \\ &= \left( - \frac { u } { \lambda } \right) { ( 2n - 1 ) } \left( - \frac { \mu } { \lambda } \right) ( 2n - 3 ) \cdots \left( - \frac { \mu } { \lambda } \right) 1 \\
   &= \left( -\frac { \mu } { \lambda } \right) ^ { n } \cdot ( 2 n - 1 ) ( 2 n - 3 ) \cdots 1 \\  &= ( - 1 ) ^ { n } \left( \frac { \mu } { \lambda } \right) ^ { n } \frac { ( 2 n ) ( 2 n - 1 ) \cdots 2\cdot1 } {2 ^ { n } \cdot n !  } \\ &= ( - 1 ) ^ { n } \left( \frac { \mu } { \lambda } \right) ^ { n } \frac { (2n)! } {2 ^ { n } \cdot n !  }  \end{aligned}$.
   
   $\begin{aligned}\text{Similarly, }\frac { e_{2n+1} } { e _ { 1 } } &= \frac { e_{2n+1} } { e_{2n-1} } \frac { e_{2n- 1} } { e_{2n- 3} } \cdots \frac { e _ { 3 } } { e _ { 1 } } \\
   &= \left( -\frac { \mu } { \lambda } \right) ^ { n } \cdot ( 2 n ) ( 2 n - 2) \cdots 2 \\  &= ( - 1 ) ^ { n } \left( \frac { \mu } { \lambda } \right) ^ { n } {2 ^ { n } \cdot n !  }\end{aligned}$.
   
-  By ratio test, it can be shown that $\sum _ { n = 0 } ^ { \infty } |c_{2n+1}|^2$ does not converge, and hence, $c_1$ must be zero. Therefore, squeezed vacuum is only composed of even eigenstates of Hamiltonian.
+  By ratio test, it can be shown that $\sum _ { n = 0 } ^ { \infty } |c_{2n+1}|^2$ does not converge, and hence, $c_1$ must be zero, making all other odd coefficients zero. Therefore, squeezed vacuum is only composed of even eigenstates of Hamiltonian.
 
 
 
@@ -342,27 +351,31 @@ $\begin{aligned}\text{Let } e_n &= c_n \sqrt{n!} \\\implies e_{n+1} &= -\frac{\m
 
 \subsubsection{Langevin equation}
 It turns out that the motion of a classical particle undergoing Brownian motion can mimic a squeezed state, under special circumstances. The dynamics of a particle undergoing Brownian motion is governed by the Langevin equation,\begin{equation}\label{eq:Langevin}m \ddot{x} = -\derivative{V(x)}{x} - b \dot{x} + m \xi(t)\end{equation} where $-\derivative{V(x)}{x}$ is the force acting on the particle due to potential $V(x)$, $-b\dot{x}$ is the effective frictional force acting on the particle due to viscosity of the medium, and $\xi(t)$ is a time dependent stochastic force.
-For the Brownian motion of a particle in a normal heat bath of temperature $T$, the stochastic force is a white noise \cite{wikipedia_white_noise}, \cite{brownian_motion_riemann}, and $\overline{\xi(t_1)\xi(t_2)} = a \delta(t_1 - t_2)$, where the overhead line denotes the average over distribution of $\xi(t)$.
-\subsubsection{Explanation of the nature of correlation of the stochastic force}\label{fluctuation_dissipation_proof} To see why this happens, we note that when $t_1 \neq t_2$, the two forces are uncorrelated, and the average of their product is zero. When the two times are equal, the force acts like a Dirac delta function because the velocity of the particle changes instantaneously after being hit by another particle. Now we show that for $a = \frac{2 \gamma k T}{m}$, where $k$ is the Boltzmann's constant.\\
+For the Brownian motion of a particle in a normal heat bath of temperature $T$, the stochastic force is a white noise (see \cite{wikipedia_white_noise}, \cite{brownian_motion_riemann}). $\overline{\xi(t)} = 0$ and $\overline{\xi(t_1)\xi(t_2)} = a \delta(t_1 - t_2)$, where the overhead line denotes the average over distribution of $\xi(t)$.
+\subsubsection{Explanation of the nature of correlation of the stochastic force}\label{fluctuation_dissipation_proof} To see why this happens, we note that when $t_1 \neq t_2$, the two forces are uncorrelated, and the average of their product is zero. When the two times $t_1$ and $t_2$ are equal, the force acts like a Dirac delta function because the velocity of the particle changes instantaneously after being hit by another particle, implying that the change in momentum imparted by this instantaneous force is finite. Now we show that for $a = \frac{2 \gamma k T}{m}$, where $k$ is the Boltzmann's constant.
+
 \textbf{Proof}: When $V(x) = 0$,\begin{equation}\label{eq:lang_no_pot}
 	m\dot{v}+m\gamma v = m \xi(t)
 \end{equation} 
 
-$\begin{aligned}\implies e^{\gamma t}(\dot{v}+\gamma v) &= e^{\gamma t} \xi(t) \\ \implies \derivative{(ve^{\gamma t})}{t} &= e^{\gamma t} \xi(t)\\ \implies ve^{\gamma t} - v(0) &= \int_{0}^{t} e^{\gamma s} \xi(s) \dd{s} \\ \implies v(t_1) v(t_2) &= v(0)^2 e^{-\gamma(t_1 + t_2)} + v(0) a e^{-\gamma(t_1 + t_2)} \left[\int_{0}^{t_1} e^{\gamma s} \xi(s) \dd{s} + \int_{0}^{t_2} e^{\gamma s} \xi(s) \dd{s}\right] \\&+ e^{-\gamma(t_1 + t_2)} \int_{0}^{t_1}\int_{0}^{t_2} e^{\gamma(s_1 + s_2)} \xi(s_1)\xi(s_2) \dd{s_1} \dd{s_2} \end{aligned}$
+$\begin{aligned}\implies e^{\gamma t}(\dot{v}+\gamma v) &= e^{\gamma t} \xi(t) \\ \implies \derivative{(ve^{\gamma t})}{t} &= e^{\gamma t} \xi(t)
+\\ \implies ve^{\gamma t} - v(0) &= \int_{0}^{t} e^{\gamma s} \xi(s) \dd{s}
+\\ \implies v(t)  &= v(0) e^{-\gamma t} + e^{-\gamma t} \int_{0}^{t} e^{\gamma s} \xi(s) \dd{s}
+\\ \implies v(t_1) v(t_2) &= v(0)^2 e^{-\gamma(t_1 + t_2)} + v(0) a e^{-\gamma(t_1 + t_2)} \left[\int_{0}^{t_1} e^{\gamma s} \xi(s) \dd{s} + \int_{0}^{t_2} e^{\gamma s} \xi(s) \dd{s}\right] \\&+ e^{-\gamma(t_1 + t_2)} \int_{0}^{t_1}\int_{0}^{t_2} e^{\gamma(s_1 + s_2)} \xi(s_1)\xi(s_2) \dd{s_1} \dd{s_2} \end{aligned}$
 
 Taking averages over the distribution,\\
 $\begin{aligned}\overline{v(t_1) v(t_2)} = v(0)^2 e^{-\gamma(t_1 + t_2)} &+ v(0) a e^{-\gamma(t_1 + t_2)} \left[\int_{0}^{t_1} e^{\gamma s} \overline{\xi(s)} \dd{s} + \int_{0}^{t_2} e^{\gamma s} \overline{\xi(s)} \dd{s}\right] \\&+ e^{-\gamma(t_1 + t_2)} \int_{0}^{t_1}\int_{0}^{t_2} e^{\gamma(s_1 + s_2)} \overline{\xi(s_1)\xi(s_2)} \dd{s_1} \\ &= v(0)^2 e^{-\gamma(t_1 + t_2)} + e^{-\gamma(t_1 + t_2)} \int_{0}^{t_1}\int_{0}^{t_2} e^{\gamma(s_1 + s_2)} {a} \delta(s_1 - s_2) \dd{s_1} \dd{s_2} \\ &= v(0)^2 e^{-\gamma(t_1 + t_2)} + a  e^{-\gamma(t_1 + t_2)} \int_{0}^{min(t_1,t_2)} e^{\gamma(2 s_1)} {a} \dd{s_1} \end{aligned}$
 
-Therefore, $\overline{v(t)^2} = v(0)^2 e^{-2\gamma t} + a e^{-2\gamma t}\frac{e^{2\gamma t} - 1}{2\gamma}$. When $t \rightarrow \infty, \overline{v(t)^2} = \frac{a}{2\gamma}$. But, in a thermal reservoir, $\frac{m\overline{v^2}}{2} =\frac{k T}{2} \implies \overline{v^2} = \frac{kT}{m}$. Hence, $a = \frac{2 \gamma k T}{m}$. To prove this, we could also Fourier transform the Langevin equation (\ref{eq:lang_no_pot}), solve it algebraically, and inverse transform it. This method is illustrated in the next section.
+Therefore, $\overline{v(t)^2} = v(0)^2 e^{-2\gamma t} + a e^{-2\gamma t}\frac{e^{2\gamma t} - 1}{2\gamma}$. When $t \rightarrow \infty, \overline{v(t)^2} = \frac{a}{2\gamma}$. But, in thermal equilibrium, $\frac{m\overline{v^2}}{2} =\frac{k T}{2} \implies \overline{v^2} = \frac{kT}{m}$. Hence, $a = \frac{2 \gamma k T}{m}$. To prove this, we could also Fourier transform the Langevin equation (\ref{eq:lang_no_pot}), solve it algebraically, and inverse transform it. This method is illustrated in the next section.
 \subsubsection{Fluctuation dissipation theorem and the claim}
-Using this value of $a$ and this method, it can be proved that $\frac{m \omega^2 \overline{x^2}}{2} = \frac{k T}{2}$ for a harmonic potential (see section 3 of chapter II in \cite{chandrashekhar_stochastic_physics_astro}). These results are known as ``Fluctuation dissipation theorem", which basically shows whatever may be the initial position and velocity of the particle, random thermal fluctuations will make each quadratic degree of freedom have energy $\frac{kT}{2}$, in average. This results also holds for random noise in LCR circuits, where the differential equation for the time evolution the charge in the capacitor is identical to the equation of the displacement a damped harmonic oscillator. 
+Using this value of $a$ and this method, it can be proved that $\frac{m \omega^2 \overline{x^2}}{2} = \frac{k T}{2}$ for a harmonic potential (see section 3 of chapter II in \cite{chandrashekhar_stochastic_physics_astro}). These results are known as ``Fluctuation dissipation theorem", which basically shows whatever may be the initial position and velocity of the particle, after long enough time random thermal fluctuations will make each quadratic degree of freedom have energy $\frac{kT}{2}$, in average. This results also hold for random noise in LCR circuits, where the differential equation for the time evolution of the charge in the capacitor is identical to the equation of the displacement a damped harmonic oscillator. 
 
-It is claimed in the article by Klaers et. al \cite{klaers} that a certain kind of stochastic force will lead to different variance (hence, different effective temperature) in position and momentum coordinates, as seen in a rotating frame.
+It is claimed in the article by Klaers et. al \cite{klaers} that a certain kind of stochastic force (see equation (\ref{eq: stochastic})) will lead to different variance (hence, different effective temperature) in position and momentum coordinates, as seen in a rotating frame.
 
 \section{Proof of the claim}
 Consider a particle in a Harmonic potential, undergoing Brownian motion for which \begin{equation}\label{eq: stochastic}
 	\xi(t) =  a_0 [e^{\tilde{r}} \xi_1(t) \cos(\omega t) + e^{-{\tilde{r}}} \xi_2(t)\sin(\omega t)]
-\end{equation} where $a_0 ^ 2 = \frac{2 \gamma k T}{m}$, and $\xi_1(t)$ and $\xi_2(t)$ are two uncorrelated stochastic forces which satisfy $\overline{\xi_i(t_1)\xi_j(t_2)} = \delta_{ij}\delta(t_1 - t_2)$. $r$ is a real number. Thus, the equations of motion are, \begin{equation}\label{eq:1st}
+\end{equation} where $a_0 ^ 2 = \frac{2 \gamma k T}{m}$, and $\xi_1(t)$ and $\xi_2(t)$ are two independent, uncorrelated stochastic forces which satisfy $\overline{\xi_i(t_1)\xi_j(t_2)} = \delta_{ij}\delta(t_1 - t_2)$. $\tilde{r}$ is a real number. Thus, the equations of motion are, \begin{equation}\label{eq:1st}
 m \dot{x} = p
 \end{equation}
 \begin{equation}\label{eq:2nd}
@@ -420,7 +433,7 @@ Then, from (\ref{eq: stochastic}),
 \end{equation}
 
 \begin{equation}\label{eq: stochastic_fourier}\begin{aligned} \text{Therefore, }
-\overline{\widetilde { \xi } \left( \omega _ { 1 } \right) \widetilde { \xi } \left( \omega _ { 2 } \right)} &= \frac{a_0 ^2 }{4}\left[e ^ { 2 r } \overline{\left\{ \widetilde{\xi _ { 1 }} \left( \omega _ { 1 } + \omega _ { 0 } \right) + \widetilde{\xi _ { 1 }} \left( \omega _ { 1 } - \omega _ { 0 } \right) \right\}\left\{ \widetilde{\xi _ { 1 }} \left( \omega _ { 2 } + \omega _ { 0 } \right) + \widetilde{\xi _ { 1 }} \left( \omega _ { 2 } - \omega _ { 0 } \right) \right\}} \right]\\ &- \frac{a_0^2}{4} \left[e ^ { -2 r }\overline{\left\{ \widetilde{\xi _ { 2 }} \left( \omega _ { 1 } + \omega _ { 0 } \right) + \widetilde{\xi _ { 2 }} \left( \omega _ { 1 } - \omega _ { 0 } \right) \right\}\left\{ \widetilde{\xi _ { 2 }} \left( \omega _ { 2 } + \omega _ { 0 } \right) + \widetilde{\xi _ { 2 }} \left( \omega _ { 2 } - \omega _ { 0 } \right) \right\}}\right]  \\&\text{(cross terms are $0$ in average)}\\& = \frac{a_0^2}{4} \left[ e^{2r}\left\{\delta \left( \omega _ { 1 } + \omega _ { 2 } + 2 \omega _ { 0 } \right) + 2 \delta \left( \omega _ { 1 } + \omega _ { 2 } \right) + \delta \left( \omega _ { 1 } + \omega _ { 2 } - 2 \omega_0 \right)\right\}\right] \\& - \frac{a_0^2}{4} \left[e^{-2r}\left\{\delta \left( \omega _ { 1 } + \omega _ { 2 } + 2 \omega _ { 0 } \right) + 2 \delta \left( \omega _ { 1 } + \omega _ { 2 } \right) + \delta \left( \omega _ { 1 } + \omega _ { 2 } - 2 \omega_0 \right)\right\}\right] \\ & =\frac{a_0^2}{2}\left[\sinh(2\tilde{r})\left\{\delta(\omega_1 + \omega_2 + 2\omega_0)+\delta(\omega_1 + \omega_2 + 2\omega_0)\right\} + 2\cosh(2\tilde{r})\delta(\omega_1 + \omega_2)\right] \end{aligned}\end{equation}
+\overline{\widetilde { \xi } \left( \omega _ { 1 } \right) \widetilde { \xi } \left( \omega _ { 2 } \right)} &= \frac{a_0 ^2 }{4}\left[e ^ { 2 r } \overline{\left\{ \widetilde{\xi _ { 1 }} \left( \omega _ { 1 } + \omega _ { 0 } \right) + \widetilde{\xi _ { 1 }} \left( \omega _ { 1 } - \omega _ { 0 } \right) \right\}\left\{ \widetilde{\xi _ { 1 }} \left( \omega _ { 2 } + \omega _ { 0 } \right) + \widetilde{\xi _ { 1 }} \left( \omega _ { 2 } - \omega _ { 0 } \right) \right\}} \right]\\ &- \frac{a_0^2}{4} \left[e ^ { -2 r }\overline{\left\{ \widetilde{\xi _ { 2 }} \left( \omega _ { 1 } + \omega _ { 0 } \right) + \widetilde{\xi _ { 2 }} \left( \omega _ { 1 } - \omega _ { 0 } \right) \right\}\left\{ \widetilde{\xi _ { 2 }} \left( \omega _ { 2 } + \omega _ { 0 } \right) + \widetilde{\xi _ { 2 }} \left( \omega _ { 2 } - \omega _ { 0 } \right) \right\}}\right]  \\&\text{(since cross terms are $0$ in average)}\\& = \frac{a_0^2}{4} \left[ e^{2r}\left\{\delta \left( \omega _ { 1 } + \omega _ { 2 } + 2 \omega _ { 0 } \right) + 2 \delta \left( \omega _ { 1 } + \omega _ { 2 } \right) + \delta \left( \omega _ { 1 } + \omega _ { 2 } - 2 \omega_0 \right)\right\}\right] \\& - \frac{a_0^2}{4} \left[e^{-2r}\left\{\delta \left( \omega _ { 1 } + \omega _ { 2 } + 2 \omega _ { 0 } \right) + 2 \delta \left( \omega _ { 1 } + \omega _ { 2 } \right) + \delta \left( \omega _ { 1 } + \omega _ { 2 } - 2 \omega_0 \right)\right\}\right] \\ & =\frac{a_0^2}{2}\left[\sinh(2\tilde{r})\left\{\delta(\omega_1 + \omega_2 + 2\omega_0)+\delta(\omega_1 + \omega_2 + 2\omega_0)\right\} + 2\cosh(2\tilde{r})\delta(\omega_1 + \omega_2)\right] \end{aligned}\end{equation}
 \subsubsection{Calculation of Fourier transformed position and momentum}
 From (\ref{eq:3}) and (\ref{eq:4}), \begin{equation}\label{eq:x_omega}
 \widetilde{X}(\omega) = \frac{m \omega_0}{p_0} \frac { \widetilde { \xi } ( \omega ) } { \omega _ { 0 } ^ { 2 } - \omega ^ { 2 } - i \omega \gamma }
@@ -457,7 +470,7 @@ Substituting this expression in the expression of variance in position, we get,
 \subsection{Calculation of covariance in position and momentum}
 Similarly, we inverse transform the covariance of position and momentum to time domain. 
 
-$\begin{aligned} \overline{X( t ) P(t)} &= \frac { 1 } { 2 \pi } \int _ { \omega _ { 1 }}\int_{\omega_2} \overline{\widetilde { X } ( \omega_1 )\widetilde { P } ( \omega_2 )}  e ^ { - i \omega _ { 1 } t } e ^ { - i \omega _ { 2 } t } \\ &= \frac{-i}{4\pi \omega_0}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[ 2 \cosh(2\tilde{r}) \int_{\omega_1} \frac{\omega_1}{(\omega_0^2 - \omega_1 ^2)^2 + \omega_1 ^2 \gamma^2}\right] \text{($=0$, as integrand is odd function)} \\&+ \frac{-i}{4\pi\omega_0}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[ \sinh(2\tilde{r}) \int_{\omega_1}\int_{\omega_2} \frac{\omega_2 e^{-i(\omega_1 + \omega_2) t} \left\{\delta(\omega_1 + \omega_2 + 2\omega_0) + \delta(\omega_1 + \omega_2 - 2\omega_0) \right\}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 + 2\omega_0)^2 + i(\omega_1 + 2 \omega_0) \gamma)]}\right] \\&= \frac{-i\gamma k T}{2 \pi \hbar} \sinh(2\tilde{r}) \left[\int_{\omega_1} \frac{\omega_1 e^{2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 + 2\omega_0)^2 + i(\omega_1 + 2 \omega_0) \gamma)]} \right] \\ &+ \frac{-i\gamma k T}{2 \pi \hbar} \sinh(2\tilde{r}) \left[\int_{\omega_1} \frac{\omega_1 e^{-2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 - 2\omega_0)^2 + i(\omega_1 - 2 \omega_0) \gamma)]}   \right] \\& = \frac{-i\gamma k T}{2 \pi \hbar} \sinh(2\tilde{r}) \left[I_4(\omega_0,\gamma) e^{2i\omega_0 t} + I_4(-\omega_0,\gamma)e^{-2i\omega_0 t}\right]
+$\begin{aligned} &\overline{X( t ) P(t)} = \frac { 1 } { 2 \pi } \int _ { \omega _ { 1 }}\int_{\omega_2} \overline{\widetilde { X } ( \omega_1 )\widetilde { P } ( \omega_2 )}  e ^ { - i \omega _ { 1 } t } e ^ { - i \omega _ { 2 } t } \\ &= \frac{-i}{4\pi \omega_0}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[ 2 \cosh(2\tilde{r}) \int_{\omega_1} \frac{\omega_1}{(\omega_0^2 - \omega_1 ^2)^2 + \omega_1 ^2 \gamma^2}\right] \text{($=0$, as integrand is odd function)} \\&+ \frac{-i}{4\pi\omega_0}\left(\frac { m \omega _ { 0 } a_0 } { p _ { 0 } }\right)^2 \left[ \sinh(2\tilde{r}) \int_{\omega_1}\int_{\omega_2} \frac{\omega_2 e^{-i(\omega_1 + \omega_2) t} \left\{\delta(\omega_1 + \omega_2 + 2\omega_0) + \delta(\omega_1 + \omega_2 - 2\omega_0) \right\}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 + 2\omega_0)^2 + i(\omega_1 + 2 \omega_0) \gamma)]}\right] \\&= \frac{-i\gamma k T}{2 \pi \hbar} \sinh(2\tilde{r}) \left[\int_{\omega_1} \frac{\omega_1 e^{2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 + 2\omega_0)^2 + i(\omega_1 + 2 \omega_0) \gamma)]} \right] \\ &+ \frac{-i\gamma k T}{2 \pi \hbar} \sinh(2\tilde{r}) \left[\int_{\omega_1} \frac{\omega_1 e^{-2i\omega_0 t}}{(\omega_0^2 - \omega_1 ^2 - i\omega_1\gamma) [({\omega_0}^2 - (\omega_1 - 2\omega_0)^2 + i(\omega_1 - 2 \omega_0) \gamma)]}   \right] \\& = \frac{-i\gamma k T}{2 \pi \hbar} \sinh(2\tilde{r}) \left[I_4(\omega_0,\gamma) e^{2i\omega_0 t} + I_4(-\omega_0,\gamma)e^{-2i\omega_0 t}\right]
 \end{aligned}$
 
 $\begin{aligned}
@@ -519,7 +532,7 @@ Let us define ``rotating coordinates", \begin{equation}\begin{array} { l } { X _
  \\ {T^*}_2 &= T \left[\cosh(2\tilde{r}) + \frac{\sinh(2\tilde{r})}{2}\right]
  \end{aligned}
  \end{equation}
- where $T$ is the temperature of the heat bath to which the harmonic oscillator is coupled and $r$ is the parameter in the stochastic force (\ref{eq: stochastic}). Note that the time-averaged energies in non-rotating coordinates $X(t)$ (kinetic energy) and $P(t)$(potential energy) are equal.
+ where $T$ is the temperature of the heat bath to which the harmonic oscillator is coupled and $\tilde{r}$ is the parameter in the stochastic force (\ref{eq: stochastic}). Note that the time-averaged energies in non-rotating coordinates $X(t)$ (kinetic energy) and $P(t)$(potential energy) are equal.
  
  \textbf{Note}: It is claimed in \cite{klaers}, the stochastic force $\xi(t) =  a_0 [e^{\tilde{r}} \xi_1(t) \cos(\omega t) + e^{-{\tilde{r}}} \xi_2(t)\sin(\omega t)]$ gives rise to effective temperatures ${T^*}_{1,2}
 = T e^{\pm 2r}$. The relation between $r$ and $\tilde{r}$ is not mentioned. This can be explained if the relation $e^{4r} = \frac{\cosh(2\tilde{r}) - \frac{\sinh(2\tilde{r})}{2}}{\cosh(2\tilde{r}) + \frac{\sinh(2\tilde{r})}{2}}$, i.e. $r = \frac{1}{4}\ln(\frac{e^{\tilde{r}} + 3}{3 e^{4\tilde{r}} + 1})$ is satisfied.
@@ -549,17 +562,17 @@ We can write (\ref{eq:1st}) and (\ref{eq:2nd}) in matrix form, and diagonalize t
 		\includegraphics[width=\linewidth]{graphs/simulation/kinetic_potential.png}
 		\caption{The average energy in position and momentum are almost equal.}
 	\end{subfigure}
-	\caption{A simulation of a Brownian harmonic oscillator under the stochastic force with $a_0 = 1000, \tilde{r} = -0.4$. In this, mass is taken to be unity, Note that the energy in rotating coordinates are different, while they are almost equal in the non-rotating coordinates, which can be justified by time averaging equations (\ref{eq:x_average}) and (\ref{eq:p_average})}
+	\caption{A simulation of a Brownian harmonic oscillator under the stochastic force with $a_0 = 1000, \tilde{r} = -0.4$. In this, mass is taken to be unity. Note that the energy in rotating coordinates are different, while they are almost equal in the non-rotating coordinates, which can be justified by time averaging equations (\ref{eq:x_average}) and (\ref{eq:p_average})}
 	
 \end{figure}
 
-I created a C program \cite{link_to_c_code} to numerically solve (\ref{eq:Langevin}) and (\ref{eq: stochastic}) numerically with Runge-Kutta method \cite{wikipedia_runge_kutta} of order 4. The delta function force is simulated with a random force of very high magnitude (high compared to the spring force).
+I created a C program \cite{link_to_c_code} to numerically solve (\ref{eq:Langevin}) and (\ref{eq: stochastic}) with Runge-Kutta method \cite{wikipedia_runge_kutta} of order 4. The delta function force is simulated with a random force of very high magnitude (high compared to the spring force).
 The following graphs show that the energy in rotating coordinates are different. It is found that their ratio is close to the ratio obtained in (\ref{eq:eff_temp}).
 
 \section{How the Heat Engine works}
-The working principle of the squeezed harmonic oscillator used in \cite{klaers} is hereby explained. This section is based on the supplement material \cite{klaers_supplement} of their paper. They have created a nano beam structure made of GaAs that is doubly clamped, and allowed to vibrate. The nano-beam contains two doped layers, where a DC bias voltage can be applied to change the frequency of oscillation of the beam. 
+The working principle of the squeezed harmonic oscillator used in \cite{klaers} is hereby explained. More details can be found in the supplement material \cite{klaers_supplement} of their paper. They have created a nano beam structure made of GaAs that is doubly clamped, and allowed to vibrate. The nano-beam contains two doped layers, where a DC bias voltage can be applied to change the frequency of oscillation of the beam. 
 \subsection{How the force is applied}
-Due to the piezo-electric nature of GaAs, when an AC electric field is applied to it, it experiences a mechanical force, and oscillates according to it. The oscillator is weakly damped (Q factor is approximately $10^3$). Now, an electric field of the form (\ref{eq: stochastic}) is used, so that the beam experiences a similar mechanical force, and its displacement from equilibrium is is described by the Langevin equation (\ref{eq:Langevin}), where the force is given by (\ref{eq: stochastic}).
+Due to the piezo-electric nature of GaAs, when an AC electric field is applied to it, it experiences a mechanical force, and oscillates according to it. The oscillator is weakly damped (Q factor is approximately $10^3$). Now, an electric field of the form (\ref{eq: stochastic}) is used, so that the beam experiences a similar mechanical force, and its displacement from equilibrium is described by the Langevin equation (\ref{eq:Langevin}), where the force is given by (\ref{eq: stochastic}).
 \subsection{How the quantities are measured}
 The displacement of the nano-beam is measured using Mach-Zehnder interferometry, where the path length of a laser beam changes as the nano-beam oscillates, creating a shift in the position of fringes, which can be used to calculate the displacement of the nano-beam. From the displacement, rotating coordinate amplitudes, their effective temperatures, and all other quantities of interest can be found.
 \subsection{How it is used as a heat engine}
@@ -569,17 +582,17 @@ Now, the temperature $T$ and squeezing parameter $r$ can be varied by tweaking t
 
 The natural frequency of the oscillator is in the order of MHz, whereas the cycle time of the Otto cycle is of several seconds. So, we can use the time average values for sines and cosines (and their squares, as in subsection \ref{rotating_coordinates}), and assume that the rotating coordinates have a Gaussian distribution with mean zero, and variance proportional to $T^*_1$ and $T^*_2$.
 
-When the temperature is highest ($T_h = 10000 K$), the squeezing parameter is kept at a value $r_h = 0.4$, and when the temperature is lowest ($T_c = 9500 K$), the squeezing parameter is zero. So, the effective highest temperature is $T^*_h = T_h e^{2r_h}$, while the effective lowest temperature is $T_c$.
+When the temperature is highest ($T_h = 10000 K$), the squeezing parameter is kept at a value $r_h = 0.4$, and when the temperature is lowest ($T_c = 9500 K$), the squeezing parameter is made zero. So, the effective highest temperature is $T^*_h = T_h e^{2r_h}$, while the effective lowest temperature is $T^*_c = T_c$.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.3\linewidth]{graphs/P-V_Otto_cycle.png}
+	\includegraphics[width=0.4\linewidth]{graphs/P-V_Otto_cycle.png}
 	\caption{pressure-volume diagram of Otto Cycle. Image source: Wikipedia \cite{image_reference}}
 	\label{fig:Otto_cycle}
 \end{figure}
 
 \subsection{How efficiency is measured}
-From the displacement of the oscillator, the two rotating coordinates, and their effective temperature, and entropy can be calculated. So, one can generate a "temperature-entropy diagram" of the cycle, and find the corresponding efficiency. One can also find generate a "pressure-volume diagram" (where pressure and volume are defined in the last subsection), and find the efficiency from the ratio of work done (the area enclosed by the loop) and the heat supplied to the system when $T = T_h$. When the system is coupled to the hot bath (i.e. the prefactor $a_0$ in the stochastic force (\ref{eq: stochastic}) is such that $T = T_h$), it undergoes an isochoric process, i.e. its volume (here inverse frequency) does not change. Then the work done is zero, and from first law of thermodynamics, the effective heat given to the system is equal to the increase in internal energy (which can be calculated using the formula of internal energy given in the last subsection).
+From the displacement of the oscillator, the value of the two rotating coordinates, their effective temperature, and entropy can be calculated. So, one can generate a ``temperature-entropy diagram" of the cycle, and find the corresponding efficiency. One can also find generate a ``pressure-volume diagram" (where pressure and volume are defined in the last subsection), and find the efficiency from the ratio of work done (the area enclosed by the loop) and the heat supplied to the system when $T = T_h$. When the system is coupled to the hot bath (i.e. the prefactor $a_0$ in the stochastic force (\ref{eq: stochastic}) is such that $T = T_h$), it undergoes an isochoric process, i.e. its volume (here inverse frequency) does not change. Then the work done is zero, and from first law of thermodynamics, the effective heat given to the system is equal to the increase in internal energy (which can be calculated using the formula of internal energy given in the last subsection).
 
 It is experimentally found that the efficiency of the engine is more than the standard Carnot limit $1 - \frac{T_c}{T_h}$ (although it is less than $1 - \frac{T_c}{T^* _h}$).
 
@@ -588,13 +601,12 @@ In \ref{fluctuation_dissipation_proof} we saw that the effective temperature of 
 
 As mentioned in \cite{klaers}, we can only say that Carnot efficiency has been surpassed if squeezing can be obtained as a free resource. If we have two engines, one of which creates the squeezed force, and the other utilizes it, then the efficiency of the whole system will not be greater than the Carnot limit.
 
-There is a notion of generalized Carnot limit given by $\eta = 1 - \frac{T^*_{h}}{T^*_{c}}$ (where $T^*$ denotes the effective temperature). It is seen that the experimental efficiency is still less than this limit, although it is more than the standard Carnot limit $1 - \frac{T_{h}}{T_{c}}$. 
+There is a notion of generalized Carnot limit given by $\eta = 1 - \frac{T^*_{c}}{T^*_{h}}$ (where $T^*$ denotes the effective temperature). It is seen that the experimental efficiency is still less than this limit, although it is more than the standard Carnot limit $1 - \frac{T_{c}}{T_{h}}$. 
 
 When we calculate the change in entropy, we need to take into account the effective temperatures  ${T^*_{h}}$ and ${T^*_{c}}$ of the heat baths, and that is why, the second law of thermodynamics would not be violated. When we use this special stochastic force, the system is really coupled to two heat baths of different temperatures, and we should not compare its efficiency to the ``formula" of standard Carnot efficiency, with some intermediate temperature $T_{h}$ and $T_{c}$, where the squeezing parameter $r$ is put to zero.
 
 \section{Conclusion}
-The efficiency of the heat engine was calculated from the Temperature-Entropy diagram obtained from the rotating coordinates, the heat engine was coupled to anything that extracts actual work. Also, the effective temperatures are different in the rotating coordinates, while they are equal in the lab coordinates. It is to be investigated how work can be experimentally extracted from the rotating coordinates. Although the claim of surpassing Carnot efficiency depends on how the temperatures are interpreted, these microscopic engines can provide much higher efficiency than traditional macroscopic engines, and may become very useful in the near future.
-
+The efficiency of the heat engine was calculated from the Temperature-Entropy diagram obtained from the rotating coordinates, the heat engine was not coupled to anything that extracts actual work. Also, the effective temperatures are different in the rotating coordinates, while they are equal in the lab coordinates. It is to be investigated how work can be experimentally extracted from the rotating coordinates. Although the claim of surpassing Carnot efficiency depends on how the temperatures are interpreted, these microscopic engines can provide much higher efficiency than traditional macroscopic engines, and may become very useful in the near future.
 
 \bibliographystyle{unsrt}
 \bibliography{sample}
