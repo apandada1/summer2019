@@ -55,11 +55,12 @@ M~C Teich and B~E~A Saleh.
   1(2):153--191, dec 1989.
 
 \bibitem{recursion_substitution}
-metamorphy (https://math.stackexchange.com/users/543769/metamorphy).
+metamorphy (\texttt{https://math.stackexchange.com/users/543769/metamorphy}).
 \newblock How to solve the recurrence relation $d_n = a \sqrt{n+1}d_{n+1} + b
   \sqrt{n} d_{n-1}$ (when $n \in \mathbb { Z } ^ { + } )$, and $d_0 := a d_1$.
 \newblock Mathematics Stack Exchange.
-\newblock URL:https://math.stackexchange.com/q/3344192 (version: 2019-09-04).
+\newblock URL:\texttt{https://math.stackexchange.com/q/3344192} (version:
+  2019-09-04).
 
 \bibitem{arfken_weber_harris}
 Arfken~G. B., Weber~H. J., and Harris~F. E.
