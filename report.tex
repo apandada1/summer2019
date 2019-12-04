@@ -70,7 +70,7 @@
 
 \begin{abstract}
 
-It is a challenging task to make efficient heat engines. The Carnot limit \cite{resnick_halliday} provides an upper bound for the efficiency of a heat engine. It was claimed in a recent paper \cite{klaers} that it is possible to experimentally surpass the Carnot limit using non-equilibrium reservoirs, and the second law of thermodynamics was not violated due to the non-equilibrium nature of the reservoirs. There was a claim that a certain kind of stochastic gave rise to classical squeezed states, which can be utilized to make such an heat engines. In this report, that claim is verified, and the sense in which the Carnot efficiency is surpassed, and why second law is still not violated is explained.
+It is a challenging task to make efficient heat engines. The Carnot limit \cite{resnick_halliday} provides an upper bound for the efficiency of a heat engine. It was claimed in a recent paper \cite{klaers} that it is possible to experimentally surpass the Carnot limit using non-equilibrium reservoirs, and the second law of thermodynamics was not violated due to the non-equilibrium nature of the reservoirs. There was a claim that a certain kind of stochastic forcing gave rise to classical squeezed states, which can be utilized to make such an heat engines. In this report, that claim is critically analyzed, and the sense in which the Carnot efficiency is surpassed, and why the second law is still not violated is explained.
 
 \end{abstract}
 %{\bf Keywords:} enter, keyword, here.
@@ -102,8 +102,8 @@ I am also thankful to D.S.T. and K.V.P.Y. for providing me scholarship.
 \tableofcontents
 
 \section{Introduction}
-The classical limits of the maximum achievable efficiency of an ideal heat engine running between temperatures $T_{hot}$ and $T_{cold}$ us given by Carnot's formula $\eta_{Carnot} = 1 - \frac{T_{cold}}{T_{hot}}$.\\
-Being reversible, Carnot engine is inifinitely slow, and there are frictional dissipations in the real world. As a result, the efficiency of real, irreversible engines are a small fraction of this ideal formula.
+The classical limit for the maximum achievable efficiency of an ideal heat engine running between temperatures $T_{hot}$ and $T_{cold}$ is given by Carnot's formula $\eta_{Carnot} = 1 - \frac{T_{cold}}{T_{hot}}$.\\
+Being reversible, the Carnot engine which achieves this efficiency is inifinitely slow, and there are frictional dissipations in the real world. As a result, the efficiency of real, irreversible engines is a small fraction of this ideal formula.
 Nano engines based on the principles of Quantum Mechanics can achieve much higher efficiencies than their classical counterparts \cite{Millen_2016} and can have efficiency close to the Carnot limit.
 These engines can be realized in many forms including ion traps \cite{ion_trap_abah}, bacterial reservoirs \cite{bacterial_reservoir}, harmonic oscillators \cite{harmonic_oscl_engine}.
 It has been shown both theoretically \cite{abah_et_al} and experimentally \cite{klaers} that the efficiencies of engines realized using ``squeezed harmonic oscillators" can even surpass the Carnot limit, without violating the second law of thermodynamics. In this report, it will be elaborated in which sense the Carnot limit is surpassed, and why the second law is not violated.
@@ -112,13 +112,13 @@ To see how the experiment \cite{klaers} was done, let us recap squeezed states o
 
 Before we discuss squeezed states, let us review ``Coherent states" of a harmonic oscillator.
 \subsection{Coherent states of a quantum harmonic oscillator}
-The position and momentum of classical harmonic oscillator (a particle of mass $m$ in potential $\frac{1}{2}m\omega^2x^2$, basically a spring-mass system)  oscillates with period $\omega$, its natural frequency.
-However, in quantum mechanics, the expectation value of position or momentum of an eigenstate of the Hamiltonian does not change with time.
+The position and momentum of classical harmonic oscillator (a particle of mass $m$ in potential $\frac{1}{2}m\omega^2x^2$, basically a spring-mass system) oscillate with period $\omega$, its natural frequency.
+However, in quantum mechanics, the expectation value of position or momentum in an eigenstate of the Hamiltonian does not change with time.
 
 For the harmonic oscillator, the Hamiltonian is $\hat{H} = \frac{\hat{p}^2}{2m} + \frac{1}{2}m \omega^2 {\hat{x}}^2$.
 
-Let the eigenstates of $\hat{H}$ be denoted by $\ket{n}$. It can be shown \cite{cohen_tannoudji} that it has energy $E_n = (n+\frac{1}{2}) \hbar\omega$. The state evolves with time as $\ket{n,t} = e ^ { -i \left( n + \frac { 1 } { 2 } \right) \omega t } \ket{n,t=0}$, and the position and momentum coordinate will share equal energies $(n+\frac{1}{2}) \frac{\hbar\omega}{2}$. And, the expected values of position and momentum are zero and do not change over time.
-There exist quantum states whose expected values of position and momentum oscillate sinusoidally with time, and the wave packet does not spread with time. These are known as ``Coherent states" \cite{wikipedia_coherent}.
+Let the eigenstates of $\hat{H}$ be denoted by $\ket{n}$. It can be shown \cite{cohen_tannoudji} that it has energy $E_n = (n+\frac{1}{2}) \hbar\omega$. The state evolves with time as $\ket{n,t} = e ^ { -i \left( n + \frac { 1 } { 2 } \right) \omega t } \ket{n,t=0}$, and the position and momentum coordinate will share equal energies $(n+\frac{1}{2}) \frac{\hbar\omega}{2}$. And, the expectation values of position and momentum are zero and do not change over time.
+There exist quantum states in which the expectation values of position and momentum oscillate sinusoidally with time, and the wave packet does not spread with time. These are known as ``Coherent states" \cite{wikipedia_coherent}.
 
 
 Let us define $x_0 = \sqrt{\frac{\hbar}{m\omega}}$ and $p_0 = \sqrt{\hbar m \omega}$, and dimensionless operators $\hat{X} = \frac{\hat{x}}{x_0}$,$\hat{P} = \frac{\hat{p}}{p_0}$. Then we can rewrite \begin{equation}\label{eq:Hamiltonian}\hat{H} = \frac{\hbar\omega}{2}({\hat{X}}^2 + {\hat{P}}^2)\end{equation}
@@ -136,20 +136,20 @@ Let \begin{equation}\label{eq:coherent}
 $\begin{aligned}\text{From equations (\ref{eq:coherent}) and (\ref{eq:coherentexpansion}), we get,}\displaystyle\sum _ { n = 0 } ^ { \infty } c_ { n } \hat {a} | n \rangle &= \sum _ { n = 0 } ^ { \infty } \alpha c_{ n } | n \rangle\\\implies \sum _ { n = 1 } ^ { \infty } c_{ n } \sqrt { n } | n - 1 \rangle &= \sum _ { n = 0 } ^ { \infty } \alpha c_{ n } | n \rangle \\ \implies \sum _ { n = 0 } ^ { \infty } c _ { n + 1 } \sqrt { n + 1 } | n \rangle &= \sum _ { n = 0 } ^ { \infty } \alpha c _ { n } | n \rangle\\ \implies \quad c _ { n + 1 } \sqrt { n + 1 } &= \alpha c _ { n } \\  \implies \frac { c _ { n + 1 } \sqrt { ( n + 1 ) ! } } { \alpha ^ { n + 1 } }  &= \frac { c _ { n } \sqrt { n ! } } { \alpha ^ { n } } \\  &= \frac { c _ { 0 } \sqrt { 0 ! } } { \alpha ^ { 0 } }  \\ \implies c _ { n } &= c _ { 0 } \frac { \alpha ^ { n } } { \sqrt { n ! } }\end{aligned}$\\
 Since $\displaystyle\sum _ { n = 0 } ^ { \infty } \left| c _ { n } \right| ^ { 2 } = 1 \implies c _ { 0 } = e ^ { - \frac { | \alpha | ^ { 2 } } { 2 } }$. Finally we get $\displaystyle| \alpha \rangle = e ^ { - \frac {|\alpha| ^ { 2 } } { 2 } } \sum _ { n = 0 } ^ { \infty } \frac { \alpha ^ { n } } { \sqrt { n ! } } | n \rangle$,
 and $\displaystyle| \alpha,t \rangle = e ^ { - \frac {|\alpha| ^ { 2 } + i\omega t} { 2 }} \sum _ { n = 0 } ^ { \infty } \frac { (\alpha e^{-i\omega t})^ { n }  } { \sqrt { n ! } } | n \rangle$. So the state remains a coherent state over time, only the parameter $\alpha$ evolves as $\alpha(t) = \alpha(0) e^{-i\omega t}$.
-Now, 
+Now, in the coherent state $\ket{\alpha}$,
 \begin{equation}\label{eq:coherent_stats}
 \begin{cases}
 
 	&{ \langle \hat{a} \rangle = \alpha }\\
 	&{ \langle \hat{a}^\dagger \rangle = \alpha^* }\\
-	&{ \langle x \rangle = x _ { 0 } \left( \frac { \hat{a}+ \hat{a} ^ { \dagger } } { 2 } \right) = x _ { 0 } \frac{\alpha + \alpha^*}{2}}\\
-	& { \langle p \rangle = p_0  \left\langle \frac { \hat{a}- \hat{a} ^ { \dagger } } { \sqrt { 2 } i } \right\rangle =  p_0 \frac{\alpha - \alpha^*}{2i} }\\
+	&{ \langle x \rangle = x _ { 0 } \left\langle \frac { \hat{a}+ \hat{a} ^ { \dagger } } { \sqrt{2} } \right\rangle = x _ { 0 } \frac{\alpha + \alpha^*}{\sqrt{2}}}\\
+	& { \langle p \rangle = p_0  \left\langle \frac { \hat{a}- \hat{a} ^ { \dagger } } { \sqrt { 2 } i } \right\rangle =  p_0 \frac{\alpha - \alpha^*}{\sqrt{2} i} }\\
 	& { \langle \hat{x}^2 \rangle = {x_0}^2  \left\langle \frac { \hat{a}^2 + \hat{a^ { \dagger }}^2 + \hat{a}\hat{a}^\dagger + \hat{a}^\dagger \hat{a} } { 2 } \right\rangle =  \frac{\alpha^2 + \alpha^{*2} + 2|\alpha|^2 + 1 }{2}{x_0}^2}\\
 	& { \langle \hat{p}^2 \rangle = {p_0}^2  \left\langle \frac { \hat{a}^2 + \hat{a^ { \dagger }}^2 - \hat{a}\hat{a}^\dagger - \hat{a}^\dagger \hat{a} } { -2 } \right\rangle = \frac{ 2|\alpha|^2 + 1 -\alpha^2 - \alpha^{*2} }{2}{p_0}^2}\\
 	& \expval{E} = \frac{\hbar\omega}{2}(\hat{a}^{\dagger}\hat{a}+1) = \frac{\hbar\omega}{2}(|\alpha|^2 + 1)\\
 	& (\Delta x)^2 = \frac{{x_0}^2}{2}\\
 	& (\Delta p)^2 = \frac{{p_0}^2}{2}\\
-	& \Delta x \cdot \Delta p = x_0 p_0 = \frac{\hbar}{2} 
+	& \Delta x \cdot \Delta p = \frac{x_0 p_0}{2} = \frac{\hbar}{2} 
 	
 	\end{cases}\end{equation}
 	
@@ -182,7 +182,7 @@ Now,
 \end{subfigure}
 	\caption{Time evolution of probability density of a coherent state. $T = \frac{2\pi}{\omega}$}
 \end{figure}
-Let $\alpha = |\alpha|e^{i\phi}$. Then, $\langle x \rangle (t) $$= \sqrt{2} x_0 \Re{\alpha(t)} $$= \sqrt{2} x_0 |\alpha| \cos(\phi-\omega t)$, and $ \langle p \rangle (t) $$= \sqrt{2} p_0 \Im{\alpha(t)} $$= \sqrt{2} x_0 |\alpha| \sin(\phi-\omega t)$. The total energy, the standard deviations in position and momentum remain constant, while the expected position and momentum vary sinusodially with time, just like a classical particle. Solving the first order differential equation obtained from (\ref{eq:coherent}) in position basis, it can be easily shown that the wave function $\psi_\alpha (x) = \braket{x}{\alpha}$ is a Gaussian of fixed variance $\frac{x_0^2}{2}$, and its mean $\expval{x}$ evolves sinusodially with time.
+Let $\alpha = |\alpha|e^{i\phi}$. Then, $\langle x \rangle (t) $$= \sqrt{2} x_0 \Re{\alpha(t)} $$= \sqrt{2} x_0 |\alpha| \cos(\phi-\omega t)$, and $ \langle p \rangle (t) $$= \sqrt{2} p_0 \Im{\alpha(t)} $$= \sqrt{2} x_0 |\alpha| \sin(\phi-\omega t)$. The total energy, the standard deviations in position and momentum remain constant, while the expectation values of position and momentum vary sinusodially with time, just like for a classical particle. Solving the first order differential equation obtained from (\ref{eq:coherent}) in the position basis, it can be easily shown that the wave function $\psi_\alpha (x) = \braket{x}{\alpha}$ is a Gaussian of fixed variance $\frac{x_0^2}{2}$, centered about a mean $\expval{x}$ which evolves sinusodially with time.
 \subsection{Squeezed states of a quantum harmonic oscillator}
 
 The coherent state behaves like a classical particle in a harmonic potential, and it has equal uncertainty in position and momentum. However, there exist states which have different values of standard deviation in position and momentum coordinates. In the next section, we will see that these uncertainties are related to the effective temperature in these coordinates, and this can be utilized to prepare efficient heat engines. Let us define \begin{equation} \label{eq:squeeze}
@@ -351,8 +351,8 @@ $\begin{aligned} \implies e_{n+1} &= -\frac{\mu}{\lambda} n e_{n-1}
 
 \subsubsection{Langevin equation}
 It turns out that the motion of a classical particle undergoing Brownian motion can mimic a squeezed state, under special circumstances. The dynamics of a particle undergoing Brownian motion is governed by the Langevin equation,\begin{equation}\label{eq:Langevin}m \ddot{x} = -\derivative{V(x)}{x} - b \dot{x} + m \xi(t)\end{equation} where $-\derivative{V(x)}{x}$ is the force acting on the particle due to potential $V(x)$, $-b\dot{x}$ is the effective frictional force acting on the particle due to viscosity of the medium, and $\xi(t)$ is a time dependent stochastic force.
-For the Brownian motion of a particle in a normal heat bath of temperature $T$, the stochastic force is a white noise (see \cite{wikipedia_white_noise}, \cite{brownian_motion_riemann}). $\overline{\xi(t)} = 0$ and $\overline{\xi(t_1)\xi(t_2)} = a \delta(t_1 - t_2)$, where the overhead line denotes the average over distribution of $\xi(t)$.
-\subsubsection{Explanation of the nature of correlation of the stochastic force}\label{fluctuation_dissipation_proof} To see why this happens, we note that when $t_1 \neq t_2$, the two forces are uncorrelated, and the average of their product is zero. When the two times $t_1$ and $t_2$ are equal, the force acts like a Dirac delta function because the velocity of the particle changes instantaneously after being hit by another particle, implying that the change in momentum imparted by this instantaneous force is finite. Now we show that for $a = \frac{2 \gamma k T}{m}$, where $k$ is the Boltzmann's constant.
+For the Brownian motion of a particle in a normal heat bath of temperature $T$, the stochastic force is a white noise (see \cite{wikipedia_white_noise}, \cite{brownian_motion_riemann}). $\overline{\xi(t)} = 0$ and $\overline{\xi(t_1)\xi(t_2)} = a \delta(t_1 - t_2)$, where the overhead line denotes an average over the distribution of $\xi(t)$.
+\subsubsection{Explanation of the nature of correlation of the stochastic force}\label{fluctuation_dissipation_proof} To see why this happens, we note that when $t_1 \neq t_2$, the two stochastic forces are uncorrelated, and the average of their product is zero. When the two times $t_1$ and $t_2$ are equal, the force acts like a Dirac delta function because the velocity of the Brownian particle changes instantaneously after being hit by a medium particle, implying that the change in momentum imparted by this instantaneous force is finite. Now we show that for $a = \frac{2 \gamma k T}{m}$, where $k$ is the Boltzmann's constant, and $V(x) = 0$, the velocity of the Brownian particle tends to a thermal (Maxwell-Boltzmann) distribution with temperature $T$, at large times.
 
 \textbf{Proof}: When $V(x) = 0$,\begin{equation}\label{eq:lang_no_pot}
 	m\dot{v}+m\gamma v = m \xi(t)
@@ -524,7 +524,7 @@ Let us define ``rotating coordinates", \begin{equation}\begin{array} { l } { X _
  \\ & \approx \frac{kT}{\hbar\omega_0}\left[\cosh(2\tilde{r}) + \frac{\sinh(2\tilde{r})}{2}\right] \left(\text{in the limit of low damping, i.e. } \frac{\gamma}{\omega_0} \ll 1\right)
  \end{aligned}$
  
- From (\ref{eq:Hamiltonian}), the energy in a quadrant $X$ is,  $\frac{\hbar\omega_0}{2} <\overline { X ^ { 2 } } > = \frac{kT^*}{2}$, where $T^*$ is the effective temperature of the quadrant.
+ From (\ref{eq:Hamiltonian}), the energy in a quadratic degree of freedom $X$ is,  $\frac{\hbar\omega_0}{2} <\overline { X ^ { 2 } } > = \frac{kT^*}{2}$, where $T^*$ is the effective temperature.
  
  Therefore, the effective temperatures in the two rotating coordinates are,
  \begin{equation}\label{eq:eff_temp}
@@ -533,14 +533,14 @@ Let us define ``rotating coordinates", \begin{equation}\begin{array} { l } { X _
  \\ {T^*}_2 &= T \left[\cosh(2\tilde{r}) + \frac{\sinh(2\tilde{r})}{2}\right]
  \end{aligned}
  \end{equation}
- where $T$ is the temperature of the heat bath to which the harmonic oscillator is coupled and $\tilde{r}$ is the parameter in the stochastic force (\ref{eq: stochastic}). Note that the time-averaged energies in non-rotating coordinates $X(t)$ (kinetic energy) and $P(t)$(potential energy) are equal.
+ where $T$ is the temperature of the heat bath to which the harmonic oscillator is coupled and $\tilde{r}$ is the parameter in the stochastic force (\ref{eq: stochastic}). Note that the time-averaged energies in the non-rotating coordinates $X(t)$ (potential energy) and $P(t)$ (kinetic energy) are equal.
  
  \textbf{Note}: It is claimed in \cite{klaers}, the stochastic force $\xi(t) =  a_0 [e^{\tilde{r}} \xi_1(t) \cos(\omega t) + e^{-{\tilde{r}}} \xi_2(t)\sin(\omega t)]$ gives rise to effective temperatures ${T^*}_{1,2}
 = T e^{\pm 2r}$. The relation between $r$ and $\tilde{r}$ is not mentioned. This can be explained if the relation $e^{4r} = \frac{\cosh(2\tilde{r}) - \frac{\sinh(2\tilde{r})}{2}}{\cosh(2\tilde{r}) + \frac{\sinh(2\tilde{r})}{2}}$, i.e. $r = \frac{1}{4}\ln(\frac{e^{\tilde{r}} + 3}{3 e^{4\tilde{r}} + 1})$ is satisfied.
 
 \section{Other methods to get this result}
 \subsection{Directly integrating the equations in Mathematica}
-We can write (\ref{eq:1st}) and (\ref{eq:2nd}) in matrix form, and diagonalize the matrices to formally solve for $x(t)$ and $v(t)$ in terms of $\xi(t)$. Then we can calculate of $\overline{x(t_1)x(t_2)}$, $\overline{x(t_1)v(t_2)}$, and  $\overline{v(t_1)v(t_2)}$ just like subsection \ref{fluctuation_dissipation_proof}, and find the variance of the rotating coordinates. I did this calculation in Mathematica and got the same results as in section \ref{rotating_coordinates}, under the limit of low damping.
+We can write (\ref{eq:1st}) and (\ref{eq:2nd}) in matrix form, and diagonalize the matrices to formally solve for $x(t)$ and $v(t)$ in terms of $\xi(t)$. Then we can calculate of $\overline{x(t_1)x(t_2)}$, $\overline{x(t_1)v(t_2)}$, and  $\overline{v(t_1)v(t_2)}$ just like in subsection \ref{fluctuation_dissipation_proof}, and find the variance of the rotating coordinates. I did this calculation in Mathematica and got the same results as in section \ref{rotating_coordinates}, under the limit of low damping.
 
 \subsection{Verification using a simulation}
 
