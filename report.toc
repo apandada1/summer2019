@@ -22,5 +22,5 @@
 \contentsline {subsection}{\numberline {5.2}How the quantities are measured}{24}
 \contentsline {subsection}{\numberline {5.3}How it is used as a heat engine}{25}
 \contentsline {subsection}{\numberline {5.4}How efficiency is measured}{25}
-\contentsline {section}{\numberline {6}Explanation of different effective temperatures and the reason for surpassing the second law}{26}
+\contentsline {section}{\numberline {6}Explanation of different effective temperatures and the reason for surpassing the Carnot limit}{26}
 \contentsline {section}{\numberline {7}Conclusion}{27}
